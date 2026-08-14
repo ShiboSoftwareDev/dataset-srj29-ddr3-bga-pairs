@@ -173,7 +173,21 @@ function createSample(index, mapRecord) {
   const minimumPitch = Math.min(map.memory.pitch, map.controller.pitch)
   const nominalTraceWidth = round(Math.min(0.1, minimumPitch * 0.16), 4)
   const clearance = round(Math.min(0.075, minimumPitch * 0.1), 4)
-  const viaPadDiameter = round(Math.max(0.18, minimumPitch * 0.42), 4)
+  const maximumDogboneViaDiameter = Math.min(
+    ...[map.memory, map.controller].map((packageData) => {
+      const maximumPadHalfDiagonal = Math.max(
+        ...packageData.pads.map((pad) => Math.hypot(pad.width, pad.height) / 2),
+      )
+      return 2 * (packageData.pitch / Math.sqrt(2) - maximumPadHalfDiagonal - clearance)
+    }),
+  )
+  if (maximumDogboneViaDiameter < 0.16) {
+    throw new Error(`${id}: source pad geometry leaves no conservative dogbone-via clearance`)
+  }
+  const viaPadDiameter = round(
+    Math.max(0.16, Math.min(minimumPitch * 0.42, maximumDogboneViaDiameter * 0.95)),
+    4,
+  )
   const viaHoleDiameter = round(Math.max(0.08, viaPadDiameter * 0.45), 4)
   const memoryDepth = connectedDepth(map.memory, new Set(map.connections.map((connection) => connection.memory.ball)))
   const controllerDepth = connectedDepth(map.controller, new Set(map.connections.map((connection) => connection.controller.ball)))

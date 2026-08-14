@@ -5,8 +5,8 @@
   "layerCount": 18,
   "minTraceWidth": 0.1,
   "nominalTraceWidth": 0.1,
-  "minViaHoleDiameter": 0.1512,
-  "minViaPadDiameter": 0.336,
+  "minViaHoleDiameter": 0.1173,
+  "minViaPadDiameter": 0.2606,
   "defaultObstacleMargin": 0.075,
   "minTraceToPadEdgeClearance": 0.075,
   "minViaEdgeToPadEdgeClearance": 0.075,
@@ -11097,7 +11097,7 @@
       "connectedControllerEdgeDepth": 5.31,
       "availableRoutingLayers": 16,
       "minimumPackagePitch": 0.8,
-      "viaStyle": "0.336 mm dogbone-compatible via pad; via-in-pad disabled",
+      "viaStyle": "0.2606 mm dogbone-compatible via pad; via-in-pad disabled",
       "corridorWidth": 12
     },
     "signalGroups": {

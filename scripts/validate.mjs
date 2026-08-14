@@ -172,9 +172,12 @@ for (const [index, file] of sampleFiles.entries()) {
 
   const packageClearance = (packageData) => {
     const maximumPadWidth = Math.max(...packageData.pads.map((pad) => Math.max(pad.width, pad.height)))
+    const maximumPadHalfDiagonal = Math.max(
+      ...packageData.pads.map((pad) => Math.hypot(pad.width, pad.height) / 2),
+    )
     const traceChannel = packageData.pitch - maximumPadWidth
     const traceChannelNeed = sample.minTraceWidth + 2 * sample.minTraceToPadEdgeClearance
-    const dogboneClearance = packageData.pitch / Math.sqrt(2) - maximumPadWidth / 2 - sample.minViaPadDiameter / 2
+    const dogboneClearance = packageData.pitch / Math.sqrt(2) - maximumPadHalfDiagonal - sample.minViaPadDiameter / 2
     assert(traceChannel + EPSILON >= traceChannelNeed, `${file}: ${packageData.reference} between-ball trace channel is too narrow`)
     assert(dogboneClearance + EPSILON >= sample.minViaEdgeToPadEdgeClearance, `${file}: ${packageData.reference} dogbone via cannot fit`)
     return { traceChannel, dogboneClearance }
