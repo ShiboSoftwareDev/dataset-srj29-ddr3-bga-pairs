@@ -46,8 +46,8 @@ function convertSampleToCircuitJson(sample) {
       componentId: "ddr3_bga",
       sourceComponentId: "source_component_ddr3",
       pcbComponentId: "pcb_component_ddr3",
-      name: "U12",
-      label: `${sample.metadata.ddr3.partNumber} DDR3L x${sample.metadata.ddr3.dataWidth}`,
+      name: sample.metadata.ddr3.reference,
+      label: `${sample.metadata.ddr3.partNumber} DDR3`,
       bodyWidth: sample.metadata.ddr3.bodyWidth,
       bodyHeight: sample.metadata.ddr3.bodyHeight,
     },
@@ -55,8 +55,8 @@ function convertSampleToCircuitJson(sample) {
       componentId: "controller_bga",
       sourceComponentId: "source_component_controller",
       pcbComponentId: "pcb_component_controller",
-      name: "U5",
-      label: `${sample.metadata.controller.partNumber} ${sample.metadata.controller.package}`,
+      name: sample.metadata.controller.reference,
+      label: `${sample.metadata.controller.partNumber} ${sample.metadata.controller.footprint}`,
     },
   ]
 

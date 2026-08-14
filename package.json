@@ -1,7 +1,7 @@
 {
   "name": "@tscircuit/dataset-srj29-ddr3-bga-pairs",
-  "version": "0.2.0",
-  "description": "Twenty ball-accurate BeagleBone Black DDR3L-to-AM3358 multilayer routing benchmarks",
+  "version": "0.3.0",
+  "description": "Twenty unique-reference real DDR3-to-BGA multilayer routing benchmarks",
   "private": true,
   "main": "index.js",
   "types": "index.d.ts",
@@ -11,6 +11,7 @@
     "manifest.json",
     "validation-report.json",
     "CONNECTION_MAP.md",
+    "CONNECTION_MAPS.md",
     "autorouter-smoke-report.json",
     "AUTOROUTER_NOTES.md",
     "scripts",

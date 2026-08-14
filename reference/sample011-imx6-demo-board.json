@@ -1,0 +1,4402 @@
+{
+  "schemaVersion": 2,
+  "referenceDesign": {
+    "board": "i.MX6 Demo Board",
+    "repository": "ts-manuel/iMX6-Demo-Board",
+    "commit": "f1a40c0f5d6fa711bb6f84a7fa0da9e89bed6def",
+    "sourcePath": "kicad/iMX6 Demo Board.kicad_pcb",
+    "sourceUrl": "https://github.com/ts-manuel/iMX6-Demo-Board/blob/f1a40c0f5d6fa711bb6f84a7fa0da9e89bed6def/kicad/iMX6%20Demo%20Board.kicad_pcb",
+    "extractionMethod": "Exact KiCad PCB pad/net traversal; a single two-pad series resistor may be collapsed into one benchmark connection and is recorded per path."
+  },
+  "memory": {
+    "reference": "U9",
+    "partNumber": "MT41K256M16TW-107",
+    "footprint": "ts_Integrated:BGA-96P08L9X16_8.0X14.0mm_Ball0.45_Pad0.40mm",
+    "padCount": 96,
+    "pitch": 0.8,
+    "padFieldWidth": 6.8,
+    "padFieldHeight": 12.4,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "DQU5",
+        "x": -2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "DQU7",
+        "x": -1.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "DQU4",
+        "x": 1.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "VDDQ",
+        "x": 2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "~{DQSU}",
+        "x": 1.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "DQU6",
+        "x": 2.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "DQU3",
+        "x": -2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "DQU1",
+        "x": -1.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "DQSU",
+        "x": 1.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "DQU2",
+        "x": 2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "DMU",
+        "x": -1.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "DQU0",
+        "x": 1.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "VSSQ",
+        "x": -2.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "DQL0",
+        "x": -1.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "DML",
+        "x": 1.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "DQL2",
+        "x": -2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "DQSL",
+        "x": -1.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "DQL1",
+        "x": 1.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "DQL3",
+        "x": 2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "DQL6",
+        "x": -2.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "~{DQSL}",
+        "x": -1.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "VDD",
+        "x": 1.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "VREFDQ",
+        "x": -3.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "DQL4",
+        "x": -1.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "DQL7",
+        "x": 1.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "DQL5",
+        "x": 2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "NC_(ODT1)",
+        "x": -3.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "VSS",
+        "x": -2.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "~{RAS}",
+        "x": -1.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "CK",
+        "x": 1.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "NC_(CKE1)",
+        "x": 3.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "ODT0",
+        "x": -3.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "~{CAS}",
+        "x": -1.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "~{CK}",
+        "x": 1.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "VDD",
+        "x": 2.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "CKE0",
+        "x": 3.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "NC_(~{CS1})",
+        "x": -3.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "~{CS0}",
+        "x": -2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "~{WE}",
+        "x": -1.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "A10/AP",
+        "x": 1.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "ZQ0",
+        "x": 2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "NC_(ZQ1)",
+        "x": 3.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "BA0",
+        "x": -2.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "BA2",
+        "x": -1.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "NC_(A15)",
+        "x": 1.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "VREFCA",
+        "x": 2.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "VDD",
+        "x": -3.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "A3",
+        "x": -2.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "A0",
+        "x": -1.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "A12/~{BC}",
+        "x": 1.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "BA1",
+        "x": 2.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "A5",
+        "x": -2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "A2",
+        "x": -1.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "A1",
+        "x": 1.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "A4",
+        "x": 2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "VDD",
+        "x": -3.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "A7",
+        "x": -2.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "A9",
+        "x": -1.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "A11",
+        "x": 1.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "A6",
+        "x": 2.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "~{RESET}",
+        "x": -2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "A13",
+        "x": -1.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "A14",
+        "x": 1.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "A8",
+        "x": 2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      }
+    ]
+  },
+  "controller": {
+    "reference": "U7",
+    "partNumber": "MCIMX6Y2CVM08AB",
+    "footprint": "ts_Integrated:BGA-289P08L17x17_14.0x14.0mm_Ball0.35mm_Pad0.30mm",
+    "padCount": 289,
+    "pitch": 0.8,
+    "padFieldWidth": 13.1,
+    "padFieldHeight": 13.1,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "VSS",
+        "x": -6.4,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "SD1_DATA3",
+        "x": -5.6,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "~{NAND_READY}",
+        "x": -4.8,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A4",
+        "signal": "NAND_CLE",
+        "x": -4,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A5",
+        "signal": "NAND_DATA07",
+        "x": -3.2,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A6",
+        "signal": "NAND_DATA06",
+        "x": -2.4,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "NAND_DATA02",
+        "x": -1.6,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "LCD_CLK",
+        "x": -0.8,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "LCD_DATA01",
+        "x": 0,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A10",
+        "signal": "LCD_DATA06",
+        "x": 0.8,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A11",
+        "signal": "LCD_DATA09",
+        "x": 1.6,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A12",
+        "signal": "LCD_DATA14",
+        "x": 2.4,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A13",
+        "signal": "LCD_DATA18",
+        "x": 3.2,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A14",
+        "signal": "LCD_DATA22",
+        "x": 4,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A15",
+        "signal": "ENET2_TX_DATA0",
+        "x": 4.8,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A16",
+        "signal": "ENET2_TX_DATA1",
+        "x": 5.6,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "A17",
+        "signal": "VSS",
+        "x": 6.4,
+        "y": 6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "SD1_DATA2",
+        "x": -6.4,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "SD1_DATA1",
+        "x": -5.6,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "SD1_DATA0",
+        "x": -4.8,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B4",
+        "signal": "NAND_ALE",
+        "x": -4,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B5",
+        "signal": "~{NAND_CE1}",
+        "x": -3.2,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B6",
+        "signal": "NAND_DATA05",
+        "x": -2.4,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "NAND_DATA01",
+        "x": -1.6,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "LCD_ENABLE",
+        "x": -0.8,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "LCD_DATA00",
+        "x": 0,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B10",
+        "signal": "LCD_DATA05",
+        "x": 0.8,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B11",
+        "signal": "LCD_DATA08",
+        "x": 1.6,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B12",
+        "signal": "LCD_DATA13",
+        "x": 2.4,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B13",
+        "signal": "LCD_DATA17",
+        "x": 3.2,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B14",
+        "signal": "LCD_DATA21",
+        "x": 4,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B15",
+        "signal": "ENET2_TX_EN",
+        "x": 4.8,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B16",
+        "signal": "LCD_DATA23",
+        "x": 5.6,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "B17",
+        "signal": "ENET2_RX_EN",
+        "x": 6.4,
+        "y": 5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "SD1_CLK",
+        "x": -6.4,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "SD1_CMD",
+        "x": -5.6,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "VSS",
+        "x": -4.8,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C4",
+        "signal": "NVCC_SD1",
+        "x": -4,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C5",
+        "signal": "~{NAND_CE0}",
+        "x": -3.2,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C6",
+        "signal": "NAND_DATA04",
+        "x": -2.4,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "~{NAND_WE}",
+        "x": -0.8,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "LCD_VSYNC",
+        "x": 0,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C10",
+        "signal": "LCD_DATA04",
+        "x": 0.8,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C11",
+        "signal": "VSS",
+        "x": 1.6,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C12",
+        "signal": "LCD_DATA12",
+        "x": 2.4,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C13",
+        "signal": "LCD_DATA16",
+        "x": 3.2,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C14",
+        "signal": "LCD_DATA20",
+        "x": 4,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C15",
+        "signal": "VSS",
+        "x": 4.8,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C16",
+        "signal": "ENET2_RX_DATA1",
+        "x": 5.6,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "C17",
+        "signal": "ENET2_RX_DATA0",
+        "x": 6.4,
+        "y": 4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "CSI_DATA07",
+        "x": -6.4,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "CSI_DATA06",
+        "x": -5.6,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "CSI_DATA05",
+        "x": -4.8,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D4",
+        "signal": "CSI_DATA04",
+        "x": -4,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D5",
+        "signal": "~{NAND_WP}",
+        "x": -3.2,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D6",
+        "signal": "NAND_DATA03",
+        "x": -2.4,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "NAND_DATA00",
+        "x": -1.6,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "~{NAND_RE}",
+        "x": -0.8,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "LCD_HSYNC",
+        "x": 0,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D10",
+        "signal": "LCD_DATA03",
+        "x": 0.8,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D11",
+        "signal": "LCD_DATA07",
+        "x": 1.6,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D12",
+        "signal": "LCD_DATA11",
+        "x": 2.4,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D13",
+        "signal": "LCD_DATA15",
+        "x": 3.2,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D14",
+        "signal": "LCD_DATA19",
+        "x": 4,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D15",
+        "signal": "ENET1_RX_ER",
+        "x": 4.8,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D16",
+        "signal": "ENET2_RX_ER",
+        "x": 5.6,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "D17",
+        "signal": "ENET2_TX_CLK",
+        "x": 6.4,
+        "y": 4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "CSI_DATA03",
+        "x": -6.4,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "CSI_DATA02",
+        "x": -5.6,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "CSI_DATA01",
+        "x": -4.8,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E4",
+        "signal": "CSI_DATA00",
+        "x": -4,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E5",
+        "signal": "CSI_PIXCLK",
+        "x": -3.2,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E6",
+        "signal": "NAND_DQS",
+        "x": -2.4,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "NVCC_NAND",
+        "x": -1.6,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "VSS",
+        "x": -0.8,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "LCD_RESET",
+        "x": 0,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E10",
+        "signal": "LCD_DATA02",
+        "x": 0.8,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E11",
+        "signal": "VSS",
+        "x": 1.6,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E12",
+        "signal": "LCD_DATA10",
+        "x": 2.4,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E13",
+        "signal": "NVCC_LCD",
+        "x": 3.2,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E14",
+        "signal": "ENET1_TX_DATA1",
+        "x": 4,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E15",
+        "signal": "ENET1_TX_DATA0",
+        "x": 4.8,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E16",
+        "signal": "ENET1_RX_EN",
+        "x": 5.6,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "E17",
+        "signal": "ENET1_RX_DATA1",
+        "x": 6.4,
+        "y": 3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "DRAM_ODT1",
+        "x": -6.4,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "CSI_VSYNC",
+        "x": -5.6,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "CSI_HSYNC",
+        "x": -4.8,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F4",
+        "signal": "NVCC_CSI",
+        "x": -4,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F5",
+        "signal": "CSI_MCLK",
+        "x": -3.2,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F6",
+        "signal": "VSS",
+        "x": -2.4,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "VSS",
+        "x": -0.8,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "VSS",
+        "x": 0,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F10",
+        "signal": "VSS",
+        "x": 0.8,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F11",
+        "signal": "VSS",
+        "x": 1.6,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F12",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F13",
+        "signal": "NVCC_ENET",
+        "x": 3.2,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F14",
+        "signal": "ENET1_TX_CLK",
+        "x": 4,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F15",
+        "signal": "ENET1_TX_EN",
+        "x": 4.8,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F16",
+        "signal": "ENET1_RX_DATA0",
+        "x": 5.6,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "F17",
+        "signal": "UART5_TX_DATA",
+        "x": 6.4,
+        "y": 2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "DRAM_ADDR14",
+        "x": -6.4,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "DRAM_ADDR06",
+        "x": -5.6,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "VSS",
+        "x": -4.8,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G4",
+        "signal": "DRAM_RESET",
+        "x": -4,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G5",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G6",
+        "signal": "NVCC_DRAM",
+        "x": -2.4,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "VDD_SOC_CAP",
+        "x": -0.8,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VDD_ARM_CAP",
+        "x": 0,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G10",
+        "signal": "VDD_ARM_CAP",
+        "x": 0.8,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G11",
+        "signal": "VDD_ARM_CAP",
+        "x": 1.6,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G12",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G13",
+        "signal": "UART5_RX_DATA",
+        "x": 3.2,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G14",
+        "signal": "~{UART3_RTS}",
+        "x": 4,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G15",
+        "signal": "VSS",
+        "x": 4.8,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G16",
+        "signal": "UART4_RX_DATA",
+        "x": 5.6,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "G17",
+        "signal": "UART4_TX_DATA",
+        "x": 6.4,
+        "y": 1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "DRAM_SDBA1",
+        "x": -6.4,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "DRAM_ADDR01",
+        "x": -5.6,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "DRAM_ADDR13",
+        "x": -4.8,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H4",
+        "signal": "DRAM_ADDR07",
+        "x": -4,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H5",
+        "signal": "~{DRAM_CS1}",
+        "x": -3.2,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H6",
+        "signal": "NVCC_DRAM",
+        "x": -2.4,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "VDD_SOC_CAP",
+        "x": -0.8,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "VDD_SOC_IN",
+        "x": 0,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H10",
+        "signal": "VDD_SOC_IN",
+        "x": 0.8,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H11",
+        "signal": "VDD_ARM_CAP",
+        "x": 1.6,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H12",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H13",
+        "signal": "NVCC_UART",
+        "x": 3.2,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H14",
+        "signal": "~{UART2_RTS}",
+        "x": 4,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H15",
+        "signal": "~{UART3_CTS}",
+        "x": 4.8,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H16",
+        "signal": "UART3_RX_DATA",
+        "x": 5.6,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "H17",
+        "signal": "UART3_TX_DATA",
+        "x": 6.4,
+        "y": 0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "~{DRAM_SDWE}",
+        "x": -6.4,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "~{DRAM_CAS}",
+        "x": -5.6,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "DRAM_SDCKE1",
+        "x": -4.8,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J4",
+        "signal": "DRAM_ADDR08",
+        "x": -4,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J5",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J6",
+        "signal": "NVCC_DRAM",
+        "x": -2.4,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "VDD_SOC_CAP",
+        "x": -0.8,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "VDD_SOC_IN",
+        "x": 0,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J10",
+        "signal": "VDD_SOC_IN",
+        "x": 0.8,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J11",
+        "signal": "VDD_SOC_CAP",
+        "x": 1.6,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J12",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J13",
+        "signal": "NVCC_GPIO",
+        "x": 3.2,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J14",
+        "signal": "~{UART1_RTS}",
+        "x": 4,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J15",
+        "signal": "~{UART2_CTS}",
+        "x": 4.8,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J16",
+        "signal": "UART2_RX_DATA",
+        "x": 5.6,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "J17",
+        "signal": "UART2_TX_DATA",
+        "x": 6.4,
+        "y": 0,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "DRAM_ADDR02",
+        "x": -6.4,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "DRAM_SDBA2",
+        "x": -5.6,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "DRAM_ADDR11",
+        "x": -4.8,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K4",
+        "signal": "DRAM_ADDR04",
+        "x": -4,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K5",
+        "signal": "DRAM_ADDR15",
+        "x": -3.2,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K6",
+        "signal": "NVCC_DRAM",
+        "x": -2.4,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "VDD_SOC_CAP",
+        "x": -0.8,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "VDD_SOC_IN",
+        "x": 0,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K10",
+        "signal": "VDD_SOC_IN",
+        "x": 0.8,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K11",
+        "signal": "VDD_SOC_CAP",
+        "x": 1.6,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K12",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K13",
+        "signal": "GPIO1_IO00",
+        "x": 3.2,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K14",
+        "signal": "UART1_TX_DATA",
+        "x": 4,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K15",
+        "signal": "~{UART1_CTS}",
+        "x": 4.8,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K16",
+        "signal": "UART1_RX_DATA",
+        "x": 5.6,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "K17",
+        "signal": "GPIO1_IO06",
+        "x": 6.4,
+        "y": -0.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "DRAM_ADDR05",
+        "x": -6.4,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "DRAM_ADDR09",
+        "x": -5.6,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "VSS",
+        "x": -4.8,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L4",
+        "signal": "DRAM_ADDR12",
+        "x": -4,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L5",
+        "signal": "DRAM_ADDR00",
+        "x": -3.2,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L6",
+        "signal": "NVCC_DRAM",
+        "x": -2.4,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "VDD_SOC_CAP",
+        "x": -0.8,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "VDD_SOC_CAP",
+        "x": 0,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L10",
+        "signal": "VDD_SOC_CAP",
+        "x": 0.8,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L11",
+        "signal": "VDD_SOC_CAP",
+        "x": 1.6,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L12",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L13",
+        "signal": "VDDA_ADC_3P3",
+        "x": 3.2,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L14",
+        "signal": "GPIO1_IO02",
+        "x": 4,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L15",
+        "signal": "GPIO1_IO01",
+        "x": 4.8,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L16",
+        "signal": "GPIO1_IO07",
+        "x": 5.6,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "L17",
+        "signal": "GPIO1_IO03",
+        "x": 6.4,
+        "y": -1.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "DRAM_SDBA0",
+        "x": -6.4,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "DRAM_ADDR03",
+        "x": -5.6,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "DRAM_SDCKE0",
+        "x": -4.8,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M4",
+        "signal": "DRAM_ADDR10",
+        "x": -4,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M5",
+        "signal": "~{DRAM_RAS}",
+        "x": -3.2,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M6",
+        "signal": "NVCC_DRAM",
+        "x": -2.4,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "VSS",
+        "x": -0.8,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "VSS",
+        "x": 0,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M10",
+        "signal": "VSS",
+        "x": 0.8,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M11",
+        "signal": "VSS",
+        "x": 1.6,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M12",
+        "signal": "NGND_KEL0",
+        "x": 2.4,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M13",
+        "signal": "ADC_VREFH",
+        "x": 3.2,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M14",
+        "signal": "JTAG_TCK",
+        "x": 4,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M15",
+        "signal": "GPIO1_IO09",
+        "x": 4.8,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M16",
+        "signal": "GPIO1_IO04",
+        "x": 5.6,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "M17",
+        "signal": "GPIO1_IO05",
+        "x": 6.4,
+        "y": -2.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "DRAM_ODT0",
+        "x": -6.4,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "~{DRAM_CS0}",
+        "x": -5.6,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "VSS",
+        "x": -4.8,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N4",
+        "signal": "DRAM_ZQPAD",
+        "x": -4,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N5",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N6",
+        "signal": "NVCC_DRAM_2P5",
+        "x": -2.4,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "TEST_MODE",
+        "x": -1.6,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "SNVS_TAMPER5",
+        "x": -0.8,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "SNVS_TAMPER8",
+        "x": 0,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N10",
+        "signal": "SNVS_TAMPER7",
+        "x": 0.8,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N11",
+        "signal": "SNVS_TAMPER6",
+        "x": 1.6,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N12",
+        "signal": "VDD_SNVS_CAP",
+        "x": 2.4,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N13",
+        "signal": "VDD_HIGH_IN",
+        "x": 3.2,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N14",
+        "signal": "JTAG_TRST_B",
+        "x": 4,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N15",
+        "signal": "JTAG_TDO",
+        "x": 4.8,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N16",
+        "signal": "JTAG_TDI",
+        "x": 5.6,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "N17",
+        "signal": "GPIO1_IO08",
+        "x": 6.4,
+        "y": -3.2,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "DRAM_SDCLK0_P",
+        "x": -6.4,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "DRAM_SDCLK0_N",
+        "x": -5.6,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "DRAM_DATA13",
+        "x": -4.8,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P4",
+        "signal": "DRAM_VREF",
+        "x": -4,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P5",
+        "signal": "DRAM_DATA12",
+        "x": -3.2,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P6",
+        "signal": "DRAM_SDQS0_P",
+        "x": -2.4,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "DRAM_SDQS0_N",
+        "x": -1.6,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "~{POR}",
+        "x": -0.8,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "SNVS_TAMPER4",
+        "x": 0,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P10",
+        "signal": "SNVS_TAMPER3",
+        "x": 0.8,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P11",
+        "signal": "SNVS_TAMPER2",
+        "x": 1.6,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P12",
+        "signal": "VDD_SNVS_IN",
+        "x": 2.4,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P13",
+        "signal": "NVCC_PLL",
+        "x": 3.2,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P14",
+        "signal": "JTAG_TMS",
+        "x": 4,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P15",
+        "signal": "JTAG_MOD",
+        "x": 4.8,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P16",
+        "signal": "CCM_CLK1_N",
+        "x": 5.6,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "P17",
+        "signal": "CCM_CLK1_P",
+        "x": 6.4,
+        "y": -4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "DRAM_DATA15",
+        "x": -6.4,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "DRAM_DATA14",
+        "x": -5.6,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "VSS",
+        "x": -4.8,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R4",
+        "signal": "DRAM_DATA11",
+        "x": -4,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R5",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R6",
+        "signal": "SNVS_TAMPER9",
+        "x": -2.4,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "ONOFF",
+        "x": -0.8,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "SNVS_TAMPER1",
+        "x": 0,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R10",
+        "signal": "SNVS_TAMPER0",
+        "x": 0.8,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R11",
+        "signal": "VSS",
+        "x": 1.6,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R12",
+        "signal": "VDD_USB_CAP",
+        "x": 2.4,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R13",
+        "signal": "GPANIO",
+        "x": 3.2,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R14",
+        "signal": "VDD_HIGH_CAP",
+        "x": 4,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R15",
+        "signal": "VDD_HIGH_CAP",
+        "x": 4.8,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R16",
+        "signal": "VSS",
+        "x": 5.6,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "R17",
+        "signal": "VSS",
+        "x": 6.4,
+        "y": -4.8,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "DRAM_SDQS1_P",
+        "x": -6.4,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "DRAM_SDQS1_N",
+        "x": -5.6,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "DRAM_DQM1",
+        "x": -4.8,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T4",
+        "signal": "DRAM_DATA00",
+        "x": -4,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T5",
+        "signal": "DRAM_DATA06",
+        "x": -3.2,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T6",
+        "signal": "DRAM_DATA02",
+        "x": -2.4,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "DRAM_DQM0",
+        "x": -1.6,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "DRAM_DATA05",
+        "x": -0.8,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "SNVS_PMIC_ON_REQ",
+        "x": 0,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T10",
+        "signal": "BOOT_MODE0",
+        "x": 0.8,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T11",
+        "signal": "RTC_XTAL_I",
+        "x": 1.6,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T12",
+        "signal": "USB_OTG1_VBUS",
+        "x": 2.4,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T13",
+        "signal": "USB_OTG2_DN",
+        "x": 3.2,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T14",
+        "signal": "VSS",
+        "x": 4,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T15",
+        "signal": "USB_OTG1_DN",
+        "x": 4.8,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T16",
+        "signal": "XTAL_I",
+        "x": 5.6,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "T17",
+        "signal": "XTAL_O",
+        "x": 6.4,
+        "y": -5.6,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U1",
+        "signal": "VSS",
+        "x": -6.4,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U2",
+        "signal": "DRAM_DATA08",
+        "x": -5.6,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U3",
+        "signal": "DRAM_DATA09",
+        "x": -4.8,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U4",
+        "signal": "DRAM_DATA07",
+        "x": -4,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U5",
+        "signal": "DRAM_DATA10",
+        "x": -3.2,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U6",
+        "signal": "DRAM_DATA01",
+        "x": -2.4,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U7",
+        "signal": "DRAM_DATA03",
+        "x": -1.6,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U8",
+        "signal": "DRAM_DATA04",
+        "x": -0.8,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U9",
+        "signal": "CCM_PMIC_STBY_REQ",
+        "x": 0,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U10",
+        "signal": "BOOT_MODE1",
+        "x": 0.8,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U11",
+        "signal": "RTC_XTAL_O",
+        "x": 1.6,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U12",
+        "signal": "USB_OTG2_VBUS",
+        "x": 2.4,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U13",
+        "signal": "USB_OTG2_DP",
+        "x": 3.2,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U14",
+        "signal": "VSS",
+        "x": 4,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U15",
+        "signal": "USB_OTG1_DP",
+        "x": 4.8,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U16",
+        "signal": "~{USB_OTG1_CHD}",
+        "x": 5.6,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      },
+      {
+        "ball": "U17",
+        "signal": "VSS",
+        "x": 6.4,
+        "y": -6.4,
+        "width": 0.3,
+        "height": 0.3,
+        "shape": "circle"
+      }
+    ]
+  },
+  "connections": [
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA13",
+      "group": "data",
+      "memory": {
+        "ball": "A2",
+        "signal": "DQU5"
+      },
+      "controller": {
+        "ball": "R4",
+        "signal": "DRAM_DATA11"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA13",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA15",
+      "group": "data",
+      "memory": {
+        "ball": "A3",
+        "signal": "DQU7"
+      },
+      "controller": {
+        "ball": "U3",
+        "signal": "DRAM_DATA09"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA15",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA15",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA12",
+      "group": "data",
+      "memory": {
+        "ball": "A7",
+        "signal": "DQU4"
+      },
+      "controller": {
+        "ball": "P5",
+        "signal": "DRAM_DATA12"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA12",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSU_N",
+      "group": "strobe",
+      "memory": {
+        "ball": "B7",
+        "signal": "~{DQSU}"
+      },
+      "controller": {
+        "ball": "T2",
+        "signal": "DRAM_SDQS1_N"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSU_N",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSU_N",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA14",
+      "group": "data",
+      "memory": {
+        "ball": "B8",
+        "signal": "DQU6"
+      },
+      "controller": {
+        "ball": "R2",
+        "signal": "DRAM_DATA14"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA14",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA11",
+      "group": "data",
+      "memory": {
+        "ball": "C2",
+        "signal": "DQU3"
+      },
+      "controller": {
+        "ball": "P3",
+        "signal": "DRAM_DATA13"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA11",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA9",
+      "group": "data",
+      "memory": {
+        "ball": "C3",
+        "signal": "DQU1"
+      },
+      "controller": {
+        "ball": "R1",
+        "signal": "DRAM_DATA15"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA9",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSU_P",
+      "group": "strobe",
+      "memory": {
+        "ball": "C7",
+        "signal": "DQSU"
+      },
+      "controller": {
+        "ball": "T1",
+        "signal": "DRAM_SDQS1_P"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSU_P",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSU_P",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA10",
+      "group": "data",
+      "memory": {
+        "ball": "C8",
+        "signal": "DQU2"
+      },
+      "controller": {
+        "ball": "U5",
+        "signal": "DRAM_DATA10"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA10",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DMU",
+      "group": "control",
+      "memory": {
+        "ball": "D3",
+        "signal": "DMU"
+      },
+      "controller": {
+        "ball": "T3",
+        "signal": "DRAM_DQM1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DMU",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DMU",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA8",
+      "group": "data",
+      "memory": {
+        "ball": "D7",
+        "signal": "DQU0"
+      },
+      "controller": {
+        "ball": "U2",
+        "signal": "DRAM_DATA08"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA8",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA8",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA0",
+      "group": "data",
+      "memory": {
+        "ball": "E3",
+        "signal": "DQL0"
+      },
+      "controller": {
+        "ball": "T4",
+        "signal": "DRAM_DATA00"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA0",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DML",
+      "group": "control",
+      "memory": {
+        "ball": "E7",
+        "signal": "DML"
+      },
+      "controller": {
+        "ball": "T7",
+        "signal": "DRAM_DQM0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DML",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DML",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA7",
+      "group": "data",
+      "memory": {
+        "ball": "F2",
+        "signal": "DQL2"
+      },
+      "controller": {
+        "ball": "U4",
+        "signal": "DRAM_DATA07"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA7",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSL_P",
+      "group": "strobe",
+      "memory": {
+        "ball": "F3",
+        "signal": "DQSL"
+      },
+      "controller": {
+        "ball": "P6",
+        "signal": "DRAM_SDQS0_P"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSL_P",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSL_P",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA4",
+      "group": "data",
+      "memory": {
+        "ball": "F7",
+        "signal": "DQL1"
+      },
+      "controller": {
+        "ball": "U8",
+        "signal": "DRAM_DATA04"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA4",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA3",
+      "group": "data",
+      "memory": {
+        "ball": "F8",
+        "signal": "DQL3"
+      },
+      "controller": {
+        "ball": "U7",
+        "signal": "DRAM_DATA03"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA3",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA6",
+      "group": "data",
+      "memory": {
+        "ball": "G2",
+        "signal": "DQL6"
+      },
+      "controller": {
+        "ball": "T5",
+        "signal": "DRAM_DATA06"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA6",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSL_N",
+      "group": "strobe",
+      "memory": {
+        "ball": "G3",
+        "signal": "~{DQSL}"
+      },
+      "controller": {
+        "ball": "P7",
+        "signal": "DRAM_SDQS0_N"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSL_N",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DQSL_N",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA1",
+      "group": "data",
+      "memory": {
+        "ball": "H3",
+        "signal": "DQL4"
+      },
+      "controller": {
+        "ball": "U6",
+        "signal": "DRAM_DATA01"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA1",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA2",
+      "group": "data",
+      "memory": {
+        "ball": "H7",
+        "signal": "DQL7"
+      },
+      "controller": {
+        "ball": "T6",
+        "signal": "DRAM_DATA02"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA2",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA5",
+      "group": "data",
+      "memory": {
+        "ball": "H8",
+        "signal": "DQL5"
+      },
+      "controller": {
+        "ball": "T8",
+        "signal": "DRAM_DATA05"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA5",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/DRAM_DATA5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_ODT1",
+      "group": "control",
+      "memory": {
+        "ball": "J1",
+        "signal": "DRAM_ODT1"
+      },
+      "controller": {
+        "ball": "F1",
+        "signal": "DRAM_ODT1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_ODT1",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_ODT1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/~{DRAM_RAS}",
+      "group": "command",
+      "memory": {
+        "ball": "J3",
+        "signal": "~{RAS}"
+      },
+      "controller": {
+        "ball": "M5",
+        "signal": "~{DRAM_RAS}"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_RAS}",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_RAS}",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_CLK_P",
+      "group": "clock",
+      "memory": {
+        "ball": "J7",
+        "signal": "CK"
+      },
+      "controller": {
+        "ball": "P1",
+        "signal": "DRAM_SDCLK0_P"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_P",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_P",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_CLK_EN1",
+      "group": "clock",
+      "memory": {
+        "ball": "J9",
+        "signal": "DRAM_CLK_EN1"
+      },
+      "controller": {
+        "ball": "J3",
+        "signal": "DRAM_SDCKE1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_EN1",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_EN1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_ODT0",
+      "group": "control",
+      "memory": {
+        "ball": "K1",
+        "signal": "ODT0"
+      },
+      "controller": {
+        "ball": "N1",
+        "signal": "DRAM_ODT0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_ODT0",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_ODT0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/~{DRAM_CAS}",
+      "group": "command",
+      "memory": {
+        "ball": "K3",
+        "signal": "~{CAS}"
+      },
+      "controller": {
+        "ball": "J2",
+        "signal": "~{DRAM_CAS}"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_CAS}",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_CAS}",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_CLK_N",
+      "group": "clock",
+      "memory": {
+        "ball": "K7",
+        "signal": "~{CK}"
+      },
+      "controller": {
+        "ball": "P2",
+        "signal": "DRAM_SDCLK0_N"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_N",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_N",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_CLK_EN0",
+      "group": "control",
+      "memory": {
+        "ball": "K9",
+        "signal": "CKE0"
+      },
+      "controller": {
+        "ball": "M3",
+        "signal": "DRAM_SDCKE0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_EN0",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_CLK_EN0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/~{DRAM_CS1}",
+      "group": "control",
+      "memory": {
+        "ball": "L1",
+        "signal": "~{DRAM_CS1}"
+      },
+      "controller": {
+        "ball": "H5",
+        "signal": "~{DRAM_CS1}"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_CS1}",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_CS1}",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/~{DRAM_CS0}",
+      "group": "control",
+      "memory": {
+        "ball": "L2",
+        "signal": "~{CS0}"
+      },
+      "controller": {
+        "ball": "N2",
+        "signal": "~{DRAM_CS0}"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_CS0}",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_CS0}",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/~{DRAM_WE}",
+      "group": "command",
+      "memory": {
+        "ball": "L3",
+        "signal": "~{WE}"
+      },
+      "controller": {
+        "ball": "J1",
+        "signal": "~{DRAM_SDWE}"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_WE}",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/~{DRAM_WE}",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A10",
+      "group": "address",
+      "memory": {
+        "ball": "L7",
+        "signal": "A10/AP"
+      },
+      "controller": {
+        "ball": "M4",
+        "signal": "DRAM_ADDR10"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A10",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_BA0",
+      "group": "bank",
+      "memory": {
+        "ball": "M2",
+        "signal": "BA0"
+      },
+      "controller": {
+        "ball": "M1",
+        "signal": "DRAM_SDBA0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_BA0",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_BA0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_BA2",
+      "group": "bank",
+      "memory": {
+        "ball": "M3",
+        "signal": "BA2"
+      },
+      "controller": {
+        "ball": "K2",
+        "signal": "DRAM_SDBA2"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_BA2",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_BA2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A15",
+      "group": "address",
+      "memory": {
+        "ball": "M7",
+        "signal": "DRAM_A15"
+      },
+      "controller": {
+        "ball": "K5",
+        "signal": "DRAM_ADDR15"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A15",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A15",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A3",
+      "group": "address",
+      "memory": {
+        "ball": "N2",
+        "signal": "A3"
+      },
+      "controller": {
+        "ball": "M2",
+        "signal": "DRAM_ADDR03"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A3",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A0",
+      "group": "address",
+      "memory": {
+        "ball": "N3",
+        "signal": "A0"
+      },
+      "controller": {
+        "ball": "L5",
+        "signal": "DRAM_ADDR00"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A0",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A12",
+      "group": "address",
+      "memory": {
+        "ball": "N7",
+        "signal": "A12/~{BC}"
+      },
+      "controller": {
+        "ball": "L4",
+        "signal": "DRAM_ADDR12"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A12",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_BA1",
+      "group": "bank",
+      "memory": {
+        "ball": "N8",
+        "signal": "BA1"
+      },
+      "controller": {
+        "ball": "H1",
+        "signal": "DRAM_SDBA1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_BA1",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_BA1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A5",
+      "group": "address",
+      "memory": {
+        "ball": "P2",
+        "signal": "A5"
+      },
+      "controller": {
+        "ball": "L1",
+        "signal": "DRAM_ADDR05"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A5",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A2",
+      "group": "address",
+      "memory": {
+        "ball": "P3",
+        "signal": "A2"
+      },
+      "controller": {
+        "ball": "K1",
+        "signal": "DRAM_ADDR02"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A2",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A1",
+      "group": "address",
+      "memory": {
+        "ball": "P7",
+        "signal": "A1"
+      },
+      "controller": {
+        "ball": "H2",
+        "signal": "DRAM_ADDR01"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A1",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A4",
+      "group": "address",
+      "memory": {
+        "ball": "P8",
+        "signal": "A4"
+      },
+      "controller": {
+        "ball": "K4",
+        "signal": "DRAM_ADDR04"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A4",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A7",
+      "group": "address",
+      "memory": {
+        "ball": "R2",
+        "signal": "A7"
+      },
+      "controller": {
+        "ball": "H4",
+        "signal": "DRAM_ADDR07"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A7",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A9",
+      "group": "address",
+      "memory": {
+        "ball": "R3",
+        "signal": "A9"
+      },
+      "controller": {
+        "ball": "L2",
+        "signal": "DRAM_ADDR09"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A9",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A11",
+      "group": "address",
+      "memory": {
+        "ball": "R7",
+        "signal": "A11"
+      },
+      "controller": {
+        "ball": "K3",
+        "signal": "DRAM_ADDR11"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A11",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A6",
+      "group": "address",
+      "memory": {
+        "ball": "R8",
+        "signal": "A6"
+      },
+      "controller": {
+        "ball": "G2",
+        "signal": "DRAM_ADDR06"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A6",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/RAM DDR3/~{DRAM_RESET}",
+      "group": "control",
+      "memory": {
+        "ball": "T2",
+        "signal": "~{RESET}"
+      },
+      "controller": {
+        "ball": "G4",
+        "signal": "DRAM_RESET"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/RAM DDR3/~{DRAM_RESET}",
+        "controllerSideNet": "/i.MX6ULL MAIN/RAM DDR3/~{DRAM_RESET}",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A13",
+      "group": "address",
+      "memory": {
+        "ball": "T3",
+        "signal": "A13"
+      },
+      "controller": {
+        "ball": "H3",
+        "signal": "DRAM_ADDR13"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A13",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A14",
+      "group": "address",
+      "memory": {
+        "ball": "T7",
+        "signal": "A14"
+      },
+      "controller": {
+        "ball": "G1",
+        "signal": "DRAM_ADDR14"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A14",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/i.MX6ULL MAIN/CPU/DRAM_A8",
+      "group": "address",
+      "memory": {
+        "ball": "T8",
+        "signal": "A8"
+      },
+      "controller": {
+        "ball": "J4",
+        "signal": "DRAM_ADDR08"
+      },
+      "sourcePath": {
+        "memorySideNet": "/i.MX6ULL MAIN/CPU/DRAM_A8",
+        "controllerSideNet": "/i.MX6ULL MAIN/CPU/DRAM_A8",
+        "seriesComponents": []
+      }
+    }
+  ],
+  "endpointMapSha256": "b399f668dbe4c86c5271b452d52e81a8d9c03145d6ce38636c5a291c6fd6879c"
+}

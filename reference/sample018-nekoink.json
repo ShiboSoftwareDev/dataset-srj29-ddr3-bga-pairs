@@ -1,0 +1,5333 @@
+{
+  "schemaVersion": 2,
+  "referenceDesign": {
+    "board": "NekoInk Gen2 mainboard",
+    "repository": "zephray/NekoInk",
+    "commit": "9bb86a9f21bbe98f1e5dd090bf5172e57ec50cf3",
+    "sourcePath": "pcb/mainboard_gen2/pcb.kicad_pcb",
+    "sourceUrl": "https://github.com/zephray/NekoInk/blob/9bb86a9f21bbe98f1e5dd090bf5172e57ec50cf3/pcb/mainboard_gen2/pcb.kicad_pcb",
+    "extractionMethod": "Exact KiCad PCB pad/net traversal; a single two-pad series resistor may be collapsed into one benchmark connection and is recorded per path."
+  },
+  "memory": {
+    "reference": "U7",
+    "partNumber": "MT41K256M16HA",
+    "footprint": "Package_BGA:BGA-96_9.0x13.0mm_Layout2x3x16_P0.8mm",
+    "padCount": 96,
+    "pitch": 0.8,
+    "padFieldWidth": 6.8,
+    "padFieldHeight": 12.4,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "DQ13",
+        "x": -2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "DQ15",
+        "x": -1.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "DQ12",
+        "x": 1.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "VDDQ",
+        "x": 2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "~{UDQS}",
+        "x": 1.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "DQ14",
+        "x": 2.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "DQ11",
+        "x": -2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "DQ9",
+        "x": -1.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "UDQS",
+        "x": 1.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "DQ10",
+        "x": 2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "UDM",
+        "x": -1.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "DQ8",
+        "x": 1.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "VSSQ",
+        "x": -2.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "DQ0",
+        "x": -1.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "LDM",
+        "x": 1.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "DQ2",
+        "x": -2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "LDQS",
+        "x": -1.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "DQ1",
+        "x": 1.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "DQ3",
+        "x": 2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "DQ6",
+        "x": -2.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "~{LDQS}",
+        "x": -1.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "VDD",
+        "x": 1.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "VrefDQ",
+        "x": -3.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "DQ4",
+        "x": -1.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "DQ7",
+        "x": 1.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "DQ5",
+        "x": 2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "J1",
+        "x": -3.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "VSS",
+        "x": -2.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "~{RAS}",
+        "x": -1.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "CK",
+        "x": 1.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "J9",
+        "x": 3.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "ODT",
+        "x": -3.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "~{CAS}",
+        "x": -1.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "~{CK}",
+        "x": 1.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "VDD",
+        "x": 2.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "CKE",
+        "x": 3.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "L1",
+        "x": -3.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "~{CS}",
+        "x": -2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "~{WE}",
+        "x": -1.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "A10",
+        "x": 1.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "ZQ",
+        "x": 2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "L9",
+        "x": 3.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "BA0",
+        "x": -2.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "BA2",
+        "x": -1.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "A15/NC",
+        "x": 1.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "VrefCA",
+        "x": 2.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "VDD",
+        "x": -3.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "A3",
+        "x": -2.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "A0",
+        "x": -1.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "A12/~{BC}",
+        "x": 1.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "BA1",
+        "x": 2.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "A5",
+        "x": -2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "A2",
+        "x": -1.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "A1",
+        "x": 1.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "A4",
+        "x": 2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "VDD",
+        "x": -3.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "A7",
+        "x": -2.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "A9",
+        "x": -1.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "A11",
+        "x": 1.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "A6",
+        "x": 2.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "~{RESET}",
+        "x": -2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "A13",
+        "x": -1.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "A14/NC",
+        "x": 1.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "A8",
+        "x": 2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      }
+    ]
+  },
+  "controller": {
+    "reference": "U6",
+    "partNumber": "XC7Z010-CLG400",
+    "footprint": "Package_BGA:Xilinx_CLG400",
+    "padCount": 400,
+    "pitch": 0.8,
+    "padFieldWidth": 15.6,
+    "padFieldHeight": 15.6,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "PS_DDR_DM0_502",
+        "x": -7.6,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "PS_DDR_DQ2_502",
+        "x": -6.8,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -6,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A4",
+        "signal": "PS_DDR_DQ3_502",
+        "x": -5.2,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A5",
+        "signal": "PS_MIO6_500",
+        "x": -4.4,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A6",
+        "signal": "PS_MIO5_500",
+        "x": -3.6,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "PS_MIO1_500",
+        "x": -2.8,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "GND[59]",
+        "x": -2,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "PS_MIO43_501",
+        "x": -1.2,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A10",
+        "signal": "PS_MIO37_501",
+        "x": -0.4,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A11",
+        "signal": "PS_MIO36_501",
+        "x": 0.4,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A12",
+        "signal": "PS_MIO34_501",
+        "x": 1.2,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A13",
+        "signal": "VCCO_MIO1_501[4]",
+        "x": 2,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A14",
+        "signal": "PS_MIO32_501",
+        "x": 2.8,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A15",
+        "signal": "PS_MIO26_501",
+        "x": 3.6,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A16",
+        "signal": "PS_MIO24_501",
+        "x": 4.4,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A17",
+        "signal": "PS_MIO20_501",
+        "x": 5.2,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A18",
+        "signal": "GND[59]",
+        "x": 6,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A19",
+        "signal": "PS_MIO16_501",
+        "x": 6.8,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A20",
+        "signal": "IO_L2N_T0_AD8N_35",
+        "x": 7.6,
+        "y": 7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "GND[59]",
+        "x": -7.6,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "PS_DDR_DQS_N0_502",
+        "x": -6.8,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "PS_DDR_DQ1_502",
+        "x": -6,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B4",
+        "signal": "PS_DDR_DRST_B_502",
+        "x": -5.2,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B5",
+        "signal": "PS_MIO9_500",
+        "x": -4.4,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B6",
+        "signal": "VCCO_MIO0_500[2]",
+        "x": -3.6,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "PS_MIO4_500",
+        "x": -2.8,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "PS_MIO2_500",
+        "x": -2,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "PS_MIO51_501",
+        "x": -1.2,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B10",
+        "signal": "PS_SRST_B_501",
+        "x": -0.4,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B11",
+        "signal": "GND[59]",
+        "x": 0.4,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B12",
+        "signal": "PS_MIO48_501",
+        "x": 1.2,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B13",
+        "signal": "PS_MIO50_501",
+        "x": 2,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B14",
+        "signal": "PS_MIO47_501",
+        "x": 2.8,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B15",
+        "signal": "PS_MIO45_501",
+        "x": 3.6,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B16",
+        "signal": "VCCO_MIO1_501[4]",
+        "x": 4.4,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B17",
+        "signal": "PS_MIO22_501",
+        "x": 5.2,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B18",
+        "signal": "PS_MIO18_501",
+        "x": 6,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B19",
+        "signal": "IO_L2P_T0_AD8P_35",
+        "x": 6.8,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B20",
+        "signal": "IO_L1N_T0_AD0N_35",
+        "x": 7.6,
+        "y": 6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "PS_DDR_DQ6_502",
+        "x": -7.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "PS_DDR_DQS_P0_502",
+        "x": -6.8,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "PS_DDR_DQ0_502",
+        "x": -6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C4",
+        "signal": "GND[59]",
+        "x": -5.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C5",
+        "signal": "PS_MIO14_500",
+        "x": -4.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C6",
+        "signal": "PS_MIO11_500",
+        "x": -3.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "PS_POR_B_500",
+        "x": -2.8,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "PS_MIO15_500",
+        "x": -2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "GND[59]",
+        "x": -1.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C10",
+        "signal": "PS_MIO52_501",
+        "x": -0.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C11",
+        "signal": "PS_MIO53_501",
+        "x": 0.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C12",
+        "signal": "PS_MIO49_501",
+        "x": 1.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C13",
+        "signal": "PS_MIO29_501",
+        "x": 2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C14",
+        "signal": "GND[59]",
+        "x": 2.8,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C15",
+        "signal": "PS_MIO30_501",
+        "x": 3.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C16",
+        "signal": "PS_MIO28_501",
+        "x": 4.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C17",
+        "signal": "PS_MIO41_501",
+        "x": 5.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C18",
+        "signal": "PS_MIO39_501",
+        "x": 6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C19",
+        "signal": "VCCO_35[6]",
+        "x": 6.8,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C20",
+        "signal": "IO_L1P_T0_AD0P_35",
+        "x": 7.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "PS_DDR_DQ5_502",
+        "x": -7.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -6.8,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "PS_DDR_DQ4_502",
+        "x": -6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D4",
+        "signal": "PS_DDR_A13_502",
+        "x": -5.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D5",
+        "signal": "PS_MIO8_500",
+        "x": -4.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D6",
+        "signal": "PS_MIO3_500",
+        "x": -3.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "VCCO_MIO0_500[2]",
+        "x": -2.8,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "PS_MIO7_500",
+        "x": -2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "PS_MIO12_500",
+        "x": -1.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D10",
+        "signal": "PS_MIO19_501",
+        "x": -0.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D11",
+        "signal": "PS_MIO23_501",
+        "x": 0.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D12",
+        "signal": "VCCO_MIO1_501[4]",
+        "x": 1.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D13",
+        "signal": "PS_MIO27_501",
+        "x": 2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D14",
+        "signal": "PS_MIO40_501",
+        "x": 2.8,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D15",
+        "signal": "PS_MIO33_501",
+        "x": 3.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D16",
+        "signal": "PS_MIO46_501",
+        "x": 4.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D17",
+        "signal": "GND[59]",
+        "x": 5.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D18",
+        "signal": "IO_L3N_T0_DQS_AD1N_35",
+        "x": 6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D19",
+        "signal": "IO_L4P_T0_35",
+        "x": 6.8,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D20",
+        "signal": "IO_L4N_T0_35",
+        "x": 7.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "PS_DDR_DQ7_502",
+        "x": -7.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "PS_DDR_DQ8_502",
+        "x": -6.8,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "PS_DDR_DQ9_502",
+        "x": -6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E4",
+        "signal": "PS_DDR_A12_502",
+        "x": -5.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E5",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -4.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E6",
+        "signal": "PS_MIO0_500",
+        "x": -3.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "PS_CLK_500",
+        "x": -2.8,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "PS_MIO13_500",
+        "x": -2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "PS_MIO10_500",
+        "x": -1.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E10",
+        "signal": "GND[59]",
+        "x": -0.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E11",
+        "signal": "PS_MIO_VREF_501",
+        "x": 0.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E12",
+        "signal": "PS_MIO42_501",
+        "x": 1.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E13",
+        "signal": "PS_MIO38_501",
+        "x": 2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E14",
+        "signal": "PS_MIO17_501",
+        "x": 2.8,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E15",
+        "signal": "VCCO_MIO1_501[4]",
+        "x": 3.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E16",
+        "signal": "PS_MIO31_501",
+        "x": 4.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E17",
+        "signal": "IO_L3P_T0_DQS_AD1P_35",
+        "x": 5.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E18",
+        "signal": "IO_L5P_T0_AD9P_35",
+        "x": 6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E19",
+        "signal": "IO_L5N_T0_AD9N_35",
+        "x": 6.8,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E20",
+        "signal": "GND[59]",
+        "x": 7.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "PS_DDR_DM1_502",
+        "x": -7.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "PS_DDR_DQS_N1_502",
+        "x": -6.8,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "GND[59]",
+        "x": -6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F4",
+        "signal": "PS_DDR_A14_502",
+        "x": -5.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F5",
+        "signal": "PS_DDR_A10_502",
+        "x": -4.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F6",
+        "signal": "TDO_0",
+        "x": -3.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "GND[59]",
+        "x": -2.8,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "VCCPAUX[5]",
+        "x": -2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "TCK_0",
+        "x": -1.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F10",
+        "signal": "RSVDGND",
+        "x": -0.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F11",
+        "signal": "VCCBATT_0",
+        "x": 0.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F12",
+        "signal": "PS_MIO35_501",
+        "x": 1.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F13",
+        "signal": "PS_MIO44_501",
+        "x": 2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F14",
+        "signal": "PS_MIO21_501",
+        "x": 2.8,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F15",
+        "signal": "PS_MIO25_501",
+        "x": 3.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F16",
+        "signal": "IO_L6P_T0_35",
+        "x": 4.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F17",
+        "signal": "IO_L6N_T0_VREF_35",
+        "x": 5.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F18",
+        "signal": "VCCO_35[6]",
+        "x": 6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F19",
+        "signal": "IO_L15P_T2_DQS_AD12P_35",
+        "x": 6.8,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F20",
+        "signal": "IO_L15N_T2_DQS_AD12N_35",
+        "x": 7.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -7.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "PS_DDR_DQS_P1_502",
+        "x": -6.8,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "PS_DDR_DQ10_502",
+        "x": -6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G4",
+        "signal": "PS_DDR_A11_502",
+        "x": -5.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G5",
+        "signal": "PS_DDR_VRN_502",
+        "x": -4.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G6",
+        "signal": "TDI_0",
+        "x": -3.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "VCCPINT[6]",
+        "x": -2.8,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "VCCPLL",
+        "x": -2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VCCPAUX[5]",
+        "x": -1.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G10",
+        "signal": "GND[59]",
+        "x": -0.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G11",
+        "signal": "VCCBRAM[2]",
+        "x": 0.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G12",
+        "signal": "GND[59]",
+        "x": 1.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G13",
+        "signal": "VCCINT[9]",
+        "x": 2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G14",
+        "signal": "IO_0_35",
+        "x": 2.8,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G15",
+        "signal": "IO_L19N_T3_VREF_35",
+        "x": 3.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G16",
+        "signal": "GND[59]",
+        "x": 4.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G17",
+        "signal": "IO_L16P_T2_35",
+        "x": 5.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G18",
+        "signal": "IO_L16N_T2_35",
+        "x": 6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G19",
+        "signal": "IO_L18P_T2_AD13P_35",
+        "x": 6.8,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G20",
+        "signal": "IO_L18N_T2_AD13N_35",
+        "x": 7.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "PS_DDR_DQ14_502",
+        "x": -7.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "PS_DDR_DQ13_502",
+        "x": -6.8,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "PS_DDR_DQ11_502",
+        "x": -6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H4",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -5.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H5",
+        "signal": "PS_DDR_VRP_502",
+        "x": -4.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H6",
+        "signal": "PS_DDR_VREF0_502",
+        "x": -3.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "GND[59]",
+        "x": -2.8,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "VCCPAUX[5]",
+        "x": -2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "GND[59]",
+        "x": -1.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H10",
+        "signal": "VCCBRAM[2]",
+        "x": -0.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H11",
+        "signal": "GND[59]",
+        "x": 0.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H12",
+        "signal": "VCCINT[9]",
+        "x": 1.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H13",
+        "signal": "GND[59]",
+        "x": 2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H14",
+        "signal": "VCCO_35[6]",
+        "x": 2.8,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H15",
+        "signal": "IO_L19P_T3_35",
+        "x": 3.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H16",
+        "signal": "IO_L13P_T2_MRCC_35",
+        "x": 4.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H17",
+        "signal": "IO_L13N_T2_MRCC_35",
+        "x": 5.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H18",
+        "signal": "IO_L14N_T2_AD4N_SRCC_35",
+        "x": 6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H19",
+        "signal": "GND[59]",
+        "x": 6.8,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H20",
+        "signal": "IO_L17N_T2_AD5N_35",
+        "x": 7.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "PS_DDR_DQ15_502",
+        "x": -7.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "GND[59]",
+        "x": -6.8,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "PS_DDR_DQ12_502",
+        "x": -6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J4",
+        "signal": "PS_DDR_A9_502",
+        "x": -5.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J5",
+        "signal": "PS_DDR_BA2_502",
+        "x": -4.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J6",
+        "signal": "TMS_0",
+        "x": -3.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "VCCPINT[6]",
+        "x": -2.8,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "GND[59]",
+        "x": -2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "VCCADC_0",
+        "x": -1.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J10",
+        "signal": "GNDADC_0",
+        "x": -0.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J11",
+        "signal": "VCCAUX[6]",
+        "x": 0.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J12",
+        "signal": "GND[59]",
+        "x": 1.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J13",
+        "signal": "VCCINT[9]",
+        "x": 2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J14",
+        "signal": "IO_L20N_T3_AD6N_35",
+        "x": 2.8,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J15",
+        "signal": "IO_25_35",
+        "x": 3.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J16",
+        "signal": "IO_L24N_T3_AD15N_35",
+        "x": 4.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J17",
+        "signal": "VCCO_35[6]",
+        "x": 5.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J18",
+        "signal": "IO_L14P_T2_AD4P_SRCC_35",
+        "x": 6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J19",
+        "signal": "IO_L10N_T1_AD11N_35",
+        "x": 6.8,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J20",
+        "signal": "IO_L17P_T2_AD5P_35",
+        "x": 7.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "PS_DDR_A8_502",
+        "x": -7.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "PS_DDR_A1_502",
+        "x": -6.8,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "PS_DDR_A3_502",
+        "x": -6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K4",
+        "signal": "PS_DDR_A7_502",
+        "x": -5.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K5",
+        "signal": "GND[59]",
+        "x": -4.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K6",
+        "signal": "VCCO_0",
+        "x": -3.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "GND[59]",
+        "x": -2.8,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "VCCPAUX[5]",
+        "x": -2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "VP_0",
+        "x": -1.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K10",
+        "signal": "VREFN_0",
+        "x": -0.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K11",
+        "signal": "GND[59]",
+        "x": 0.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K12",
+        "signal": "VCCINT[9]",
+        "x": 1.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K13",
+        "signal": "GND[59]",
+        "x": 2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K14",
+        "signal": "IO_L20P_T3_AD6P_35",
+        "x": 2.8,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K15",
+        "signal": "GND[59]",
+        "x": 3.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K16",
+        "signal": "IO_L24P_T3_AD15P_35",
+        "x": 4.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K17",
+        "signal": "IO_L12P_T1_MRCC_35",
+        "x": 5.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K18",
+        "signal": "IO_L12N_T1_MRCC_35",
+        "x": 6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K19",
+        "signal": "IO_L10P_T1_AD11P_35",
+        "x": 6.8,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K20",
+        "signal": "VCCO_35[6]",
+        "x": 7.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "PS_DDR_A5_502",
+        "x": -7.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "PS_DDR_CKP_502",
+        "x": -6.8,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L4",
+        "signal": "PS_DDR_A6_502",
+        "x": -5.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L5",
+        "signal": "PS_DDR_BA0_502",
+        "x": -4.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L6",
+        "signal": "PROGRAM_B_0",
+        "x": -3.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "VCCPINT[6]",
+        "x": -2.8,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "GND[59]",
+        "x": -2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "VREFP_0",
+        "x": -1.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L10",
+        "signal": "VN_0",
+        "x": -0.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L11",
+        "signal": "VCCAUX[6]",
+        "x": 0.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L12",
+        "signal": "GND[59]",
+        "x": 1.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L13",
+        "signal": "VCCINT[9]",
+        "x": 2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L14",
+        "signal": "IO_L22P_T3_AD7P_35",
+        "x": 2.8,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L15",
+        "signal": "IO_L22N_T3_AD7N_35",
+        "x": 3.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L16",
+        "signal": "IO_L11P_T1_SRCC_35",
+        "x": 4.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L17",
+        "signal": "IO_L11N_T1_SRCC_35",
+        "x": 5.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L18",
+        "signal": "GND[59]",
+        "x": 6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L19",
+        "signal": "IO_L9P_T1_DQS_AD3P_35",
+        "x": 6.8,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L20",
+        "signal": "IO_L9N_T1_DQS_AD3N_35",
+        "x": 7.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "GND[59]",
+        "x": -7.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "PS_DDR_CKN_502",
+        "x": -6.8,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "PS_DDR_A2_502",
+        "x": -6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M4",
+        "signal": "PS_DDR_A4_502",
+        "x": -5.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M5",
+        "signal": "PS_DDR_WE_B_502",
+        "x": -4.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M6",
+        "signal": "CFGBVS_0",
+        "x": -3.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "GND[59]",
+        "x": -2.8,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "VCCPAUX[5]",
+        "x": -2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "DXP_0",
+        "x": -1.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M10",
+        "signal": "DXN_0",
+        "x": -0.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M11",
+        "signal": "GND[59]",
+        "x": 0.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M12",
+        "signal": "VCCINT[9]",
+        "x": 1.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M13",
+        "signal": "GND[59]",
+        "x": 2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M14",
+        "signal": "IO_L23P_T3_35",
+        "x": 2.8,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M15",
+        "signal": "IO_L23N_T3_35",
+        "x": 3.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M16",
+        "signal": "VCCO_35[6]",
+        "x": 4.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M17",
+        "signal": "IO_L8P_T1_AD10P_35",
+        "x": 5.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M18",
+        "signal": "IO_L8N_T1_AD10N_35",
+        "x": 6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M19",
+        "signal": "IO_L7P_T1_AD2P_35",
+        "x": 6.8,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M20",
+        "signal": "IO_L7N_T1_AD2N_35",
+        "x": 7.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "PS_DDR_CS_B_502",
+        "x": -7.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "PS_DDR_A0_502",
+        "x": -6.8,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "PS_DDR_CKE_502",
+        "x": -6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N4",
+        "signal": "GND[59]",
+        "x": -5.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N5",
+        "signal": "PS_DDR_ODT_502",
+        "x": -4.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N6",
+        "signal": "RSVDVCC3",
+        "x": -3.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "VCCPINT[6]",
+        "x": -2.8,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "GND[59]",
+        "x": -2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "VCCAUX[6]",
+        "x": -1.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N10",
+        "signal": "GND[59]",
+        "x": -0.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N11",
+        "signal": "VCCAUX[6]",
+        "x": 0.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N12",
+        "signal": "GND[59]",
+        "x": 1.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N13",
+        "signal": "VCCINT[9]",
+        "x": 2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N14",
+        "signal": "GND[59]",
+        "x": 2.8,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N15",
+        "signal": "IO_L21P_T3_DQS_AD14P_35",
+        "x": 3.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N16",
+        "signal": "IO_L21N_T3_DQS_AD14N_35",
+        "x": 4.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N17",
+        "signal": "IO_L23P_T3_34",
+        "x": 5.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N18",
+        "signal": "IO_L13P_T2_MRCC_34",
+        "x": 6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N19",
+        "signal": "VCCO_34[6]",
+        "x": 6.8,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N20",
+        "signal": "IO_L14P_T2_SRCC_34",
+        "x": 7.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "PS_DDR_DQ16_502",
+        "x": -7.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -6.8,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "PS_DDR_DQ17_502",
+        "x": -6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P4",
+        "signal": "PS_DDR_RAS_B_502",
+        "x": -5.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P5",
+        "signal": "PS_DDR_CAS_B_502",
+        "x": -4.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P6",
+        "signal": "PS_DDR_VREF1_502",
+        "x": -3.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "GND[59]",
+        "x": -2.8,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "VCCPINT[6]",
+        "x": -2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "GND[59]",
+        "x": -1.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P10",
+        "signal": "VCCAUX[6]",
+        "x": -0.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P11",
+        "signal": "GND[59]",
+        "x": 0.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P12",
+        "signal": "VCCINT[9]",
+        "x": 1.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P13",
+        "signal": "GND[59]",
+        "x": 2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P14",
+        "signal": "IO_L6P_T0_34",
+        "x": 2.8,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P15",
+        "signal": "IO_L24P_T3_34",
+        "x": 3.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P16",
+        "signal": "IO_L24N_T3_34",
+        "x": 4.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P17",
+        "signal": "GND[59]",
+        "x": 5.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P18",
+        "signal": "IO_L23N_T3_34",
+        "x": 6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P19",
+        "signal": "IO_L13N_T2_MRCC_34",
+        "x": 6.8,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P20",
+        "signal": "IO_L14N_T2_SRCC_34",
+        "x": 7.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "PS_DDR_DQ19_502",
+        "x": -7.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "PS_DDR_DQS_P2_502",
+        "x": -6.8,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "PS_DDR_DQ18_502",
+        "x": -6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R4",
+        "signal": "PS_DDR_BA1_502",
+        "x": -5.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R5",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -4.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R6",
+        "signal": "RSVDVCC2",
+        "x": -3.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "VCCPINT[6]",
+        "x": -2.8,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "GND[59]",
+        "x": -2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "VCCAUX[6]",
+        "x": -1.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R10",
+        "signal": "INIT_B_0",
+        "x": -0.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R11",
+        "signal": "DONE_0",
+        "x": 0.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R12",
+        "signal": "GND[59]",
+        "x": 1.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R13",
+        "signal": "VCCINT[9]",
+        "x": 2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R14",
+        "signal": "IO_L6N_T0_VREF_34",
+        "x": 2.8,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R15",
+        "signal": "VCCO_34[6]",
+        "x": 3.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R16",
+        "signal": "IO_L19P_T3_34",
+        "x": 4.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R17",
+        "signal": "IO_L19N_T3_VREF_34",
+        "x": 5.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R18",
+        "signal": "IO_L20N_T3_34",
+        "x": 6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R19",
+        "signal": "IO_0_34",
+        "x": 6.8,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R20",
+        "signal": "GND[59]",
+        "x": 7.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "PS_DDR_DM2_502",
+        "x": -7.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "PS_DDR_DQS_N2_502",
+        "x": -6.8,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "GND[59]",
+        "x": -6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T4",
+        "signal": "PS_DDR_DQ20_502",
+        "x": -5.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T5",
+        "signal": "NC",
+        "x": -4.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T6",
+        "signal": "RSVDVCC1",
+        "x": -3.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "GND[59]",
+        "x": -2.8,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "VCCO_13[4]",
+        "x": -2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "NC",
+        "x": -1.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T10",
+        "signal": "IO_L1N_T0_34",
+        "x": -0.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T11",
+        "signal": "IO_L1P_T0_34",
+        "x": 0.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T12",
+        "signal": "IO_L2P_T0_34",
+        "x": 1.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T13",
+        "signal": "GND[59]",
+        "x": 2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T14",
+        "signal": "IO_L5P_T0_34",
+        "x": 2.8,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T15",
+        "signal": "IO_L5N_T0_34",
+        "x": 3.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T16",
+        "signal": "IO_L9P_T1_DQS_34",
+        "x": 4.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T17",
+        "signal": "IO_L20P_T3_34",
+        "x": 5.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T18",
+        "signal": "VCCO_34[6]",
+        "x": 6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T19",
+        "signal": "IO_25_34",
+        "x": 6.8,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T20",
+        "signal": "IO_L15P_T2_DQS_34",
+        "x": 7.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U1",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -7.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U2",
+        "signal": "PS_DDR_DQ22_502",
+        "x": -6.8,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U3",
+        "signal": "PS_DDR_DQ23_502",
+        "x": -6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U4",
+        "signal": "PS_DDR_DQ21_502",
+        "x": -5.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U5",
+        "signal": "NC",
+        "x": -4.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U6",
+        "signal": "GND[59]",
+        "x": -3.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U7",
+        "signal": "NC",
+        "x": -2.8,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U8",
+        "signal": "NC",
+        "x": -2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U9",
+        "signal": "NC",
+        "x": -1.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U10",
+        "signal": "NC",
+        "x": -0.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U11",
+        "signal": "VCCO_13[4]",
+        "x": 0.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U12",
+        "signal": "IO_L2N_T0_34",
+        "x": 1.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U13",
+        "signal": "IO_L3P_T0_DQS_PUDC_B_34",
+        "x": 2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U14",
+        "signal": "IO_L11P_T1_SRCC_34",
+        "x": 2.8,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U15",
+        "signal": "IO_L11N_T1_SRCC_34",
+        "x": 3.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U16",
+        "signal": "GND[59]",
+        "x": 4.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U17",
+        "signal": "IO_L9N_T1_DQS_34",
+        "x": 5.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U18",
+        "signal": "IO_L12P_T1_MRCC_34",
+        "x": 6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U19",
+        "signal": "IO_L12N_T1_MRCC_34",
+        "x": 6.8,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U20",
+        "signal": "IO_L15N_T2_DQS_34",
+        "x": 7.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V1",
+        "signal": "PS_DDR_DQ24_502",
+        "x": -7.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V2",
+        "signal": "PS_DDR_DQ30_502",
+        "x": -6.8,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V3",
+        "signal": "PS_DDR_DQ31_502",
+        "x": -6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V4",
+        "signal": "VCCO_DDR_502[10]",
+        "x": -5.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V5",
+        "signal": "NC",
+        "x": -4.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V6",
+        "signal": "NC",
+        "x": -3.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V7",
+        "signal": "NC",
+        "x": -2.8,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V8",
+        "signal": "NC",
+        "x": -2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V9",
+        "signal": "GND[59]",
+        "x": -1.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V10",
+        "signal": "NC",
+        "x": -0.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V11",
+        "signal": "NC",
+        "x": 0.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V12",
+        "signal": "IO_L4P_T0_34",
+        "x": 1.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V13",
+        "signal": "IO_L3N_T0_DQS_34",
+        "x": 2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V14",
+        "signal": "VCCO_34[6]",
+        "x": 2.8,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V15",
+        "signal": "IO_L10P_T1_34",
+        "x": 3.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V16",
+        "signal": "IO_L18P_T2_34",
+        "x": 4.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V17",
+        "signal": "IO_L21P_T3_DQS_34",
+        "x": 5.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V18",
+        "signal": "IO_L21N_T3_DQS_34",
+        "x": 6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V19",
+        "signal": "GND[59]",
+        "x": 6.8,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V20",
+        "signal": "IO_L16P_T2_34",
+        "x": 7.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W1",
+        "signal": "PS_DDR_DQ26_502",
+        "x": -7.6,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W2",
+        "signal": "GND[59]",
+        "x": -6.8,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W3",
+        "signal": "PS_DDR_DQ29_502",
+        "x": -6,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W4",
+        "signal": "PS_DDR_DQS_N3_502",
+        "x": -5.2,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W5",
+        "signal": "PS_DDR_DQS_P3_502",
+        "x": -4.4,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W6",
+        "signal": "NC",
+        "x": -3.6,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W7",
+        "signal": "VCCO_13[4]",
+        "x": -2.8,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W8",
+        "signal": "NC",
+        "x": -2,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W9",
+        "signal": "NC",
+        "x": -1.2,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W10",
+        "signal": "NC",
+        "x": -0.4,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W11",
+        "signal": "NC",
+        "x": 0.4,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W12",
+        "signal": "GND[59]",
+        "x": 1.2,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W13",
+        "signal": "IO_L4N_T0_34",
+        "x": 2,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W14",
+        "signal": "IO_L8P_T1_34",
+        "x": 2.8,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W15",
+        "signal": "IO_L10N_T1_34",
+        "x": 3.6,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W16",
+        "signal": "IO_L18N_T2_34",
+        "x": 4.4,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W17",
+        "signal": "VCCO_34[6]",
+        "x": 5.2,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W18",
+        "signal": "IO_L22P_T3_34",
+        "x": 6,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W19",
+        "signal": "IO_L22N_T3_34",
+        "x": 6.8,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W20",
+        "signal": "IO_L16N_T2_34",
+        "x": 7.6,
+        "y": -6.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y1",
+        "signal": "PS_DDR_DM3_502",
+        "x": -7.6,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y2",
+        "signal": "PS_DDR_DQ28_502",
+        "x": -6.8,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y3",
+        "signal": "PS_DDR_DQ25_502",
+        "x": -6,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y4",
+        "signal": "PS_DDR_DQ27_502",
+        "x": -5.2,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y5",
+        "signal": "GND[59]",
+        "x": -4.4,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y6",
+        "signal": "NC",
+        "x": -3.6,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y7",
+        "signal": "NC",
+        "x": -2.8,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y8",
+        "signal": "NC",
+        "x": -2,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y9",
+        "signal": "NC",
+        "x": -1.2,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y10",
+        "signal": "VCCO_13[4]",
+        "x": -0.4,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y11",
+        "signal": "NC",
+        "x": 0.4,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y12",
+        "signal": "NC",
+        "x": 1.2,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y13",
+        "signal": "NC",
+        "x": 2,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y14",
+        "signal": "IO_L8N_T1_34",
+        "x": 2.8,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y15",
+        "signal": "GND[59]",
+        "x": 3.6,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y16",
+        "signal": "IO_L7P_T1_34",
+        "x": 4.4,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y17",
+        "signal": "IO_L7N_T1_34",
+        "x": 5.2,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y18",
+        "signal": "IO_L17P_T2_34",
+        "x": 6,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y19",
+        "signal": "IO_L17N_T2_34",
+        "x": 6.8,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y20",
+        "signal": "VCCO_34[6]",
+        "x": 7.6,
+        "y": -7.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      }
+    ]
+  },
+  "connections": [
+    {
+      "net": "/ddr/DRAM_DATA13",
+      "group": "data",
+      "memory": {
+        "ball": "A2",
+        "signal": "DQ13"
+      },
+      "controller": {
+        "ball": "H2",
+        "signal": "PS_DDR_DQ13_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA13",
+        "controllerSideNet": "/ddr/DRAM_DATA13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA15",
+      "group": "data",
+      "memory": {
+        "ball": "A3",
+        "signal": "DQ15"
+      },
+      "controller": {
+        "ball": "J1",
+        "signal": "PS_DDR_DQ15_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA15",
+        "controllerSideNet": "/ddr/DRAM_DATA15",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA12",
+      "group": "data",
+      "memory": {
+        "ball": "A7",
+        "signal": "DQ12"
+      },
+      "controller": {
+        "ball": "J3",
+        "signal": "PS_DDR_DQ12_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA12",
+        "controllerSideNet": "/ddr/DRAM_DATA12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_SDQSN_1",
+      "group": "strobe",
+      "memory": {
+        "ball": "B7",
+        "signal": "~{UDQS}"
+      },
+      "controller": {
+        "ball": "F2",
+        "signal": "PS_DDR_DQS_N1_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_SDQSN_1",
+        "controllerSideNet": "/ddr/DRAM_SDQSN_1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA14",
+      "group": "data",
+      "memory": {
+        "ball": "B8",
+        "signal": "DQ14"
+      },
+      "controller": {
+        "ball": "H1",
+        "signal": "PS_DDR_DQ14_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA14",
+        "controllerSideNet": "/ddr/DRAM_DATA14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA11",
+      "group": "data",
+      "memory": {
+        "ball": "C2",
+        "signal": "DQ11"
+      },
+      "controller": {
+        "ball": "H3",
+        "signal": "PS_DDR_DQ11_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA11",
+        "controllerSideNet": "/ddr/DRAM_DATA11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA9",
+      "group": "data",
+      "memory": {
+        "ball": "C3",
+        "signal": "DQ9"
+      },
+      "controller": {
+        "ball": "E3",
+        "signal": "PS_DDR_DQ9_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA9",
+        "controllerSideNet": "/ddr/DRAM_DATA9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_SDQSP_1",
+      "group": "strobe",
+      "memory": {
+        "ball": "C7",
+        "signal": "UDQS"
+      },
+      "controller": {
+        "ball": "G2",
+        "signal": "PS_DDR_DQS_P1_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_SDQSP_1",
+        "controllerSideNet": "/ddr/DRAM_SDQSP_1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA10",
+      "group": "data",
+      "memory": {
+        "ball": "C8",
+        "signal": "DQ10"
+      },
+      "controller": {
+        "ball": "G3",
+        "signal": "PS_DDR_DQ10_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA10",
+        "controllerSideNet": "/ddr/DRAM_DATA10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DQM1",
+      "group": "mask",
+      "memory": {
+        "ball": "D3",
+        "signal": "UDM"
+      },
+      "controller": {
+        "ball": "F1",
+        "signal": "PS_DDR_DM1_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DQM1",
+        "controllerSideNet": "/ddr/DRAM_DQM1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA8",
+      "group": "data",
+      "memory": {
+        "ball": "D7",
+        "signal": "DQ8"
+      },
+      "controller": {
+        "ball": "E2",
+        "signal": "PS_DDR_DQ8_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA8",
+        "controllerSideNet": "/ddr/DRAM_DATA8",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA0",
+      "group": "data",
+      "memory": {
+        "ball": "E3",
+        "signal": "DQ0"
+      },
+      "controller": {
+        "ball": "C3",
+        "signal": "PS_DDR_DQ0_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA0",
+        "controllerSideNet": "/ddr/DRAM_DATA0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DQM0",
+      "group": "mask",
+      "memory": {
+        "ball": "E7",
+        "signal": "LDM"
+      },
+      "controller": {
+        "ball": "A1",
+        "signal": "PS_DDR_DM0_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DQM0",
+        "controllerSideNet": "/ddr/DRAM_DQM0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA2",
+      "group": "data",
+      "memory": {
+        "ball": "F2",
+        "signal": "DQ2"
+      },
+      "controller": {
+        "ball": "A2",
+        "signal": "PS_DDR_DQ2_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA2",
+        "controllerSideNet": "/ddr/DRAM_DATA2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_SDQSP_0",
+      "group": "strobe",
+      "memory": {
+        "ball": "F3",
+        "signal": "LDQS"
+      },
+      "controller": {
+        "ball": "C2",
+        "signal": "PS_DDR_DQS_P0_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_SDQSP_0",
+        "controllerSideNet": "/ddr/DRAM_SDQSP_0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA1",
+      "group": "data",
+      "memory": {
+        "ball": "F7",
+        "signal": "DQ1"
+      },
+      "controller": {
+        "ball": "B3",
+        "signal": "PS_DDR_DQ1_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA1",
+        "controllerSideNet": "/ddr/DRAM_DATA1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA3",
+      "group": "data",
+      "memory": {
+        "ball": "F8",
+        "signal": "DQ3"
+      },
+      "controller": {
+        "ball": "A4",
+        "signal": "PS_DDR_DQ3_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA3",
+        "controllerSideNet": "/ddr/DRAM_DATA3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA6",
+      "group": "data",
+      "memory": {
+        "ball": "G2",
+        "signal": "DQ6"
+      },
+      "controller": {
+        "ball": "C1",
+        "signal": "PS_DDR_DQ6_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA6",
+        "controllerSideNet": "/ddr/DRAM_DATA6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_SDQSN_0",
+      "group": "strobe",
+      "memory": {
+        "ball": "G3",
+        "signal": "~{LDQS}"
+      },
+      "controller": {
+        "ball": "B2",
+        "signal": "PS_DDR_DQS_N0_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_SDQSN_0",
+        "controllerSideNet": "/ddr/DRAM_SDQSN_0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA4",
+      "group": "data",
+      "memory": {
+        "ball": "H3",
+        "signal": "DQ4"
+      },
+      "controller": {
+        "ball": "D3",
+        "signal": "PS_DDR_DQ4_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA4",
+        "controllerSideNet": "/ddr/DRAM_DATA4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA7",
+      "group": "data",
+      "memory": {
+        "ball": "H7",
+        "signal": "DQ7"
+      },
+      "controller": {
+        "ball": "E1",
+        "signal": "PS_DDR_DQ7_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA7",
+        "controllerSideNet": "/ddr/DRAM_DATA7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_DATA5",
+      "group": "data",
+      "memory": {
+        "ball": "H8",
+        "signal": "DQ5"
+      },
+      "controller": {
+        "ball": "D1",
+        "signal": "PS_DDR_DQ5_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_DATA5",
+        "controllerSideNet": "/ddr/DRAM_DATA5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_RASB",
+      "group": "command",
+      "memory": {
+        "ball": "J3",
+        "signal": "~{RAS}"
+      },
+      "controller": {
+        "ball": "P4",
+        "signal": "PS_DDR_RAS_B_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_RASB",
+        "controllerSideNet": "/ddr/DRAM_RASB",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_CKP",
+      "group": "clock",
+      "memory": {
+        "ball": "J7",
+        "signal": "CK"
+      },
+      "controller": {
+        "ball": "L2",
+        "signal": "PS_DDR_CKP_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_CKP",
+        "controllerSideNet": "/ddr/DRAM_CKP",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ODT",
+      "group": "control",
+      "memory": {
+        "ball": "K1",
+        "signal": "ODT"
+      },
+      "controller": {
+        "ball": "N5",
+        "signal": "PS_DDR_ODT_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ODT",
+        "controllerSideNet": "/ddr/DRAM_ODT",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_CASB",
+      "group": "command",
+      "memory": {
+        "ball": "K3",
+        "signal": "~{CAS}"
+      },
+      "controller": {
+        "ball": "P5",
+        "signal": "PS_DDR_CAS_B_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_CASB",
+        "controllerSideNet": "/ddr/DRAM_CASB",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_CKN",
+      "group": "clock",
+      "memory": {
+        "ball": "K7",
+        "signal": "~{CK}"
+      },
+      "controller": {
+        "ball": "M2",
+        "signal": "PS_DDR_CKN_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_CKN",
+        "controllerSideNet": "/ddr/DRAM_CKN",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_CKE",
+      "group": "control",
+      "memory": {
+        "ball": "K9",
+        "signal": "CKE"
+      },
+      "controller": {
+        "ball": "N3",
+        "signal": "PS_DDR_CKE_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_CKE",
+        "controllerSideNet": "/ddr/DRAM_CKE",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_CSB",
+      "group": "control",
+      "memory": {
+        "ball": "L2",
+        "signal": "~{CS}"
+      },
+      "controller": {
+        "ball": "N1",
+        "signal": "PS_DDR_CS_B_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_CSB",
+        "controllerSideNet": "/ddr/DRAM_CSB",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_WEB",
+      "group": "control",
+      "memory": {
+        "ball": "L3",
+        "signal": "~{WE}"
+      },
+      "controller": {
+        "ball": "M5",
+        "signal": "PS_DDR_WE_B_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_WEB",
+        "controllerSideNet": "/ddr/DRAM_WEB",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR10",
+      "group": "address",
+      "memory": {
+        "ball": "L7",
+        "signal": "A10"
+      },
+      "controller": {
+        "ball": "F5",
+        "signal": "PS_DDR_A10_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR10",
+        "controllerSideNet": "/ddr/DRAM_ADDR10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_BA0",
+      "group": "bank",
+      "memory": {
+        "ball": "M2",
+        "signal": "BA0"
+      },
+      "controller": {
+        "ball": "L5",
+        "signal": "PS_DDR_BA0_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_BA0",
+        "controllerSideNet": "/ddr/DRAM_BA0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_BA2",
+      "group": "bank",
+      "memory": {
+        "ball": "M3",
+        "signal": "BA2"
+      },
+      "controller": {
+        "ball": "J5",
+        "signal": "PS_DDR_BA2_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_BA2",
+        "controllerSideNet": "/ddr/DRAM_BA2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR3",
+      "group": "address",
+      "memory": {
+        "ball": "N2",
+        "signal": "A3"
+      },
+      "controller": {
+        "ball": "K3",
+        "signal": "PS_DDR_A3_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR3",
+        "controllerSideNet": "/ddr/DRAM_ADDR3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR0",
+      "group": "address",
+      "memory": {
+        "ball": "N3",
+        "signal": "A0"
+      },
+      "controller": {
+        "ball": "N2",
+        "signal": "PS_DDR_A0_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR0",
+        "controllerSideNet": "/ddr/DRAM_ADDR0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR12",
+      "group": "address",
+      "memory": {
+        "ball": "N7",
+        "signal": "A12/~{BC}"
+      },
+      "controller": {
+        "ball": "E4",
+        "signal": "PS_DDR_A12_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR12",
+        "controllerSideNet": "/ddr/DRAM_ADDR12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_BA1",
+      "group": "bank",
+      "memory": {
+        "ball": "N8",
+        "signal": "BA1"
+      },
+      "controller": {
+        "ball": "R4",
+        "signal": "PS_DDR_BA1_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_BA1",
+        "controllerSideNet": "/ddr/DRAM_BA1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR5",
+      "group": "address",
+      "memory": {
+        "ball": "P2",
+        "signal": "A5"
+      },
+      "controller": {
+        "ball": "L1",
+        "signal": "PS_DDR_A5_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR5",
+        "controllerSideNet": "/ddr/DRAM_ADDR5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR2",
+      "group": "address",
+      "memory": {
+        "ball": "P3",
+        "signal": "A2"
+      },
+      "controller": {
+        "ball": "M3",
+        "signal": "PS_DDR_A2_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR2",
+        "controllerSideNet": "/ddr/DRAM_ADDR2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR1",
+      "group": "address",
+      "memory": {
+        "ball": "P7",
+        "signal": "A1"
+      },
+      "controller": {
+        "ball": "K2",
+        "signal": "PS_DDR_A1_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR1",
+        "controllerSideNet": "/ddr/DRAM_ADDR1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR4",
+      "group": "address",
+      "memory": {
+        "ball": "P8",
+        "signal": "A4"
+      },
+      "controller": {
+        "ball": "M4",
+        "signal": "PS_DDR_A4_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR4",
+        "controllerSideNet": "/ddr/DRAM_ADDR4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR7",
+      "group": "address",
+      "memory": {
+        "ball": "R2",
+        "signal": "A7"
+      },
+      "controller": {
+        "ball": "K4",
+        "signal": "PS_DDR_A7_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR7",
+        "controllerSideNet": "/ddr/DRAM_ADDR7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR9",
+      "group": "address",
+      "memory": {
+        "ball": "R3",
+        "signal": "A9"
+      },
+      "controller": {
+        "ball": "J4",
+        "signal": "PS_DDR_A9_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR9",
+        "controllerSideNet": "/ddr/DRAM_ADDR9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR11",
+      "group": "address",
+      "memory": {
+        "ball": "R7",
+        "signal": "A11"
+      },
+      "controller": {
+        "ball": "G4",
+        "signal": "PS_DDR_A11_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR11",
+        "controllerSideNet": "/ddr/DRAM_ADDR11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR6",
+      "group": "address",
+      "memory": {
+        "ball": "R8",
+        "signal": "A6"
+      },
+      "controller": {
+        "ball": "L4",
+        "signal": "PS_DDR_A6_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR6",
+        "controllerSideNet": "/ddr/DRAM_ADDR6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_RST",
+      "group": "control",
+      "memory": {
+        "ball": "T2",
+        "signal": "~{RESET}"
+      },
+      "controller": {
+        "ball": "B4",
+        "signal": "PS_DDR_DRST_B_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_RST",
+        "controllerSideNet": "/ddr/DRAM_RST",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR13",
+      "group": "address",
+      "memory": {
+        "ball": "T3",
+        "signal": "A13"
+      },
+      "controller": {
+        "ball": "D4",
+        "signal": "PS_DDR_A13_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR13",
+        "controllerSideNet": "/ddr/DRAM_ADDR13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR14",
+      "group": "address",
+      "memory": {
+        "ball": "T7",
+        "signal": "A14/NC"
+      },
+      "controller": {
+        "ball": "F4",
+        "signal": "PS_DDR_A14_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR14",
+        "controllerSideNet": "/ddr/DRAM_ADDR14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/ddr/DRAM_ADDR8",
+      "group": "address",
+      "memory": {
+        "ball": "T8",
+        "signal": "A8"
+      },
+      "controller": {
+        "ball": "K1",
+        "signal": "PS_DDR_A8_502"
+      },
+      "sourcePath": {
+        "memorySideNet": "/ddr/DRAM_ADDR8",
+        "controllerSideNet": "/ddr/DRAM_ADDR8",
+        "seriesComponents": []
+      }
+    }
+  ],
+  "endpointMapSha256": "f64e3ee5a499cd98e9f302581a9f69a2995c5fc05e23a7f3a1fca56e152cfe08"
+}

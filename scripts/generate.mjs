@@ -5,13 +5,12 @@ import { fileURLToPath } from "node:url"
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const samplesDir = path.join(repoRoot, "samples")
 const previewsDir = path.join(repoRoot, "previews")
-const connectionMapPath = path.join(repoRoot, "reference", "beaglebone-black-ddr3-map.json")
-const realConnectionMap = JSON.parse(await readFile(connectionMapPath, "utf8"))
+const referenceManifest = JSON.parse(await readFile(path.join(repoRoot, "reference", "reference-manifest.json"), "utf8"))
+const maps = await Promise.all(referenceManifest.map(async (entry) => ({
+  manifestEntry: entry,
+  map: JSON.parse(await readFile(path.join(repoRoot, entry.mapFile), "utf8")),
+})))
 
-const SAMPLE_COUNT = 20
-const DDR3_ROWS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "T"]
-const DDR3_POPULATED_COLUMNS = [0, 1, 2, 6, 7, 8]
-const CONTROLLER_ROWS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "T", "U", "V"]
 const GROUP_COLORS = {
   data: "#4ecdc4",
   strobe: "#ff6b6b",
@@ -23,40 +22,45 @@ const GROUP_COLORS = {
   control: "#76b7b2",
 }
 
-const round = (value, precision = 4) => Number(value.toFixed(precision))
+const round = (value, precision = 5) => Number(value.toFixed(precision))
 const sampleName = (index) => `sample${String(index).padStart(3, "0")}`
-const safeId = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "")
+const safeId = (value) => String(value).toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "")
+const evenCeiling = (value) => Math.ceil(value / 2) * 2
 
-function makeGrid({ rows, cols, pitch, padSize, centerX, centerY, componentId, keep, rotation = 0 }) {
-  const xOffset = ((cols - 1) * pitch) / 2
-  const yOffset = ((rows.length - 1) * pitch) / 2
-  const pads = []
-  for (let row = 0; row < rows.length; row++) {
-    for (let col = 0; col < cols; col++) {
-      if (keep && !keep(row, col)) continue
-      const localX = col * pitch - xOffset
-      const localY = yOffset - row * pitch
-      const rotatedX = rotation === 180 ? -localX : localX
-      const rotatedY = rotation === 180 ? -localY : localY
-      pads.push({
-        row,
-        col,
-        ball: `${rows[row]}${col + 1}`,
-        x: round(centerX + rotatedX),
-        y: round(centerY + rotatedY),
-        width: padSize,
-        height: padSize,
-        pitch,
-        componentId,
-      })
+function transformPackage(packageData, componentId, center, rotation) {
+  return packageData.pads.map((pad) => {
+    const x = rotation === 180 ? -pad.x : pad.x
+    const y = rotation === 180 ? -pad.y : pad.y
+    return {
+      ball: pad.ball,
+      vendorSignal: pad.signal,
+      x: round(center.x + x),
+      y: round(center.y + y),
+      width: pad.width,
+      height: pad.height,
+      shape: pad.shape,
+      componentId,
     }
-  }
-  return pads
+  })
 }
 
-function createObstacle(pad, connection, pinName) {
+function getPadBounds(pads) {
+  return {
+    minX: Math.min(...pads.map((pad) => pad.x - pad.width / 2)),
+    maxX: Math.max(...pads.map((pad) => pad.x + pad.width / 2)),
+    minY: Math.min(...pads.map((pad) => pad.y - pad.height / 2)),
+    maxY: Math.max(...pads.map((pad) => pad.y + pad.height / 2)),
+  }
+}
+
+function makeConnectionName(connection) {
+  return `DDR3_${safeId(connection.memory.ball)}_${safeId(connection.net)}`
+}
+
+function createObstacle(pad, connection, packageData) {
   const componentPrefix = pad.componentId === "ddr3_bga" ? "ddr3" : "controller"
   const padId = `${componentPrefix}_${safeId(pad.ball)}`
+  const connectionName = connection?.connectionName
   return {
     obstacleId: `pcb_smtpad_${padId}`,
     componentId: pad.componentId,
@@ -66,230 +70,259 @@ function createObstacle(pad, connection, pinName) {
     width: pad.width,
     height: pad.height,
     ballName: pad.ball,
-    vendorPinName: pinName,
-    connectedTo: connection
-      ? [connection.net, `pcb_port_${componentPrefix}_${safeId(connection.net)}`]
+    vendorPinName: connection?.signal ?? pad.vendorSignal ?? pad.ball,
+    connectedTo: connectionName
+      ? [connectionName, `pcb_port_${componentPrefix}_${safeId(connectionName)}`]
       : [`unconnected_${padId}`],
     circuitJsonMetadata: {
-      source_component_name: componentPrefix === "ddr3" ? "U12_DDR3L" : "U5_AM3358",
-      source_port_name: pinName,
-      reference_design_net: connection?.net,
+      source_component_name: `${packageData.reference}_${packageData.partNumber}`,
+      source_port_name: connection?.signal ?? pad.vendorSignal ?? pad.ball,
+      reference_design_net: connection?.referenceNet,
     },
   }
 }
 
 function makeBuses(connections) {
-  const names = (groups) => connections.filter((connection) => groups.includes(connection.group)).map((connection) => connection.net)
+  const names = (groups) => connections.filter((connection) => groups.includes(connection.group)).map((connection) => connection.connectionName)
   return [
-    { busId: "ddr3_data_bus", connectionNames: names(["data", "strobe", "mask"]), maxLengthSkew: 1.5, traceWidth: 0.12 },
-    { busId: "ddr3_address_command_bus", connectionNames: names(["address", "bank", "command", "control", "clock"]), maxLengthSkew: 2.5, traceWidth: 0.12 },
-  ]
+    { busId: "ddr3_data_bus", connectionNames: names(["data", "strobe", "mask"]), maxLengthSkew: 1.5, traceWidth: 0.1 },
+    { busId: "ddr3_address_command_bus", connectionNames: names(["address", "bank", "command", "control", "clock"]), maxLengthSkew: 2.5, traceWidth: 0.1 },
+  ].filter((bus) => bus.connectionNames.length > 0)
 }
 
-function makeDifferentialPairs() {
-  return [
-    { connectionNames: ["DDR_CLK", "DDR_CLKn"], lengthTolerance: 0.8, traceGap: 0.18, maxUncoupledLength: 5 },
-    { connectionNames: ["DDR_DQS0", "DDR_DQSN0"], lengthTolerance: 0.8, traceGap: 0.18, maxUncoupledLength: 5 },
-    { connectionNames: ["DDR_DQS1", "DDR_DQSN1"], lengthTolerance: 0.8, traceGap: 0.18, maxUncoupledLength: 5 },
-  ]
+function pairDescriptor(connection) {
+  const raw = `${connection.memory.signal} ${connection.net}`.toUpperCase().replace(/[~{}]/g, "")
+  const signal = raw.split(/\s+/)[0]
+  let polarity
+  if (/#|(?:^|[_./])N(?:$|[_./])|_N$|-$/.test(signal)) polarity = "negative"
+  else if (/\+|_P$|(?:^|[_./])P(?:$|[_./])/.test(signal)) polarity = "positive"
+  else if (/DQS|(?:^|_)CK(?:$|\d)/.test(signal)) polarity = "positive"
+  const base = signal
+    .replace(/#/g, "")
+    .replace(/[+-]$/g, "")
+    .replace(/_(?:P|N)$/g, "")
+    .replace(/(?:P|N)$/g, "")
+  return { base, polarity }
 }
 
-function createSample(index) {
-  const mapping = realConnectionMap.connections
-  const ddr3OnLeft = index % 4 !== 0
-  const rotation = ddr3OnLeft ? 0 : 180
-  const ddr3Side = ddr3OnLeft ? "left" : "right"
-  const controllerSide = ddr3OnLeft ? "right" : "left"
-  const pitch = 0.8
-  const padSize = 0.38
-  const ddr3FieldWidth = 8 * pitch + padSize
-  const controllerFieldWidth = 17 * pitch + padSize
-  const componentGap = round(9.2 + ((index * 7) % 6) * 0.8)
-  const verticalOffset = round(((index * 5) % 7 - 3) * 0.8)
-  const ddr3XAbs = componentGap / 2 + ddr3FieldWidth / 2
-  const controllerXAbs = componentGap / 2 + controllerFieldWidth / 2
-  const ddr3CenterX = round(ddr3OnLeft ? -ddr3XAbs : ddr3XAbs)
-  const controllerCenterX = round(ddr3OnLeft ? controllerXAbs : -controllerXAbs)
-  const ddr3CenterY = verticalOffset / 2
-  const controllerCenterY = -verticalOffset / 2
-  const layerCount = index % 3 === 0 ? 14 : 12
+function makeDifferentialPairs(connections) {
+  const groups = new Map()
+  for (const connection of connections.filter((item) => item.group === "strobe" || item.group === "clock")) {
+    const descriptor = pairDescriptor(connection)
+    if (!groups.has(descriptor.base)) groups.set(descriptor.base, [])
+    groups.get(descriptor.base).push({ connection, ...descriptor })
+  }
+  return [...groups.values()].filter((group) => group.length === 2).map((group) => ({
+    connectionNames: group.sort((a, b) => (a.polarity === "positive" ? -1 : 1)).map((entry) => entry.connection.connectionName),
+    lengthTolerance: 0.8,
+    traceGap: 0.18,
+    maxUncoupledLength: 5,
+  }))
+}
 
-  const ddr3Pads = makeGrid({
-    rows: DDR3_ROWS,
-    cols: 9,
-    pitch,
-    padSize,
-    centerX: ddr3CenterX,
-    centerY: ddr3CenterY,
-    componentId: "ddr3_bga",
-    rotation,
-    keep: (_row, col) => DDR3_POPULATED_COLUMNS.includes(col),
-  })
-  const controllerPads = makeGrid({
-    rows: CONTROLLER_ROWS,
-    cols: 18,
-    pitch,
-    padSize,
-    centerX: controllerCenterX,
-    centerY: controllerCenterY,
-    componentId: "controller_bga",
-    rotation,
-  })
+function connectedDepth(packageData, connectedBalls) {
+  const pads = packageData.pads.filter((pad) => connectedBalls.has(pad.ball))
+  if (pads.length === 0) return 0
+  const field = getPadBounds(packageData.pads)
+  return Math.max(...pads.map((pad) => Math.min(
+    (pad.x - field.minX) / packageData.pitch,
+    (field.maxX - pad.x) / packageData.pitch,
+    (pad.y - field.minY) / packageData.pitch,
+    (field.maxY - pad.y) / packageData.pitch,
+  )))
+}
 
-  const ddr3ConnectionByBall = new Map(mapping.map((connection) => [connection.ddr3.ball, connection]))
-  const controllerConnectionByBall = new Map(mapping.map((connection) => [connection.controller.ball, connection]))
-  const ddr3PadByBall = new Map(ddr3Pads.map((pad) => [pad.ball, pad]))
+function createSample(index, mapRecord) {
+  const { map, manifestEntry } = mapRecord
+  const id = sampleName(index)
+  const memoryOnLeft = index % 4 !== 0
+  const rotation = index % 3 === 0 ? 180 : 0
+  const componentGap = round(12 + ((index * 7) % 5) * 1.5)
+  const verticalOffset = round(((index * 3) % 7 - 3) * 1.2)
+  const memoryCenter = {
+    x: memoryOnLeft ? -(componentGap + map.memory.padFieldWidth) / 2 : (componentGap + map.memory.padFieldWidth) / 2,
+    y: verticalOffset / 2,
+  }
+  const controllerCenter = {
+    x: memoryOnLeft ? (componentGap + map.controller.padFieldWidth) / 2 : -(componentGap + map.controller.padFieldWidth) / 2,
+    y: -verticalOffset / 2,
+  }
+  const memoryPads = transformPackage(map.memory, "ddr3_bga", memoryCenter, rotation)
+  const controllerPads = transformPackage(map.controller, "controller_bga", controllerCenter, rotation)
+  const connectionRecords = map.connections.map((connection) => ({
+    ...connection,
+    connectionName: makeConnectionName(connection),
+  }))
+  const memoryConnectionByBall = new Map(connectionRecords.map((connection) => [connection.memory.ball, {
+    connectionName: connection.connectionName,
+    referenceNet: connection.net,
+    signal: connection.memory.signal,
+  }]))
+  const controllerConnectionByBall = new Map(connectionRecords.map((connection) => [connection.controller.ball, {
+    connectionName: connection.connectionName,
+    referenceNet: connection.net,
+    signal: connection.controller.signal,
+  }]))
+  const memoryPadByBall = new Map(memoryPads.map((pad) => [pad.ball, pad]))
   const controllerPadByBall = new Map(controllerPads.map((pad) => [pad.ball, pad]))
   const obstacles = [
-    ...ddr3Pads.map((pad) => {
-      const connection = ddr3ConnectionByBall.get(pad.ball)
-      return createObstacle(pad, connection, connection?.ddr3.signal ?? `NON_INTERFACE_${pad.ball}`)
-    }),
-    ...controllerPads.map((pad) => {
-      const connection = controllerConnectionByBall.get(pad.ball)
-      return createObstacle(pad, connection, connection?.controller.signal ?? `NON_DDR_${pad.ball}`)
-    }),
+    ...memoryPads.map((pad) => createObstacle(pad, memoryConnectionByBall.get(pad.ball), map.memory)),
+    ...controllerPads.map((pad) => createObstacle(pad, controllerConnectionByBall.get(pad.ball), map.controller)),
   ]
-  const connections = mapping.map((connection) => {
-    const ddr3Pad = ddr3PadByBall.get(connection.ddr3.ball)
+
+  const minimumPitch = Math.min(map.memory.pitch, map.controller.pitch)
+  const nominalTraceWidth = round(Math.min(0.1, minimumPitch * 0.16), 4)
+  const clearance = round(Math.min(0.075, minimumPitch * 0.1), 4)
+  const viaPadDiameter = round(Math.max(0.18, minimumPitch * 0.42), 4)
+  const viaHoleDiameter = round(Math.max(0.08, viaPadDiameter * 0.45), 4)
+  const memoryDepth = connectedDepth(map.memory, new Set(map.connections.map((connection) => connection.memory.ball)))
+  const controllerDepth = connectedDepth(map.controller, new Set(map.connections.map((connection) => connection.controller.ball)))
+  const layerCount = Math.max(
+    16,
+    evenCeiling(Math.max(memoryDepth, controllerDepth) * 2 + 6),
+    evenCeiling(map.connections.length / 3.5 + 2),
+  )
+
+  const connections = connectionRecords.map((connection) => {
+    const memoryPad = memoryPadByBall.get(connection.memory.ball)
     const controllerPad = controllerPadByBall.get(connection.controller.ball)
-    if (!ddr3Pad || !controllerPad) throw new Error(`${connection.net}: mapped ball is absent from its physical package`)
+    if (!memoryPad || !controllerPad) throw new Error(`${id}: ${connection.net} references an absent package ball`)
     return {
-      name: connection.net,
-      rootConnectionName: connection.net,
-      netConnectionName: connection.net,
-      nominalTraceWidth: 0.12,
+      name: connection.connectionName,
+      rootConnectionName: connection.connectionName,
+      netConnectionName: connection.connectionName,
+      nominalTraceWidth,
       pointsToConnect: [
         {
-          x: ddr3Pad.x,
-          y: ddr3Pad.y,
+          x: memoryPad.x,
+          y: memoryPad.y,
           layer: "top",
-          pointId: `point_ddr3_${safeId(connection.net)}`,
-          pcb_port_id: `pcb_port_ddr3_${safeId(connection.net)}`,
+          pointId: `point_ddr3_${safeId(connection.connectionName)}`,
+          pcb_port_id: `pcb_port_ddr3_${safeId(connection.connectionName)}`,
         },
         {
           x: controllerPad.x,
           y: controllerPad.y,
           layer: "top",
-          pointId: `point_controller_${safeId(connection.net)}`,
-          pcb_port_id: `pcb_port_controller_${safeId(connection.net)}`,
+          pointId: `point_controller_${safeId(connection.connectionName)}`,
+          pcb_port_id: `pcb_port_controller_${safeId(connection.connectionName)}`,
         },
       ],
     }
   })
 
-  const minX = Math.min(...obstacles.map((obstacle) => obstacle.center.x - obstacle.width / 2)) - 5.5
-  const maxX = Math.max(...obstacles.map((obstacle) => obstacle.center.x + obstacle.width / 2)) + 5.5
-  const minY = Math.min(...obstacles.map((obstacle) => obstacle.center.y - obstacle.height / 2)) - 5.5
-  const maxY = Math.max(...obstacles.map((obstacle) => obstacle.center.y + obstacle.height / 2)) + 5.5
-  const bounds = { minX: round(minX), maxX: round(maxX), minY: round(minY), maxY: round(maxY) }
+  const padBounds = getPadBounds([...memoryPads, ...controllerPads])
+  const boardMargin = 7
+  const bounds = {
+    minX: round(padBounds.minX - boardMargin),
+    maxX: round(padBounds.maxX + boardMargin),
+    minY: round(padBounds.minY - boardMargin),
+    maxY: round(padBounds.maxY + boardMargin),
+  }
   const outline = [
     { x: bounds.minX, y: bounds.minY },
     { x: bounds.maxX, y: bounds.minY },
     { x: bounds.maxX, y: bounds.maxY },
     { x: bounds.minX, y: bounds.maxY },
   ]
-  const groupCounts = Object.fromEntries(
-    Object.keys(GROUP_COLORS).map((group) => [group, mapping.filter((connection) => connection.group === group).length]),
-  )
+  const signalGroups = Object.fromEntries(Object.keys(GROUP_COLORS).map((group) => [
+    group,
+    connectionRecords.filter((connection) => connection.group === group).length,
+  ]))
+  const referenceNetByConnection = Object.fromEntries(connectionRecords.map((connection) => [connection.connectionName, connection.net]))
+  const endpointBallsByConnection = Object.fromEntries(connectionRecords.map((connection) => [connection.connectionName, {
+    ddr3Ball: connection.memory.ball,
+    ddr3Signal: connection.memory.signal,
+    controllerBall: connection.controller.ball,
+    controllerSignal: connection.controller.signal,
+    referenceNet: connection.net,
+    sourcePath: connection.sourcePath,
+  }]))
 
   return {
-    id: sampleName(index),
-    title: `BeagleBone Black DDR3L U12 to AM3358BZCZ100 U5 · geometry ${index}`,
-    description: "A spacious multilayer routing problem whose 50 endpoint pairs reproduce the official BeagleBone Black U12 DDR3L-to-U5 AM3358 schematic ball-for-ball.",
+    id,
+    title: `${map.referenceDesign.board}: ${map.memory.partNumber} ${map.memory.reference} to ${map.controller.partNumber} ${map.controller.reference}`,
+    description: `A spacious multilayer benchmark reproducing ${map.connections.length} exact DDR3-to-BGA endpoint pairs from ${map.referenceDesign.board}.`,
     layerCount,
-    minTraceWidth: 0.12,
-    nominalTraceWidth: 0.12,
-    minViaHoleDiameter: 0.15,
-    minViaPadDiameter: 0.34,
-    defaultObstacleMargin: 0.08,
-    minTraceToPadEdgeClearance: 0.08,
-    minViaEdgeToPadEdgeClearance: 0.08,
+    minTraceWidth: nominalTraceWidth,
+    nominalTraceWidth,
+    minViaHoleDiameter: viaHoleDiameter,
+    minViaPadDiameter: viaPadDiameter,
+    defaultObstacleMargin: clearance,
+    minTraceToPadEdgeClearance: clearance,
+    minViaEdgeToPadEdgeClearance: clearance,
     minBoardEdgeClearance: 0.5,
     allowViaInPad: false,
     obstacles,
     connections,
-    buses: makeBuses(mapping),
-    differentialPairs: makeDifferentialPairs(),
+    buses: makeBuses(connectionRecords),
+    differentialPairs: makeDifferentialPairs(connectionRecords),
     bounds,
     outline,
     metadata: {
       datasetName: "dataset-srj29-ddr3-bga-pairs",
       generatorSeed: 0x3dd30000 + index * 7919,
       referenceDesign: {
-        board: realConnectionMap.referenceDesign.board,
-        schematicRevision: realConnectionMap.referenceDesign.schematicRevision,
-        schematicSheet: realConnectionMap.referenceDesign.schematicSheet,
-        connectionMapFile: "reference/beaglebone-black-ddr3-map.json",
-        directConnectionCount: mapping.length,
-        schematicUrl: realConnectionMap.referenceDesign.schematicUrl,
+        ...map.referenceDesign,
+        connectionMapFile: manifestEntry.mapFile,
+        directConnectionCount: map.connections.length,
+        endpointMapSha256: map.endpointMapSha256,
       },
       ddr3: {
         componentId: "ddr3_bga",
-        reference: "U12",
-        partNumber: realConnectionMap.referenceDesign.memoryPartNumbersPrintedOnSchematic[0],
-        partNumbers: realConnectionMap.referenceDesign.memoryPartNumbersPrintedOnSchematic,
-        package: "96-ball FBGA",
-        technology: "DDR3L",
-        dataWidth: 16,
-        pitch,
-        bodyWidth: 7.5,
-        bodyHeight: 13.3,
-        rowLabels: DDR3_ROWS,
-        populatedColumns: [1, 2, 3, 7, 8, 9],
-        padCount: ddr3Pads.length,
-        signalPinCount: mapping.length,
+        reference: map.memory.reference,
+        partNumber: map.memory.partNumber,
+        footprint: map.memory.footprint,
+        padCount: map.memory.padCount,
+        pitch: map.memory.pitch,
+        padFieldWidth: map.memory.padFieldWidth,
+        padFieldHeight: map.memory.padFieldHeight,
+        technology: "DDR3 / DDR3L",
+        signalPinCount: map.connections.length,
         rotation,
-        ballMapOrientation: `vendor top-view ballout rotated ${rotation} degrees on PCB`,
-        sourceUrl: realConnectionMap.referenceDesign.schematicUrl,
-        note: "The sparse 96-ball population and every connected ball follow U12 on the official board schematic. Non-interface balls remain physical obstacles but are outside the routing-net scope.",
+        bodyWidth: round(map.memory.padFieldWidth + map.memory.pitch),
+        bodyHeight: round(map.memory.padFieldHeight + map.memory.pitch),
       },
       controller: {
         componentId: "controller_bga",
-        reference: "U5",
-        partNumber: "AM3358BZCZ100",
-        package: "ZCZ 324-ball NFBGA",
-        grid: "18x18 full ball field",
-        pitch,
-        bodyWidth: 15,
-        bodyHeight: 15,
-        padCount: controllerPads.length,
+        reference: map.controller.reference,
+        partNumber: map.controller.partNumber,
+        footprint: map.controller.footprint,
+        padCount: map.controller.padCount,
+        pitch: map.controller.pitch,
+        padFieldWidth: map.controller.padFieldWidth,
+        padFieldHeight: map.controller.padFieldHeight,
         rotation,
-        memoryBankDepth: 5,
-        sourceUrl: realConnectionMap.referenceDesign.processorProductUrl,
+        bodyWidth: round(map.controller.padFieldWidth + map.controller.pitch),
+        bodyHeight: round(map.controller.padFieldHeight + map.controller.pitch),
       },
       placement: {
-        ddr3Side,
-        controllerSide,
+        ddr3Side: memoryOnLeft ? "left" : "right",
+        controllerSide: memoryOnLeft ? "right" : "left",
         componentGap,
-        componentGapDefinition: "minimum horizontal clearance between the two physical pad-field edges",
+        componentGapDefinition: "minimum horizontal clearance between the physical pad-field edges",
         verticalOffset,
-        boardMarginX: 5.5,
-        boardMarginY: 5.5,
+        boardMargin,
       },
       feasibility: {
-        focus: "fan out both real BGA footprints, then route the real chip-to-chip DDR interface",
-        connectedDdr3ColumnDepth: 6,
-        connectedControllerColumnDepth: 5,
+        focus: "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
+        connectedDdr3EdgeDepth: round(memoryDepth, 2),
+        connectedControllerEdgeDepth: round(controllerDepth, 2),
         availableRoutingLayers: layerCount - 2,
-        viaStyle: "0.34 mm dogbone-compatible via; via-in-pad disabled",
+        minimumPackagePitch: minimumPitch,
+        viaStyle: `${viaPadDiameter} mm dogbone-compatible via pad; via-in-pad disabled`,
         corridorWidth: componentGap,
       },
-      signalGroups: groupCounts,
-      signalGroupByConnection: Object.fromEntries(mapping.map((connection) => [connection.net, connection.group])),
-      endpointBallsByConnection: Object.fromEntries(mapping.map((connection) => [connection.net, {
-        ddr3Ball: connection.ddr3.ball,
-        ddr3Signal: connection.ddr3.signal,
-        controllerBall: connection.controller.ball,
-        controllerSignal: connection.controller.signal,
-      }])),
-      sourceReview: [
-        "beagleboard/beaglebone-black BBB-SCH.pdf sheets 3 and 7",
-        "BeagleBoard BeagleBone Black System Reference Manual chapter 6",
-        "Texas Instruments AM3358BZCZ100 product/package specification",
-      ],
+      signalGroups,
+      signalGroupByConnection: Object.fromEntries(connectionRecords.map((connection) => [connection.connectionName, connection.group])),
+      referenceNetByConnection,
+      endpointBallsByConnection,
     },
   }
+}
+
+function escapeXml(value) {
+  return String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 }
 
 function makeSampleSvg(sample, svgWidth = 1000, svgHeight = 650, showComponentLabels = true) {
@@ -308,32 +341,25 @@ function makeSampleSvg(sample, svgWidth = 1000, svgHeight = 650, showComponentLa
   }).join("")
   const pads = sample.obstacles.map((obstacle) => {
     const fill = obstacle.componentId === "ddr3_bga" ? "#f5a742" : "#4d8cc9"
-    const width = Math.max(2, obstacle.width * scale)
-    const height = Math.max(2, obstacle.height * scale)
-    return `<rect x="${sx(obstacle.center.x) - width / 2}" y="${sy(obstacle.center.y) - height / 2}" width="${width}" height="${height}" rx="${Math.min(width, height) * 0.22}" fill="${fill}" stroke="#0b1015" stroke-width="0.45"/>`
+    const width = Math.max(1.6, obstacle.width * scale)
+    const height = Math.max(1.6, obstacle.height * scale)
+    return `<rect x="${sx(obstacle.center.x) - width / 2}" y="${sy(obstacle.center.y) - height / 2}" width="${width}" height="${height}" rx="${Math.min(width, height) * 0.22}" fill="${fill}" stroke="#0b1015" stroke-width="0.35"/>`
   }).join("")
-  const componentBounds = (componentId) => {
+  const componentLabel = (componentId, color, label) => {
     const componentPads = sample.obstacles.filter((obstacle) => obstacle.componentId === componentId)
-    return {
-      x: componentPads.reduce((sum, pad) => sum + pad.center.x, 0) / componentPads.length,
-      minY: Math.min(...componentPads.map((pad) => pad.center.y - pad.height / 2)),
-    }
+    const bounds = getPadBounds(componentPads.map((pad) => ({ ...pad.center, width: pad.width, height: pad.height })))
+    return `<text x="${sx((bounds.minX + bounds.maxX) / 2)}" y="${Math.min(svgHeight - 19, sy(bounds.minY) + 25)}" text-anchor="middle" fill="${color}" font-family="ui-monospace, monospace" font-size="12" font-weight="700">${escapeXml(label)}</text>`
   }
-  const ddr3 = componentBounds("ddr3_bga")
-  const controller = componentBounds("controller_bga")
-  const componentLabels = showComponentLabels
-    ? `<text x="${sx(ddr3.x)}" y="${Math.min(svgHeight - 24, sy(ddr3.minY) + 28)}" text-anchor="middle" fill="#ffc977" font-family="ui-monospace, monospace" font-size="14" font-weight="700">U12 · DDR3L x16 · 96-ball</text>
-  <text x="${sx(controller.x)}" y="${Math.min(svgHeight - 24, sy(controller.minY) + 28)}" text-anchor="middle" fill="#88b9eb" font-family="ui-monospace, monospace" font-size="14" font-weight="700">U5 · AM3358BZCZ100 · 324-ball</text>`
+  const labels = showComponentLabels
+    ? `${componentLabel("ddr3_bga", "#ffc977", `${sample.metadata.ddr3.reference} · ${sample.metadata.ddr3.partNumber} · ${sample.metadata.ddr3.padCount} balls`)}${componentLabel("controller_bga", "#88b9eb", `${sample.metadata.controller.reference} · ${sample.metadata.controller.partNumber} · ${sample.metadata.controller.padCount} balls`)}`
     : ""
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">
   <rect width="100%" height="100%" fill="#0d1218"/>
   <rect x="${sx(minX)}" y="${sy(maxY)}" width="${boardWidth * scale}" height="${boardHeight * scale}" rx="8" fill="#13251f" stroke="#4f806c" stroke-width="2"/>
-  <g>${lines}</g>
-  <g>${pads}</g>
-  ${componentLabels}
-  <text x="28" y="38" fill="#eef5fb" font-family="ui-sans-serif, system-ui" font-size="19" font-weight="700">${sample.id} · 50 real board nets · ${sample.layerCount} layers</text>
-  <text x="28" y="61" fill="#9fb0bf" font-family="ui-sans-serif, system-ui" font-size="13">BeagleBone Black D1 U12↔U5 map · ${sample.metadata.placement.componentGap} mm gap · unrouted</text>
+  <g>${lines}</g><g>${pads}</g>${labels}
+  <text x="28" y="36" fill="#eef5fb" font-family="ui-sans-serif, system-ui" font-size="17" font-weight="700">${sample.id} · ${sample.connections.length} real board nets · ${sample.layerCount} layers</text>
+  <text x="28" y="57" fill="#9fb0bf" font-family="ui-sans-serif, system-ui" font-size="12">${escapeXml(sample.metadata.referenceDesign.board)} · ${sample.metadata.placement.componentGap} mm gap · unrouted</text>
 </svg>`
 }
 
@@ -349,8 +375,7 @@ function makeContactSheet(samples) {
       .replace(/<\/svg>$/, "")
     return `<g transform="translate(${(index % cols) * cellWidth},${Math.floor(index / cols) * cellHeight})">${svg}</g>`
   }).join("")
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${cellWidth * cols}" height="${cellHeight * rows}" viewBox="0 0 ${cellWidth * cols} ${cellHeight * rows}">${cells}</svg>`
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${cellWidth * cols}" height="${cellHeight * rows}" viewBox="0 0 ${cellWidth * cols} ${cellHeight * rows}">${cells}</svg>`
 }
 
 function makeIndex(samples) {
@@ -362,19 +387,20 @@ function makeIndex(samples) {
   return lines.join("\n")
 }
 
-function makeConnectionMapMarkdown() {
-  const rows = realConnectionMap.connections.map((connection) =>
-    `| ${connection.net} | ${connection.ddr3.ball} | ${connection.ddr3.signal} | ${connection.controller.ball} | ${connection.controller.signal} |`,
-  ).join("\n")
-  return `# BeagleBone Black DDR3L connection map
+function makeConnectionMapsMarkdown(samples) {
+  const rows = samples.map((sample) => {
+    const reference = sample.metadata.referenceDesign
+    return `| ${sample.id} | [${reference.board}](${reference.sourceUrl}) | ${sample.metadata.ddr3.reference} ${sample.metadata.ddr3.partNumber} | ${sample.metadata.controller.reference} ${sample.metadata.controller.partNumber} | ${sample.connections.length} | \`${reference.endpointMapSha256.slice(0, 12)}\` | [map](${reference.connectionMapFile}) |`
+  }).join("\n")
+  return `# DDR3-to-BGA reference maps
 
-This is the endpoint map used by every sample. It was transcribed from the official BeagleBone Black D1 schematic: U12 on sheet 7 and U5 on sheet 3.
+Every sample uses a different primary-source board repository and a unique canonical DDR3-ball-to-controller-ball endpoint hash. KiCad-derived maps preserve the committed package pad populations and exact board nets. If a reference uses one series resistor between the two chips, the benchmark collapses that resistor while recording it in each connection's \`sourcePath\`.
 
-| Board net | U12 ball | U12 pin | U5 ball | AM3358 pin |
-|---|---:|---|---:|---|
+| Sample | Primary board source | DDR3 | Controller / FPGA / SoC | Nets | Endpoint hash | Machine map |
+|---|---|---|---|---:|---|---|
 ${rows}
 
-The machine-readable source of truth is [\`reference/beaglebone-black-ddr3-map.json\`](reference/beaglebone-black-ddr3-map.json). Power, ground, VREF, ZQ, decoupling, and external termination components are excluded because they are not direct U12-to-U5 nets.
+Power, ground, VREF, ZQ, decoupling, and termination-only branches are outside this two-BGA routing benchmark.
 `
 }
 
@@ -395,7 +421,7 @@ export default defaultDataset
 
 await mkdir(samplesDir, { recursive: true })
 await mkdir(previewsDir, { recursive: true })
-const samples = Array.from({ length: SAMPLE_COUNT }, (_, index) => createSample(index + 1))
+const samples = maps.map((mapRecord, index) => createSample(index + 1, mapRecord))
 for (const sample of samples) {
   await writeFile(path.join(samplesDir, `${sample.id}.json`), `${JSON.stringify(sample, null, 2)}\n`)
   await writeFile(path.join(previewsDir, `${sample.id}.svg`), makeSampleSvg(sample))
@@ -403,25 +429,34 @@ for (const sample of samples) {
 const manifest = {
   datasetName: "dataset-srj29-ddr3-bga-pairs",
   sampleCount: samples.length,
-  purpose: "Spacious multilayer ball-accurate BeagleBone Black DDR3L-to-AM3358 BGA routing benchmarks",
-  referenceDesign: realConnectionMap.referenceDesign,
-  connectionMapFile: "reference/beaglebone-black-ddr3-map.json",
+  purpose: "Spacious multilayer routing benchmarks from 20 different real DDR3-to-BGA board references",
+  totalReferenceEndpointPairs: samples.reduce((sum, sample) => sum + sample.connections.length, 0),
+  referenceManifestFile: "reference/reference-manifest.json",
   samples: samples.map((sample) => ({
     id: sample.id,
     title: sample.title,
+    referenceBoard: sample.metadata.referenceDesign.board,
+    referenceRepository: sample.metadata.referenceDesign.repository,
+    referenceSourceUrl: sample.metadata.referenceDesign.sourceUrl,
+    endpointMapSha256: sample.metadata.referenceDesign.endpointMapSha256,
+    connectionMapFile: sample.metadata.referenceDesign.connectionMapFile,
     layerCount: sample.layerCount,
     connectionCount: sample.connections.length,
     obstacleCount: sample.obstacles.length,
     ddr3PadCount: sample.metadata.ddr3.padCount,
+    ddr3PartNumber: sample.metadata.ddr3.partNumber,
     controllerPadCount: sample.metadata.controller.padCount,
+    controllerPartNumber: sample.metadata.controller.partNumber,
     componentGap: sample.metadata.placement.componentGap,
     rotation: sample.metadata.ddr3.rotation,
     bounds: sample.bounds,
   })),
 }
+const connectionMapsMarkdown = makeConnectionMapsMarkdown(samples)
 await writeFile(path.join(repoRoot, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`)
 await writeFile(path.join(repoRoot, "index.js"), makeIndex(samples))
 await writeFile(path.join(repoRoot, "index.d.ts"), makeTypes(samples))
-await writeFile(path.join(repoRoot, "CONNECTION_MAP.md"), makeConnectionMapMarkdown())
+await writeFile(path.join(repoRoot, "CONNECTION_MAP.md"), connectionMapsMarkdown)
+await writeFile(path.join(repoRoot, "CONNECTION_MAPS.md"), connectionMapsMarkdown)
 await writeFile(path.join(previewsDir, "contact-sheet.svg"), makeContactSheet(samples))
-console.log(`Generated ${samples.length} ball-accurate BeagleBone Black DDR3L-to-AM3358 SRJ samples`)
+console.log(`Generated ${samples.length} unique-board DDR3-to-BGA SRJ samples`)

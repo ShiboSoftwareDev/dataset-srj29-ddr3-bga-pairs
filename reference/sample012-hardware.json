@@ -1,0 +1,7213 @@
+{
+  "schemaVersion": 2,
+  "referenceDesign": {
+    "board": "i.MX6QP IMXDesign",
+    "repository": "WilliamSanchez/Hardware",
+    "commit": "1fc7b1bb3e9a59b44b3a2b116191082dc183011e",
+    "sourcePath": "Design_IMX6QP/IMXDesign/IMXDesign.kicad_pcb",
+    "sourceUrl": "https://github.com/WilliamSanchez/Hardware/blob/1fc7b1bb3e9a59b44b3a2b116191082dc183011e/Design_IMX6QP/IMXDesign/IMXDesign.kicad_pcb",
+    "extractionMethod": "Exact KiCad PCB pad/net traversal; a single two-pad series resistor may be collapsed into one benchmark connection and is recorded per path."
+  },
+  "memory": {
+    "reference": "U3",
+    "partNumber": "MT41K128M16JT-107_K",
+    "footprint": "IMX6QP:BGA80P96C6X16_800X1400X110",
+    "padCount": 96,
+    "pitch": 0.8,
+    "padFieldWidth": 6.75,
+    "padFieldHeight": 12.35,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "A1",
+        "x": -3.2,
+        "y": 6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "A2",
+        "x": -2.4,
+        "y": 6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "A3",
+        "x": -1.6,
+        "y": 6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "A7",
+        "x": 1.6,
+        "y": 6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "A8",
+        "x": 2.4,
+        "y": 6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "A9",
+        "x": 3.2,
+        "y": 6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "B1",
+        "x": -3.2,
+        "y": 5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "B2",
+        "x": -2.4,
+        "y": 5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "B3",
+        "x": -1.6,
+        "y": 5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "B7",
+        "x": 1.6,
+        "y": 5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "B8",
+        "x": 2.4,
+        "y": 5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "B9",
+        "x": 3.2,
+        "y": 5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "C1",
+        "x": -3.2,
+        "y": 4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "C2",
+        "x": -2.4,
+        "y": 4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "C3",
+        "x": -1.6,
+        "y": 4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "C7",
+        "x": 1.6,
+        "y": 4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "C8",
+        "x": 2.4,
+        "y": 4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "C9",
+        "x": 3.2,
+        "y": 4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "D1",
+        "x": -3.2,
+        "y": 3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "D2",
+        "x": -2.4,
+        "y": 3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "D3",
+        "x": -1.6,
+        "y": 3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "D7",
+        "x": 1.6,
+        "y": 3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "D8",
+        "x": 2.4,
+        "y": 3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "D9",
+        "x": 3.2,
+        "y": 3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "E1",
+        "x": -3.2,
+        "y": 2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "E2",
+        "x": -2.4,
+        "y": 2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "E3",
+        "x": -1.6,
+        "y": 2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "E7",
+        "x": 1.6,
+        "y": 2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "E8",
+        "x": 2.4,
+        "y": 2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "E9",
+        "x": 3.2,
+        "y": 2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "F1",
+        "x": -3.2,
+        "y": 2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "F2",
+        "x": -2.4,
+        "y": 2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "F3",
+        "x": -1.6,
+        "y": 2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "F7",
+        "x": 1.6,
+        "y": 2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "F8",
+        "x": 2.4,
+        "y": 2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "F9",
+        "x": 3.2,
+        "y": 2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "G1",
+        "x": -3.2,
+        "y": 1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "G2",
+        "x": -2.4,
+        "y": 1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "G3",
+        "x": -1.6,
+        "y": 1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "G7",
+        "x": 1.6,
+        "y": 1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "G8",
+        "x": 2.4,
+        "y": 1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "G9",
+        "x": 3.2,
+        "y": 1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "H1",
+        "x": -3.2,
+        "y": 0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "H2",
+        "x": -2.4,
+        "y": 0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "H3",
+        "x": -1.6,
+        "y": 0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "H7",
+        "x": 1.6,
+        "y": 0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "H8",
+        "x": 2.4,
+        "y": 0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "H9",
+        "x": 3.2,
+        "y": 0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "J1",
+        "x": -3.2,
+        "y": -0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "J2",
+        "x": -2.4,
+        "y": -0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "J3",
+        "x": -1.6,
+        "y": -0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "J7",
+        "x": 1.6,
+        "y": -0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "J8",
+        "x": 2.4,
+        "y": -0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "J9",
+        "x": 3.2,
+        "y": -0.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "K1",
+        "x": -3.2,
+        "y": -1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "K2",
+        "x": -2.4,
+        "y": -1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "K3",
+        "x": -1.6,
+        "y": -1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "K7",
+        "x": 1.6,
+        "y": -1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "K8",
+        "x": 2.4,
+        "y": -1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "K9",
+        "x": 3.2,
+        "y": -1.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "L1",
+        "x": -3.2,
+        "y": -2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "L2",
+        "x": -2.4,
+        "y": -2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "L3",
+        "x": -1.6,
+        "y": -2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "L7",
+        "x": 1.6,
+        "y": -2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "L8",
+        "x": 2.4,
+        "y": -2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "L9",
+        "x": 3.2,
+        "y": -2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "M1",
+        "x": -3.2,
+        "y": -2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "M2",
+        "x": -2.4,
+        "y": -2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "M3",
+        "x": -1.6,
+        "y": -2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "M7",
+        "x": 1.6,
+        "y": -2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "M8",
+        "x": 2.4,
+        "y": -2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "M9",
+        "x": 3.2,
+        "y": -2.8,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "N1",
+        "x": -3.2,
+        "y": -3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "N2",
+        "x": -2.4,
+        "y": -3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "N3",
+        "x": -1.6,
+        "y": -3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "N7",
+        "x": 1.6,
+        "y": -3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "N8",
+        "x": 2.4,
+        "y": -3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "N9",
+        "x": 3.2,
+        "y": -3.6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "P1",
+        "x": -3.2,
+        "y": -4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "P2",
+        "x": -2.4,
+        "y": -4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "P3",
+        "x": -1.6,
+        "y": -4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "P7",
+        "x": 1.6,
+        "y": -4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "P8",
+        "x": 2.4,
+        "y": -4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "P9",
+        "x": 3.2,
+        "y": -4.4,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "R1",
+        "x": -3.2,
+        "y": -5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "R2",
+        "x": -2.4,
+        "y": -5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "R3",
+        "x": -1.6,
+        "y": -5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "R7",
+        "x": 1.6,
+        "y": -5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "R8",
+        "x": 2.4,
+        "y": -5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "R9",
+        "x": 3.2,
+        "y": -5.2,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "T1",
+        "x": -3.2,
+        "y": -6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "T2",
+        "x": -2.4,
+        "y": -6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "T3",
+        "x": -1.6,
+        "y": -6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "T7",
+        "x": 1.6,
+        "y": -6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "T8",
+        "x": 2.4,
+        "y": -6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "T9",
+        "x": 3.2,
+        "y": -6,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      }
+    ]
+  },
+  "controller": {
+    "reference": "U1",
+    "partNumber": "MCIMX6QP5EVT",
+    "footprint": "Package_BGA:BGA-624_21.0x21.0mm_Layout25x25_P0.8mm",
+    "padCount": 624,
+    "pitch": 0.8,
+    "padFieldWidth": 19.6,
+    "padFieldHeight": 19.6,
+    "pads": [
+      {
+        "ball": "A2",
+        "signal": "A2",
+        "x": -8.8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "A3",
+        "x": -8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A4",
+        "signal": "A4",
+        "x": -7.2,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A5",
+        "signal": "A5",
+        "x": -6.4,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A6",
+        "signal": "A6",
+        "x": -5.6,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "A7",
+        "x": -4.8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "A8",
+        "x": -4,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "A9",
+        "x": -3.2,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A10",
+        "signal": "A10",
+        "x": -2.4,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A11",
+        "signal": "A11",
+        "x": -1.6,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A12",
+        "signal": "A12",
+        "x": -0.8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A13",
+        "signal": "A13",
+        "x": 0,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A14",
+        "signal": "A14",
+        "x": 0.8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A15",
+        "signal": "A15",
+        "x": 1.6,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A16",
+        "signal": "A16",
+        "x": 2.4,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A17",
+        "signal": "A17",
+        "x": 3.2,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A18",
+        "signal": "A18",
+        "x": 4,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A19",
+        "signal": "A19",
+        "x": 4.8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A20",
+        "signal": "A20",
+        "x": 5.6,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A21",
+        "signal": "A21",
+        "x": 6.4,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A22",
+        "signal": "A22",
+        "x": 7.2,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A23",
+        "signal": "A23",
+        "x": 8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A24",
+        "signal": "A24",
+        "x": 8.8,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A25",
+        "signal": "A25",
+        "x": 9.6,
+        "y": 9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA1",
+        "signal": "AA1",
+        "x": -9.6,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA2",
+        "signal": "AA2",
+        "x": -8.8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA3",
+        "signal": "AA3",
+        "x": -8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA4",
+        "signal": "AA4",
+        "x": -7.2,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA5",
+        "signal": "AA5",
+        "x": -6.4,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA6",
+        "signal": "AA6",
+        "x": -5.6,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA7",
+        "signal": "AA7",
+        "x": -4.8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA8",
+        "signal": "AA8",
+        "x": -4,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA9",
+        "signal": "AA9",
+        "x": -3.2,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA10",
+        "signal": "AA10",
+        "x": -2.4,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA11",
+        "signal": "AA11",
+        "x": -1.6,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA12",
+        "signal": "AA12",
+        "x": -0.8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA13",
+        "signal": "AA13",
+        "x": 0,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA14",
+        "signal": "AA14",
+        "x": 0.8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA15",
+        "signal": "AA15",
+        "x": 1.6,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA16",
+        "signal": "AA16",
+        "x": 2.4,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA17",
+        "signal": "AA17",
+        "x": 3.2,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA18",
+        "signal": "AA18",
+        "x": 4,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA19",
+        "signal": "AA19",
+        "x": 4.8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA20",
+        "signal": "AA20",
+        "x": 5.6,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA21",
+        "signal": "AA21",
+        "x": 6.4,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA22",
+        "signal": "AA22",
+        "x": 7.2,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA23",
+        "signal": "AA23",
+        "x": 8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA24",
+        "signal": "AA24",
+        "x": 8.8,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA25",
+        "signal": "AA25",
+        "x": 9.6,
+        "y": -6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB1",
+        "signal": "AB1",
+        "x": -9.6,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB2",
+        "signal": "AB2",
+        "x": -8.8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB3",
+        "signal": "AB3",
+        "x": -8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB4",
+        "signal": "AB4",
+        "x": -7.2,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB5",
+        "signal": "AB5",
+        "x": -6.4,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB6",
+        "signal": "AB6",
+        "x": -5.6,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB7",
+        "signal": "AB7",
+        "x": -4.8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB8",
+        "signal": "AB8",
+        "x": -4,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB9",
+        "signal": "AB9",
+        "x": -3.2,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB10",
+        "signal": "AB10",
+        "x": -2.4,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB11",
+        "signal": "AB11",
+        "x": -1.6,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB12",
+        "signal": "AB12",
+        "x": -0.8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB13",
+        "signal": "AB13",
+        "x": 0,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB14",
+        "signal": "AB14",
+        "x": 0.8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB15",
+        "signal": "AB15",
+        "x": 1.6,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB16",
+        "signal": "AB16",
+        "x": 2.4,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB17",
+        "signal": "AB17",
+        "x": 3.2,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB18",
+        "signal": "AB18",
+        "x": 4,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB19",
+        "signal": "AB19",
+        "x": 4.8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB20",
+        "signal": "AB20",
+        "x": 5.6,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB21",
+        "signal": "AB21",
+        "x": 6.4,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB22",
+        "signal": "AB22",
+        "x": 7.2,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB23",
+        "signal": "AB23",
+        "x": 8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB24",
+        "signal": "AB24",
+        "x": 8.8,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB25",
+        "signal": "AB25",
+        "x": 9.6,
+        "y": -7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC1",
+        "signal": "AC1",
+        "x": -9.6,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC2",
+        "signal": "AC2",
+        "x": -8.8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC3",
+        "signal": "AC3",
+        "x": -8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC4",
+        "signal": "AC4",
+        "x": -7.2,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC5",
+        "signal": "AC5",
+        "x": -6.4,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC6",
+        "signal": "AC6",
+        "x": -5.6,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC7",
+        "signal": "AC7",
+        "x": -4.8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC8",
+        "signal": "AC8",
+        "x": -4,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC9",
+        "signal": "AC9",
+        "x": -3.2,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC10",
+        "signal": "AC10",
+        "x": -2.4,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC11",
+        "signal": "AC11",
+        "x": -1.6,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC12",
+        "signal": "AC12",
+        "x": -0.8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC13",
+        "signal": "AC13",
+        "x": 0,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC14",
+        "signal": "AC14",
+        "x": 0.8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC15",
+        "signal": "AC15",
+        "x": 1.6,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC16",
+        "signal": "AC16",
+        "x": 2.4,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC17",
+        "signal": "AC17",
+        "x": 3.2,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC18",
+        "signal": "AC18",
+        "x": 4,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC19",
+        "signal": "AC19",
+        "x": 4.8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC20",
+        "signal": "AC20",
+        "x": 5.6,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC21",
+        "signal": "AC21",
+        "x": 6.4,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC22",
+        "signal": "AC22",
+        "x": 7.2,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC23",
+        "signal": "AC23",
+        "x": 8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC24",
+        "signal": "AC24",
+        "x": 8.8,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC25",
+        "signal": "AC25",
+        "x": 9.6,
+        "y": -8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD1",
+        "signal": "AD1",
+        "x": -9.6,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD2",
+        "signal": "AD2",
+        "x": -8.8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD3",
+        "signal": "AD3",
+        "x": -8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD4",
+        "signal": "AD4",
+        "x": -7.2,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD5",
+        "signal": "AD5",
+        "x": -6.4,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD6",
+        "signal": "AD6",
+        "x": -5.6,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD7",
+        "signal": "AD7",
+        "x": -4.8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD8",
+        "signal": "AD8",
+        "x": -4,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD9",
+        "signal": "AD9",
+        "x": -3.2,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD10",
+        "signal": "AD10",
+        "x": -2.4,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD11",
+        "signal": "AD11",
+        "x": -1.6,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD12",
+        "signal": "AD12",
+        "x": -0.8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD13",
+        "signal": "AD13",
+        "x": 0,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD14",
+        "signal": "AD14",
+        "x": 0.8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD15",
+        "signal": "AD15",
+        "x": 1.6,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD16",
+        "signal": "AD16",
+        "x": 2.4,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD17",
+        "signal": "AD17",
+        "x": 3.2,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD18",
+        "signal": "AD18",
+        "x": 4,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD19",
+        "signal": "AD19",
+        "x": 4.8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD20",
+        "signal": "AD20",
+        "x": 5.6,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD21",
+        "signal": "AD21",
+        "x": 6.4,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD22",
+        "signal": "AD22",
+        "x": 7.2,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD23",
+        "signal": "AD23",
+        "x": 8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD24",
+        "signal": "AD24",
+        "x": 8.8,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD25",
+        "signal": "AD25",
+        "x": 9.6,
+        "y": -8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE1",
+        "signal": "AE1",
+        "x": -9.6,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE2",
+        "signal": "AE2",
+        "x": -8.8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE3",
+        "signal": "AE3",
+        "x": -8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE4",
+        "signal": "AE4",
+        "x": -7.2,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE5",
+        "signal": "AE5",
+        "x": -6.4,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE6",
+        "signal": "AE6",
+        "x": -5.6,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE7",
+        "signal": "AE7",
+        "x": -4.8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE8",
+        "signal": "AE8",
+        "x": -4,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE9",
+        "signal": "AE9",
+        "x": -3.2,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE10",
+        "signal": "AE10",
+        "x": -2.4,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE11",
+        "signal": "AE11",
+        "x": -1.6,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE12",
+        "signal": "AE12",
+        "x": -0.8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE13",
+        "signal": "AE13",
+        "x": 0,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE14",
+        "signal": "AE14",
+        "x": 0.8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE15",
+        "signal": "AE15",
+        "x": 1.6,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE16",
+        "signal": "AE16",
+        "x": 2.4,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE17",
+        "signal": "AE17",
+        "x": 3.2,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE18",
+        "signal": "AE18",
+        "x": 4,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE19",
+        "signal": "AE19",
+        "x": 4.8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE20",
+        "signal": "AE20",
+        "x": 5.6,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE21",
+        "signal": "AE21",
+        "x": 6.4,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE22",
+        "signal": "AE22",
+        "x": 7.2,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE23",
+        "signal": "AE23",
+        "x": 8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE24",
+        "signal": "AE24",
+        "x": 8.8,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE25",
+        "signal": "AE25",
+        "x": 9.6,
+        "y": -9.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "B1",
+        "x": -9.6,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "B2",
+        "x": -8.8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "B3",
+        "x": -8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B4",
+        "signal": "B4",
+        "x": -7.2,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B5",
+        "signal": "B5",
+        "x": -6.4,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B6",
+        "signal": "B6",
+        "x": -5.6,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "B7",
+        "x": -4.8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "B8",
+        "x": -4,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "B9",
+        "x": -3.2,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B10",
+        "signal": "B10",
+        "x": -2.4,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B11",
+        "signal": "B11",
+        "x": -1.6,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B12",
+        "signal": "B12",
+        "x": -0.8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B13",
+        "signal": "B13",
+        "x": 0,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B14",
+        "signal": "B14",
+        "x": 0.8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B15",
+        "signal": "B15",
+        "x": 1.6,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B16",
+        "signal": "B16",
+        "x": 2.4,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B17",
+        "signal": "B17",
+        "x": 3.2,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B18",
+        "signal": "B18",
+        "x": 4,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B19",
+        "signal": "B19",
+        "x": 4.8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B20",
+        "signal": "B20",
+        "x": 5.6,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B21",
+        "signal": "B21",
+        "x": 6.4,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B22",
+        "signal": "B22",
+        "x": 7.2,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B23",
+        "signal": "B23",
+        "x": 8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B24",
+        "signal": "B24",
+        "x": 8.8,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B25",
+        "signal": "B25",
+        "x": 9.6,
+        "y": 8.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "C1",
+        "x": -9.6,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "C2",
+        "x": -8.8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "C3",
+        "x": -8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C4",
+        "signal": "C4",
+        "x": -7.2,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C5",
+        "signal": "C5",
+        "x": -6.4,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C6",
+        "signal": "C6",
+        "x": -5.6,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "C7",
+        "x": -4.8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "C8",
+        "x": -4,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "C9",
+        "x": -3.2,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C10",
+        "signal": "C10",
+        "x": -2.4,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C11",
+        "signal": "C11",
+        "x": -1.6,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C12",
+        "signal": "C12",
+        "x": -0.8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C13",
+        "signal": "C13",
+        "x": 0,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C14",
+        "signal": "C14",
+        "x": 0.8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C15",
+        "signal": "C15",
+        "x": 1.6,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C16",
+        "signal": "C16",
+        "x": 2.4,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C17",
+        "signal": "C17",
+        "x": 3.2,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C18",
+        "signal": "C18",
+        "x": 4,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C19",
+        "signal": "C19",
+        "x": 4.8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C20",
+        "signal": "C20",
+        "x": 5.6,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C21",
+        "signal": "C21",
+        "x": 6.4,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C22",
+        "signal": "C22",
+        "x": 7.2,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C23",
+        "signal": "C23",
+        "x": 8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C24",
+        "signal": "C24",
+        "x": 8.8,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C25",
+        "signal": "C25",
+        "x": 9.6,
+        "y": 8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "D1",
+        "x": -9.6,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "D2",
+        "x": -8.8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "D3",
+        "x": -8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D4",
+        "signal": "D4",
+        "x": -7.2,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D5",
+        "signal": "D5",
+        "x": -6.4,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D6",
+        "signal": "D6",
+        "x": -5.6,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "D7",
+        "x": -4.8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "D8",
+        "x": -4,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "D9",
+        "x": -3.2,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D10",
+        "signal": "D10",
+        "x": -2.4,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D11",
+        "signal": "D11",
+        "x": -1.6,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D12",
+        "signal": "D12",
+        "x": -0.8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D13",
+        "signal": "D13",
+        "x": 0,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D14",
+        "signal": "D14",
+        "x": 0.8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D15",
+        "signal": "D15",
+        "x": 1.6,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D16",
+        "signal": "D16",
+        "x": 2.4,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D17",
+        "signal": "D17",
+        "x": 3.2,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D18",
+        "signal": "D18",
+        "x": 4,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D19",
+        "signal": "D19",
+        "x": 4.8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D20",
+        "signal": "D20",
+        "x": 5.6,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D21",
+        "signal": "D21",
+        "x": 6.4,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D22",
+        "signal": "D22",
+        "x": 7.2,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D23",
+        "signal": "D23",
+        "x": 8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D24",
+        "signal": "D24",
+        "x": 8.8,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D25",
+        "signal": "D25",
+        "x": 9.6,
+        "y": 7.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "E1",
+        "x": -9.6,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "E2",
+        "x": -8.8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "E3",
+        "x": -8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E4",
+        "signal": "E4",
+        "x": -7.2,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E5",
+        "signal": "E5",
+        "x": -6.4,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E6",
+        "signal": "E6",
+        "x": -5.6,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "E7",
+        "x": -4.8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "E8",
+        "x": -4,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "E9",
+        "x": -3.2,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E10",
+        "signal": "E10",
+        "x": -2.4,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E11",
+        "signal": "E11",
+        "x": -1.6,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E12",
+        "signal": "E12",
+        "x": -0.8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E13",
+        "signal": "E13",
+        "x": 0,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E14",
+        "signal": "E14",
+        "x": 0.8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E15",
+        "signal": "E15",
+        "x": 1.6,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E16",
+        "signal": "E16",
+        "x": 2.4,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E17",
+        "signal": "E17",
+        "x": 3.2,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E18",
+        "signal": "E18",
+        "x": 4,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E19",
+        "signal": "E19",
+        "x": 4.8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E20",
+        "signal": "E20",
+        "x": 5.6,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E21",
+        "signal": "E21",
+        "x": 6.4,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E22",
+        "signal": "E22",
+        "x": 7.2,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E23",
+        "signal": "E23",
+        "x": 8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E24",
+        "signal": "E24",
+        "x": 8.8,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E25",
+        "signal": "E25",
+        "x": 9.6,
+        "y": 6.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "F1",
+        "x": -9.6,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "F2",
+        "x": -8.8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "F3",
+        "x": -8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F4",
+        "signal": "F4",
+        "x": -7.2,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F5",
+        "signal": "F5",
+        "x": -6.4,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F6",
+        "signal": "F6",
+        "x": -5.6,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "F7",
+        "x": -4.8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "F8",
+        "x": -4,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "F9",
+        "x": -3.2,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F10",
+        "signal": "F10",
+        "x": -2.4,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F11",
+        "signal": "F11",
+        "x": -1.6,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F12",
+        "signal": "F12",
+        "x": -0.8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F13",
+        "signal": "F13",
+        "x": 0,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F14",
+        "signal": "F14",
+        "x": 0.8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F15",
+        "signal": "F15",
+        "x": 1.6,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F16",
+        "signal": "F16",
+        "x": 2.4,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F17",
+        "signal": "F17",
+        "x": 3.2,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F18",
+        "signal": "F18",
+        "x": 4,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F19",
+        "signal": "F19",
+        "x": 4.8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F20",
+        "signal": "F20",
+        "x": 5.6,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F21",
+        "signal": "F21",
+        "x": 6.4,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F22",
+        "signal": "F22",
+        "x": 7.2,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F23",
+        "signal": "F23",
+        "x": 8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F24",
+        "signal": "F24",
+        "x": 8.8,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F25",
+        "signal": "F25",
+        "x": 9.6,
+        "y": 5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "G1",
+        "x": -9.6,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "G2",
+        "x": -8.8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "G3",
+        "x": -8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G4",
+        "signal": "G4",
+        "x": -7.2,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G5",
+        "signal": "G5",
+        "x": -6.4,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G6",
+        "signal": "G6",
+        "x": -5.6,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "G7",
+        "x": -4.8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "G8",
+        "x": -4,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "G9",
+        "x": -3.2,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G10",
+        "signal": "G10",
+        "x": -2.4,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G11",
+        "signal": "G11",
+        "x": -1.6,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G12",
+        "signal": "G12",
+        "x": -0.8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G13",
+        "signal": "G13",
+        "x": 0,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G14",
+        "signal": "G14",
+        "x": 0.8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G15",
+        "signal": "G15",
+        "x": 1.6,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G16",
+        "signal": "G16",
+        "x": 2.4,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G17",
+        "signal": "G17",
+        "x": 3.2,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G18",
+        "signal": "G18",
+        "x": 4,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G19",
+        "signal": "G19",
+        "x": 4.8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G20",
+        "signal": "G20",
+        "x": 5.6,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G21",
+        "signal": "G21",
+        "x": 6.4,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G22",
+        "signal": "G22",
+        "x": 7.2,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G23",
+        "signal": "G23",
+        "x": 8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G24",
+        "signal": "G24",
+        "x": 8.8,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G25",
+        "signal": "G25",
+        "x": 9.6,
+        "y": 4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "H1",
+        "x": -9.6,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "H2",
+        "x": -8.8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "H3",
+        "x": -8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H4",
+        "signal": "H4",
+        "x": -7.2,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H5",
+        "signal": "H5",
+        "x": -6.4,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H6",
+        "signal": "H6",
+        "x": -5.6,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "H7",
+        "x": -4.8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "H8",
+        "x": -4,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "H9",
+        "x": -3.2,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H10",
+        "signal": "H10",
+        "x": -2.4,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H11",
+        "signal": "H11",
+        "x": -1.6,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H12",
+        "signal": "H12",
+        "x": -0.8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H13",
+        "signal": "H13",
+        "x": 0,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H14",
+        "signal": "H14",
+        "x": 0.8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H15",
+        "signal": "H15",
+        "x": 1.6,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H16",
+        "signal": "H16",
+        "x": 2.4,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H17",
+        "signal": "H17",
+        "x": 3.2,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H18",
+        "signal": "H18",
+        "x": 4,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H19",
+        "signal": "H19",
+        "x": 4.8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H20",
+        "signal": "H20",
+        "x": 5.6,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H21",
+        "signal": "H21",
+        "x": 6.4,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H22",
+        "signal": "H22",
+        "x": 7.2,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H23",
+        "signal": "H23",
+        "x": 8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H24",
+        "signal": "H24",
+        "x": 8.8,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H25",
+        "signal": "H25",
+        "x": 9.6,
+        "y": 4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "J1",
+        "x": -9.6,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "J2",
+        "x": -8.8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "J3",
+        "x": -8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J4",
+        "signal": "J4",
+        "x": -7.2,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J5",
+        "signal": "J5",
+        "x": -6.4,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J6",
+        "signal": "J6",
+        "x": -5.6,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "J7",
+        "x": -4.8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "J8",
+        "x": -4,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "J9",
+        "x": -3.2,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J10",
+        "signal": "J10",
+        "x": -2.4,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J11",
+        "signal": "J11",
+        "x": -1.6,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J12",
+        "signal": "J12",
+        "x": -0.8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J13",
+        "signal": "J13",
+        "x": 0,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J14",
+        "signal": "J14",
+        "x": 0.8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J15",
+        "signal": "J15",
+        "x": 1.6,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J16",
+        "signal": "J16",
+        "x": 2.4,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J17",
+        "signal": "J17",
+        "x": 3.2,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J18",
+        "signal": "J18",
+        "x": 4,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J19",
+        "signal": "J19",
+        "x": 4.8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J20",
+        "signal": "J20",
+        "x": 5.6,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J21",
+        "signal": "J21",
+        "x": 6.4,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J22",
+        "signal": "J22",
+        "x": 7.2,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J23",
+        "signal": "J23",
+        "x": 8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J24",
+        "signal": "J24",
+        "x": 8.8,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J25",
+        "signal": "J25",
+        "x": 9.6,
+        "y": 3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "K1",
+        "x": -9.6,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "K2",
+        "x": -8.8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "K3",
+        "x": -8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K4",
+        "signal": "K4",
+        "x": -7.2,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K5",
+        "signal": "K5",
+        "x": -6.4,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K6",
+        "signal": "K6",
+        "x": -5.6,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "K7",
+        "x": -4.8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "K8",
+        "x": -4,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "K9",
+        "x": -3.2,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K10",
+        "signal": "K10",
+        "x": -2.4,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K11",
+        "signal": "K11",
+        "x": -1.6,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K12",
+        "signal": "K12",
+        "x": -0.8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K13",
+        "signal": "K13",
+        "x": 0,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K14",
+        "signal": "K14",
+        "x": 0.8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K15",
+        "signal": "K15",
+        "x": 1.6,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K16",
+        "signal": "K16",
+        "x": 2.4,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K17",
+        "signal": "K17",
+        "x": 3.2,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K18",
+        "signal": "K18",
+        "x": 4,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K19",
+        "signal": "K19",
+        "x": 4.8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K20",
+        "signal": "K20",
+        "x": 5.6,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K21",
+        "signal": "K21",
+        "x": 6.4,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K22",
+        "signal": "K22",
+        "x": 7.2,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K23",
+        "signal": "K23",
+        "x": 8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K24",
+        "signal": "K24",
+        "x": 8.8,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K25",
+        "signal": "K25",
+        "x": 9.6,
+        "y": 2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "L1",
+        "x": -9.6,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "L2",
+        "x": -8.8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "L3",
+        "x": -8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L4",
+        "signal": "L4",
+        "x": -7.2,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L5",
+        "signal": "L5",
+        "x": -6.4,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L6",
+        "signal": "L6",
+        "x": -5.6,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "L7",
+        "x": -4.8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "L8",
+        "x": -4,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "L9",
+        "x": -3.2,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L10",
+        "signal": "L10",
+        "x": -2.4,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L11",
+        "signal": "L11",
+        "x": -1.6,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L12",
+        "signal": "L12",
+        "x": -0.8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L13",
+        "signal": "L13",
+        "x": 0,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L14",
+        "signal": "L14",
+        "x": 0.8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L15",
+        "signal": "L15",
+        "x": 1.6,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L16",
+        "signal": "L16",
+        "x": 2.4,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L17",
+        "signal": "L17",
+        "x": 3.2,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L18",
+        "signal": "L18",
+        "x": 4,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L19",
+        "signal": "L19",
+        "x": 4.8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L20",
+        "signal": "L20",
+        "x": 5.6,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L21",
+        "signal": "L21",
+        "x": 6.4,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L22",
+        "signal": "L22",
+        "x": 7.2,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L23",
+        "signal": "L23",
+        "x": 8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L24",
+        "signal": "L24",
+        "x": 8.8,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L25",
+        "signal": "L25",
+        "x": 9.6,
+        "y": 1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "M1",
+        "x": -9.6,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "M2",
+        "x": -8.8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "M3",
+        "x": -8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M4",
+        "signal": "M4",
+        "x": -7.2,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M5",
+        "signal": "M5",
+        "x": -6.4,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M6",
+        "signal": "M6",
+        "x": -5.6,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "M7",
+        "x": -4.8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "M8",
+        "x": -4,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "M9",
+        "x": -3.2,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M10",
+        "signal": "M10",
+        "x": -2.4,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M11",
+        "signal": "M11",
+        "x": -1.6,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M12",
+        "signal": "M12",
+        "x": -0.8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M13",
+        "signal": "M13",
+        "x": 0,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M14",
+        "signal": "M14",
+        "x": 0.8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M15",
+        "signal": "M15",
+        "x": 1.6,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M16",
+        "signal": "M16",
+        "x": 2.4,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M17",
+        "signal": "M17",
+        "x": 3.2,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M18",
+        "signal": "M18",
+        "x": 4,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M19",
+        "signal": "M19",
+        "x": 4.8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M20",
+        "signal": "M20",
+        "x": 5.6,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M21",
+        "signal": "M21",
+        "x": 6.4,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M22",
+        "signal": "M22",
+        "x": 7.2,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M23",
+        "signal": "M23",
+        "x": 8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M24",
+        "signal": "M24",
+        "x": 8.8,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M25",
+        "signal": "M25",
+        "x": 9.6,
+        "y": 0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "N1",
+        "x": -9.6,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "N2",
+        "x": -8.8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "N3",
+        "x": -8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N4",
+        "signal": "N4",
+        "x": -7.2,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N5",
+        "signal": "N5",
+        "x": -6.4,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N6",
+        "signal": "N6",
+        "x": -5.6,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "N7",
+        "x": -4.8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "N8",
+        "x": -4,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "N9",
+        "x": -3.2,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N10",
+        "signal": "N10",
+        "x": -2.4,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N11",
+        "signal": "N11",
+        "x": -1.6,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N12",
+        "signal": "N12",
+        "x": -0.8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N13",
+        "signal": "N13",
+        "x": 0,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N14",
+        "signal": "N14",
+        "x": 0.8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N15",
+        "signal": "N15",
+        "x": 1.6,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N16",
+        "signal": "N16",
+        "x": 2.4,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N17",
+        "signal": "N17",
+        "x": 3.2,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N18",
+        "signal": "N18",
+        "x": 4,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N19",
+        "signal": "N19",
+        "x": 4.8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N20",
+        "signal": "N20",
+        "x": 5.6,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N21",
+        "signal": "N21",
+        "x": 6.4,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N22",
+        "signal": "N22",
+        "x": 7.2,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N23",
+        "signal": "N23",
+        "x": 8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N24",
+        "signal": "N24",
+        "x": 8.8,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N25",
+        "signal": "N25",
+        "x": 9.6,
+        "y": 0,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "P1",
+        "x": -9.6,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "P2",
+        "x": -8.8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "P3",
+        "x": -8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P4",
+        "signal": "P4",
+        "x": -7.2,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P5",
+        "signal": "P5",
+        "x": -6.4,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P6",
+        "signal": "P6",
+        "x": -5.6,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "P7",
+        "x": -4.8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "P8",
+        "x": -4,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "P9",
+        "x": -3.2,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P10",
+        "signal": "P10",
+        "x": -2.4,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P11",
+        "signal": "P11",
+        "x": -1.6,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P12",
+        "signal": "P12",
+        "x": -0.8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P13",
+        "signal": "P13",
+        "x": 0,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P14",
+        "signal": "P14",
+        "x": 0.8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P15",
+        "signal": "P15",
+        "x": 1.6,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P16",
+        "signal": "P16",
+        "x": 2.4,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P17",
+        "signal": "P17",
+        "x": 3.2,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P18",
+        "signal": "P18",
+        "x": 4,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P19",
+        "signal": "P19",
+        "x": 4.8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P20",
+        "signal": "P20",
+        "x": 5.6,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P21",
+        "signal": "P21",
+        "x": 6.4,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P22",
+        "signal": "P22",
+        "x": 7.2,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P23",
+        "signal": "P23",
+        "x": 8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P24",
+        "signal": "P24",
+        "x": 8.8,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P25",
+        "signal": "P25",
+        "x": 9.6,
+        "y": -0.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "R1",
+        "x": -9.6,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "R2",
+        "x": -8.8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "R3",
+        "x": -8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R4",
+        "signal": "R4",
+        "x": -7.2,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R5",
+        "signal": "R5",
+        "x": -6.4,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R6",
+        "signal": "R6",
+        "x": -5.6,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "R7",
+        "x": -4.8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "R8",
+        "x": -4,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "R9",
+        "x": -3.2,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R10",
+        "signal": "R10",
+        "x": -2.4,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R11",
+        "signal": "R11",
+        "x": -1.6,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R12",
+        "signal": "R12",
+        "x": -0.8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R13",
+        "signal": "R13",
+        "x": 0,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R14",
+        "signal": "R14",
+        "x": 0.8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R15",
+        "signal": "R15",
+        "x": 1.6,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R16",
+        "signal": "R16",
+        "x": 2.4,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R17",
+        "signal": "R17",
+        "x": 3.2,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R18",
+        "signal": "R18",
+        "x": 4,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R19",
+        "signal": "R19",
+        "x": 4.8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R20",
+        "signal": "R20",
+        "x": 5.6,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R21",
+        "signal": "R21",
+        "x": 6.4,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R22",
+        "signal": "R22",
+        "x": 7.2,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R23",
+        "signal": "R23",
+        "x": 8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R24",
+        "signal": "R24",
+        "x": 8.8,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R25",
+        "signal": "R25",
+        "x": 9.6,
+        "y": -1.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "T1",
+        "x": -9.6,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "T2",
+        "x": -8.8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "T3",
+        "x": -8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T4",
+        "signal": "T4",
+        "x": -7.2,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T5",
+        "signal": "T5",
+        "x": -6.4,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T6",
+        "signal": "T6",
+        "x": -5.6,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "T7",
+        "x": -4.8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "T8",
+        "x": -4,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "T9",
+        "x": -3.2,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T10",
+        "signal": "T10",
+        "x": -2.4,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T11",
+        "signal": "T11",
+        "x": -1.6,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T12",
+        "signal": "T12",
+        "x": -0.8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T13",
+        "signal": "T13",
+        "x": 0,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T14",
+        "signal": "T14",
+        "x": 0.8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T15",
+        "signal": "T15",
+        "x": 1.6,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T16",
+        "signal": "T16",
+        "x": 2.4,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T17",
+        "signal": "T17",
+        "x": 3.2,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T18",
+        "signal": "T18",
+        "x": 4,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T19",
+        "signal": "T19",
+        "x": 4.8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T20",
+        "signal": "T20",
+        "x": 5.6,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T21",
+        "signal": "T21",
+        "x": 6.4,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T22",
+        "signal": "T22",
+        "x": 7.2,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T23",
+        "signal": "T23",
+        "x": 8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T24",
+        "signal": "T24",
+        "x": 8.8,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T25",
+        "signal": "T25",
+        "x": 9.6,
+        "y": -2.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U1",
+        "signal": "U1",
+        "x": -9.6,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U2",
+        "signal": "U2",
+        "x": -8.8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U3",
+        "signal": "U3",
+        "x": -8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U4",
+        "signal": "U4",
+        "x": -7.2,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U5",
+        "signal": "U5",
+        "x": -6.4,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U6",
+        "signal": "U6",
+        "x": -5.6,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U7",
+        "signal": "U7",
+        "x": -4.8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U8",
+        "signal": "U8",
+        "x": -4,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U9",
+        "signal": "U9",
+        "x": -3.2,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U10",
+        "signal": "U10",
+        "x": -2.4,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U11",
+        "signal": "U11",
+        "x": -1.6,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U12",
+        "signal": "U12",
+        "x": -0.8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U13",
+        "signal": "U13",
+        "x": 0,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U14",
+        "signal": "U14",
+        "x": 0.8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U15",
+        "signal": "U15",
+        "x": 1.6,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U16",
+        "signal": "U16",
+        "x": 2.4,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U17",
+        "signal": "U17",
+        "x": 3.2,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U18",
+        "signal": "U18",
+        "x": 4,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U19",
+        "signal": "U19",
+        "x": 4.8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U20",
+        "signal": "U20",
+        "x": 5.6,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U21",
+        "signal": "U21",
+        "x": 6.4,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U22",
+        "signal": "U22",
+        "x": 7.2,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U23",
+        "signal": "U23",
+        "x": 8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U24",
+        "signal": "U24",
+        "x": 8.8,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "U25",
+        "signal": "U25",
+        "x": 9.6,
+        "y": -3.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V1",
+        "signal": "V1",
+        "x": -9.6,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V2",
+        "signal": "V2",
+        "x": -8.8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V3",
+        "signal": "V3",
+        "x": -8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V4",
+        "signal": "V4",
+        "x": -7.2,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V5",
+        "signal": "V5",
+        "x": -6.4,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V6",
+        "signal": "V6",
+        "x": -5.6,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V7",
+        "signal": "V7",
+        "x": -4.8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V8",
+        "signal": "V8",
+        "x": -4,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V9",
+        "signal": "V9",
+        "x": -3.2,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V10",
+        "signal": "V10",
+        "x": -2.4,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V11",
+        "signal": "V11",
+        "x": -1.6,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V12",
+        "signal": "V12",
+        "x": -0.8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V13",
+        "signal": "V13",
+        "x": 0,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V14",
+        "signal": "V14",
+        "x": 0.8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V15",
+        "signal": "V15",
+        "x": 1.6,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V16",
+        "signal": "V16",
+        "x": 2.4,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V17",
+        "signal": "V17",
+        "x": 3.2,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V18",
+        "signal": "V18",
+        "x": 4,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V19",
+        "signal": "V19",
+        "x": 4.8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V20",
+        "signal": "V20",
+        "x": 5.6,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V21",
+        "signal": "V21",
+        "x": 6.4,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V22",
+        "signal": "V22",
+        "x": 7.2,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V23",
+        "signal": "V23",
+        "x": 8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V24",
+        "signal": "V24",
+        "x": 8.8,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "V25",
+        "signal": "V25",
+        "x": 9.6,
+        "y": -4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W1",
+        "signal": "W1",
+        "x": -9.6,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W2",
+        "signal": "W2",
+        "x": -8.8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W3",
+        "signal": "W3",
+        "x": -8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W4",
+        "signal": "W4",
+        "x": -7.2,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W5",
+        "signal": "W5",
+        "x": -6.4,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W6",
+        "signal": "W6",
+        "x": -5.6,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W7",
+        "signal": "W7",
+        "x": -4.8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W8",
+        "signal": "W8",
+        "x": -4,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W9",
+        "signal": "W9",
+        "x": -3.2,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W10",
+        "signal": "W10",
+        "x": -2.4,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W11",
+        "signal": "W11",
+        "x": -1.6,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W12",
+        "signal": "W12",
+        "x": -0.8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W13",
+        "signal": "W13",
+        "x": 0,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W14",
+        "signal": "W14",
+        "x": 0.8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W15",
+        "signal": "W15",
+        "x": 1.6,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W16",
+        "signal": "W16",
+        "x": 2.4,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W17",
+        "signal": "W17",
+        "x": 3.2,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W18",
+        "signal": "W18",
+        "x": 4,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W19",
+        "signal": "W19",
+        "x": 4.8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W20",
+        "signal": "W20",
+        "x": 5.6,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W21",
+        "signal": "W21",
+        "x": 6.4,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W22",
+        "signal": "W22",
+        "x": 7.2,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W23",
+        "signal": "W23",
+        "x": 8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W24",
+        "signal": "W24",
+        "x": 8.8,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "W25",
+        "signal": "W25",
+        "x": 9.6,
+        "y": -4.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y1",
+        "signal": "Y1",
+        "x": -9.6,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y2",
+        "signal": "Y2",
+        "x": -8.8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y3",
+        "signal": "Y3",
+        "x": -8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y4",
+        "signal": "Y4",
+        "x": -7.2,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y5",
+        "signal": "Y5",
+        "x": -6.4,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y6",
+        "signal": "Y6",
+        "x": -5.6,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y7",
+        "signal": "Y7",
+        "x": -4.8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y8",
+        "signal": "Y8",
+        "x": -4,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y9",
+        "signal": "Y9",
+        "x": -3.2,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y10",
+        "signal": "Y10",
+        "x": -2.4,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y11",
+        "signal": "Y11",
+        "x": -1.6,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y12",
+        "signal": "Y12",
+        "x": -0.8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y13",
+        "signal": "Y13",
+        "x": 0,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y14",
+        "signal": "Y14",
+        "x": 0.8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y15",
+        "signal": "Y15",
+        "x": 1.6,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y16",
+        "signal": "Y16",
+        "x": 2.4,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y17",
+        "signal": "Y17",
+        "x": 3.2,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y18",
+        "signal": "Y18",
+        "x": 4,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y19",
+        "signal": "Y19",
+        "x": 4.8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y20",
+        "signal": "Y20",
+        "x": 5.6,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y21",
+        "signal": "Y21",
+        "x": 6.4,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y22",
+        "signal": "Y22",
+        "x": 7.2,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y23",
+        "signal": "Y23",
+        "x": 8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y24",
+        "signal": "Y24",
+        "x": 8.8,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y25",
+        "signal": "Y25",
+        "x": 9.6,
+        "y": -5.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      }
+    ]
+  },
+  "connections": [
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D10",
+      "group": "control",
+      "memory": {
+        "ball": "A2",
+        "signal": "DRAM_D10"
+      },
+      "controller": {
+        "ball": "AA6",
+        "signal": "DRAM_D10"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D10",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D12",
+      "group": "control",
+      "memory": {
+        "ball": "A3",
+        "signal": "DRAM_D12"
+      },
+      "controller": {
+        "ball": "AB5",
+        "signal": "DRAM_D12"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D12",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D9",
+      "group": "control",
+      "memory": {
+        "ball": "A7",
+        "signal": "DRAM_D9"
+      },
+      "controller": {
+        "ball": "AE5",
+        "signal": "DRAM_D9"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D9",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS1-",
+      "group": "strobe",
+      "memory": {
+        "ball": "B7",
+        "signal": "DRAM_SDQS1-"
+      },
+      "controller": {
+        "ball": "AE6",
+        "signal": "DRAM_SDQS1-"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS1-",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS1-",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D11",
+      "group": "control",
+      "memory": {
+        "ball": "B8",
+        "signal": "DRAM_D11"
+      },
+      "controller": {
+        "ball": "AE7",
+        "signal": "DRAM_D11"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D11",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D13",
+      "group": "control",
+      "memory": {
+        "ball": "C2",
+        "signal": "DRAM_D13"
+      },
+      "controller": {
+        "ball": "AC5",
+        "signal": "DRAM_D13"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D13",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D14",
+      "group": "control",
+      "memory": {
+        "ball": "C3",
+        "signal": "DRAM_D14"
+      },
+      "controller": {
+        "ball": "AB6",
+        "signal": "DRAM_D14"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D14",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS1+",
+      "group": "strobe",
+      "memory": {
+        "ball": "C7",
+        "signal": "DRAM_SDQS1+"
+      },
+      "controller": {
+        "ball": "AD6",
+        "signal": "DRAM_SDQS1+"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS1+",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS1+",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D15",
+      "group": "control",
+      "memory": {
+        "ball": "C8",
+        "signal": "DRAM_D15"
+      },
+      "controller": {
+        "ball": "AC7",
+        "signal": "DRAM_D15"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D15",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D15",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_DQM1",
+      "group": "control",
+      "memory": {
+        "ball": "D3",
+        "signal": "DRAM_DQM1"
+      },
+      "controller": {
+        "ball": "AC6",
+        "signal": "DRAM_DQM1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_DQM1",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_DQM1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D8",
+      "group": "control",
+      "memory": {
+        "ball": "D7",
+        "signal": "DRAM_D8"
+      },
+      "controller": {
+        "ball": "AD5",
+        "signal": "DRAM_D8"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D8",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D8",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D0",
+      "group": "control",
+      "memory": {
+        "ball": "E3",
+        "signal": "DRAM_D0"
+      },
+      "controller": {
+        "ball": "AD2",
+        "signal": "DRAM_D0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D0",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_DQM0",
+      "group": "control",
+      "memory": {
+        "ball": "E7",
+        "signal": "DRAM_DQM0"
+      },
+      "controller": {
+        "ball": "AC3",
+        "signal": "DRAM_DQM0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_DQM0",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_DQM0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D2",
+      "group": "control",
+      "memory": {
+        "ball": "F2",
+        "signal": "DRAM_D2"
+      },
+      "controller": {
+        "ball": "AC4",
+        "signal": "DRAM_D2"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D2",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS0+",
+      "group": "strobe",
+      "memory": {
+        "ball": "F3",
+        "signal": "DRAM_SDQS0+"
+      },
+      "controller": {
+        "ball": "AE3",
+        "signal": "DRAM_SDQS0+"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS0+",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS0+",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D7",
+      "group": "control",
+      "memory": {
+        "ball": "F7",
+        "signal": "DRAM_D7"
+      },
+      "controller": {
+        "ball": "AE4",
+        "signal": "DRAM_D7"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D7",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D1",
+      "group": "control",
+      "memory": {
+        "ball": "F8",
+        "signal": "DRAM_D1"
+      },
+      "controller": {
+        "ball": "AE2",
+        "signal": "DRAM_D1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D1",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D4",
+      "group": "control",
+      "memory": {
+        "ball": "G2",
+        "signal": "DRAM_D4"
+      },
+      "controller": {
+        "ball": "AC1",
+        "signal": "DRAM_D4"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D4",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS0-",
+      "group": "strobe",
+      "memory": {
+        "ball": "G3",
+        "signal": "DRAM_SDQS0-"
+      },
+      "controller": {
+        "ball": "AD3",
+        "signal": "DRAM_SDQS0-"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS0-",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_SDQS0-",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D3",
+      "group": "control",
+      "memory": {
+        "ball": "H3",
+        "signal": "DRAM_D3"
+      },
+      "controller": {
+        "ball": "AA5",
+        "signal": "DRAM_D3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D3",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D6",
+      "group": "control",
+      "memory": {
+        "ball": "H7",
+        "signal": "DRAM_D6"
+      },
+      "controller": {
+        "ball": "AB4",
+        "signal": "DRAM_D6"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D6",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_D5",
+      "group": "control",
+      "memory": {
+        "ball": "H8",
+        "signal": "DRAM_D5"
+      },
+      "controller": {
+        "ball": "AD1",
+        "signal": "DRAM_D5"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D5",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_D5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_RAS_B",
+      "group": "command",
+      "memory": {
+        "ball": "J3",
+        "signal": "DRAM_RAS_B"
+      },
+      "controller": {
+        "ball": "AB15",
+        "signal": "DRAM_RAS_B"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_RAS_B",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_RAS_B",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_CAS_B",
+      "group": "command",
+      "memory": {
+        "ball": "K3",
+        "signal": "DRAM_CAS_B"
+      },
+      "controller": {
+        "ball": "AE16",
+        "signal": "DRAM_CAS_B"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_CAS_B",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_CAS_B",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_CS0_B",
+      "group": "control",
+      "memory": {
+        "ball": "L2",
+        "signal": "DRAM_CS0_B"
+      },
+      "controller": {
+        "ball": "Y16",
+        "signal": "DRAM_CS0_B"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_CS0_B",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_CS0_B",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A10",
+      "group": "address",
+      "memory": {
+        "ball": "L7",
+        "signal": "DRAM_A10"
+      },
+      "controller": {
+        "ball": "AA15",
+        "signal": "DRAM_A10"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A10",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A15",
+      "group": "address",
+      "memory": {
+        "ball": "M7",
+        "signal": "DRAM_A15"
+      },
+      "controller": {
+        "ball": "Y12",
+        "signal": "DRAM_A15"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A15",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A15",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A3",
+      "group": "address",
+      "memory": {
+        "ball": "N2",
+        "signal": "DRAM_A3"
+      },
+      "controller": {
+        "ball": "Y14",
+        "signal": "DRAM_A3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A3",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A0",
+      "group": "address",
+      "memory": {
+        "ball": "N3",
+        "signal": "DRAM_A0"
+      },
+      "controller": {
+        "ball": "AC14",
+        "signal": "DRAM_A0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A0",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A12",
+      "group": "address",
+      "memory": {
+        "ball": "N7",
+        "signal": "DRAM_A12"
+      },
+      "controller": {
+        "ball": "AD12",
+        "signal": "DRAM_A12"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A12",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A5",
+      "group": "address",
+      "memory": {
+        "ball": "P2",
+        "signal": "DRAM_A5"
+      },
+      "controller": {
+        "ball": "AE13",
+        "signal": "DRAM_A5"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A5",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A2",
+      "group": "address",
+      "memory": {
+        "ball": "P3",
+        "signal": "DRAM_A2"
+      },
+      "controller": {
+        "ball": "AA14",
+        "signal": "DRAM_A2"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A2",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A1",
+      "group": "address",
+      "memory": {
+        "ball": "P7",
+        "signal": "DRAM_A1"
+      },
+      "controller": {
+        "ball": "AB14",
+        "signal": "DRAM_A1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A1",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A4",
+      "group": "address",
+      "memory": {
+        "ball": "P8",
+        "signal": "DRAM_A4"
+      },
+      "controller": {
+        "ball": "W14",
+        "signal": "DRAM_A4"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A4",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A7",
+      "group": "address",
+      "memory": {
+        "ball": "R2",
+        "signal": "DRAM_A7"
+      },
+      "controller": {
+        "ball": "Y13",
+        "signal": "DRAM_A7"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A7",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A9",
+      "group": "address",
+      "memory": {
+        "ball": "R3",
+        "signal": "DRAM_A9"
+      },
+      "controller": {
+        "ball": "AE12",
+        "signal": "DRAM_A9"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A9",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A11",
+      "group": "address",
+      "memory": {
+        "ball": "R7",
+        "signal": "DRAM_A11"
+      },
+      "controller": {
+        "ball": "AC12",
+        "signal": "DRAM_A11"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A11",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A6",
+      "group": "address",
+      "memory": {
+        "ball": "R8",
+        "signal": "DRAM_A6"
+      },
+      "controller": {
+        "ball": "AC13",
+        "signal": "DRAM_A6"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A6",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A13",
+      "group": "address",
+      "memory": {
+        "ball": "T3",
+        "signal": "DRAM_A13"
+      },
+      "controller": {
+        "ball": "AC17",
+        "signal": "DRAM_A13"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A13",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A14",
+      "group": "address",
+      "memory": {
+        "ball": "T7",
+        "signal": "DRAM_A14"
+      },
+      "controller": {
+        "ball": "AA12",
+        "signal": "DRAM_A14"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A14",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/DDR3_Memory/CPU_DDR3/DRAM_A8",
+      "group": "address",
+      "memory": {
+        "ball": "T8",
+        "signal": "DRAM_A8"
+      },
+      "controller": {
+        "ball": "AB13",
+        "signal": "DRAM_A8"
+      },
+      "sourcePath": {
+        "memorySideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A8",
+        "controllerSideNet": "/DDR3_Memory/CPU_DDR3/DRAM_A8",
+        "seriesComponents": []
+      }
+    }
+  ],
+  "endpointMapSha256": "601ef2e388a7b13356808f6399a960cbd9f91e956966059a8c8864f12e66d436"
+}

@@ -9,7 +9,7 @@ const maxSteps = Number(process.argv.find((arg) => arg.startsWith("--max-steps="
 const requireSolved = process.argv.includes("--require-solved")
 const sampleIds = requested
   ? requested.split(",").map((value) => `sample${String(Number(value)).padStart(3, "0")}`)
-  : ["sample001", "sample007", "sample014", "sample020"]
+  : ["sample001", "sample004", "sample008", "sample013", "sample020"]
 const results = []
 
 for (const id of sampleIds) {

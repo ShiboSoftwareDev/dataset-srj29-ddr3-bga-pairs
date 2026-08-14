@@ -1,0 +1,4020 @@
+{
+  "schemaVersion": 2,
+  "referenceDesign": {
+    "board": "Glider mainboard",
+    "repository": "Modos-Labs/Glider",
+    "commit": "ed94ef7fd95a42cfdcdaf5e5da1dcdd709122763",
+    "sourcePath": "pcb/mainboard/pcb.kicad_pcb",
+    "sourceUrl": "https://github.com/Modos-Labs/Glider/blob/ed94ef7fd95a42cfdcdaf5e5da1dcdd709122763/pcb/mainboard/pcb.kicad_pcb",
+    "extractionMethod": "Exact KiCad PCB pad/net traversal; a single two-pad series resistor may be collapsed into one benchmark connection and is recorded per path."
+  },
+  "memory": {
+    "reference": "U12",
+    "partNumber": "MT41K64M16TW",
+    "footprint": "footprints:BGA-96_9.0x14.0mm_P0.8mm",
+    "padCount": 96,
+    "pitch": 0.8,
+    "padFieldWidth": 6.8,
+    "padFieldHeight": 12.4,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "DQ13",
+        "x": -2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "DQ15",
+        "x": -1.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "DQ12",
+        "x": 1.6,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "VDDQ",
+        "x": 2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "VSS",
+        "x": -1.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "~{UDQS}",
+        "x": 1.6,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "DQ14",
+        "x": 2.4,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "DQ11",
+        "x": -2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "DQ9",
+        "x": -1.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "UDQS",
+        "x": 1.6,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "DQ10",
+        "x": 2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "UDM",
+        "x": -1.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "DQ8",
+        "x": 1.6,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": 3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "VSSQ",
+        "x": -2.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "DQ0",
+        "x": -1.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "LDM",
+        "x": 1.6,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "VDDQ",
+        "x": -3.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "DQ2",
+        "x": -2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "LDQS",
+        "x": -1.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "DQ1",
+        "x": 1.6,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "DQ3",
+        "x": 2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "VSSQ",
+        "x": -3.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "DQ6",
+        "x": -2.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "~{LDQS}",
+        "x": -1.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "VDD",
+        "x": 1.6,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VSSQ",
+        "x": 3.2,
+        "y": 1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "VrefDQ",
+        "x": -3.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "DQ4",
+        "x": -1.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "DQ7",
+        "x": 1.6,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "DQ5",
+        "x": 2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "VDDQ",
+        "x": 3.2,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "VSS",
+        "x": -2.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "~{RAS}",
+        "x": -1.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "CK",
+        "x": 1.6,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "ODT",
+        "x": -3.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "~{CAS}",
+        "x": -1.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "~{CK}",
+        "x": 1.6,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "VDD",
+        "x": 2.4,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "CKE",
+        "x": 3.2,
+        "y": -1.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "~{CS}",
+        "x": -2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "~{WE}",
+        "x": -1.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "A10",
+        "x": 1.6,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "ZQ",
+        "x": 2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "BA0",
+        "x": -2.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "BA2",
+        "x": -1.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "A15/NC",
+        "x": 1.6,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "VrefCA",
+        "x": 2.4,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -2.8,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "VDD",
+        "x": -3.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "A3",
+        "x": -2.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "A0",
+        "x": -1.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "A12/~{BC}",
+        "x": 1.6,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "BA1",
+        "x": 2.4,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": -3.6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "A5",
+        "x": -2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "A2",
+        "x": -1.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "A1",
+        "x": 1.6,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "A4",
+        "x": 2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "VDD",
+        "x": -3.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "A7",
+        "x": -2.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "A9",
+        "x": -1.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "A11",
+        "x": 1.6,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "A6",
+        "x": 2.4,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "VDD",
+        "x": 3.2,
+        "y": -5.2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "VSS",
+        "x": -3.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "~{RESET}",
+        "x": -2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "A13",
+        "x": -1.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "A14/NC",
+        "x": 1.6,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "A8",
+        "x": 2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "VSS",
+        "x": 3.2,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      }
+    ]
+  },
+  "controller": {
+    "reference": "U1",
+    "partNumber": "XC6SLX-FTG256",
+    "footprint": "footprints:Xilinx_FTG256",
+    "padCount": 256,
+    "pitch": 1,
+    "padFieldWidth": 15.4,
+    "padFieldHeight": 15.4,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "GND",
+        "x": -7.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "IO_L52N_M3A9_3",
+        "x": -6.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "IO_L83N_VREF_3",
+        "x": -5.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A4",
+        "signal": "IO_L1N_VREF_0",
+        "x": -4.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A5",
+        "signal": "IO_L2N_0",
+        "x": -3.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A6",
+        "signal": "IO_L4N_0",
+        "x": -2.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "IO_L6N_0",
+        "x": -1.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "IO_L33N_0",
+        "x": -0.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "IO_L34N_GCLK18_0",
+        "x": 0.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A10",
+        "signal": "IO_L35N_GCLK16_0",
+        "x": 1.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A11",
+        "signal": "IO_L39N_0",
+        "x": 2.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A12",
+        "signal": "IO_L62N_VREF_0",
+        "x": 3.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A13",
+        "signal": "IO_L63N_SCP6_0",
+        "x": 4.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A14",
+        "signal": "IO_L65N_SCP2_0",
+        "x": 5.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A15",
+        "signal": "TMS",
+        "x": 6.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A16",
+        "signal": "GND",
+        "x": 7.5,
+        "y": 7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "IO_L50N_M3BA2_3",
+        "x": -7.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "IO_L52P_M3A8_3",
+        "x": -6.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "IO_L83P_3",
+        "x": -5.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B4",
+        "signal": "VCCO_0",
+        "x": -4.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B5",
+        "signal": "IO_L2P_0",
+        "x": -3.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B6",
+        "signal": "IO_L4P_0",
+        "x": -2.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "GND",
+        "x": -1.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "IO_L33P_0",
+        "x": -0.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "VCCO_0",
+        "x": 0.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B10",
+        "signal": "IO_L35P_GCLK17_0",
+        "x": 1.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B11",
+        "signal": "GND",
+        "x": 2.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B12",
+        "signal": "IO_L62P_0",
+        "x": 3.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B13",
+        "signal": "VCCO_0",
+        "x": 4.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B14",
+        "signal": "IO_L65P_SCP3_0",
+        "x": 5.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B15",
+        "signal": "IO_L29P_A23_M1A13_1",
+        "x": 6.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B16",
+        "signal": "IO_L29N_A22_M1A14_1",
+        "x": 7.5,
+        "y": 6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "IO_L50P_M3WE_3",
+        "x": -7.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "IO_L48N_M3BA1_3",
+        "x": -6.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "IO_L48P_M3BA0_3",
+        "x": -5.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C4",
+        "signal": "IO_L1P_HSWAPEN_0",
+        "x": -4.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C5",
+        "signal": "IO_L3N_0",
+        "x": -3.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C6",
+        "signal": "IO_L7N_0",
+        "x": -2.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "IO_L6P_0",
+        "x": -1.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "IO_L38N_VREF_0",
+        "x": -0.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "IO_L34P_GCLK19_0",
+        "x": 0.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C10",
+        "signal": "IO_L37N_GCLK12_0",
+        "x": 1.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C11",
+        "signal": "IO_L39P_0",
+        "x": 2.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C12",
+        "signal": "TDI",
+        "x": 3.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C13",
+        "signal": "IO_L63P_SCP7_0",
+        "x": 4.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C14",
+        "signal": "TCK",
+        "x": 5.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C15",
+        "signal": "IO_L33P_A15_M1A10_1",
+        "x": 6.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C16",
+        "signal": "IO_L33N_A14_M1A4_1",
+        "x": 7.5,
+        "y": 5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "IO_L49N_M3A2_3",
+        "x": -7.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "VCCO_3",
+        "x": -6.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "IO_L49P_M3A7_3",
+        "x": -5.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D4",
+        "signal": "GND",
+        "x": -4.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D5",
+        "signal": "IO_L3P_0",
+        "x": -3.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D6",
+        "signal": "IO_L7P_0",
+        "x": -2.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "VCCO_0",
+        "x": -1.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "IO_L38P_0",
+        "x": -0.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "IO_L40N_0",
+        "x": 0.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D10",
+        "signal": "VCCO_0",
+        "x": 1.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D11",
+        "signal": "IO_L66P_SCP1_0",
+        "x": 2.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D12",
+        "signal": "IO_L66N_SCP0_0",
+        "x": 3.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D13",
+        "signal": "GND",
+        "x": 4.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D14",
+        "signal": "IO_L31P_A19_M1CKE_1",
+        "x": 5.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D15",
+        "signal": "VCCO_1",
+        "x": 6.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D16",
+        "signal": "IO_L31N_A18_M1A12_1",
+        "x": 7.5,
+        "y": 4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "IO_L46N_M3CLKN_3",
+        "x": -7.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "IO_L46P_M3CLK_3",
+        "x": -6.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "IO_L54N_M3A11_3",
+        "x": -5.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E4",
+        "signal": "IO_L54P_M3RESET_3",
+        "x": -4.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E5",
+        "signal": "VCCAUX",
+        "x": -3.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E6",
+        "signal": "IO_L5N_0",
+        "x": -2.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "IO_L36P_GCLK15_0",
+        "x": -1.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "IO_L36N_GCLK14_0",
+        "x": -0.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "GND",
+        "x": 0.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E10",
+        "signal": "IO_L37P_GCLK13_0",
+        "x": 1.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E11",
+        "signal": "IO_L64N_SCP4_0",
+        "x": 2.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E12",
+        "signal": "IO_L1N_A24_VREF_1",
+        "x": 3.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E13",
+        "signal": "IO_L1P_A25_1",
+        "x": 4.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E14",
+        "signal": "TDO",
+        "x": 5.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E15",
+        "signal": "IO_L34P_A13_M1WE_1",
+        "x": 6.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E16",
+        "signal": "IO_L34N_A12_M1BA2_1",
+        "x": 7.5,
+        "y": 3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "IO_L41N_GCLK26_M3DQ5_3",
+        "x": -7.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "IO_L41P_GCLK27_M3DQ4_3",
+        "x": -6.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "IO_L53N_M3A12_3",
+        "x": -5.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F4",
+        "signal": "IO_L53P_M3CKE_3",
+        "x": -4.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F5",
+        "signal": "IO_L55N_M3A14_3",
+        "x": -3.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F6",
+        "signal": "IO_L55P_M3A13_3",
+        "x": -2.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "IO_L5P_0",
+        "x": -1.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "VCCAUX",
+        "x": -0.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "IO_L40P_0",
+        "x": 0.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F10",
+        "signal": "IO_L64P_SCP5_0",
+        "x": 1.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F11",
+        "signal": "VCCAUX",
+        "x": 2.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F12",
+        "signal": "IO_L30P_A21_M1RESET_1",
+        "x": 3.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F13",
+        "signal": "IO_L32P_A17_M1A8_1",
+        "x": 4.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F14",
+        "signal": "IO_L32N_A16_M1A9_1",
+        "x": 5.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F15",
+        "signal": "IO_L35P_A11_M1A7_1",
+        "x": 6.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F16",
+        "signal": "IO_L35N_A10_M1A2_1",
+        "x": 7.5,
+        "y": 2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "IO_L40N_M3DQ7_3",
+        "x": -7.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "GND",
+        "x": -6.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "IO_L40P_M3DQ6_3",
+        "x": -5.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G4",
+        "signal": "VCCO_3",
+        "x": -4.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G5",
+        "signal": "IO_L51N_M3A4_3",
+        "x": -3.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G6",
+        "signal": "IO_L51P_M3A10_3",
+        "x": -2.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "VCCINT",
+        "x": -1.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "GND",
+        "x": -0.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VCCINT",
+        "x": 0.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G10",
+        "signal": "VCCAUX",
+        "x": 1.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G11",
+        "signal": "IO_L30N_A20_M1A11_1",
+        "x": 2.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G12",
+        "signal": "IO_L38P_A5_M1CLK_1",
+        "x": 3.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G13",
+        "signal": "VCCO_1",
+        "x": 4.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G14",
+        "signal": "IO_L36P_A9_M1BA0_1",
+        "x": 5.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G15",
+        "signal": "GND",
+        "x": 6.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G16",
+        "signal": "IO_L36N_A8_M1BA1_1",
+        "x": 7.5,
+        "y": 1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "IO_L39N_M3LDQSN_3",
+        "x": -7.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "IO_L39P_M3LDQS_3",
+        "x": -6.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "IO_L44N_GCLK20_M3A6_3",
+        "x": -5.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H4",
+        "signal": "IO_L44P_GCLK21_M3A5_3",
+        "x": -4.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H5",
+        "signal": "IO_L43N_GCLK22_IRDY2_M3CASN_3",
+        "x": -3.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H6",
+        "signal": "VCCAUX",
+        "x": -2.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "GND",
+        "x": -1.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "VCCINT",
+        "x": -0.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "GND",
+        "x": 0.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H10",
+        "signal": "VCCINT",
+        "x": 1.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H11",
+        "signal": "IO_L38N_A4_M1CLKN_1",
+        "x": 2.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H12",
+        "signal": "GND",
+        "x": 3.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H13",
+        "signal": "IO_L39P_M1A3_1",
+        "x": 4.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H14",
+        "signal": "IO_L39N_M1ODT_1",
+        "x": 5.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H15",
+        "signal": "IO_L37P_A7_M1A0_1",
+        "x": 6.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H16",
+        "signal": "IO_L37N_A6_M1A1_1",
+        "x": 7.5,
+        "y": 0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "IO_L38N_M3DQ3_3",
+        "x": -7.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "VCCO_3",
+        "x": -6.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "IO_L38P_M3DQ2_3",
+        "x": -5.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J4",
+        "signal": "IO_L42N_GCLK24_M3LDM_3",
+        "x": -4.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J5",
+        "signal": "GND",
+        "x": -3.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J6",
+        "signal": "IO_L43P_GCLK23_M3RASN_3",
+        "x": -2.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "VCCINT",
+        "x": -1.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "GND",
+        "x": -0.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "VCCINT",
+        "x": 0.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J10",
+        "signal": "VCCAUX",
+        "x": 1.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J11",
+        "signal": "IO_L40P_GCLK11_M1A5_1",
+        "x": 2.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J12",
+        "signal": "IO_L40N_GCLK10_M1A6_1",
+        "x": 3.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J13",
+        "signal": "IO_L41P_GCLK9_IRDY1_M1RASN_1",
+        "x": 4.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J14",
+        "signal": "IO_L43P_GCLK5_M1DQ4_1",
+        "x": 5.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J15",
+        "signal": "VCCO_1",
+        "x": 6.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J16",
+        "signal": "IO_L43N_GCLK4_M1DQ5_1",
+        "x": 7.5,
+        "y": -0.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "IO_L37N_M3DQ1_3",
+        "x": -7.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "IO_L37P_M3DQ0_3",
+        "x": -6.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "IO_L42P_GCLK25_TRDY2_M3UDM_3",
+        "x": -5.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K4",
+        "signal": "VCCO_3",
+        "x": -4.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K5",
+        "signal": "IO_L47P_M3A0_3",
+        "x": -3.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K6",
+        "signal": "IO_L47N_M3A1_3",
+        "x": -2.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "GND",
+        "x": -1.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "VCCINT",
+        "x": -0.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "GND",
+        "x": 0.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K10",
+        "signal": "VCCINT",
+        "x": 1.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K11",
+        "signal": "IO_L42N_GCLK6_TRDY1_M1LDM_1",
+        "x": 2.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K12",
+        "signal": "IO_L42P_GCLK7_M1UDM_1",
+        "x": 3.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K13",
+        "signal": "VCCO_1",
+        "x": 4.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K14",
+        "signal": "IO_L41N_GCLK8_M1CASN_1",
+        "x": 5.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K15",
+        "signal": "IO_L44P_A3_M1DQ6_1",
+        "x": 6.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K16",
+        "signal": "IO_L44N_A2_M1DQ7_1",
+        "x": 7.5,
+        "y": -1.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "IO_L36N_M3DQ9_3",
+        "x": -7.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "GND",
+        "x": -6.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "IO_L36P_M3DQ8_3",
+        "x": -5.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L4",
+        "signal": "IO_L45P_M3A3_3",
+        "x": -4.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L5",
+        "signal": "IO_L45N_M3ODT_3",
+        "x": -3.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L6",
+        "signal": "VCCAUX",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "IO_L62N_D6_2",
+        "x": -1.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "IO_L62P_D5_2",
+        "x": -0.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "VCCAUX",
+        "x": 0.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L10",
+        "signal": "IO_L16P_2",
+        "x": 1.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L11",
+        "signal": "CMPCS_B_2",
+        "x": 2.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L12",
+        "signal": "IO_L53P_1",
+        "x": 3.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L13",
+        "signal": "IO_L53N_VREF_1",
+        "x": 4.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L14",
+        "signal": "IO_L47P_FWE_B_M1DQ0_1",
+        "x": 5.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L15",
+        "signal": "GND",
+        "x": 6.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L16",
+        "signal": "IO_L47N_LDC_M1DQ1_1",
+        "x": 7.5,
+        "y": -2.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "IO_L35N_M3DQ11_3",
+        "x": -7.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "IO_L35P_M3DQ10_3",
+        "x": -6.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "IO_L1N_VREF_3",
+        "x": -5.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M4",
+        "signal": "IO_L1P_3",
+        "x": -4.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M5",
+        "signal": "IO_L2P_3",
+        "x": -3.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M6",
+        "signal": "IO_L64P_D8_2",
+        "x": -2.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "IO_L31N_GCLK30_D15_2",
+        "x": -1.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "GND",
+        "x": -0.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "IO_L29P_GCLK3_2",
+        "x": 0.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M10",
+        "signal": "IO_L16N_VREF_2",
+        "x": 1.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M11",
+        "signal": "IO_L2N_CMPMOSI_2",
+        "x": 2.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M12",
+        "signal": "IO_L2P_CMPCLK_2",
+        "x": 3.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M13",
+        "signal": "IO_L74P_AWAKE_1",
+        "x": 4.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M14",
+        "signal": "IO_L74N_DOUT_BUSY_1",
+        "x": 5.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M15",
+        "signal": "IO_L46P_FCS_B_M1DQ2_1",
+        "x": 6.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M16",
+        "signal": "IO_L46N_FOE_B_M1DQ3_1",
+        "x": 7.5,
+        "y": -3.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "IO_L34N_M3UDQSN_3",
+        "x": -7.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "VCCO_3",
+        "x": -6.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "IO_L34P_M3UDQS_3",
+        "x": -5.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N4",
+        "signal": "IO_L2N_3",
+        "x": -4.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N5",
+        "signal": "IO_L49P_D3_2",
+        "x": -3.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N6",
+        "signal": "IO_L64N_D9_2",
+        "x": -2.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "VCCO_2",
+        "x": -1.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "IO_L29N_GCLK2_2",
+        "x": -0.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "IO_L14P_D11_2",
+        "x": 0.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N10",
+        "signal": "VCCO_2",
+        "x": 1.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N11",
+        "signal": "IO_L13P_M1_2",
+        "x": 2.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N12",
+        "signal": "IO_L12P_D1_MISO2_2",
+        "x": 3.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N13",
+        "signal": "GND",
+        "x": 4.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N14",
+        "signal": "IO_L45P_A1_M1LDQS_1",
+        "x": 5.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N15",
+        "signal": "VCCO_1",
+        "x": 6.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N16",
+        "signal": "IO_L45N_A0_M1LDQSN_1",
+        "x": 7.5,
+        "y": -4.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "IO_L33N_M3DQ13_3",
+        "x": -7.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "IO_L33P_M3DQ12_3",
+        "x": -6.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "GND",
+        "x": -5.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P4",
+        "signal": "IO_L63P_2",
+        "x": -4.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P5",
+        "signal": "IO_L49N_D4_2",
+        "x": -3.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P6",
+        "signal": "IO_L47P_2",
+        "x": -2.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "IO_L31P_GCLK31_D14_2",
+        "x": -1.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "IO_L30P_GCLK1_D13_2",
+        "x": -0.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "IO_L14N_D12_2",
+        "x": 0.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P10",
+        "signal": "IO_L3P_D0_DIN_MISO_MISO1_2",
+        "x": 1.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P11",
+        "signal": "IO_L13N_D10_2",
+        "x": 2.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P12",
+        "signal": "IO_L12N_D2_MISO3_2",
+        "x": 3.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P13",
+        "signal": "DONE_2",
+        "x": 4.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P14",
+        "signal": "SUSPEND",
+        "x": 5.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P15",
+        "signal": "IO_L48P_HDC_M1DQ8_1",
+        "x": 6.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P16",
+        "signal": "IO_L48N_M1DQ9_1",
+        "x": 7.5,
+        "y": -5.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "IO_L32N_M3DQ15_3",
+        "x": -7.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "IO_L32P_M3DQ14_3",
+        "x": -6.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "IO_L65P_INIT_B_2",
+        "x": -5.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R4",
+        "signal": "VCCO_2",
+        "x": -4.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R5",
+        "signal": "IO_L48P_D7_2",
+        "x": -3.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R6",
+        "signal": "GND",
+        "x": -2.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "IO_L32P_GCLK29_2",
+        "x": -1.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "VCCO_2",
+        "x": -0.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "IO_L23P_2",
+        "x": 0.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R10",
+        "signal": "GND",
+        "x": 1.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R11",
+        "signal": "IO_L1P_CCLK_2",
+        "x": 2.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R12",
+        "signal": "IO_L52P_M1DQ14_1",
+        "x": 3.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R13",
+        "signal": "VCCO_1",
+        "x": 4.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R14",
+        "signal": "IO_L50P_M1UDQS_1",
+        "x": 5.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R15",
+        "signal": "IO_L49P_M1DQ10_1",
+        "x": 6.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R16",
+        "signal": "IO_L49N_M1DQ11_1",
+        "x": 7.5,
+        "y": -6.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "GND",
+        "x": -7.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "PROGRAM_B_2",
+        "x": -6.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "IO_L65N_CSO_B_2",
+        "x": -5.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T4",
+        "signal": "IO_L63N_2",
+        "x": -4.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T5",
+        "signal": "IO_L48N_RDWR_B_VREF_2",
+        "x": -3.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T6",
+        "signal": "IO_L47N_2",
+        "x": -2.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "IO_L32N_GCLK28_2",
+        "x": -1.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "IO_L30N_GCLK0_USERCCLK_2",
+        "x": -0.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "IO_L23N_2",
+        "x": 0.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T10",
+        "signal": "IO_L3N_MOSI_CSI_B_MISO0_2",
+        "x": 1.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T11",
+        "signal": "IO_L1N_M0_CMPMISO_2",
+        "x": 2.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T12",
+        "signal": "IO_L52N_M1DQ15_1",
+        "x": 3.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T13",
+        "signal": "IO_L51N_M1DQ13_1",
+        "x": 4.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T14",
+        "signal": "IO_L51P_M1DQ12_1",
+        "x": 5.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T15",
+        "signal": "IO_L50N_M1UDQSN_1",
+        "x": 6.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T16",
+        "signal": "GND",
+        "x": 7.5,
+        "y": -7.5,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      }
+    ]
+  },
+  "connections": [
+    {
+      "net": "/fpga_ddr/DRAM_DATA13",
+      "group": "data",
+      "memory": {
+        "ball": "A2",
+        "signal": "DQ13"
+      },
+      "controller": {
+        "ball": "P1",
+        "signal": "IO_L33N_M3DQ13_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA13",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA15",
+      "group": "data",
+      "memory": {
+        "ball": "A3",
+        "signal": "DQ15"
+      },
+      "controller": {
+        "ball": "R1",
+        "signal": "IO_L32N_M3DQ15_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA15",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA15",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA12",
+      "group": "data",
+      "memory": {
+        "ball": "A7",
+        "signal": "DQ12"
+      },
+      "controller": {
+        "ball": "P2",
+        "signal": "IO_L33P_M3DQ12_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA12",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_UDQSN",
+      "group": "strobe",
+      "memory": {
+        "ball": "B7",
+        "signal": "~{UDQS}"
+      },
+      "controller": {
+        "ball": "N1",
+        "signal": "IO_L34N_M3UDQSN_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_UDQSN",
+        "controllerSideNet": "/fpga_ddr/DRAM_UDQSN",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA14",
+      "group": "data",
+      "memory": {
+        "ball": "B8",
+        "signal": "DQ14"
+      },
+      "controller": {
+        "ball": "R2",
+        "signal": "IO_L32P_M3DQ14_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA14",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA11",
+      "group": "data",
+      "memory": {
+        "ball": "C2",
+        "signal": "DQ11"
+      },
+      "controller": {
+        "ball": "M1",
+        "signal": "IO_L35N_M3DQ11_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA11",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA9",
+      "group": "data",
+      "memory": {
+        "ball": "C3",
+        "signal": "DQ9"
+      },
+      "controller": {
+        "ball": "L1",
+        "signal": "IO_L36N_M3DQ9_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA9",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_UDQSP",
+      "group": "strobe",
+      "memory": {
+        "ball": "C7",
+        "signal": "UDQS"
+      },
+      "controller": {
+        "ball": "N3",
+        "signal": "IO_L34P_M3UDQS_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_UDQSP",
+        "controllerSideNet": "/fpga_ddr/DRAM_UDQSP",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA10",
+      "group": "data",
+      "memory": {
+        "ball": "C8",
+        "signal": "DQ10"
+      },
+      "controller": {
+        "ball": "M2",
+        "signal": "IO_L35P_M3DQ10_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA10",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_UDM",
+      "group": "mask",
+      "memory": {
+        "ball": "D3",
+        "signal": "UDM"
+      },
+      "controller": {
+        "ball": "K3",
+        "signal": "IO_L42P_GCLK25_TRDY2_M3UDM_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_UDM",
+        "controllerSideNet": "/fpga_ddr/DRAM_UDM",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA8",
+      "group": "data",
+      "memory": {
+        "ball": "D7",
+        "signal": "DQ8"
+      },
+      "controller": {
+        "ball": "L3",
+        "signal": "IO_L36P_M3DQ8_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA8",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA8",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA0",
+      "group": "data",
+      "memory": {
+        "ball": "E3",
+        "signal": "DQ0"
+      },
+      "controller": {
+        "ball": "K2",
+        "signal": "IO_L37P_M3DQ0_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA0",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_LDM",
+      "group": "mask",
+      "memory": {
+        "ball": "E7",
+        "signal": "LDM"
+      },
+      "controller": {
+        "ball": "J4",
+        "signal": "IO_L42N_GCLK24_M3LDM_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_LDM",
+        "controllerSideNet": "/fpga_ddr/DRAM_LDM",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA2",
+      "group": "data",
+      "memory": {
+        "ball": "F2",
+        "signal": "DQ2"
+      },
+      "controller": {
+        "ball": "J3",
+        "signal": "IO_L38P_M3DQ2_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA2",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_LDQSP",
+      "group": "strobe",
+      "memory": {
+        "ball": "F3",
+        "signal": "LDQS"
+      },
+      "controller": {
+        "ball": "H2",
+        "signal": "IO_L39P_M3LDQS_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_LDQSP",
+        "controllerSideNet": "/fpga_ddr/DRAM_LDQSP",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA1",
+      "group": "data",
+      "memory": {
+        "ball": "F7",
+        "signal": "DQ1"
+      },
+      "controller": {
+        "ball": "K1",
+        "signal": "IO_L37N_M3DQ1_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA1",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA3",
+      "group": "data",
+      "memory": {
+        "ball": "F8",
+        "signal": "DQ3"
+      },
+      "controller": {
+        "ball": "J1",
+        "signal": "IO_L38N_M3DQ3_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA3",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA6",
+      "group": "data",
+      "memory": {
+        "ball": "G2",
+        "signal": "DQ6"
+      },
+      "controller": {
+        "ball": "G3",
+        "signal": "IO_L40P_M3DQ6_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA6",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_LDQSN",
+      "group": "strobe",
+      "memory": {
+        "ball": "G3",
+        "signal": "~{LDQS}"
+      },
+      "controller": {
+        "ball": "H1",
+        "signal": "IO_L39N_M3LDQSN_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_LDQSN",
+        "controllerSideNet": "/fpga_ddr/DRAM_LDQSN",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA4",
+      "group": "data",
+      "memory": {
+        "ball": "H3",
+        "signal": "DQ4"
+      },
+      "controller": {
+        "ball": "F2",
+        "signal": "IO_L41P_GCLK27_M3DQ4_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA4",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA7",
+      "group": "data",
+      "memory": {
+        "ball": "H7",
+        "signal": "DQ7"
+      },
+      "controller": {
+        "ball": "G1",
+        "signal": "IO_L40N_M3DQ7_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA7",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_DATA5",
+      "group": "data",
+      "memory": {
+        "ball": "H8",
+        "signal": "DQ5"
+      },
+      "controller": {
+        "ball": "F1",
+        "signal": "IO_L41N_GCLK26_M3DQ5_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_DATA5",
+        "controllerSideNet": "/fpga_ddr/DRAM_DATA5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_RASB",
+      "group": "command",
+      "memory": {
+        "ball": "J3",
+        "signal": "~{RAS}"
+      },
+      "controller": {
+        "ball": "J6",
+        "signal": "IO_L43P_GCLK23_M3RASN_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_RASB",
+        "controllerSideNet": "/fpga_ddr/DRAM_RASB",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_CKP",
+      "group": "clock",
+      "memory": {
+        "ball": "J7",
+        "signal": "CK"
+      },
+      "controller": {
+        "ball": "E2",
+        "signal": "IO_L46P_M3CLK_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_CKP",
+        "controllerSideNet": "/fpga_ddr/DRAM_CKP",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ODT",
+      "group": "control",
+      "memory": {
+        "ball": "K1",
+        "signal": "ODT"
+      },
+      "controller": {
+        "ball": "L5",
+        "signal": "IO_L45N_M3ODT_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ODT",
+        "controllerSideNet": "/fpga_ddr/DRAM_ODT",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_CASB",
+      "group": "command",
+      "memory": {
+        "ball": "K3",
+        "signal": "~{CAS}"
+      },
+      "controller": {
+        "ball": "H5",
+        "signal": "IO_L43N_GCLK22_IRDY2_M3CASN_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_CASB",
+        "controllerSideNet": "/fpga_ddr/DRAM_CASB",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_CKN",
+      "group": "clock",
+      "memory": {
+        "ball": "K7",
+        "signal": "~{CK}"
+      },
+      "controller": {
+        "ball": "E1",
+        "signal": "IO_L46N_M3CLKN_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_CKN",
+        "controllerSideNet": "/fpga_ddr/DRAM_CKN",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_CKE",
+      "group": "control",
+      "memory": {
+        "ball": "K9",
+        "signal": "CKE"
+      },
+      "controller": {
+        "ball": "F4",
+        "signal": "IO_L53P_M3CKE_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_CKE",
+        "controllerSideNet": "/fpga_ddr/DRAM_CKE",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_WEB",
+      "group": "control",
+      "memory": {
+        "ball": "L3",
+        "signal": "~{WE}"
+      },
+      "controller": {
+        "ball": "C1",
+        "signal": "IO_L50P_M3WE_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_WEB",
+        "controllerSideNet": "/fpga_ddr/DRAM_WEB",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR10",
+      "group": "address",
+      "memory": {
+        "ball": "L7",
+        "signal": "A10"
+      },
+      "controller": {
+        "ball": "G6",
+        "signal": "IO_L51P_M3A10_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR10",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_BA0",
+      "group": "bank",
+      "memory": {
+        "ball": "M2",
+        "signal": "BA0"
+      },
+      "controller": {
+        "ball": "C3",
+        "signal": "IO_L48P_M3BA0_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_BA0",
+        "controllerSideNet": "/fpga_ddr/DRAM_BA0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_BA2",
+      "group": "bank",
+      "memory": {
+        "ball": "M3",
+        "signal": "BA2"
+      },
+      "controller": {
+        "ball": "B1",
+        "signal": "IO_L50N_M3BA2_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_BA2",
+        "controllerSideNet": "/fpga_ddr/DRAM_BA2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR3",
+      "group": "address",
+      "memory": {
+        "ball": "N2",
+        "signal": "A3"
+      },
+      "controller": {
+        "ball": "L4",
+        "signal": "IO_L45P_M3A3_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR3",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR0",
+      "group": "address",
+      "memory": {
+        "ball": "N3",
+        "signal": "A0"
+      },
+      "controller": {
+        "ball": "K5",
+        "signal": "IO_L47P_M3A0_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR0",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR12",
+      "group": "address",
+      "memory": {
+        "ball": "N7",
+        "signal": "A12/~{BC}"
+      },
+      "controller": {
+        "ball": "F3",
+        "signal": "IO_L53N_M3A12_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR12",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_BA1",
+      "group": "bank",
+      "memory": {
+        "ball": "N8",
+        "signal": "BA1"
+      },
+      "controller": {
+        "ball": "C2",
+        "signal": "IO_L48N_M3BA1_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_BA1",
+        "controllerSideNet": "/fpga_ddr/DRAM_BA1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR5",
+      "group": "address",
+      "memory": {
+        "ball": "P2",
+        "signal": "A5"
+      },
+      "controller": {
+        "ball": "H4",
+        "signal": "IO_L44P_GCLK21_M3A5_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR5",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR2",
+      "group": "address",
+      "memory": {
+        "ball": "P3",
+        "signal": "A2"
+      },
+      "controller": {
+        "ball": "D1",
+        "signal": "IO_L49N_M3A2_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR2",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR1",
+      "group": "address",
+      "memory": {
+        "ball": "P7",
+        "signal": "A1"
+      },
+      "controller": {
+        "ball": "K6",
+        "signal": "IO_L47N_M3A1_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR1",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR4",
+      "group": "address",
+      "memory": {
+        "ball": "P8",
+        "signal": "A4"
+      },
+      "controller": {
+        "ball": "G5",
+        "signal": "IO_L51N_M3A4_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR4",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR7",
+      "group": "address",
+      "memory": {
+        "ball": "R2",
+        "signal": "A7"
+      },
+      "controller": {
+        "ball": "D3",
+        "signal": "IO_L49P_M3A7_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR7",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR9",
+      "group": "address",
+      "memory": {
+        "ball": "R3",
+        "signal": "A9"
+      },
+      "controller": {
+        "ball": "A2",
+        "signal": "IO_L52N_M3A9_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR9",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR11",
+      "group": "address",
+      "memory": {
+        "ball": "R7",
+        "signal": "A11"
+      },
+      "controller": {
+        "ball": "E3",
+        "signal": "IO_L54N_M3A11_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR11",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR6",
+      "group": "address",
+      "memory": {
+        "ball": "R8",
+        "signal": "A6"
+      },
+      "controller": {
+        "ball": "H3",
+        "signal": "IO_L44N_GCLK20_M3A6_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR6",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_RST",
+      "group": "control",
+      "memory": {
+        "ball": "T2",
+        "signal": "~{RESET}"
+      },
+      "controller": {
+        "ball": "E4",
+        "signal": "IO_L54P_M3RESET_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_RST",
+        "controllerSideNet": "/fpga_ddr/DRAM_RST",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR13",
+      "group": "address",
+      "memory": {
+        "ball": "T3",
+        "signal": "A13"
+      },
+      "controller": {
+        "ball": "F6",
+        "signal": "IO_L55P_M3A13_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR13",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR14",
+      "group": "address",
+      "memory": {
+        "ball": "T7",
+        "signal": "A14/NC"
+      },
+      "controller": {
+        "ball": "F5",
+        "signal": "IO_L55N_M3A14_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR14",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/fpga_ddr/DRAM_ADDR8",
+      "group": "address",
+      "memory": {
+        "ball": "T8",
+        "signal": "A8"
+      },
+      "controller": {
+        "ball": "B2",
+        "signal": "IO_L52P_M3A8_3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/fpga_ddr/DRAM_ADDR8",
+        "controllerSideNet": "/fpga_ddr/DRAM_ADDR8",
+        "seriesComponents": []
+      }
+    }
+  ],
+  "endpointMapSha256": "813ba1df79b49d895438e133ac1745401f3f18f8373102d6551d30c24ccb027a"
+}

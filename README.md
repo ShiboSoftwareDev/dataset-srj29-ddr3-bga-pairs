@@ -1,57 +1,54 @@
 # dataset-srj29-ddr3-bga-pairs
 
-Twenty spacious multilayer Simple Route JSON fixtures that reproduce a real DDR3L interface ball-for-ball: the official BeagleBone Black D1 schematic connection between U12, a 4-Gbit x16 DDR3L device in a sparse 96-ball FBGA, and U5, the AM3358BZCZ100 in its ZCZ 324-ball NFBGA.
+Twenty spacious multilayer Simple Route JSON fixtures derived from twenty different real DDR3 board designs. Every sample contains one 78- or 96-ball DDR3/DDR3L device, one real BGA FPGA/SoC/controller footprint, and that board's exact DDR3-ball-to-controller-ball connections.
 
-This revision does not invent a controller ballout. All 50 connections come from the board schematic and are stored as explicit `board net → U12 ball/pin → U5 ball/pin` records in [CONNECTION_MAP.md](CONNECTION_MAP.md) and [`reference/beaglebone-black-ddr3-map.json`](reference/beaglebone-black-ddr3-map.json).
+This revision intentionally does **not** reuse one connection map with different placement geometry. The source repositories, committed PCB/schematic files, endpoint maps, part numbers, BGA pad populations, and canonical endpoint hashes are listed in [CONNECTION_MAPS.md](CONNECTION_MAPS.md). The validator rejects a repeated repository, board, or endpoint hash.
 
-Examples:
+## Dataset scope
 
-- `DDR_D0`: U12 E3 / DQ0 → U5 M3 / DDR_D0
-- `DDR_D11`: U12 C2 / DQ11 → U5 K3 / DDR_D11
-- `DDR_DQS0`: U12 F3 / LDQS → U5 P1 / DDR_DQS0
-- `DDR_A15`: U12 M7 / A15 → U5 D3 / DDR_A15
-- `DDR_CLK`: U12 J7 / CK → U5 D2 / DDR_CK
-- `DDR_RESETn`: U12 T2 / RESET# → U5 J3 / DDR_RESET
+- 20 different primary board repositories, pinned to exact commits.
+- 951 total DDR3↔BGA endpoint pairs; 39–53 per sample according to the real device width and board topology.
+- Real 78-ball x8 or 96-ball x16 DDR3 package pad populations at approximately 0.8 mm pitch.
+- Real 256- to 900-ball paired BGA footprints at 0.5–1.0 mm pitch.
+- Exact board-net, DDR3 ball, and controller ball triples from committed KiCad PCB data, plus the audited official BeagleBone Black schematic map.
+- A single series resistor is collapsed when it lies directly between the two chips; its reference/value and both board-net names remain in `sourcePath`.
+- 12–18 mm clear pad-field corridors and 16–22 total layers. Layer count is selected from connected-pad depth and connection count.
+- No pre-routed traces, no via-in-pad, and no artificial board compaction.
+- One `circuit-to-svg` SVG snapshot per sample.
 
-## What each sample contains
+Power, ground, VREF, ZQ, decoupling, and termination-only branches are excluded because this benchmark is specifically the two-BGA signal-routing problem. Their package balls still exist as physical pad obstacles.
 
-- The real sparse 16-row × 9-column, 96-populated-ball DDR3L footprint at 0.8 mm pitch.
-- The real 18 × 18, 324-ball AM3358 ZCZ footprint at 0.8 mm pitch.
-- Exactly 50 direct interface nets: 16 DQ, two DQS pairs, two masks, 16 address, three bank, command, clock, and control signals.
-- A 9.2–13.2 mm physical gap between pad fields so the benchmark tests paired-BGA fanout and routing, not artificial board compaction.
-- 12 or 14 total copper layers, leaving 10 or 12 routing layers under the dataset's conservative capacity model.
-- Either the documented top-view orientation or a legal 180° rotation of both packages; ball identities rotate with the footprints.
-- No pre-routed traces and no via-in-pad.
+## Reference integrity
 
-The samples deliberately exclude power/ground routing, VREF generation, ZQ, decoupling, and external termination components. Those are real-board requirements but are not direct chip-to-chip connections, so their balls remain physical obstacles without being added as U12↔U5 nets.
+Each `reference/sampleNNN-*.json` file records:
 
-## Sources
+- the board repository, exact source commit/path/URL, part references, and footprint names;
+- every physical pad in both source BGA footprints, including land geometry and pitch;
+- every included board net and its DDR3/controller balls and signals;
+- any collapsed single-series-resistor path; and
+- a SHA-256 hash of the canonical `DDR3 ball → controller ball` map.
 
-The endpoint map was checked against the official BeagleBone Black schematic, U5 on sheet 3 and U12 on sheet 7. The BeagleBoard hardware documentation describes the x16 DDR3L interface and the 96-ball, 0.8 mm memory package. Texas Instruments identifies AM3358BZCZ100 as the 324-ball ZCZ package.
-
-- [Official BeagleBone Black hardware repository and schematic](https://github.com/beagleboard/beaglebone-black/blob/master/BBB-SCH.pdf)
-- [Official BeagleBone Black hardware design documentation](https://docs.beagleboard.org/boards/beaglebone/black/ch06.html)
-- [TI AM3358BZCZ100 product/package page](https://www.ti.com/product/AM3358/part-details/AM3358BZCZ100)
+The set spans Allwinner H3/H616, AM335x, i.MX6/i.MX7, STM32MP1, HPMicro, Zynq, Spartan-6, Artix-7, Kintex-7, and ECP5 designs. See [CONNECTION_MAPS.md](CONNECTION_MAPS.md) for all 20 primary links.
 
 ## Repository layout
 
-- `reference/beaglebone-black-ddr3-map.json` — canonical real-board endpoint map and source provenance.
-- `CONNECTION_MAP.md` — readable table of all 50 endpoint triples.
+- `reference/reference-manifest.json` — ordered sample-to-source index and unique endpoint hashes.
+- `reference/sampleNNN-*.json` — one complete, machine-readable source map per sample.
+- `CONNECTION_MAPS.md` — readable table of all board references.
 - `samples/sampleNNN.json` — 20 unrouted benchmark inputs.
-- `manifest.json` — sample index, package statistics, placement, and layer budget.
-- `scripts/generate.mjs` — deterministic sample and mapping-table generator.
-- `scripts/validate.mjs` — package, endpoint-map, geometry, capacity, and snapshot validation.
+- `manifest.json` — sample index, source, package, placement, and layer statistics.
+- `scripts/generate.mjs` — deterministic dataset generator.
+- `scripts/validate.mjs` — source-map, uniqueness, footprint, geometry, clearance, layer, and snapshot checks.
 - `snapshots/` — one PCB SVG per sample produced by `circuit-to-svg`.
-- `previews/` — one colored ratsnest SVG per sample and a contact sheet.
+- `previews/` — colored ratsnest previews and a contact sheet.
 
 ## Generate and validate
 
 ```sh
-npm run generate
-npm test
+npm run build
 ```
 
-The validator resolves every connection endpoint back to the physical package ball and compares its net, ball, and pin name against the canonical real-board map. It also rejects missing package balls, duplicate endpoints, pad overlaps, insufficient clearance, gaps below 9 mm, insufficient layer capacity, and snapshots that do not contain all 420 physical pads and 50 ratsnests.
+The validator resolves every routing endpoint back to its source package ball and rejects missing or repeated mappings, altered land geometry, overlapping pads, corridors below 12 mm, insufficient trace/via clearance, insufficient layers, and incomplete snapshots.
 
 ## Package usage
 
@@ -59,4 +56,4 @@ The validator resolves every connection endpoint back to the physical package ba
 const { sample001, dataset } = require("@tscircuit/dataset-srj29-ddr3-bga-pairs")
 ```
 
-The tscircuit autorouter repository contains a dedicated dataset fixture pipeline that runs component detection, fanout on both detected BGA packages, and then the multilayer autorouter.
+The tscircuit autorouter repository has a dedicated fixture pipeline that runs component detection, standalone fanout on both detected BGAs, and then the multilayer autorouter.

@@ -1,0 +1,222 @@
+[
+  {
+    "sampleId": "sample001",
+    "mapFile": "reference/sample001-beaglebone-black.json",
+    "board": "BeagleBone Black Rev D1",
+    "repository": "beagleboard/beaglebone-black",
+    "sourceUrl": "https://github.com/beagleboard/beaglebone-black/blob/c7bbdb9676c0cacc8dd9a2f656ee2dab34d98fca/BBB-SCH.pdf",
+    "memory": "U12 MT41K256M16HA-125 / MT41K512M16HA-125",
+    "controller": "U5 AM3358BZCZ100",
+    "connectionCount": 50,
+    "endpointMapSha256": "32dcd9c8076359ec6e4dfc449cf0519d50dc2c34bd678354d8d33f6b3aed538d"
+  },
+  {
+    "sampleId": "sample002",
+    "mapFile": "reference/sample002-allwinner-h3-ddr3-16x1-kicad.json",
+    "board": "Allwinner H3 DDR3 x16 reference design",
+    "repository": "hvwyl/allwinner-h3-ddr3-16x1-kicad",
+    "sourceUrl": "https://github.com/hvwyl/allwinner-h3-ddr3-16x1-kicad/blob/02e365b21363a17710e0f96072c0844940495567/project/allwinner-h3.kicad_pcb",
+    "memory": "DU1 DDR3-FBGA96",
+    "controller": "U1 Allwinner-H3",
+    "connectionCount": 53,
+    "endpointMapSha256": "5e0a090408ca5367121d6c832ed90262af014839163485017262e1d37e021942"
+  },
+  {
+    "sampleId": "sample003",
+    "mapFile": "reference/sample003-allwinner-h616-devboard.json",
+    "board": "Allwinner H616 Devboard DDR3",
+    "repository": "Kononenko-K/Allwinner_H616_Devboard",
+    "sourceUrl": "https://github.com/Kononenko-K/Allwinner_H616_Devboard/blob/94fe1071ff3d7c2e6a227a3e4dfccb6acae305c4/Hardware/H616_DDR3/H616_devboard.kicad_pcb",
+    "memory": "U2 K4B8G1646D",
+    "controller": "U1 H616",
+    "connectionCount": 46,
+    "endpointMapSha256": "497ed41bc2ddcc14bca09fc10d0304b55a3cc28ca15678c46266c27a72ff02a4"
+  },
+  {
+    "sampleId": "sample004",
+    "mapFile": "reference/sample004-orangecrab-hardware.json",
+    "board": "OrangeCrab r0.2.1",
+    "repository": "orangecrab-fpga/orangecrab-hardware",
+    "sourceUrl": "https://github.com/orangecrab-fpga/orangecrab-hardware/blob/c511d569fe2af39467041f888bc231020f40c6ac/hardware/orangecrab_r0.2.1/OrangeCrab.kicad_pcb",
+    "memory": "U4 MT41K64M16TW-107_J-TR",
+    "controller": "U3 LFE5U-25F-8MG285C",
+    "connectionCount": 50,
+    "endpointMapSha256": "b0949cbf68e9bc43e7ea195f97ee0c3fe6def873ccb49481620e97fba01c0320"
+  },
+  {
+    "sampleId": "sample005",
+    "mapFile": "reference/sample005-butterstick-hardware.json",
+    "board": "ButterStick r1.0",
+    "repository": "butterstick-fpga/butterstick-hardware",
+    "sourceUrl": "https://github.com/butterstick-fpga/butterstick-hardware/blob/0694ddfa9824a07f0c6c6981186e45f80187659c/hardware/ButterStick_r1.0/ButterStick.kicad_pcb",
+    "memory": "U11 MT41K64M16TW-107_J-TR",
+    "controller": "U4 ECP5UM5G_85_CABGA381",
+    "connectionCount": 50,
+    "endpointMapSha256": "65b805237c237d04baf4c4799a0db9cd699e6ee8fd7b19e2ff1b60c8e571a618"
+  },
+  {
+    "sampleId": "sample006",
+    "mapFile": "reference/sample006-ecp5u85-bse-usb.json",
+    "board": "ECP5U85 BSE USB",
+    "repository": "open-ephys/ECP5U85-BSE-USB",
+    "sourceUrl": "https://github.com/open-ephys/ECP5U85-BSE-USB/blob/272a1b284ee53c0726788fd254733abb7d83da21/pcb/ecp5u85-bse-usb.kicad_pcb",
+    "memory": "U4 MT41K64M16TW-x",
+    "controller": "U1 LFE5U-85F-6BG381",
+    "connectionCount": 47,
+    "endpointMapSha256": "d42177d0dd6820ffe26b46665df7b22af128e2ac40c92aa83b6cd25a3648525d"
+  },
+  {
+    "sampleId": "sample007",
+    "mapFile": "reference/sample007-glider.json",
+    "board": "Glider mainboard",
+    "repository": "Modos-Labs/Glider",
+    "sourceUrl": "https://github.com/Modos-Labs/Glider/blob/ed94ef7fd95a42cfdcdaf5e5da1dcdd709122763/pcb/mainboard/pcb.kicad_pcb",
+    "memory": "U12 MT41K64M16TW",
+    "controller": "U1 XC6SLX-FTG256",
+    "connectionCount": 48,
+    "endpointMapSha256": "813ba1df79b49d895438e133ac1745401f3f18f8373102d6551d30c24ccb027a"
+  },
+  {
+    "sampleId": "sample008",
+    "mapFile": "reference/sample008-kintex-410t-devboard.json",
+    "board": "Kintex-410T development board",
+    "repository": "antmicro/kintex-410t-devboard",
+    "sourceUrl": "https://github.com/antmicro/kintex-410t-devboard/blob/aeacd840ec3d5b4d93b789ccd99c30c50da11d71/k410t-devboard.kicad_pcb",
+    "memory": "U5 MT41K512M8DA",
+    "controller": "U1 XC7K410T-2FFG900I",
+    "connectionCount": 39,
+    "endpointMapSha256": "dc680cc2bf1d563ffe3141d33bc725e30ee5b2e7e35aee50c0070d3454e6ab44"
+  },
+  {
+    "sampleId": "sample009",
+    "mapFile": "reference/sample009-logic-analyzer-pcb.json",
+    "board": "Artix-7 Logic Analyzer PCB",
+    "repository": "perehinik/Logic_Analyzer_PCB",
+    "sourceUrl": "https://github.com/perehinik/Logic_Analyzer_PCB/blob/cde7192ddbde771b7f8befc64025844eff8fb3ba/Project/LogAn.kicad_pcb",
+    "memory": "IC301 IC_MT41K128M16JT-125K_FBGA96",
+    "controller": "IC201 IC_XC7A15T_FTG256",
+    "connectionCount": 44,
+    "endpointMapSha256": "611ccaeb28468ef9a354e096aae0fdd6c46325f8c125fbf882e704200aee0b53"
+  },
+  {
+    "sampleId": "sample010",
+    "mapFile": "reference/sample010-stm32mp1-testboard-revb.json",
+    "board": "STM32MP1 TestBoard RevB",
+    "repository": "cracked-machine/STM32MP1_TestBoard_RevB",
+    "sourceUrl": "https://github.com/cracked-machine/STM32MP1_TestBoard_RevB/blob/5ab597798fed377dee2e47daac7ee24bb2c08287/STM32MP1_TestBoard_RevB/STM32MP1_TestBoard_RevB.kicad_pcb",
+    "memory": "U2 MT41K256M16TW-107",
+    "controller": "U1 STM32MP157xAB",
+    "connectionCount": 48,
+    "endpointMapSha256": "1334c22162397200fd9545c3c32fa24a099f09258d2d820266e1c8998996e6e0"
+  },
+  {
+    "sampleId": "sample011",
+    "mapFile": "reference/sample011-imx6-demo-board.json",
+    "board": "i.MX6 Demo Board",
+    "repository": "ts-manuel/iMX6-Demo-Board",
+    "sourceUrl": "https://github.com/ts-manuel/iMX6-Demo-Board/blob/f1a40c0f5d6fa711bb6f84a7fa0da9e89bed6def/kicad/iMX6%20Demo%20Board.kicad_pcb",
+    "memory": "U9 MT41K256M16TW-107",
+    "controller": "U7 MCIMX6Y2CVM08AB",
+    "connectionCount": 53,
+    "endpointMapSha256": "b399f668dbe4c86c5271b452d52e81a8d9c03145d6ce38636c5a291c6fd6879c"
+  },
+  {
+    "sampleId": "sample012",
+    "mapFile": "reference/sample012-hardware.json",
+    "board": "i.MX6QP IMXDesign",
+    "repository": "WilliamSanchez/Hardware",
+    "sourceUrl": "https://github.com/WilliamSanchez/Hardware/blob/1fc7b1bb3e9a59b44b3a2b116191082dc183011e/Design_IMX6QP/IMXDesign/IMXDesign.kicad_pcb",
+    "memory": "U3 MT41K128M16JT-107_K",
+    "controller": "U1 MCIMX6QP5EVT",
+    "connectionCount": 41,
+    "endpointMapSha256": "601ef2e388a7b13356808f6399a960cbd9f91e956966059a8c8864f12e66d436"
+  },
+  {
+    "sampleId": "sample013",
+    "mapFile": "reference/sample013-hpm-apps.json",
+    "board": "HPM6880 DDR3 Core RevB",
+    "repository": "hpmicro/hpm_apps",
+    "sourceUrl": "https://github.com/hpmicro/hpm_apps/blob/90a3b66fff6362d823b0435e0bbb33b0d2d57d4e/apps/ddr/hardware/HPM6880_DDR3_CORE_RevB/01.%E5%B7%A5%E7%A8%8B%E6%96%87%E4%BB%B6/HPM1500_DDR3_CORE_RevB/HPM1500_DDR3_CORE_RevB.kicad_pcb",
+    "memory": "U4 W634GU6QB-12",
+    "controller": "U1 HPM1500_BGA417",
+    "connectionCount": 50,
+    "endpointMapSha256": "7a646fcb22f6ef68b318b3636259594269e9c669ec3034c1202ab001a291483b"
+  },
+  {
+    "sampleId": "sample014",
+    "mapFile": "reference/sample014-artix-7-fpga-dev-board.json",
+    "board": "Artix-7 FPGA Development Board",
+    "repository": "LZajmi/Artix-7-FPGA-Dev-Board",
+    "sourceUrl": "https://github.com/LZajmi/Artix-7-FPGA-Dev-Board/blob/487da39802928ca3259d1c44efa1a5037408195f/FPGA_dev_board.kicad_pcb",
+    "memory": "U9 AS4C256M16D3",
+    "controller": "U1 XC7A100T-FGG484",
+    "connectionCount": 48,
+    "endpointMapSha256": "a3a3043d5d741713de8e0928615cc67196d08167464fd79f279578b38c7c371a"
+  },
+  {
+    "sampleId": "sample015",
+    "mapFile": "reference/sample015-elasticai-hardware.json",
+    "board": "elasticAI Artix digital board v1",
+    "repository": "es-ude/elasticai.hardware",
+    "sourceUrl": "https://github.com/es-ude/elasticai.hardware/blob/2e077b06fbf4b2f42de74e3b84545002684258ce/v6/dev_artix/digital_board_v1.kicad_pcb",
+    "memory": "U501 AS4C256M16D3",
+    "controller": "U301 XC7A100T-CSG324",
+    "connectionCount": 48,
+    "endpointMapSha256": "d6834b6914efcc8363d82ac33cd649e04c11c2f855f3fb0de9739bcf4dc87463"
+  },
+  {
+    "sampleId": "sample016",
+    "mapFile": "reference/sample016-pixieboard.json",
+    "board": "Pixieboard SOM",
+    "repository": "robotman2412/pixieboard",
+    "sourceUrl": "https://github.com/robotman2412/pixieboard/blob/2f600e9e7613158eaa4593da5bd7903e00451547/som/pixieboard.kicad_pcb",
+    "memory": "U3 AS4C256M16D3",
+    "controller": "U1 XC7A200T-3FBG484E",
+    "connectionCount": 49,
+    "endpointMapSha256": "202c01750208ab82d67592136c8758f45bc44a7de82dcabe654d6448da3b4791"
+  },
+  {
+    "sampleId": "sample017",
+    "mapFile": "reference/sample017-archer.json",
+    "board": "Archer mainboard",
+    "repository": "EI2030/Archer",
+    "sourceUrl": "https://github.com/EI2030/Archer/blob/b27a02682ccdd6d9f38ecceedff56ed014178d11/pcb/mainboard/pcb.kicad_pcb",
+    "memory": "U202 MT41K256M16HA",
+    "controller": "U101 MCIMX7S5EVM08SC",
+    "connectionCount": 49,
+    "endpointMapSha256": "71d4c9bf2461b181f30dc869f63261fc73f06386f83ba6011880303368f8da90"
+  },
+  {
+    "sampleId": "sample018",
+    "mapFile": "reference/sample018-nekoink.json",
+    "board": "NekoInk Gen2 mainboard",
+    "repository": "zephray/NekoInk",
+    "sourceUrl": "https://github.com/zephray/NekoInk/blob/9bb86a9f21bbe98f1e5dd090bf5172e57ec50cf3/pcb/mainboard_gen2/pcb.kicad_pcb",
+    "memory": "U7 MT41K256M16HA",
+    "controller": "U6 XC7Z010-CLG400",
+    "connectionCount": 49,
+    "endpointMapSha256": "f64e3ee5a499cd98e9f302581a9f69a2995c5fc05e23a7f3a1fca56e152cfe08"
+  },
+  {
+    "sampleId": "sample019",
+    "mapFile": "reference/sample019-icepi-sbc.json",
+    "board": "iCE/Pi CM0 SBC",
+    "repository": "cheyao/icepi-sbc",
+    "sourceUrl": "https://github.com/cheyao/icepi-sbc/blob/45037f8522e6b95649ab43772b08fe223cb87f01/hardware/cm0.kicad_pcb",
+    "memory": "U2 H5TQ4G63EFR",
+    "controller": "U1 H3",
+    "connectionCount": 45,
+    "endpointMapSha256": "2226bf8ac400938b600c6142778e68b2f0aeaaeabf4f2c38215434d6a3f9613b"
+  },
+  {
+    "sampleId": "sample020",
+    "mapFile": "reference/sample020-sdr-dongle.json",
+    "board": "Zynq SDR Dongle",
+    "repository": "john-luan/SDR-dongle",
+    "sourceUrl": "https://github.com/john-luan/SDR-dongle/blob/1861a1b339c4064f057cf5e1f721f089c28d0b08/hardware/zynq_sdr_dongle.kicad_pcb",
+    "memory": "U1 DDR3",
+    "controller": "U2 xc7z020clg400",
+    "connectionCount": 44,
+    "endpointMapSha256": "8fc6606eb3f652b8e6e8429968c464401fe0d8bfee2d0056602470143f168a3a"
+  }
+]

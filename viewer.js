@@ -35,7 +35,7 @@ function renderList() {
     button.className = `sample-button${index === currentIndex ? " selected" : ""}`
     button.innerHTML = `
       <span class="sample-number">${sample.id.replace("sample", "#")}</span>
-      <span class="sample-copy"><strong>DDR3 x${sample.ddr3DataWidth} → ${sample.controllerPackage}</strong><span>${sample.connectionCount} nets · ${sample.componentGap} mm gap</span></span>
+      <span class="sample-copy"><strong>${sample.referenceBoard}</strong><span>${sample.connectionCount} nets · ${sample.componentGap} mm gap</span></span>
       <span class="layer-pill">${sample.layerCount}L</span>`
     button.addEventListener("click", () => selectSample(index))
     return button
@@ -46,8 +46,8 @@ function renderStats(sample) {
   const items = [
     ["Connections", sample.connections.length],
     ["Copper layers", sample.layerCount],
-    ["DDR3", `x${sample.metadata.ddr3.dataWidth} / 96 balls`],
-    ["Controller", sample.metadata.controller.package],
+    ["DDR3", `${sample.metadata.ddr3.partNumber} / ${sample.metadata.ddr3.padCount} balls`],
+    ["Controller", `${sample.metadata.controller.partNumber} / ${sample.metadata.controller.padCount} balls`],
     ["BGA edge gap", `${sample.metadata.placement.componentGap} mm`],
   ]
   document.querySelector("#stats").innerHTML = items.map(([label, value]) =>
@@ -117,10 +117,10 @@ function renderBoard(sample) {
   }
   const ddr3 = componentCenter("ddr3_bga")
   const controller = componentCenter("controller_bga")
-  addText(svg, `DDR3 x${sample.metadata.ddr3.dataWidth} · FBGA-96`, x(ddr3.x), y(ddr3.minY) + 35, {
+  addText(svg, `${sample.metadata.ddr3.reference} · ${sample.metadata.ddr3.partNumber} · ${sample.metadata.ddr3.padCount} balls`, x(ddr3.x), y(ddr3.minY) + 35, {
     fill: "#ffc977", "font-size": 18, "font-weight": 750, "text-anchor": "middle",
   })
-  addText(svg, `CONTROLLER · ${sample.metadata.controller.package}`, x(controller.x), y(controller.minY) + 35, {
+  addText(svg, `${sample.metadata.controller.reference} · ${sample.metadata.controller.partNumber} · ${sample.metadata.controller.padCount} balls`, x(controller.x), y(controller.minY) + 35, {
     fill: "#8fc3ee", "font-size": 18, "font-weight": 750, "text-anchor": "middle",
   })
 }

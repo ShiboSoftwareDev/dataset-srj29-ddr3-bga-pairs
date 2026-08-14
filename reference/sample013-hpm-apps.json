@@ -1,0 +1,5503 @@
+{
+  "schemaVersion": 2,
+  "referenceDesign": {
+    "board": "HPM6880 DDR3 Core RevB",
+    "repository": "hpmicro/hpm_apps",
+    "commit": "90a3b66fff6362d823b0435e0bbb33b0d2d57d4e",
+    "sourcePath": "apps/ddr/hardware/HPM6880_DDR3_CORE_RevB/01.工程文件/HPM1500_DDR3_CORE_RevB/HPM1500_DDR3_CORE_RevB.kicad_pcb",
+    "sourceUrl": "https://github.com/hpmicro/hpm_apps/blob/90a3b66fff6362d823b0435e0bbb33b0d2d57d4e/apps/ddr/hardware/HPM6880_DDR3_CORE_RevB/01.%E5%B7%A5%E7%A8%8B%E6%96%87%E4%BB%B6/HPM1500_DDR3_CORE_RevB/HPM1500_DDR3_CORE_RevB.kicad_pcb",
+    "extractionMethod": "Exact KiCad PCB pad/net traversal; a single two-pad series resistor may be collapsed into one benchmark connection and is recorded per path."
+  },
+  "memory": {
+    "reference": "U4",
+    "partNumber": "W634GU6QB-12",
+    "footprint": "08_HPM_Storage:TFBGA96",
+    "padCount": 96,
+    "pitch": 0.7998,
+    "padFieldWidth": 6.7998,
+    "padFieldHeight": 12.4,
+    "pads": [
+      {
+        "ball": "A1",
+        "signal": "VDDQ",
+        "x": -3.1999,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A2",
+        "signal": "DQU5",
+        "x": -2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A3",
+        "signal": "DQU7",
+        "x": -1.5999,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "DQU4",
+        "x": 1.5999,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A8",
+        "signal": "VDDQ",
+        "x": 2.4,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "VSS",
+        "x": 3.1999,
+        "y": 6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B1",
+        "signal": "VSSQ",
+        "x": -3.1999,
+        "y": 5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": 5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B3",
+        "signal": "VSS",
+        "x": -1.5999,
+        "y": 5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B7",
+        "signal": "DQSU#",
+        "x": 1.5999,
+        "y": 5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "DQU6",
+        "x": 2.4,
+        "y": 5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "B9",
+        "signal": "VSSQ",
+        "x": 3.1999,
+        "y": 5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "VDDQ",
+        "x": -3.1999,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C2",
+        "signal": "DQU3",
+        "x": -2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "DQU1",
+        "x": -1.5999,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "DQSU",
+        "x": 1.5999,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C8",
+        "signal": "DQU2",
+        "x": 2.4,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "VDDQ",
+        "x": 3.1999,
+        "y": 4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D1",
+        "signal": "VSSQ",
+        "x": -3.1999,
+        "y": 3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D3",
+        "signal": "DMU",
+        "x": -1.5999,
+        "y": 3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D7",
+        "signal": "DQU0",
+        "x": 1.5999,
+        "y": 3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "D9",
+        "signal": "VDD",
+        "x": 3.1999,
+        "y": 3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "VSS",
+        "x": -3.1999,
+        "y": 2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E2",
+        "signal": "VSSQ",
+        "x": -2.4,
+        "y": 2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "DQL0",
+        "x": -1.5999,
+        "y": 2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "DML",
+        "x": 1.5999,
+        "y": 2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E8",
+        "signal": "VSSQ",
+        "x": 2.4,
+        "y": 2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "VDDQ",
+        "x": 3.1999,
+        "y": 2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F1",
+        "signal": "VDDQ",
+        "x": -3.1999,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "DQL2",
+        "x": -2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F3",
+        "signal": "DQSL",
+        "x": -1.5999,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F7",
+        "signal": "DQL1",
+        "x": 1.5999,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "DQL3",
+        "x": 2.4,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "F9",
+        "signal": "VSSQ",
+        "x": 3.1999,
+        "y": 2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "VSSQ",
+        "x": -3.1999,
+        "y": 1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G2",
+        "signal": "DQL6",
+        "x": -2.4,
+        "y": 1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "DQSL#",
+        "x": -1.5999,
+        "y": 1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "VDD",
+        "x": 1.5999,
+        "y": 1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": 1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VSSQ",
+        "x": 3.1999,
+        "y": 1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H1",
+        "signal": "VREFDQ",
+        "x": -3.1999,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "VDDQ",
+        "x": -2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H3",
+        "signal": "DQL4",
+        "x": -1.5999,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H7",
+        "signal": "DQL7",
+        "x": 1.5999,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "DQL5",
+        "x": 2.4,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "H9",
+        "signal": "VDDQ",
+        "x": 3.1999,
+        "y": 0.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "NC",
+        "x": -3.1999,
+        "y": -0.4001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J2",
+        "signal": "VSS",
+        "x": -2.4,
+        "y": -0.4001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "RAS#",
+        "x": -1.5999,
+        "y": -0.4001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "CK",
+        "x": 1.5999,
+        "y": -0.4001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J8",
+        "signal": "VSS",
+        "x": 2.4,
+        "y": -0.4001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "NC",
+        "x": 3.1999,
+        "y": -0.4001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K1",
+        "signal": "ODT",
+        "x": -3.1999,
+        "y": -1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "VDD",
+        "x": -2.4,
+        "y": -1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K3",
+        "signal": "CAS#",
+        "x": -1.5999,
+        "y": -1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K7",
+        "signal": "CK#",
+        "x": 1.5999,
+        "y": -1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "VDD",
+        "x": 2.4,
+        "y": -1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "K9",
+        "signal": "CKE",
+        "x": 3.1999,
+        "y": -1.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "NC",
+        "x": -3.1999,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L2",
+        "signal": "CS#",
+        "x": -2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "WE#",
+        "x": -1.5999,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "A10/AP",
+        "x": 1.5999,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L8",
+        "signal": "ZQ",
+        "x": 2.4,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "NC",
+        "x": 3.1999,
+        "y": -2,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M1",
+        "signal": "VSS",
+        "x": -3.1999,
+        "y": -2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "BA0",
+        "x": -2.4,
+        "y": -2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M3",
+        "signal": "BA2",
+        "x": -1.5999,
+        "y": -2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M7",
+        "signal": "NC",
+        "x": 1.5999,
+        "y": -2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "VREFCA",
+        "x": 2.4,
+        "y": -2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "M9",
+        "signal": "VSS",
+        "x": 3.1999,
+        "y": -2.8001,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "VDD",
+        "x": -3.1999,
+        "y": -3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N2",
+        "signal": "A3",
+        "x": -2.4,
+        "y": -3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "A0",
+        "x": -1.5999,
+        "y": -3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "A12/BC#",
+        "x": 1.5999,
+        "y": -3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N8",
+        "signal": "BA1",
+        "x": 2.4,
+        "y": -3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "VDD",
+        "x": 3.1999,
+        "y": -3.5999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P1",
+        "signal": "VSS",
+        "x": -3.1999,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "A5",
+        "x": -2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P3",
+        "signal": "A2",
+        "x": -1.5999,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P7",
+        "signal": "A1",
+        "x": 1.5999,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "A4",
+        "x": 2.4,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "P9",
+        "signal": "VSS",
+        "x": 3.1999,
+        "y": -4.4,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "VDD",
+        "x": -3.1999,
+        "y": -5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R2",
+        "signal": "A7",
+        "x": -2.4,
+        "y": -5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "A9",
+        "x": -1.5999,
+        "y": -5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "A11",
+        "x": 1.5999,
+        "y": -5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R8",
+        "signal": "A6",
+        "x": 2.4,
+        "y": -5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "VDD",
+        "x": 3.1999,
+        "y": -5.1999,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T1",
+        "signal": "VSS",
+        "x": -3.1999,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "RESET#",
+        "x": -2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T3",
+        "signal": "A13",
+        "x": -1.5999,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T7",
+        "signal": "A14",
+        "x": 1.5999,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "A8",
+        "x": 2.4,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      },
+      {
+        "ball": "T9",
+        "signal": "VSS",
+        "x": 3.1999,
+        "y": -6,
+        "width": 0.4,
+        "height": 0.4,
+        "shape": "circle"
+      }
+    ]
+  },
+  "controller": {
+    "reference": "U1",
+    "partNumber": "HPM1500_BGA417",
+    "footprint": "00_HPM_Library:BGA_417",
+    "padCount": 417,
+    "pitch": 0.57,
+    "padFieldWidth": 16.31,
+    "padFieldHeight": 16.31,
+    "pads": [
+      {
+        "ball": "A3",
+        "signal": "VSS",
+        "x": -6.84,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A5",
+        "signal": "PC03/TMR1.B.CAPT1/URT0.C.CTS/CAN1.C.STBY/I2S2.AB.RXD0/SDC0.A.DATA1/XPI_SLV.A.ADQ1",
+        "x": -5.7,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A7",
+        "signal": "PC08/TMR0.B.COMP1/URT2.C.TXD/I2C0.C.SCL/CAN2.C.TXD/I2S2.AB.TXD2/DAO.B.LN/SDC0.A.DATA4/XPI_SLV.A.ERR",
+        "x": -4.56,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A11",
+        "signal": "PC20/TMR3.B.CAPT2/URT5.C.CTS/SPI0.C.CS0/CAN5.C.RXD/I2S1.CD.RXD0/SDC1.B.CLK/ETH0.A.TXCK",
+        "x": -2.28,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A13",
+        "signal": "PC24/TMR2.B.COMP1/URT6.C.TXD/I2C2.C.SCL/SPI1.C.CS2/CAN6.C.TXD/I2S1.CD.TXD0/SDC1.C.CDN/ETH0.A.RXD2",
+        "x": -1.14,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A15",
+        "signal": "VSS",
+        "x": 0,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A17",
+        "signal": "PD04/TMR5.B.CAPT2/URT1.D.CTS/SPI3.C.CS0/CAN1.D.RXD/PDM0.EF.D0/XPI0.A.CA_CS0",
+        "x": 1.14,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A19",
+        "signal": "PD08/TMR4.B.COMP1/URT2.D.TXD/I2C0.D.SCL/SPI2.C.CS2/CAN2.D.TXD/PDM0.E.CLK/XPI0.A.CA_D0/ETH0.B.TXCK",
+        "x": 2.28,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A23",
+        "signal": "PD22/TMR6.B.CAPT0/URT5.D.RXD/SPI0.D.MISO/I2S3.AB.RXD0/ETH0.A.EVTI2",
+        "x": 4.56,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A25",
+        "signal": "PD30/TMR6.B.CAPT3/URT7.D.RXD/SPI1.D.DAT2/CAN7.D.RXD/I2S3.A.MCLK/ETH0.A.EVTI0/SOC.A.REF0",
+        "x": 5.7,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "A27",
+        "signal": "VSS",
+        "x": 6.84,
+        "y": 7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA1",
+        "signal": "VSS",
+        "x": -7.98,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA3",
+        "signal": "VSS",
+        "x": -6.84,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA5",
+        "signal": "PA20/TMR3.A.CAPT2/URT5.A.CTS/CAN5.A.RXD/I2S0.CD.BCLK/DIS0.AB.G2/CAM0.A.PIXCLK",
+        "x": -5.7,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA7",
+        "signal": "VIO_B00",
+        "x": -4.56,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA9",
+        "signal": "VDD_SOC",
+        "x": -3.42,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA11",
+        "signal": "VSS",
+        "x": -2.28,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA13",
+        "signal": "VSS",
+        "x": -1.14,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA15",
+        "signal": "VIO_B10",
+        "x": 0,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA17",
+        "signal": "VSS",
+        "x": 1.14,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA19",
+        "signal": "VREFL",
+        "x": 2.28,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA21",
+        "signal": "VDDR",
+        "x": 3.42,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA23",
+        "signal": "VDDR",
+        "x": 4.56,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA25",
+        "signal": "VDDR",
+        "x": 5.7,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA27",
+        "signal": "VSS",
+        "x": 6.84,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AA29",
+        "signal": "VSS",
+        "x": 7.98,
+        "y": -3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB2",
+        "signal": "PA04/TMR1.A.CAPT2/URT1.A.CTS/CAN1.A.RXD/JTAG.A.TDO",
+        "x": -7.41,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB4",
+        "signal": "PA05/TMR1.A.COMP2/URT1.A.DE/URT1.A.RTS/CAN1.A.TXD/JTAG.A.TDI",
+        "x": -6.27,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB6",
+        "signal": "PA18/TMR3.A.COMP1/URT4.A.DE/URT4.A.RTS/CAN4.A.STBY/I2S0.CD.FCLK/DIS0.AB.R7/CAM0.A.D7/CPU0.A.NMI",
+        "x": -5.13,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB8",
+        "signal": "PA19/TMR3.A.CAPT1/URT4.A.CTS/CAN5.A.STBY/I2S0.C.MCLK/DIS0.AB.R6/CAM0.A.D6",
+        "x": -3.99,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB10",
+        "signal": "PZ07/TMR2.D.COMP0/URT5.G.TXD/SPI0.G.MOSI",
+        "x": -2.85,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB12",
+        "signal": "VPMC",
+        "x": -1.71,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB14",
+        "signal": "PZ01/TMR3.D.CAPT0/URT4.G.RXD/CAN4.G.RXD",
+        "x": -0.57,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB16",
+        "signal": "PF09/TMR4.C.CAPT1/URT2.F.RXD/I2C0.F.SDA/SPI3.E.CS1/CAN2.F.RXD/ETH0.E.MDC/ETH0.D.EVTI3",
+        "x": 0.57,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB18",
+        "signal": "VIO_B09\\n",
+        "x": 1.71,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB20",
+        "signal": "PE28/TMR3.C.CAPT3/URT7.E.CTS/I2C3.E.SDA/SPI1.E.MISO/DAO.E.RP/USB0.C.ID/ADC0.A.IN1",
+        "x": 2.85,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB22",
+        "signal": "VDDR",
+        "x": 3.99,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB24",
+        "signal": "DDR_CKP",
+        "x": 5.13,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB26",
+        "signal": "DDR_A2",
+        "x": 6.27,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AB28",
+        "signal": "DDR_A5",
+        "x": 7.41,
+        "y": -3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC1",
+        "signal": "PA02/TMR1.A.COMP1/URT0.A.DE/URT0.A.RTS/CAN0.A.STBY/DAO.A.LN",
+        "x": -7.98,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC3",
+        "signal": "PA03/TMR1.A.CAPT1/URT0.A.CTS/CAN1.A.STBY/DAO.A.LP",
+        "x": -6.84,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC5",
+        "signal": "PA16/TMR3.A.COMP0/URT4.A.TXD/CAN4.A.TXD/I2S0.CD.RXD0/DIS0.AB.R5/CAM0.A.D9",
+        "x": -5.7,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC7",
+        "signal": "PA17/TMR3.A.CAPT0/URT4.A.RXD/CAN4.A.RXD/I2S0.CD.RXD2/DIS0.AB.R4/CAM0.A.D8",
+        "x": -4.56,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC9",
+        "signal": "VDD_PMCCAP",
+        "x": -3.42,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC11",
+        "signal": "PZ05/TMR3.D.COMP2/URT5.G.DE/URT5.G.RTS/SPI0.G.SCLK/CAN5.G.TXD/DAO.F.LN",
+        "x": -2.28,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC13",
+        "signal": "PZ03/TMR3.D.CAPT1/URT4.G.CTS/CAN5.G.STBY/DAO.F.RN",
+        "x": -1.14,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC15",
+        "signal": "VBAT",
+        "x": 0,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC17",
+        "signal": "PF07/TMR4.C.COMP0/URT1.F.TXD/SPI2.E.MOSI/ETH0.D.EVTI1/",
+        "x": 1.14,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC19",
+        "signal": "PE30/TMR2.C.CAPT3/URT7.E.RXD/SPI1.E.DAT2/CAN7.E.RXD/DAO.E.RN/USB0.C.OC/ADC0.A.IN5/ADC1.A.INN/OPA0.A.IN0N",
+        "x": 2.28,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC21",
+        "signal": "VIO_B09",
+        "x": 3.42,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC23",
+        "signal": "DDR_A10",
+        "x": 4.56,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC25",
+        "signal": "DDR_CKN",
+        "x": 5.7,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC27",
+        "signal": "DDR_A0",
+        "x": 6.84,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AC29",
+        "signal": "DDR_A3",
+        "x": 7.98,
+        "y": -4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD2",
+        "signal": "PA00/TMR1.A.COMP0/URT0.A.TXD/CAN0.A.TXD/DAO.A.RN",
+        "x": -7.41,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD4",
+        "signal": "PA01/TMR1.A.CAPT0/URT0.A.RXD/CAN0.A.RXD/DAO.A.RP",
+        "x": -6.27,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD6",
+        "signal": "PA14/TMR0.A.CAPT3/URT3.A.RXD/CAN3.A.RXD/I2S0.CD.RXD1/DIS0.B.CLK/CAM0.A.VSYNC",
+        "x": -5.13,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD8",
+        "signal": "PA15/TMR0.A.COMP3/URT3.A.TXD/CAN3.A.TXD/I2S0.CD.RXD3/DIS0.AB.R3/CAM0.A.HSYNC",
+        "x": -3.99,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD10",
+        "signal": "PZ06/TMR2.D.CAPT0/URT5.G.RXD/SPI0.G.MISO",
+        "x": -2.85,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD12",
+        "signal": "VPMC",
+        "x": -1.71,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD14",
+        "signal": "PZ00/TMR3.D.COMP0/URT4.G.TXD/CAN4.G.TXD",
+        "x": -0.57,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD16",
+        "signal": "PF08/TMR4.C.COMP1/URT2.F.TXD/I2C0.F.SCL/SPI3.E.CS2/CAN2.F.TXD/ETH0.E.MDIO/ETH0.D.EVTI2",
+        "x": 0.57,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD18",
+        "signal": "PE31/TMR2.C.COMP3/URT7.E.TXD/SPI1.E.DAT3/CAN7.E.TXD/DAO.E.LP/ADC0.A.IN7/ADC1.A.INP/OPA0.A.IN0P",
+        "x": 1.71,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD20",
+        "signal": "PE27/TMR2.C.CAPT2/URT6.E.CTS/SPI1.E.SCLK/I2S0.B.MCLK/USB0.C.PWR/ADC0.A.IN11/OPA0.A.IN1N",
+        "x": 2.85,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD22",
+        "signal": "PE25/TMR2.C.CAPT1/URT6.E.RXD/I2C2.E.SDA/SPI1.E.CS1/CAN6.E.RXD/I2S0.A.MCLK/ETH0.D.MDC/ADC0.A.IN0",
+        "x": 3.99,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD24",
+        "signal": "DDR_A15",
+        "x": 5.13,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD26",
+        "signal": "DDR_A12",
+        "x": 6.27,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AD28",
+        "signal": "VSS",
+        "x": 7.41,
+        "y": -5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE1",
+        "signal": "DCDC_GND",
+        "x": -7.98,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE3",
+        "signal": "DCDC_GND",
+        "x": -6.84,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE5",
+        "signal": "DCDC_GND",
+        "x": -5.7,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE7",
+        "signal": "DCDC_SNS",
+        "x": -4.56,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE9",
+        "signal": "RESETN",
+        "x": -3.42,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE11",
+        "signal": "PZ04/TMR3.D.CAPT2/URT5.G.CTS/SPI0.G.CS0/CAN5.G.RXD/DAO.F.LP",
+        "x": -2.28,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE13",
+        "signal": "PZ02/TMR3.D.COMP1/URT4.G.DE/URT4.G.RTS/CAN4.G.STBY/DAO.F.RP",
+        "x": -1.14,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE15",
+        "signal": "VBAT",
+        "x": 0,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE17",
+        "signal": "PF06/TMR4.C.CAPT0/URT1.F.RXD/SPI2.E.MISO/ETH0.D.EVTI0",
+        "x": 1.14,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE19",
+        "signal": "PE29/TMR3.C.COMP3/URT7.E.DE/URT7.E.RTS/I2C3.E.SCL/SPI1.E.MOSI/CAN7.E.STBY/DAO.E.LN/ADC0.A.IN3/OPA0.A.OUT",
+        "x": 2.28,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE21",
+        "signal": "PE26/TMR2.C.COMP2/URT6.E.DE/URT6.E.RTS/SPI1.E.CS0/CAN6.E.STBY/I2S0.AB.BCLK/ADC0.A.IN14/OPA0.A.IN3N",
+        "x": 3.42,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE23",
+        "signal": "PE24/TMR2.C.COMP1/URT6.E.TXD/I2C2.E.SCL/SPI1.E.CS2/CAN6.E.TXD/I2S0.AB.FCLK/ETH0.D.MDIO/ADC0.A.IN12",
+        "x": 4.56,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE25",
+        "signal": "VSS",
+        "x": 5.7,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE27",
+        "signal": "DDR_A1",
+        "x": 6.84,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AE29",
+        "signal": "DDR_BA1",
+        "x": 7.98,
+        "y": -5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF2",
+        "signal": "DCDC_LP\\n",
+        "x": -7.41,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF4",
+        "signal": "DCDC_LP\\n",
+        "x": -6.27,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF6",
+        "signal": "DCDC_LP\\n",
+        "x": -5.13,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF8",
+        "signal": "DCDC_GND",
+        "x": -3.99,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF10",
+        "signal": "PY07/TMR0.D.COMP0/URT1.G.TXD/SPI2.F.MOSI/PDM0.LM.D0",
+        "x": -2.85,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF12",
+        "signal": "PY03/TMR1.D.CAPT1/URT0.G.CTS/CAN1.G.STBY/PDM0.LM.D2",
+        "x": -1.71,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF14",
+        "signal": "RTC_XTAL_OUT",
+        "x": -0.57,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF16",
+        "signal": "PF05/TMR5.C.COMP2/URT1.F.DE/URT1.F.RTS/SPI2.E.SCLK/CAN1.F.TXD/PDM0.JK.D0/ETH0.D.EVTO3",
+        "x": 0.57,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF18",
+        "signal": "PF01/TMR5.C.CAPT0/URT0.F.RXD/CAN0.F.RXD/PDM0.JK.D2/CPU0.E.NMI",
+        "x": 1.71,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF20",
+        "signal": "PE21/TMR3.C.COMP2/URT5.E.DE/URT5.E.RTS/SPI0.E.SCLK/CAN5.E.TXD/I2S0.AB.RXD1/ETH0.C.EVTI2/ADC0.A.IN2/OPA0.A.IN3P",
+        "x": 2.85,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF22",
+        "signal": "PE19/TMR3.C.CAPT1/URT4.E.CTS/SPI1.E.CS3/CAN5.E.STBY/I2S0.AB.TXD1/ETH0.C.EVTI1/ADC0.A.IN10/OPA0.A.IN2N",
+        "x": 3.99,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF24",
+        "signal": "DDR_ZQ",
+        "x": 5.13,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF26",
+        "signal": "DDR_A11",
+        "x": 6.27,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AF28",
+        "signal": "DDR_A4",
+        "x": 7.41,
+        "y": -6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG1",
+        "signal": "VSS",
+        "x": -7.98,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG3",
+        "signal": "DCDC_IN",
+        "x": -6.84,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG5",
+        "signal": "DCDC_IN",
+        "x": -5.7,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG7",
+        "signal": "DCDCM_SNS",
+        "x": -4.56,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG11",
+        "signal": "PY05/TMR1.D.COMP2/URT1.G.DE/URT1.G.RTS/SPI2.F.SCLK/CAN1.G.TXD/PDM0.LM.D1",
+        "x": -2.28,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG13",
+        "signal": "PY01/TMR1.D.CAPT0/URT0.G.RXD/CAN0.G.RXD",
+        "x": -1.14,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG15",
+        "signal": "VSS",
+        "x": 0,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG17",
+        "signal": "PF03/TMR5.C.CAPT1/URT0.F.CTS/SPI3.E.CS3/CAN1.F.STBY/PDM0.JK.D1/ETH0.D.EVTO1/USB0.A.OC",
+        "x": 1.14,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG19",
+        "signal": "PE23/TMR2.C.COMP0/URT5.E.TXD/SPI0.E.MOSI/I2S0.AB.RXD3/ETH0.C.EVTI3/USB0.B.OC/ADC0.A.IN6/OPA0.A.IN1P",
+        "x": 2.28,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG23",
+        "signal": "PE17/TMR3.C.CAPT0/URT4.E.RXD/CAN4.E.RXD/I2S0.AB.TXD3/ETH0.C.EVTI0/ADC0.A.IN13",
+        "x": 4.56,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG25",
+        "signal": "DDR_CKE0",
+        "x": 5.7,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG27",
+        "signal": "DDR_A6",
+        "x": 6.84,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AG29",
+        "signal": "VSS",
+        "x": 7.98,
+        "y": -6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH2",
+        "signal": "DCDC_IN",
+        "x": -7.41,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH4",
+        "signal": "DCDC_IN",
+        "x": -6.27,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH6",
+        "signal": "DCDCM_LP",
+        "x": -5.13,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH8",
+        "signal": "DCDC_GND",
+        "x": -3.99,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH10",
+        "signal": "PY06/TMR0.D.CAPT0/URT1.G.RXD/SPI2.F.MISO/PDM0.L.CLK",
+        "x": -2.85,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH12",
+        "signal": "PY02/TMR1.D.COMP1/URT0.G.DE/URT0.G.RTS/CAN0.G.STBY/PDM0.M.CLK",
+        "x": -1.71,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH14",
+        "signal": "RTC_XTAL_IN",
+        "x": -0.57,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH16",
+        "signal": "PF04/TMR5.C.CAPT2/URT1.F.CTS/SPI2.E.CS0/CAN1.F.RXD/PDM0.J.CLK/ETH0.D.EVTO2/USB0.A.ID",
+        "x": 0.57,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH18",
+        "signal": "PF00/TMR5.C.COMP0/URT0.F.TXD/CAN0.F.TXD/PDM0.K.CLK/USB0.A.PWR",
+        "x": 1.71,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH20",
+        "signal": "PE20/TMR3.C.CAPT2/URT5.E.CTS/SPI0.E.CS0/CAN5.E.RXD/I2S0.AB.RXD0/ETH0.C.EVTO2/USB0.B.ID/OPA0.A.EXT",
+        "x": 2.85,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH22",
+        "signal": "PE18/TMR3.C.COMP1/URT4.E.DE/URT4.E.RTS/CAN4.E.STBY/I2S0.AB.TXD0/ETH0.C.EVTO1/USB0.B.PWR/ADC0.A.IN9",
+        "x": 3.99,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH24",
+        "signal": "VSS",
+        "x": 5.13,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH26",
+        "signal": "DDR_A8",
+        "x": 6.27,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AH28",
+        "signal": "DDR_A14",
+        "x": 7.41,
+        "y": -7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ3",
+        "signal": "VSS",
+        "x": -6.84,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ5",
+        "signal": "DCDC_IN",
+        "x": -5.7,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ7",
+        "signal": "DCDCM_LP",
+        "x": -4.56,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ11",
+        "signal": "PY04/TMR1.D.CAPT2/URT1.G.CTS/SPI2.F.CS0/CAN1.G.RXD/PDM0.LM.D3",
+        "x": -2.28,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ13",
+        "signal": "PY00/TMR1.D.COMP0/URT0.G.TXD/CAN0.G.TXD",
+        "x": -1.14,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ15",
+        "signal": "VSS",
+        "x": 0,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ17",
+        "signal": "PF02/TMR5.C.COMP1/URT0.F.DE/URT0.F.RTS/CAN0.F.STBY/PDM0.JK.D3/ETH0.D.EVTO0",
+        "x": 1.14,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ19",
+        "signal": "PE22/TMR2.C.CAPT0/URT5.E.RXD/SPI0.E.MISO/I2S0.AB.RXD2/ETH0.C.EVTO3/ADC0.A.IN4/OPA0.A.IN2P",
+        "x": 2.28,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ23",
+        "signal": "PE16/TMR3.C.COMP0/URT4.E.TXD/CAN4.E.TXD/I2S0.AB.TXD2/ETH0.C.EVTO0/ADC0.A.IN8",
+        "x": 4.56,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ25",
+        "signal": "DDR_CKE1",
+        "x": 5.7,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "AJ27",
+        "signal": "VSS",
+        "x": 6.84,
+        "y": -7.98,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B2",
+        "signal": "USB0_DP",
+        "x": -7.41,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B4",
+        "signal": "PC01/TMR1.B.CAPT0/URT0.C.RXD/CAN0.C.RXD/I2S2.AB.RXD2/SDC0.A.CMD/CPU0.C.NMI/XPI_SLV.A.CLK",
+        "x": -6.27,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B6",
+        "signal": "PC05/TMR1.B.COMP2/URT1.C.DE/URT1.C.RTS/SPI2.B.SCLK/CAN1.C.TXD/I2S2.AB.BCLK/SDC0.A.DATA3/XPI_SLV.A.ADQ2",
+        "x": -5.13,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B8",
+        "signal": "PC10/TMR0.B.COMP2/URT2.C.DE/URT2.C.RTS/CAN2.C.STBY/I2S2.AB.TXD0/DAO.B.RN/SDC0.A.DATA6",
+        "x": -3.99,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B10",
+        "signal": "PC18/TMR3.B.COMP1/URT4.C.DE/URT4.C.RTS/CAN4.C.STBY/I2S1.CD.RXD2/SDC1.B.DATA3/ETH0.A.TXD3",
+        "x": -2.85,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B12",
+        "signal": "PC22/TMR2.B.CAPT0/URT5.C.RXD/SPI0.C.MISO/I2S1.CD.BCLK/SDC1.B.DATA1/ETH0.A.TXD0",
+        "x": -1.71,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B14",
+        "signal": "PC26/TMR2.B.COMP2/URT6.C.DE/URT6.C.RTS/SPI1.C.CS0/CAN6.C.STBY/I2S1.CD.TXD2/SDC1.C.WP/ETH0.A.RXCK",
+        "x": -0.57,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B16",
+        "signal": "PC28/TMR3.B.CAPT3/URT7.C.CTS/I2C3.C.SDA/SPI1.C.MISO/I2S1.C.MCLK/ETH0.A.RXD1",
+        "x": 0.57,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B18",
+        "signal": "PD06/TMR4.B.CAPT0/URT1.D.RXD/SPI3.C.MISO/I2S2.CD.RXD3/PDM0.F.CLK/XPI0.A.CA_SCLK/ETH0.B.TXD3",
+        "x": 1.71,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B20",
+        "signal": "PD10/TMR4.B.COMP2/URT2.D.DE/URT2.D.RTS/SPI2.C.CS0/CAN2.D.STBY/I2S2.CD.TXD2/XPI0.A.CA_D2/ETH0.B.TXD0",
+        "x": 2.85,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B22",
+        "signal": "PD20/TMR7.B.CAPT2/URT5.D.CTS/SPI0.D.CS0/CAN5.D.RXD/I2S3.AB.RXD1/ETH0.A.EVTI3",
+        "x": 3.99,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B24",
+        "signal": "PD24/TMR6.B.COMP1/URT6.D.TXD/I2C2.D.SCL/SPI1.D.CS2/CAN6.D.TXD/I2S3.AB.BCLK/ETH0.A.EVTI1",
+        "x": 5.13,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B26",
+        "signal": "PE01/TMR1.C.CAPT0/URT0.E.RXD/CAN0.E.RXD/I2S3.CD.TXD2/PDM0.GH.D1",
+        "x": 6.27,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "B28",
+        "signal": "PE00/TMR1.C.COMP0/URT0.E.TXD/CAN0.E.TXD/I2S3.CD.TXD3/PDM0.G.CLK/SYSCTL.A.CLK_OBS0",
+        "x": 7.41,
+        "y": 7.41,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C1",
+        "signal": "VSS",
+        "x": -7.98,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C3",
+        "signal": "USB0_DN",
+        "x": -6.84,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C5",
+        "signal": "PC04/TMR1.B.CAPT2/URT1.C.CTS/SPI2.B.CS0/CAN1.C.RXD/I2S2.AB.RXD1/SDC0.A.DATA2/XPI_SLV.A.ADQ3",
+        "x": -5.7,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C7",
+        "signal": "PC09/TMR0.B.CAPT1/URT2.C.RXD/I2C0.C.SDA/CAN2.C.RXD/I2S2.AB.TXD3/DAO.B.LP/SDC0.A.DATA5/XPI_SLV.A.RDY",
+        "x": -4.56,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C11",
+        "signal": "PC21/TMR3.B.COMP2/URT5.C.DE/URT5.C.RTS/SPI0.C.SCLK/CAN5.C.TXD/I2S1.CD.RXD1/SDC1.B.CMD/ETH0.A.TXEN",
+        "x": -2.28,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C13",
+        "signal": "PC25/TMR2.B.CAPT1/URT6.C.RXD/I2C2.C.SDA/SPI1.C.CS1/CAN6.C.RXD/I2S1.CD.TXD1/SDC1.C.VSEL/ETH0.A.RXD3",
+        "x": -1.14,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C15",
+        "signal": "VSS",
+        "x": 0,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C17",
+        "signal": "PD05/TMR5.B.COMP2/URT1.D.DE/URT1.D.RTS/SPI3.C.SCLK/CAN1.D.TXD/PDM0.EF.D1/XPI0.A.CA_CS1",
+        "x": 1.14,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C19",
+        "signal": "PD09/TMR4.B.CAPT1/URT2.D.RXD/I2C0.D.SDA/SPI2.C.CS1/CAN2.D.RXD/PDM0.EF.D2/XPI0.A.CA_D1/ETH0.B.TXEN",
+        "x": 2.28,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C23",
+        "signal": "PD23/TMR6.B.COMP0/URT5.D.TXD/SPI0.D.MOSI/I2S3.AB.RXD2/ETH0.A.EVTO1",
+        "x": 4.56,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C25",
+        "signal": "PD31/TMR6.B.COMP3/URT7.D.TXD/SPI1.D.DAT3/CAN7.D.TXD/I2S3.B.MCLK/ETH0.A.EVTO0/SOC.A.REF1",
+        "x": 5.7,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C27",
+        "signal": "PE02/TMR1.C.COMP1/URT0.E.DE/URT0.E.RTS/CAN0.E.STBY/I2S3.CD.TXD1/PDM0.GH.D0/SYSCTL.A.CLK_OBS2",
+        "x": 6.84,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "C29",
+        "signal": "VSS",
+        "x": 7.98,
+        "y": 6.84,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D2",
+        "signal": "XTAL_OUT",
+        "x": -7.41,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D4",
+        "signal": "PC02/TMR1.B.COMP1/URT0.C.DE/URT0.C.RTS/CAN0.C.STBY/I2S2.AB.RXD3/SDC0.A.CLK/XPI_SLV.A.CSN",
+        "x": -6.27,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D6",
+        "signal": "PC06/TMR0.B.CAPT0/URT1.C.RXD/SPI2.B.MISO/I2S2.AB.FCLK/SDC0.A.DATA0/XPI_SLV.A.ADQ0",
+        "x": -5.13,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D8",
+        "signal": "PC11/TMR0.B.CAPT2/URT2.C.CTS/I2S2.AB.TXD1/DAO.B.RP/SDC0.A.DATA7",
+        "x": -3.99,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D10",
+        "signal": "PC19/TMR3.B.CAPT1/URT4.C.CTS/SPI1.C.CS3/CAN5.C.STBY/I2S1.CD.RXD3/SDC1.B.DATA2/ETH0.A.TXD2/ADC0.A.DBG",
+        "x": -2.85,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D12",
+        "signal": "PC23/TMR2.B.COMP0/URT5.C.TXD/SPI0.C.MOSI/I2S1.CD.FCLK/SDC1.B.DATA0/ETH0.A.TXD1/SYSCTL.B.CLK_OBS0",
+        "x": -1.71,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D14",
+        "signal": "PC27/TMR2.B.CAPT2/URT6.C.CTS/SPI1.C.SCLK/I2S1.CD.TXD3/SDC1.C.VON/ETH0.A.RXDV/SYSCTL.B.CLK_OBS2",
+        "x": -0.57,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D16",
+        "signal": "PC29/TMR3.B.COMP3/URT7.C.DE/URT7.C.RTS/I2C3.C.SCL/SPI1.C.MOSI/CAN7.C.STBY/I2S1.D.MCLK/ETH0.A.RXD0",
+        "x": 0.57,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D18",
+        "signal": "PD07/TMR4.B.COMP0/URT1.D.TXD/SPI3.C.MOSI/I2S2.CD.RXD2/PDM0.EF.D3/XPI0.A.CA_DQS/ETH0.B.TXD2",
+        "x": 1.71,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D20",
+        "signal": "PD11/TMR4.B.CAPT2/URT2.D.CTS/SPI2.C.SCLK/I2S2.CD.TXD3/XPI0.A.CA_D3/ETH0.B.TXD1",
+        "x": 2.85,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D22",
+        "signal": "PD21/TMR7.B.COMP2/URT5.D.DE/URT5.D.RTS/SPI0.D.SCLK/CAN5.D.TXD/I2S3.AB.RXD3/ETH0.A.EVTO3",
+        "x": 3.99,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D24",
+        "signal": "PD25/TMR6.B.CAPT1/URT6.D.RXD/I2C2.D.SDA/SPI1.D.CS1/CAN6.D.RXD/I2S3.AB.FCLK/ETH0.A.EVTO2",
+        "x": 5.13,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D26",
+        "signal": "PE04/TMR1.C.CAPT2/URT1.E.CTS/SPI3.D.CS0/CAN1.E.RXD/I2S3.D.MCLK/SYSCTL.A.CLK_OBS3",
+        "x": 6.27,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "D28",
+        "signal": "PE03/TMR1.C.CAPT1/URT0.E.CTS/SPI2.D.CS3/CAN1.E.STBY/I2S3.CD.TXD0/SYSCTL.A.CLK_OBS1",
+        "x": 7.41,
+        "y": 6.27,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E1",
+        "signal": "XTAL_IN",
+        "x": -7.98,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E3",
+        "signal": "PC00/TMR1.B.COMP0/URT0.C.TXD/CAN0.C.TXD/I2S2.B.MCLK/SDC0.A.DS/XPI_SLV.A.DQS",
+        "x": -6.84,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E5",
+        "signal": "VSS",
+        "x": -5.7,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E7",
+        "signal": "PC07/TMR0.B.COMP0/URT1.C.TXD/SPI2.B.MOSI/I2S2.A.MCLK/SDC0.A.RSTN",
+        "x": -4.56,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E9",
+        "signal": "PC12/TMR1.B.CAPT3/URT3.C.CTS/I2C1.C.SDA/SPI3.B.MISO/PDM0.CD.D0/SDC1.AC.DATA3",
+        "x": -3.42,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E11",
+        "signal": "PC15/TMR0.B.COMP3/URT3.C.TXD/SPI3.B.SCLK/CAN3.C.TXD/PDM0.CD.D2/SDC1.AC.DATA1",
+        "x": -2.28,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E13",
+        "signal": "PC30/TMR2.B.CAPT3/URT7.C.RXD/CAN7.C.RXD/DAO.C.LN/SDC1.B.CDN",
+        "x": -1.14,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E15",
+        "signal": "VIO_B04",
+        "x": 0,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E17",
+        "signal": "PD12/TMR5.B.CAPT3/URT3.D.CTS/I2C1.D.SDA/SPI2.C.MISO/I2S2.CD.RXD1/XPI0.A.CB_CS0/ETH0.B.RXD1",
+        "x": 1.14,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E19",
+        "signal": "PD15/TMR4.B.COMP3/URT3.D.TXD/SPI2.C.DAT3/CAN3.D.TXD/I2S2.CD.BCLK/XPI0.A.CB_D0/ETH0.B.RXDV",
+        "x": 2.28,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E21",
+        "signal": "PD19/TMR7.B.CAPT1/URT4.D.CTS/SPI1.D.CS3/CAN5.D.STBY/I2S2.CD.TXD1/XPI0.A.CB_D2",
+        "x": 3.42,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E23",
+        "signal": "PD28/TMR7.B.CAPT3/URT7.D.CTS/I2C3.D.SDA/SPI1.D.MISO/I2S3.AB.TXD0",
+        "x": 4.56,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E25",
+        "signal": "VSS",
+        "x": 5.7,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E27",
+        "signal": "PE09/TMR0.C.CAPT1/URT2.E.RXD/I2C0.E.SDA/SPI2.D.CS1/CAN2.E.RXD/I2S3.C.MCLK/ETH0.B.EVTI3",
+        "x": 6.84,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "E29",
+        "signal": "PE08/TMR0.C.COMP1/URT2.E.TXD/I2C0.E.SCL/SPI2.D.CS2/CAN2.E.TXD/I2S3.CD.FCLK/ETH0.B.EVTO3",
+        "x": 7.98,
+        "y": 5.7,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F2",
+        "signal": "PB04/TMR5.A.CAPT2/URT1.B.CTS/SPI2.A.CS0/CAN1.B.RXD/DIS0.AB.B2/MIPI2.A.D0N/LVDS2.A.D0N",
+        "x": -7.41,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F4",
+        "signal": "PB05/TMR5.A.COMP2/URT1.B.DE/URT1.B.RTS/SPI2.A.SCLK/CAN1.B.TXD/DIS0.AB.G7/MIPI2.A.D0P/LVDS2.A.D0P",
+        "x": -6.27,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F6",
+        "signal": "PB22/TMR6.A.CAPT0/URT5.B.RXD/SPI1.B.MISO/I2S1.AB.TXD3/SDC0.B.DATA6/MIPI3.A.D0N/LVDS3.A.D0N",
+        "x": -5.13,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F8",
+        "signal": "PB24/TMR6.A.COMP1/URT6.B.TXD/I2C2.B.SCL/SPI0.B.CS2/CAN6.B.TXD/I2S1.A.MCLK/SDC0.B.DATA7/MIPI3.A.D0P/LVDS3.A.D0P",
+        "x": -3.99,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F10",
+        "signal": "PC13/TMR1.B.COMP3/URT3.C.DE/URT3.C.RTS/I2C1.C.SCL/SPI3.B.MOSI/CAN3.C.STBY/PDM0.C.CLK/SDC1.AC.CMD",
+        "x": -2.85,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F12",
+        "signal": "PC17/TMR3.B.CAPT0/URT4.C.RXD/CAN4.C.RXD/PDM0.CD.D3/SDC1.AC.DATA0",
+        "x": -1.71,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F14",
+        "signal": "PD00/TMR5.B.COMP0/URT0.D.TXD/CAN0.D.TXD/DAO.C.RN/SDC1.B.VON",
+        "x": -0.57,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F16",
+        "signal": "PD02/TMR5.B.COMP1/URT0.D.DE/URT0.D.RTS/CAN0.D.STBY/ETH0.A.MDC",
+        "x": 0.57,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F18",
+        "signal": "PD14/TMR4.B.CAPT3/URT3.D.RXD/SPI2.C.DAT2/CAN3.D.RXD/I2S2.CD.RXD0/XPI0.A.CB_SCLK/ETH0.B.RXCK",
+        "x": 1.71,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F20",
+        "signal": "PD17/TMR7.B.CAPT0/URT4.D.RXD/CAN4.D.RXD/I2S2.CD.TXD0/XPI0.A.CB_DQS/ETH0.B.RXD2",
+        "x": 2.85,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F22",
+        "signal": "PD26/TMR6.B.COMP2/URT6.D.DE/URT6.D.RTS/SPI1.D.CS0/CAN6.D.STBY/I2S3.AB.TXD1/ETH0.B.MDC",
+        "x": 3.99,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F24",
+        "signal": "PE06/TMR0.C.CAPT0/URT1.E.RXD/SPI3.D.MISO/DAO.D.LN",
+        "x": 5.13,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F26",
+        "signal": "PE11/TMR0.C.CAPT2/URT2.E.CTS/SPI2.D.SCLK/DAO.D.RN/ETH0.B.EVTI2",
+        "x": 6.27,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "F28",
+        "signal": "PE10/TMR0.C.COMP2/URT2.E.DE/URT2.E.RTS/SPI2.D.CS0/CAN2.E.STBY/I2S3.CD.BCLK/ETH0.B.EVTO1",
+        "x": 7.41,
+        "y": 5.13,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G1",
+        "signal": "PB06/TMR4.A.CAPT0/URT1.B.RXD/SPI2.A.MISO/DIS0.AB.B3/MIPI2.A.D1N/LVDS2.A.D1N",
+        "x": -7.98,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G3",
+        "signal": "PB07/TMR4.A.COMP0/URT1.B.TXD/SPI2.A.MOSI/DIS0.AB.B4/MIPI2.A.D1P/LVDS2.A.D1P",
+        "x": -6.84,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G5",
+        "signal": "PB25/TMR6.A.CAPT1/URT6.B.RXD/I2C2.B.SDA/SPI0.B.CS1/CAN6.B.RXD/I2S1.AB.BCLK/SDC0.B.DATA4/MIPI3.A.D1N/LVDS3.A.D1N",
+        "x": -5.7,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G7",
+        "signal": "PB23/TMR6.A.COMP0/URT5.B.TXD/SPI1.B.MOSI/I2S1.AB.FCLK/SDC0.B.DATA5/MIPI3.A.D1P/LVDS3.A.D1P",
+        "x": -4.56,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G9",
+        "signal": "VIO_B02",
+        "x": -3.42,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G11",
+        "signal": "PC16/TMR3.B.COMP0/URT4.C.TXD/CAN4.C.TXD/PDM0.D.CLK/SDC1.AC.CLK",
+        "x": -2.28,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G13",
+        "signal": "PC31/TMR2.B.COMP3/URT7.C.TXD/CAN7.C.TXD/DAO.C.LP/SDC1.B.VSEL",
+        "x": -1.14,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G15",
+        "signal": "VIO_B05",
+        "x": 0,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G17",
+        "signal": "PD13/TMR5.B.COMP3/URT3.D.DE/URT3.D.RTS/I2C1.D.SCL/SPI2.C.MOSI/CAN3.D.STBY/I2S2.D.MCLK/XPI0.A.CB_CS1/ETH0.B.RXD0",
+        "x": 1.14,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G19",
+        "signal": "PD16/TMR7.B.COMP0/URT4.D.TXD/CAN4.D.TXD/I2S2.CD.FCLK/XPI0.A.CB_D1/ETH0.B.RXD3",
+        "x": 2.28,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G21",
+        "signal": "VIO_B06",
+        "x": 3.42,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G23",
+        "signal": "PD29/TMR7.B.COMP3/URT7.D.DE/URT7.D.RTS/I2C3.D.SCL/SPI1.D.MOSI/CAN7.D.STBY/I2S3.AB.TXD3/CPU0.D.NMI",
+        "x": 4.56,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G25",
+        "signal": "PE05/TMR1.C.COMP2/URT1.E.DE/URT1.E.RTS/SPI3.D.SCLK/CAN1.E.TXD/DAO.D.RP",
+        "x": 5.7,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G27",
+        "signal": "PE13/TMR1.C.COMP3/URT3.E.DE/URT3.E.RTS/I2C1.E.SCL/SPI2.D.MOSI/CAN3.E.STBY/I2S3.CD.RXD0/PDM0.GH.D3/ETH0.B.EVTI1",
+        "x": 6.84,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "G29",
+        "signal": "PE12/TMR1.C.CAPT3/URT3.E.CTS/I2C1.E.SDA/SPI2.D.MISO/I2S3.CD.RXD1/PDM0.GH.D2/ETH0.B.EVTO2",
+        "x": 7.98,
+        "y": 4.56,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H2",
+        "signal": "PB08/TMR4.A.COMP1/URT2.B.TXD/I2C0.B.SCL/SPI3.A.CS2/CAN2.B.TXD/DIS0.AB.B6/MIPI2.A.CKN/LVDS2.A.CKN",
+        "x": -7.41,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H4",
+        "signal": "PB09/TMR4.A.CAPT1/URT2.B.RXD/I2C0.B.SDA/SPI3.A.CS1/CAN2.B.RXD/DIS0.AB.B5/MIPI2.A.CKP/LVDS2.A.CKP",
+        "x": -6.27,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H6",
+        "signal": "PB26/TMR6.A.COMP2/URT6.B.DE/URT6.B.RTS/SPI0.B.CS0/CAN6.B.STBY/I2S1.AB.RXD1/SDC0.BC.DATA3/MIPI3.A.CKN/LVDS3.A.CKN",
+        "x": -5.13,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H8",
+        "signal": "PB27/TMR6.A.CAPT2/URT6.B.CTS/SPI0.B.SCLK/I2S1.AB.RXD3/SDC0.BC.DATA0/MIPI3.A.CKP/LVDS3.A.CKP",
+        "x": -3.99,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H10",
+        "signal": "PC14/TMR0.B.CAPT3/URT3.C.RXD/SPI3.B.CS0/CAN3.C.RXD/PDM0.CD.D1/SDC1.AC.DATA2",
+        "x": -2.85,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H12",
+        "signal": "VIO_B03",
+        "x": -1.71,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H14",
+        "signal": "PD01/TMR5.B.CAPT0/URT0.D.RXD/CAN0.D.RXD/DAO.C.RP/SDC1.B.WP",
+        "x": -0.57,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H16",
+        "signal": "PD03/TMR5.B.CAPT1/URT0.D.CTS/CAN1.D.STBY/ETH0.A.MDIO",
+        "x": 0.57,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H18",
+        "signal": "VIO_B06",
+        "x": 1.71,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H20",
+        "signal": "PD18/TMR7.B.COMP1/URT4.D.DE/URT4.D.RTS/CAN4.D.STBY/I2S2.C.MCLK/XPI0.A.CB_D3",
+        "x": 2.85,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H22",
+        "signal": "PD27/TMR6.B.CAPT2/URT6.D.CTS/SPI1.D.SCLK/I2S3.AB.TXD2/ETH0.B.MDIO",
+        "x": 3.99,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H24",
+        "signal": "PE07/TMR0.C.COMP0/URT1.E.TXD/SPI3.D.MOSI/DAO.D.LP",
+        "x": 5.13,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H26",
+        "signal": "PE15/TMR0.C.COMP3/URT3.E.TXD/SPI2.D.DAT3/CAN3.E.TXD/I2S3.CD.RXD2/ETH0.C.MDC/ETH0.B.EVTI0",
+        "x": 6.27,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "H28",
+        "signal": "PE14/TMR0.C.CAPT3/URT3.E.RXD/SPI2.D.DAT2/CAN3.E.RXD/I2S3.CD.RXD3/PDM0.H.CLK/ETH0.C.MDIO/ETH0.B.EVTO0",
+        "x": 7.41,
+        "y": 3.99,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J1",
+        "signal": "VSS",
+        "x": -7.98,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J3",
+        "signal": "VSS",
+        "x": -6.84,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J5",
+        "signal": "PB28/TMR7.A.CAPT3/URT7.B.CTS/I2C3.B.SDA/SPI0.B.MISO/I2S1.AB.RXD0/SDC0.BC.DATA1/CPU0.B.NMI/MIPI3.A.D2N/LVDS3.A.D2N",
+        "x": -5.7,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J7",
+        "signal": "VIO_B01",
+        "x": -4.56,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J9",
+        "signal": "USB0_VBUS",
+        "x": -3.42,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J11",
+        "signal": "VSS",
+        "x": -2.28,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J13",
+        "signal": "VSS",
+        "x": -1.14,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J15",
+        "signal": "VIO_B11",
+        "x": 0,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J17",
+        "signal": "VSS",
+        "x": 1.14,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J19",
+        "signal": "VSS",
+        "x": 2.28,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J21",
+        "signal": "VIO_B07",
+        "x": 3.42,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J23",
+        "signal": "VDDR",
+        "x": 4.56,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J25",
+        "signal": "VDDR",
+        "x": 5.7,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J27",
+        "signal": "VSS",
+        "x": 6.84,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "J29",
+        "signal": "VSS",
+        "x": 7.98,
+        "y": 3.42,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K2",
+        "signal": "PB10/TMR4.A.COMP2/URT2.B.DE/URT2.B.RTS/SPI3.A.CS0/CAN2.B.STBY/DIS0.AB.EN/MIPI2.A.D2N/LVDS2.A.D2N",
+        "x": -7.41,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K4",
+        "signal": "PB11/TMR4.A.CAPT2/URT2.B.CTS/SPI3.A.SCLK/DIS0.AB.B7/MIPI2.A.D2P/LVDS2.A.D2P",
+        "x": -6.27,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K6",
+        "signal": "PB29/TMR7.A.COMP3/URT7.B.DE/URT7.B.RTS/I2C3.B.SCL/SPI0.B.MOSI/CAN7.B.STBY/I2S1.AB.RXD2/SDC0.BC.DATA2/MIPI3.A.D2P/LVDS3.A.D2P",
+        "x": -5.13,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K8",
+        "signal": "PB31/TMR6.A.COMP3/URT7.B.TXD/SPI0.B.DAT3/CAN7.B.TXD/SDC0.BC.CMD/MIPI3.A.D3P/LVDS3.A.D3P",
+        "x": -3.99,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K10",
+        "signal": "VUSB",
+        "x": -2.85,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K12",
+        "signal": "VSS",
+        "x": -1.71,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K14",
+        "signal": "VSS",
+        "x": -0.57,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K16",
+        "signal": "VSS",
+        "x": 0.57,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K18",
+        "signal": "VSS",
+        "x": 1.71,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K20",
+        "signal": "VIO_B08",
+        "x": 2.85,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K22",
+        "signal": "DDR_DM1",
+        "x": 3.99,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K24",
+        "signal": "DDR_D9",
+        "x": 5.13,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K26",
+        "signal": "DDR_D6",
+        "x": 6.27,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "K28",
+        "signal": "DDR_D4",
+        "x": 7.41,
+        "y": 2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L1",
+        "signal": "PB12/TMR5.A.CAPT3/URT3.B.CTS/I2C1.B.SDA/SPI3.A.MISO/DIS0.AB.HSYNC/MIPI2.A.D3N/LVDS2.A.D3N",
+        "x": -7.98,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L3",
+        "signal": "PB13/TMR5.A.COMP3/URT3.B.DE/URT3.B.RTS/I2C1.B.SCL/SPI3.A.MOSI/CAN3.B.STBY/DIS0.A.CLK/MIPI2.A.D3P/LVDS2.A.D3P",
+        "x": -6.84,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L5",
+        "signal": "PA29/TMR3.A.COMP3/URT7.A.DE/URT7.A.RTS/I2C3.A.SCL/CAN7.A.STBY/CAM0.B.XCLK/MIPI1.A.REXT",
+        "x": -5.7,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L7",
+        "signal": "PB30/TMR6.A.CAPT3/URT7.B.RXD/SPI0.B.DAT2/CAN7.B.RXD/SDC0.BC.CLK/MIPI3.A.D3N/LVDS3.A.D3N",
+        "x": -4.56,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L11",
+        "signal": "VUSB",
+        "x": -2.28,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L13",
+        "signal": "VPLL",
+        "x": -1.14,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L15",
+        "signal": "VSS",
+        "x": 0,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L17",
+        "signal": "VDD_2V5CAP",
+        "x": 1.14,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L19",
+        "signal": "VIO_B08",
+        "x": 2.28,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L23",
+        "signal": "DDR_D11",
+        "x": 4.56,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L25",
+        "signal": "DDR_D13",
+        "x": 5.7,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L27",
+        "signal": "DDR_DQS0N",
+        "x": 6.84,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "L29",
+        "signal": "DDR_DQS0P",
+        "x": 7.98,
+        "y": 2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M2",
+        "signal": "PB14/TMR4.A.CAPT3/URT3.B.RXD/SPI3.A.DAT2/CAN3.B.RXD/DIS0.AB.VSYNC/SYSCTL.B.CLK_OBS1/MIPI2.A.REXT",
+        "x": -7.41,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M4",
+        "signal": "PB15/TMR4.A.COMP3/URT3.B.TXD/SPI3.A.DAT3/CAN3.B.TXD/SDC0.B.DS/SYSCTL.B.CLK_OBS3/MIPI3.A.REXT",
+        "x": -6.27,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M6",
+        "signal": "PA28/TMR3.A.CAPT3/URT7.A.CTS/I2C3.A.SDA/DIS0.AB.R0/MIPI0.A.REXT",
+        "x": -5.13,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M8",
+        "signal": "VIO_B01",
+        "x": -3.99,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M10",
+        "signal": "VSS",
+        "x": -2.85,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M12",
+        "signal": "VPLL",
+        "x": -1.71,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M14",
+        "signal": "VDD_SOC",
+        "x": -0.57,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M16",
+        "signal": "VDD_SOC",
+        "x": 0.57,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M18",
+        "signal": "VDD_2V5CAP",
+        "x": 1.71,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M20",
+        "signal": "VSS",
+        "x": 2.85,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M22",
+        "signal": "VDDR",
+        "x": 3.99,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M24",
+        "signal": "DDR_D15",
+        "x": 5.13,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M26",
+        "signal": "DDR_D2",
+        "x": 6.27,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "M28",
+        "signal": "VSS",
+        "x": 7.41,
+        "y": 1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N1",
+        "signal": "PA30/TMR2.A.CAPT3/URT7.A.RXD/CAN7.A.RXD/DIS0.AB.R2/MIPI0.A.D0N/LVDS0.A.D0N",
+        "x": -7.98,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N3",
+        "signal": "PA31/TMR2.A.COMP3/URT7.A.TXD/CAN7.A.TXD/DIS0.AB.R1/MIPI0.A.D0P/LVDS0.A.D0P",
+        "x": -6.84,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N5",
+        "signal": "PB16/TMR7.A.COMP0/URT4.B.TXD/CAN4.B.TXD/CAM0.B.D6/MIPI1.A.D0N/LVDS1.A.D0N",
+        "x": -5.7,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N7",
+        "signal": "PB17/TMR7.A.CAPT0/URT4.B.RXD/CAN4.B.RXD/CAM0.B.D7/MIPI1.A.D0P/LVDS1.A.D0P",
+        "x": -4.56,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N11",
+        "signal": "VPLL",
+        "x": -2.28,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N13",
+        "signal": "VDD_SOC",
+        "x": -1.14,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N15",
+        "signal": "VSS",
+        "x": 0,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N17",
+        "signal": "VDD_SOC",
+        "x": 1.14,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N19",
+        "signal": "VDD_2V5CAP",
+        "x": 2.28,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N23",
+        "signal": "DDR_D14",
+        "x": 4.56,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N25",
+        "signal": "DDR_D12",
+        "x": 5.7,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N27",
+        "signal": "DDR_D0",
+        "x": 6.84,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "N29",
+        "signal": "DDR_DM0",
+        "x": 7.98,
+        "y": 1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P2",
+        "signal": "PB00/TMR5.A.COMP0/URT0.B.TXD/CAN0.B.TXD/DIS0.AB.G1/MIPI0.A.CKN/LVDS0.A.CKN",
+        "x": -7.41,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P4",
+        "signal": "PB01/TMR5.A.CAPT0/URT0.B.RXD/CAN0.B.RXD/DIS0.AB.G0/MIPI0.A.CKP/LVDS0.A.CKP",
+        "x": -6.27,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P6",
+        "signal": "PB18/TMR7.A.COMP1/URT4.B.DE/URT4.B.RTS/CAN4.B.STBY/I2S1.AB.TXD1/CAM0.B.D9/MIPI1.A.CKN/LVDS1.A.CKN",
+        "x": -5.13,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P8",
+        "signal": "PB19/TMR7.A.CAPT1/URT4.B.CTS/SPI0.B.CS3/CAN5.B.STBY/I2S1.B.MCLK/CAM0.B.D8/MIPI1.A.CKP/LVDS1.A.CKP",
+        "x": -3.99,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P10",
+        "signal": "VSS",
+        "x": -2.85,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P12",
+        "signal": "VDD_SOC",
+        "x": -1.71,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P14",
+        "signal": "VDD_SOC",
+        "x": -0.57,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P16",
+        "signal": "VDD_SOC",
+        "x": 0.57,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P18",
+        "signal": "VDD_SOC",
+        "x": 1.71,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P20",
+        "signal": "VSS",
+        "x": 2.85,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P22",
+        "signal": "DDR_DQS1N",
+        "x": 3.99,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P24",
+        "signal": "DDR_DQS1P",
+        "x": 5.13,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P26",
+        "signal": "DDR_D1",
+        "x": 6.27,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "P28",
+        "signal": "DDR_D3",
+        "x": 7.41,
+        "y": 0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R1",
+        "signal": "VSS",
+        "x": -7.98,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R3",
+        "signal": "VSS",
+        "x": -6.84,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R5",
+        "signal": "VIO_B01",
+        "x": -5.7,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R7",
+        "signal": "VIO_B01",
+        "x": -4.56,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R9",
+        "signal": "VDDA_MIPI\\n",
+        "x": -3.42,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R11",
+        "signal": "VSS",
+        "x": -2.28,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R13",
+        "signal": "VSS",
+        "x": -1.14,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R15",
+        "signal": "VSS",
+        "x": 0,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R17",
+        "signal": "VSS",
+        "x": 1.14,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R19",
+        "signal": "VSS",
+        "x": 2.28,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R21",
+        "signal": "DDR_VREF",
+        "x": 3.42,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R23",
+        "signal": "VDDR",
+        "x": 4.56,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R25",
+        "signal": "VDDR",
+        "x": 5.7,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R27",
+        "signal": "VSS",
+        "x": 6.84,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "R29",
+        "signal": "VSS",
+        "x": 7.98,
+        "y": 0,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T2",
+        "signal": "PB02/TMR5.A.COMP1/URT0.B.DE/URT0.B.RTS/CAN0.B.STBY/DIS0.AB.B1/MIPI0.A.D1N/LVDS0.A.D1N",
+        "x": -7.41,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T4",
+        "signal": "PB03/TMR5.A.CAPT1/URT0.B.CTS/SPI3.A.CS3/CAN1.B.STBY/DIS0.AB.B0/MIPI0.A.D1P/LVDS0.A.D1P",
+        "x": -6.27,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T6",
+        "signal": "PB21/TMR7.A.COMP2/URT5.B.DE/URT5.B.RTS/SPI1.B.SCLK/CAN5.B.TXD/I2S1.AB.TXD0/CAM0.B.VSYNC/MIPI1.A.D1N/LVDS1.A.D1N",
+        "x": -5.13,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T8",
+        "signal": "PB20/TMR7.A.CAPT2/URT5.B.CTS/SPI1.B.CS0/CAN5.B.RXD/I2S1.AB.TXD2/CAM0.B.HSYNC/MIPI1.A.D1P/LVDS1.A.D1P",
+        "x": -3.99,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T10",
+        "signal": "VSS",
+        "x": -2.85,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T12",
+        "signal": "VDD_SOC",
+        "x": -1.71,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T14",
+        "signal": "VDD_SOC",
+        "x": -0.57,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T16",
+        "signal": "VDD_SOC",
+        "x": 0.57,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T18",
+        "signal": "VDD_SOC",
+        "x": 1.71,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T20",
+        "signal": "VSSA",
+        "x": 2.85,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T22",
+        "signal": "DDR_D10",
+        "x": 3.99,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T24",
+        "signal": "DDR_D8",
+        "x": 5.13,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T26",
+        "signal": "DDR_D7",
+        "x": 6.27,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "T28",
+        "signal": "DDR_D5",
+        "x": 7.41,
+        "y": -0.57,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U1",
+        "signal": "PA12/TMR1.A.CAPT3/URT3.A.CTS/I2C1.A.SDA/SPI0.A.MISO/PDM0.AB.D0/DIS0.AB.G6/CAM0.A.D4",
+        "x": -7.98,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U3",
+        "signal": "PA13/TMR1.A.COMP3/URT3.A.DE/URT3.A.RTS/I2C1.A.SCL/SPI0.A.MOSI/CAN3.A.STBY/PDM0.AB.D2/DIS0.AB.G5/CAM0.A.D5",
+        "x": -6.84,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U5",
+        "signal": "PA26/TMR2.A.COMP2/URT6.A.DE/URT6.A.RTS/SPI1.A.CS0/CAN6.A.STBY/SDC1.A.CDN/CAM0.B.PIXCLK",
+        "x": -5.7,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U7",
+        "signal": "PA27/TMR2.A.CAPT2/URT6.A.CTS/SPI1.A.SCLK/SDC1.A.WP/CAM0.B.D2",
+        "x": -4.56,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U11",
+        "signal": "VDD_SOC",
+        "x": -2.28,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U13",
+        "signal": "VDD_SOC",
+        "x": -1.14,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U15",
+        "signal": "VSS",
+        "x": 0,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U17",
+        "signal": "VDD_SOC",
+        "x": 1.14,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U19",
+        "signal": "VANA",
+        "x": 2.28,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U23",
+        "signal": "DDR_BA2",
+        "x": 4.56,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U25",
+        "signal": "DDR_BA0",
+        "x": 5.7,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U27",
+        "signal": "DDR_ODT0",
+        "x": 6.84,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "U29",
+        "signal": "DDR_ODT1",
+        "x": 7.98,
+        "y": -1.14,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V2",
+        "signal": "PA10/TMR0.A.COMP2/URT2.A.DE/URT2.A.RTS/SPI0.A.CS0/CAN2.A.STBY/PDM0.A.CLK/DIS0.AB.G4/CAM0.A.D3",
+        "x": -7.41,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V4",
+        "signal": "PA11/TMR0.A.CAPT2/URT2.A.CTS/SPI0.A.SCLK/PDM0.B.CLK/DIS0.AB.G3/CAM0.A.D2",
+        "x": -6.27,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V6",
+        "signal": "PA25/TMR2.A.CAPT1/URT6.A.RXD/I2C2.A.SDA/SPI1.A.MOSI/CAN6.A.RXD/I2S0.D.MCLK/SDC1.A.VSEL/CAM0.B.D3",
+        "x": -5.13,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V8",
+        "signal": "VIO_B00",
+        "x": -3.99,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V10",
+        "signal": "VSS",
+        "x": -2.85,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V12",
+        "signal": "VDD_SOC",
+        "x": -1.71,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V14",
+        "signal": "VDD_SOC",
+        "x": -0.57,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V16",
+        "signal": "VDD_SOC",
+        "x": 0.57,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V18",
+        "signal": "VANA",
+        "x": 1.71,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V20",
+        "signal": "VSSA",
+        "x": 2.85,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V22",
+        "signal": "VDDR",
+        "x": 3.99,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V24",
+        "signal": "DDR_CS0",
+        "x": 5.13,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V26",
+        "signal": "DDR_CS1",
+        "x": 6.27,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "V28",
+        "signal": "VSS",
+        "x": 7.41,
+        "y": -1.71,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W1",
+        "signal": "PA08/TMR0.A.COMP1/URT2.A.TXD/I2C0.A.SCL/CAN2.A.TXD/PDM0.AB.D1/JTAG.A.TRST",
+        "x": -7.98,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W3",
+        "signal": "PA09/TMR0.A.CAPT1/URT2.A.RXD/I2C0.A.SDA/CAN2.A.RXD/PDM0.AB.D3",
+        "x": -6.84,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W5",
+        "signal": "PA23/TMR2.A.COMP0/URT5.A.TXD/I2S0.CD.TXD0/SDC0.B.RSTN/CAM0.B.D4",
+        "x": -5.7,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W7",
+        "signal": "PA24/TMR2.A.COMP1/URT6.A.TXD/I2C2.A.SCL/SPI1.A.MISO/CAN6.A.TXD/I2S0.CD.TXD2/SDC1.A.VON/CAM0.B.D5",
+        "x": -4.56,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W9",
+        "signal": "VSS",
+        "x": -3.42,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W11",
+        "signal": "VDD_SOC",
+        "x": -2.28,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W13",
+        "signal": "VDD_SOC",
+        "x": -1.14,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W15",
+        "signal": "VSS",
+        "x": 0,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W17",
+        "signal": "VANA",
+        "x": 1.14,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W19",
+        "signal": "VREFH",
+        "x": 2.28,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W21",
+        "signal": "VSS",
+        "x": 3.42,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W23",
+        "signal": "DDR_WE",
+        "x": 4.56,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W25",
+        "signal": "DDR_CAS",
+        "x": 5.7,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W27",
+        "signal": "DDR_A7",
+        "x": 6.84,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "W29",
+        "signal": "DDR_RST",
+        "x": 7.98,
+        "y": -2.28,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y2",
+        "signal": "PA06/TMR0.A.CAPT0/URT1.A.RXD/JTAG.A.TCK",
+        "x": -7.41,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y4",
+        "signal": "PA07/TMR0.A.COMP0/URT1.A.TXD/JTAG.A.TMS",
+        "x": -6.27,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y6",
+        "signal": "PA21/TMR3.A.COMP2/URT5.A.DE/URT5.A.RTS/CAN5.A.TXD/I2S0.CD.TXD1/CAM0.A.XCLK",
+        "x": -5.13,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y8",
+        "signal": "PA22/TMR2.A.CAPT0/URT5.A.RXD/I2S0.CD.TXD3",
+        "x": -3.99,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y10",
+        "signal": "VDD_SOC",
+        "x": -2.85,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y12",
+        "signal": "VSS",
+        "x": -1.71,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y14",
+        "signal": "VSS",
+        "x": -0.57,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y16",
+        "signal": "VSS",
+        "x": 0.57,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y18",
+        "signal": "VREFL",
+        "x": 1.71,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y20",
+        "signal": "VREFH",
+        "x": 2.85,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y22",
+        "signal": "DDR_VREF",
+        "x": 3.99,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y24",
+        "signal": "DDR_RAS",
+        "x": 5.13,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y26",
+        "signal": "DDR_A9",
+        "x": 6.27,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      },
+      {
+        "ball": "Y28",
+        "signal": "DDR_A13",
+        "x": 7.41,
+        "y": -2.85,
+        "width": 0.35,
+        "height": 0.35,
+        "shape": "circle"
+      }
+    ]
+  },
+  "connections": [
+    {
+      "net": "/Main/DDR3/DQU5",
+      "group": "data",
+      "memory": {
+        "ball": "A2",
+        "signal": "DQU5"
+      },
+      "controller": {
+        "ball": "T28",
+        "signal": "DDR_D5"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU5",
+        "controllerSideNet": "/Main/DDR3/DQU5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQU7",
+      "group": "data",
+      "memory": {
+        "ball": "A3",
+        "signal": "DQU7"
+      },
+      "controller": {
+        "ball": "T26",
+        "signal": "DDR_D7"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU7",
+        "controllerSideNet": "/Main/DDR3/DQU7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQU4",
+      "group": "data",
+      "memory": {
+        "ball": "A7",
+        "signal": "DQU4"
+      },
+      "controller": {
+        "ball": "K28",
+        "signal": "DDR_D4"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU4",
+        "controllerSideNet": "/Main/DDR3/DQU4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQSU_N",
+      "group": "strobe",
+      "memory": {
+        "ball": "B7",
+        "signal": "DQSU#"
+      },
+      "controller": {
+        "ball": "L27",
+        "signal": "DDR_DQS0N"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQSU_N",
+        "controllerSideNet": "/Main/DDR3/DQSU_N",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQU6",
+      "group": "data",
+      "memory": {
+        "ball": "B8",
+        "signal": "DQU6"
+      },
+      "controller": {
+        "ball": "K26",
+        "signal": "DDR_D6"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU6",
+        "controllerSideNet": "/Main/DDR3/DQU6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQU3",
+      "group": "data",
+      "memory": {
+        "ball": "C2",
+        "signal": "DQU3"
+      },
+      "controller": {
+        "ball": "P28",
+        "signal": "DDR_D3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU3",
+        "controllerSideNet": "/Main/DDR3/DQU3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQU1",
+      "group": "data",
+      "memory": {
+        "ball": "C3",
+        "signal": "DQU1"
+      },
+      "controller": {
+        "ball": "P26",
+        "signal": "DDR_D1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU1",
+        "controllerSideNet": "/Main/DDR3/DQU1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQSU_P",
+      "group": "strobe",
+      "memory": {
+        "ball": "C7",
+        "signal": "DQSU"
+      },
+      "controller": {
+        "ball": "L29",
+        "signal": "DDR_DQS0P"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQSU_P",
+        "controllerSideNet": "/Main/DDR3/DQSU_P",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQU2",
+      "group": "data",
+      "memory": {
+        "ball": "C8",
+        "signal": "DQU2"
+      },
+      "controller": {
+        "ball": "M26",
+        "signal": "DDR_D2"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU2",
+        "controllerSideNet": "/Main/DDR3/DQU2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DMU",
+      "group": "control",
+      "memory": {
+        "ball": "D3",
+        "signal": "DMU"
+      },
+      "controller": {
+        "ball": "N29",
+        "signal": "DDR_DM0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DMU",
+        "controllerSideNet": "/Main/DDR3/DMU",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQU0",
+      "group": "data",
+      "memory": {
+        "ball": "D7",
+        "signal": "DQU0"
+      },
+      "controller": {
+        "ball": "N27",
+        "signal": "DDR_D0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQU0",
+        "controllerSideNet": "/Main/DDR3/DQU0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL0",
+      "group": "data",
+      "memory": {
+        "ball": "E3",
+        "signal": "DQL0"
+      },
+      "controller": {
+        "ball": "T24",
+        "signal": "DDR_D8"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL0",
+        "controllerSideNet": "/Main/DDR3/DQL0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DML",
+      "group": "control",
+      "memory": {
+        "ball": "E7",
+        "signal": "DML"
+      },
+      "controller": {
+        "ball": "K22",
+        "signal": "DDR_DM1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DML",
+        "controllerSideNet": "/Main/DDR3/DML",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL2",
+      "group": "data",
+      "memory": {
+        "ball": "F2",
+        "signal": "DQL2"
+      },
+      "controller": {
+        "ball": "T22",
+        "signal": "DDR_D10"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL2",
+        "controllerSideNet": "/Main/DDR3/DQL2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQSL_P",
+      "group": "strobe",
+      "memory": {
+        "ball": "F3",
+        "signal": "DQSL"
+      },
+      "controller": {
+        "ball": "P24",
+        "signal": "DDR_DQS1P"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQSL_P",
+        "controllerSideNet": "/Main/DDR3/DQSL_P",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL1",
+      "group": "data",
+      "memory": {
+        "ball": "F7",
+        "signal": "DQL1"
+      },
+      "controller": {
+        "ball": "K24",
+        "signal": "DDR_D9"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL1",
+        "controllerSideNet": "/Main/DDR3/DQL1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL3",
+      "group": "data",
+      "memory": {
+        "ball": "F8",
+        "signal": "DQL3"
+      },
+      "controller": {
+        "ball": "L23",
+        "signal": "DDR_D11"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL3",
+        "controllerSideNet": "/Main/DDR3/DQL3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL4",
+      "group": "data",
+      "memory": {
+        "ball": "G2",
+        "signal": "DQL6"
+      },
+      "controller": {
+        "ball": "N25",
+        "signal": "DDR_D12"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL4",
+        "controllerSideNet": "/Main/DDR3/DQL4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQSL_N",
+      "group": "strobe",
+      "memory": {
+        "ball": "G3",
+        "signal": "DQSL#"
+      },
+      "controller": {
+        "ball": "P22",
+        "signal": "DDR_DQS1N"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQSL_N",
+        "controllerSideNet": "/Main/DDR3/DQSL_N",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL6",
+      "group": "data",
+      "memory": {
+        "ball": "H3",
+        "signal": "DQL4"
+      },
+      "controller": {
+        "ball": "N23",
+        "signal": "DDR_D14"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL6",
+        "controllerSideNet": "/Main/DDR3/DQL6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL7",
+      "group": "data",
+      "memory": {
+        "ball": "H7",
+        "signal": "DQL7"
+      },
+      "controller": {
+        "ball": "M24",
+        "signal": "DDR_D15"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL7",
+        "controllerSideNet": "/Main/DDR3/DQL7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/DQL5",
+      "group": "data",
+      "memory": {
+        "ball": "H8",
+        "signal": "DQL5"
+      },
+      "controller": {
+        "ball": "L25",
+        "signal": "DDR_D13"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/DQL5",
+        "controllerSideNet": "/Main/DDR3/DQL5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/RAS",
+      "group": "command",
+      "memory": {
+        "ball": "J3",
+        "signal": "RAS#"
+      },
+      "controller": {
+        "ball": "Y24",
+        "signal": "DDR_RAS"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/RAS",
+        "controllerSideNet": "/Main/DDR3/RAS",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/CKP",
+      "group": "clock",
+      "memory": {
+        "ball": "J7",
+        "signal": "CK"
+      },
+      "controller": {
+        "ball": "AB24",
+        "signal": "DDR_CKP"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/CKP",
+        "controllerSideNet": "/Main/DDR3/CKP",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/ODT0",
+      "group": "control",
+      "memory": {
+        "ball": "K1",
+        "signal": "ODT"
+      },
+      "controller": {
+        "ball": "U27",
+        "signal": "DDR_ODT0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/ODT0",
+        "controllerSideNet": "/Main/DDR3/ODT0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/CAS",
+      "group": "command",
+      "memory": {
+        "ball": "K3",
+        "signal": "CAS#"
+      },
+      "controller": {
+        "ball": "W25",
+        "signal": "DDR_CAS"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/CAS",
+        "controllerSideNet": "/Main/DDR3/CAS",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/CKN",
+      "group": "clock",
+      "memory": {
+        "ball": "K7",
+        "signal": "CK#"
+      },
+      "controller": {
+        "ball": "AC25",
+        "signal": "DDR_CKN"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/CKN",
+        "controllerSideNet": "/Main/DDR3/CKN",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/CKE0",
+      "group": "control",
+      "memory": {
+        "ball": "K9",
+        "signal": "CKE"
+      },
+      "controller": {
+        "ball": "AG25",
+        "signal": "DDR_CKE0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/CKE0",
+        "controllerSideNet": "/Main/DDR3/CKE0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/CS0",
+      "group": "control",
+      "memory": {
+        "ball": "L2",
+        "signal": "CS#"
+      },
+      "controller": {
+        "ball": "V24",
+        "signal": "DDR_CS0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/CS0",
+        "controllerSideNet": "/Main/DDR3/CS0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/WE",
+      "group": "command",
+      "memory": {
+        "ball": "L3",
+        "signal": "WE#"
+      },
+      "controller": {
+        "ball": "W23",
+        "signal": "DDR_WE"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/WE",
+        "controllerSideNet": "/Main/DDR3/WE",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A10",
+      "group": "address",
+      "memory": {
+        "ball": "L7",
+        "signal": "A10/AP"
+      },
+      "controller": {
+        "ball": "AC23",
+        "signal": "DDR_A10"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A10",
+        "controllerSideNet": "/Main/DDR3/A10",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/BA0",
+      "group": "bank",
+      "memory": {
+        "ball": "M2",
+        "signal": "BA0"
+      },
+      "controller": {
+        "ball": "U25",
+        "signal": "DDR_BA0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/BA0",
+        "controllerSideNet": "/Main/DDR3/BA0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/BA2",
+      "group": "bank",
+      "memory": {
+        "ball": "M3",
+        "signal": "BA2"
+      },
+      "controller": {
+        "ball": "U23",
+        "signal": "DDR_BA2"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/BA2",
+        "controllerSideNet": "/Main/DDR3/BA2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A15",
+      "group": "address",
+      "memory": {
+        "ball": "M7",
+        "signal": "A15"
+      },
+      "controller": {
+        "ball": "AD24",
+        "signal": "DDR_A15"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A15",
+        "controllerSideNet": "/Main/DDR3/A15",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A3",
+      "group": "address",
+      "memory": {
+        "ball": "N2",
+        "signal": "A3"
+      },
+      "controller": {
+        "ball": "AC29",
+        "signal": "DDR_A3"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A3",
+        "controllerSideNet": "/Main/DDR3/A3",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A0",
+      "group": "address",
+      "memory": {
+        "ball": "N3",
+        "signal": "A0"
+      },
+      "controller": {
+        "ball": "AC27",
+        "signal": "DDR_A0"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A0",
+        "controllerSideNet": "/Main/DDR3/A0",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A12",
+      "group": "address",
+      "memory": {
+        "ball": "N7",
+        "signal": "A12/BC#"
+      },
+      "controller": {
+        "ball": "AD26",
+        "signal": "DDR_A12"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A12",
+        "controllerSideNet": "/Main/DDR3/A12",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/BA1",
+      "group": "bank",
+      "memory": {
+        "ball": "N8",
+        "signal": "BA1"
+      },
+      "controller": {
+        "ball": "AE29",
+        "signal": "DDR_BA1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/BA1",
+        "controllerSideNet": "/Main/DDR3/BA1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A5",
+      "group": "address",
+      "memory": {
+        "ball": "P2",
+        "signal": "A5"
+      },
+      "controller": {
+        "ball": "AB28",
+        "signal": "DDR_A5"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A5",
+        "controllerSideNet": "/Main/DDR3/A5",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A2",
+      "group": "address",
+      "memory": {
+        "ball": "P3",
+        "signal": "A2"
+      },
+      "controller": {
+        "ball": "AB26",
+        "signal": "DDR_A2"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A2",
+        "controllerSideNet": "/Main/DDR3/A2",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A1",
+      "group": "address",
+      "memory": {
+        "ball": "P7",
+        "signal": "A1"
+      },
+      "controller": {
+        "ball": "AE27",
+        "signal": "DDR_A1"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A1",
+        "controllerSideNet": "/Main/DDR3/A1",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A4",
+      "group": "address",
+      "memory": {
+        "ball": "P8",
+        "signal": "A4"
+      },
+      "controller": {
+        "ball": "AF28",
+        "signal": "DDR_A4"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A4",
+        "controllerSideNet": "/Main/DDR3/A4",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A7",
+      "group": "address",
+      "memory": {
+        "ball": "R2",
+        "signal": "A7"
+      },
+      "controller": {
+        "ball": "W27",
+        "signal": "DDR_A7"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A7",
+        "controllerSideNet": "/Main/DDR3/A7",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A9",
+      "group": "address",
+      "memory": {
+        "ball": "R3",
+        "signal": "A9"
+      },
+      "controller": {
+        "ball": "Y26",
+        "signal": "DDR_A9"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A9",
+        "controllerSideNet": "/Main/DDR3/A9",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A11",
+      "group": "address",
+      "memory": {
+        "ball": "R7",
+        "signal": "A11"
+      },
+      "controller": {
+        "ball": "AF26",
+        "signal": "DDR_A11"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A11",
+        "controllerSideNet": "/Main/DDR3/A11",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A6",
+      "group": "address",
+      "memory": {
+        "ball": "R8",
+        "signal": "A6"
+      },
+      "controller": {
+        "ball": "AG27",
+        "signal": "DDR_A6"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A6",
+        "controllerSideNet": "/Main/DDR3/A6",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/RESET",
+      "group": "control",
+      "memory": {
+        "ball": "T2",
+        "signal": "RESET#"
+      },
+      "controller": {
+        "ball": "W29",
+        "signal": "DDR_RST"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/RESET",
+        "controllerSideNet": "/Main/DDR3/RESET",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A13",
+      "group": "address",
+      "memory": {
+        "ball": "T3",
+        "signal": "A13"
+      },
+      "controller": {
+        "ball": "Y28",
+        "signal": "DDR_A13"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A13",
+        "controllerSideNet": "/Main/DDR3/A13",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A14",
+      "group": "address",
+      "memory": {
+        "ball": "T7",
+        "signal": "A14"
+      },
+      "controller": {
+        "ball": "AH28",
+        "signal": "DDR_A14"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A14",
+        "controllerSideNet": "/Main/DDR3/A14",
+        "seriesComponents": []
+      }
+    },
+    {
+      "net": "/Main/DDR3/A8",
+      "group": "address",
+      "memory": {
+        "ball": "T8",
+        "signal": "A8"
+      },
+      "controller": {
+        "ball": "AH26",
+        "signal": "DDR_A8"
+      },
+      "sourcePath": {
+        "memorySideNet": "/Main/DDR3/A8",
+        "controllerSideNet": "/Main/DDR3/A8",
+        "seriesComponents": []
+      }
+    }
+  ],
+  "endpointMapSha256": "7a646fcb22f6ef68b318b3636259594269e9c669ec3034c1202ab001a291483b"
+}
