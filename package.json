@@ -1,0 +1,38 @@
+{
+  "name": "@tscircuit/dataset-srj29-ddr3-bga-pairs",
+  "version": "0.1.0",
+  "description": "Twenty spacious multilayer DDR3-to-controller BGA Simple Route JSON benchmarks",
+  "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "manifest.json",
+    "validation-report.json",
+    "autorouter-smoke-report.json",
+    "AUTOROUTER_NOTES.md",
+    "samples",
+    "previews",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "test": "node scripts/validate.mjs",
+    "build": "node scripts/generate.mjs && node scripts/validate.mjs",
+    "preview": "node scripts/preview-server.mjs",
+    "autoroute:smoke": "node scripts/autoroute-smoke.mjs"
+  },
+  "devDependencies": {
+    "@tscircuit/capacity-autorouter": "^0.0.803"
+  },
+  "keywords": [
+    "tscircuit",
+    "autorouting",
+    "simple-route-json",
+    "ddr3",
+    "bga"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,6157 @@
+{
+  "id": "sample010",
+  "title": "DDR3 x8 to 12x12 controller BGA",
+  "description": "A deliberately spacious DDR3-memory-to-controller BGA routing problem; the benchmark is paired-BGA connectivity, not board compaction.",
+  "layerCount": 6,
+  "minTraceWidth": 0.12,
+  "nominalTraceWidth": 0.12,
+  "minViaHoleDiameter": 0.15,
+  "minViaPadDiameter": 0.34,
+  "defaultObstacleMargin": 0.08,
+  "minTraceToPadEdgeClearance": 0.08,
+  "minViaEdgeToPadEdgeClearance": 0.08,
+  "minBoardEdgeClearance": 0.5,
+  "allowViaInPad": false,
+  "obstacles": [
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_a1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_A1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_a2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_A2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_a3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_A3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a4",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -6.79,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_a4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_A4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a5",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.99,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_a5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_A5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a6",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.19,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ3",
+        "pcb_port_ddr3_ddr3_dq3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ2",
+        "pcb_port_ddr3_ddr3_dq2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ1",
+        "pcb_port_ddr3_ddr3_dq1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_a9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": 4.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ0",
+        "pcb_port_ddr3_ddr3_dq0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_b1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_B1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_b2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_B2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_b3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_B3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b4",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -6.79,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_b4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_B4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b5",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.99,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_b5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_B5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b6",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.19,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ5",
+        "pcb_port_ddr3_ddr3_dq5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ4",
+        "pcb_port_ddr3_ddr3_dq4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ6",
+        "pcb_port_ddr3_ddr3_dq6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_b9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": 3.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQ7",
+        "pcb_port_ddr3_ddr3_dq7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQ7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_c1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": 2.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_c1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_C1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_c2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": 2.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_c2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_C2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_c3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": 2.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_c3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_C3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_c7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": 2.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DM0",
+        "pcb_port_ddr3_ddr3_dm0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DM0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_c8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": 2.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQS0_N",
+        "pcb_port_ddr3_ddr3_dqs0_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQS0_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_c9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": 2.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_DQS0_P",
+        "pcb_port_ddr3_ddr3_dqs0_p"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_DQS0_P"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_d1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": 2.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_d1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_D1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_d2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": 2.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_d2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_D2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_d3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": 2.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_d3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_D3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_d7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": 2.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A11",
+        "pcb_port_ddr3_ddr3_a11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_d8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": 2.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A12",
+        "pcb_port_ddr3_ddr3_a12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_d9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": 2.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A0",
+        "pcb_port_ddr3_ddr3_a0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_e1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": 1.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_e1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_E1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_e2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": 1.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_e2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_E2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_e3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": 1.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_e3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_E3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_e7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": 1.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A8",
+        "pcb_port_ddr3_ddr3_a8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_e8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": 1.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A9",
+        "pcb_port_ddr3_ddr3_a9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_e9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": 1.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A10",
+        "pcb_port_ddr3_ddr3_a10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_f1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": 0.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_f1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_F1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_f2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": 0.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_f2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_F2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_f3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": 0.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_f3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_F3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_f7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": 0.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A6",
+        "pcb_port_ddr3_ddr3_a6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_f8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": 0.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A5",
+        "pcb_port_ddr3_ddr3_a5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_f9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": 0.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A7",
+        "pcb_port_ddr3_ddr3_a7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_g1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_G1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_g2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_G2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_g3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_G3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g4",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -6.79,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_g4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_G4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g5",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.99,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_g5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_G5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g6",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.19,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A1",
+        "pcb_port_ddr3_ddr3_a1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A2",
+        "pcb_port_ddr3_ddr3_a2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A3",
+        "pcb_port_ddr3_ddr3_a3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_g9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -0.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A4",
+        "pcb_port_ddr3_ddr3_a4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_h1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_H1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_h2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_H2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_h3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_H3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h4",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -6.79,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_h4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_H4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h5",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.99,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_h5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_H5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h6",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.19,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A14",
+        "pcb_port_ddr3_ddr3_a14"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A14"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_BA1",
+        "pcb_port_ddr3_ddr3_ba1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_BA1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_BA0",
+        "pcb_port_ddr3_ddr3_ba0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_BA0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_h9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -1.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_A13",
+        "pcb_port_ddr3_ddr3_a13"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_A13"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_j1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -1.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_j1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_J1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_j2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -1.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_j2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_J2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_j3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -1.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_j3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_J3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_j7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -1.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_CAS_N",
+        "pcb_port_ddr3_ddr3_cas_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_CAS_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_j8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -1.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_RAS_N",
+        "pcb_port_ddr3_ddr3_ras_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_RAS_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_j9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -1.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_BA2",
+        "pcb_port_ddr3_ddr3_ba2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_BA2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_k1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -2.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_k1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_K1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_k2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -2.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_k2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_K2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_k3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -2.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_k3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_K3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_k7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -2.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_CK_P",
+        "pcb_port_ddr3_ddr3_ck_p"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_CK_P"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_k8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -2.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_WE_N",
+        "pcb_port_ddr3_ddr3_we_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_WE_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_k9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -2.7
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_CK_N",
+        "pcb_port_ddr3_ddr3_ck_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_CK_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_l1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -3.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_l1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_L1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_l2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -3.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_l2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_L2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_l3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -3.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_l3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_L3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_l7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -3.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_l7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_L7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_l8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -3.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_CS_N",
+        "pcb_port_ddr3_ddr3_cs_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_CS_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_l9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -3.5
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_CKE",
+        "pcb_port_ddr3_ddr3_cke"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_CKE"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_m1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -4.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_m1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_M1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_m2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -4.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_m2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_M2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_m3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -4.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_m3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_M3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_m7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -4.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_m7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_M7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_m8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -4.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_m8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_M8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_m9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -4.3
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_m9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_M9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_n1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -5.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_n1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_N1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_n2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -5.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_n2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_N2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_n3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -5.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_n3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_N3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_n7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -5.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_n7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_N7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_n8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -5.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_n8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_N8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_n9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -5.1
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_n9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_N9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_p1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.19,
+        "y": -5.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_p1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_P1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_p2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.39,
+        "y": -5.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_p2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_P2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_p3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -7.59,
+        "y": -5.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_p3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_P3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_p7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.39,
+        "y": -5.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_ODT",
+        "pcb_port_ddr3_ddr3_odt"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_ODT"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_p8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.59,
+        "y": -5.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "DDR3_RESET_N",
+        "pcb_port_ddr3_ddr3_reset_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "DDR3_RESET_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_p9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -2.79,
+        "y": -5.9
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "connectedTo": [
+        "unconnected_ddr3_p9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "NC_P9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ0",
+        "pcb_port_controller_ddr3_dq0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ1",
+        "pcb_port_controller_ddr3_dq1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ2",
+        "pcb_port_controller_ddr3_dq2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ3",
+        "pcb_port_controller_ddr3_dq3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": 6.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_a12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_A12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ4",
+        "pcb_port_controller_ddr3_dq4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ5",
+        "pcb_port_controller_ddr3_dq5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ6",
+        "pcb_port_controller_ddr3_dq6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQ7",
+        "pcb_port_controller_ddr3_dq7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_b12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": 5.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_b12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_B12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQS0_P",
+        "pcb_port_controller_ddr3_dqs0_p"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQS0_P"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DQS0_N",
+        "pcb_port_controller_ddr3_dqs0_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQS0_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_DM0",
+        "pcb_port_controller_ddr3_dm0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DM0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A0",
+        "pcb_port_controller_ddr3_a0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": 4.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_c12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_C12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A12",
+        "pcb_port_controller_ddr3_a12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A11",
+        "pcb_port_controller_ddr3_a11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A10",
+        "pcb_port_controller_ddr3_a10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A9",
+        "pcb_port_controller_ddr3_a9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": 3.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_d12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_D12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A8",
+        "pcb_port_controller_ddr3_a8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A7",
+        "pcb_port_controller_ddr3_a7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A6",
+        "pcb_port_controller_ddr3_a6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A5",
+        "pcb_port_controller_ddr3_a5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_e12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": 2.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_e12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_E12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A4",
+        "pcb_port_controller_ddr3_a4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A3",
+        "pcb_port_controller_ddr3_a3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A2",
+        "pcb_port_controller_ddr3_a2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A1",
+        "pcb_port_controller_ddr3_a1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_f12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": 1.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_f12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_F12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_BA0",
+        "pcb_port_controller_ddr3_ba0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_BA0"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_BA1",
+        "pcb_port_controller_ddr3_ba1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_BA1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A14",
+        "pcb_port_controller_ddr3_a14"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A14"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_A13",
+        "pcb_port_controller_ddr3_a13"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A13"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_g12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": 0.2
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_g12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_G12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_BA2",
+        "pcb_port_controller_ddr3_ba2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_BA2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_RAS_N",
+        "pcb_port_controller_ddr3_ras_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_RAS_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_CAS_N",
+        "pcb_port_controller_ddr3_cas_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_CAS_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_WE_N",
+        "pcb_port_controller_ddr3_we_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_WE_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_h12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": -0.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_h12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_H12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_CKE",
+        "pcb_port_controller_ddr3_cke"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_CKE"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_CK_N",
+        "pcb_port_controller_ddr3_ck_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_CK_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_CK_P",
+        "pcb_port_controller_ddr3_ck_p"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_CK_P"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_CS_N",
+        "pcb_port_controller_ddr3_cs_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_CS_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_j12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": -1.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_j12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_J12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": -2.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_k12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_K12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l3"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L3"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l4"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L4"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_l12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": -3.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_l12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_L12"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m1",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 2.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M1"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 3.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_RESET_N",
+        "pcb_port_controller_ddr3_reset_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_RESET_N"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "DDR3_ODT",
+        "pcb_port_controller_ddr3_odt"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_ODT"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m5",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m5"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M5"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m6",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 7.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m7",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 8.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m8",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 9.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m9",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 10.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m10",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 11.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m11",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 12.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m12",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 13.85,
+        "y": -4.8
+      },
+      "width": 0.5,
+      "height": 0.5,
+      "connectedTo": [
+        "unconnected_controller_m12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "NC_M12"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "name": "DDR3_DQ0",
+      "rootConnectionName": "DDR3_DQ0",
+      "netConnectionName": "DDR3_DQ0",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": 4.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq0",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq0"
+        },
+        {
+          "x": 2.85,
+          "y": 6.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq0",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq0"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQ1",
+      "rootConnectionName": "DDR3_DQ1",
+      "netConnectionName": "DDR3_DQ1",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": 4.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq1",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq1"
+        },
+        {
+          "x": 3.85,
+          "y": 6.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq1",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq1"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQ2",
+      "rootConnectionName": "DDR3_DQ2",
+      "netConnectionName": "DDR3_DQ2",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": 4.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq2",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq2"
+        },
+        {
+          "x": 4.85,
+          "y": 6.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq2",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq2"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQ3",
+      "rootConnectionName": "DDR3_DQ3",
+      "netConnectionName": "DDR3_DQ3",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -5.19,
+          "y": 4.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq3",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq3"
+        },
+        {
+          "x": 5.85,
+          "y": 6.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq3",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq3"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQ4",
+      "rootConnectionName": "DDR3_DQ4",
+      "netConnectionName": "DDR3_DQ4",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": 3.7,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq4",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq4"
+        },
+        {
+          "x": 2.85,
+          "y": 5.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq4",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq4"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQ5",
+      "rootConnectionName": "DDR3_DQ5",
+      "netConnectionName": "DDR3_DQ5",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -5.19,
+          "y": 3.7,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq5",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq5"
+        },
+        {
+          "x": 3.85,
+          "y": 5.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq5",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq5"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQ6",
+      "rootConnectionName": "DDR3_DQ6",
+      "netConnectionName": "DDR3_DQ6",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": 3.7,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq6",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq6"
+        },
+        {
+          "x": 4.85,
+          "y": 5.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq6",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq6"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQ7",
+      "rootConnectionName": "DDR3_DQ7",
+      "netConnectionName": "DDR3_DQ7",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": 3.7,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dq7",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dq7"
+        },
+        {
+          "x": 5.85,
+          "y": 5.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dq7",
+          "pcb_port_id": "pcb_port_controller_ddr3_dq7"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQS0_P",
+      "rootConnectionName": "DDR3_DQS0_P",
+      "netConnectionName": "DDR3_DQS0_P",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": 2.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dqs0_p",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dqs0_p"
+        },
+        {
+          "x": 2.85,
+          "y": 4.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dqs0_p",
+          "pcb_port_id": "pcb_port_controller_ddr3_dqs0_p"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DQS0_N",
+      "rootConnectionName": "DDR3_DQS0_N",
+      "netConnectionName": "DDR3_DQS0_N",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": 2.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dqs0_n",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dqs0_n"
+        },
+        {
+          "x": 3.85,
+          "y": 4.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dqs0_n",
+          "pcb_port_id": "pcb_port_controller_ddr3_dqs0_n"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_DM0",
+      "rootConnectionName": "DDR3_DM0",
+      "netConnectionName": "DDR3_DM0",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": 2.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_dm0",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_dm0"
+        },
+        {
+          "x": 4.85,
+          "y": 4.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_dm0",
+          "pcb_port_id": "pcb_port_controller_ddr3_dm0"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A0",
+      "rootConnectionName": "DDR3_A0",
+      "netConnectionName": "DDR3_A0",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": 2.1,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a0",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a0"
+        },
+        {
+          "x": 5.85,
+          "y": 4.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a0",
+          "pcb_port_id": "pcb_port_controller_ddr3_a0"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A1",
+      "rootConnectionName": "DDR3_A1",
+      "netConnectionName": "DDR3_A1",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -5.19,
+          "y": -0.3,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a1",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a1"
+        },
+        {
+          "x": 5.85,
+          "y": 1.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a1",
+          "pcb_port_id": "pcb_port_controller_ddr3_a1"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A2",
+      "rootConnectionName": "DDR3_A2",
+      "netConnectionName": "DDR3_A2",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": -0.3,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a2",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a2"
+        },
+        {
+          "x": 4.85,
+          "y": 1.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a2",
+          "pcb_port_id": "pcb_port_controller_ddr3_a2"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A3",
+      "rootConnectionName": "DDR3_A3",
+      "netConnectionName": "DDR3_A3",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": -0.3,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a3",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a3"
+        },
+        {
+          "x": 3.85,
+          "y": 1.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a3",
+          "pcb_port_id": "pcb_port_controller_ddr3_a3"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A4",
+      "rootConnectionName": "DDR3_A4",
+      "netConnectionName": "DDR3_A4",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": -0.3,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a4",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a4"
+        },
+        {
+          "x": 2.85,
+          "y": 1.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a4",
+          "pcb_port_id": "pcb_port_controller_ddr3_a4"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A5",
+      "rootConnectionName": "DDR3_A5",
+      "netConnectionName": "DDR3_A5",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": 0.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a5",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a5"
+        },
+        {
+          "x": 5.85,
+          "y": 2.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a5",
+          "pcb_port_id": "pcb_port_controller_ddr3_a5"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A6",
+      "rootConnectionName": "DDR3_A6",
+      "netConnectionName": "DDR3_A6",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": 0.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a6",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a6"
+        },
+        {
+          "x": 4.85,
+          "y": 2.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a6",
+          "pcb_port_id": "pcb_port_controller_ddr3_a6"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A7",
+      "rootConnectionName": "DDR3_A7",
+      "netConnectionName": "DDR3_A7",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": 0.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a7",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a7"
+        },
+        {
+          "x": 3.85,
+          "y": 2.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a7",
+          "pcb_port_id": "pcb_port_controller_ddr3_a7"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A8",
+      "rootConnectionName": "DDR3_A8",
+      "netConnectionName": "DDR3_A8",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": 1.3,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a8",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a8"
+        },
+        {
+          "x": 2.85,
+          "y": 2.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a8",
+          "pcb_port_id": "pcb_port_controller_ddr3_a8"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A9",
+      "rootConnectionName": "DDR3_A9",
+      "netConnectionName": "DDR3_A9",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": 1.3,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a9",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a9"
+        },
+        {
+          "x": 5.85,
+          "y": 3.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a9",
+          "pcb_port_id": "pcb_port_controller_ddr3_a9"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A10",
+      "rootConnectionName": "DDR3_A10",
+      "netConnectionName": "DDR3_A10",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": 1.3,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a10",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a10"
+        },
+        {
+          "x": 4.85,
+          "y": 3.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a10",
+          "pcb_port_id": "pcb_port_controller_ddr3_a10"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A11",
+      "rootConnectionName": "DDR3_A11",
+      "netConnectionName": "DDR3_A11",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": 2.1,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a11",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a11"
+        },
+        {
+          "x": 3.85,
+          "y": 3.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a11",
+          "pcb_port_id": "pcb_port_controller_ddr3_a11"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A12",
+      "rootConnectionName": "DDR3_A12",
+      "netConnectionName": "DDR3_A12",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": 2.1,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a12",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a12"
+        },
+        {
+          "x": 2.85,
+          "y": 3.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a12",
+          "pcb_port_id": "pcb_port_controller_ddr3_a12"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A13",
+      "rootConnectionName": "DDR3_A13",
+      "netConnectionName": "DDR3_A13",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": -1.1,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a13",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a13"
+        },
+        {
+          "x": 5.85,
+          "y": 0.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a13",
+          "pcb_port_id": "pcb_port_controller_ddr3_a13"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_A14",
+      "rootConnectionName": "DDR3_A14",
+      "netConnectionName": "DDR3_A14",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -5.19,
+          "y": -1.1,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_a14",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_a14"
+        },
+        {
+          "x": 4.85,
+          "y": 0.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_a14",
+          "pcb_port_id": "pcb_port_controller_ddr3_a14"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_BA0",
+      "rootConnectionName": "DDR3_BA0",
+      "netConnectionName": "DDR3_BA0",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": -1.1,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_ba0",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_ba0"
+        },
+        {
+          "x": 2.85,
+          "y": 0.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_ba0",
+          "pcb_port_id": "pcb_port_controller_ddr3_ba0"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_BA1",
+      "rootConnectionName": "DDR3_BA1",
+      "netConnectionName": "DDR3_BA1",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": -1.1,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_ba1",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_ba1"
+        },
+        {
+          "x": 3.85,
+          "y": 0.2,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_ba1",
+          "pcb_port_id": "pcb_port_controller_ddr3_ba1"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_BA2",
+      "rootConnectionName": "DDR3_BA2",
+      "netConnectionName": "DDR3_BA2",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": -1.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_ba2",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_ba2"
+        },
+        {
+          "x": 2.85,
+          "y": -0.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_ba2",
+          "pcb_port_id": "pcb_port_controller_ddr3_ba2"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_RAS_N",
+      "rootConnectionName": "DDR3_RAS_N",
+      "netConnectionName": "DDR3_RAS_N",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": -1.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_ras_n",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_ras_n"
+        },
+        {
+          "x": 3.85,
+          "y": -0.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_ras_n",
+          "pcb_port_id": "pcb_port_controller_ddr3_ras_n"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_CAS_N",
+      "rootConnectionName": "DDR3_CAS_N",
+      "netConnectionName": "DDR3_CAS_N",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": -1.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_cas_n",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_cas_n"
+        },
+        {
+          "x": 4.85,
+          "y": -0.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_cas_n",
+          "pcb_port_id": "pcb_port_controller_ddr3_cas_n"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_WE_N",
+      "rootConnectionName": "DDR3_WE_N",
+      "netConnectionName": "DDR3_WE_N",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": -2.7,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_we_n",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_we_n"
+        },
+        {
+          "x": 5.85,
+          "y": -0.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_we_n",
+          "pcb_port_id": "pcb_port_controller_ddr3_we_n"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_CK_P",
+      "rootConnectionName": "DDR3_CK_P",
+      "netConnectionName": "DDR3_CK_P",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": -2.7,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_ck_p",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_ck_p"
+        },
+        {
+          "x": 4.85,
+          "y": -1.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_ck_p",
+          "pcb_port_id": "pcb_port_controller_ddr3_ck_p"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_CK_N",
+      "rootConnectionName": "DDR3_CK_N",
+      "netConnectionName": "DDR3_CK_N",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": -2.7,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_ck_n",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_ck_n"
+        },
+        {
+          "x": 3.85,
+          "y": -1.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_ck_n",
+          "pcb_port_id": "pcb_port_controller_ddr3_ck_n"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_CKE",
+      "rootConnectionName": "DDR3_CKE",
+      "netConnectionName": "DDR3_CKE",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -2.79,
+          "y": -3.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_cke",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_cke"
+        },
+        {
+          "x": 2.85,
+          "y": -1.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_cke",
+          "pcb_port_id": "pcb_port_controller_ddr3_cke"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_CS_N",
+      "rootConnectionName": "DDR3_CS_N",
+      "netConnectionName": "DDR3_CS_N",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": -3.5,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_cs_n",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_cs_n"
+        },
+        {
+          "x": 5.85,
+          "y": -1.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_cs_n",
+          "pcb_port_id": "pcb_port_controller_ddr3_cs_n"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_ODT",
+      "rootConnectionName": "DDR3_ODT",
+      "netConnectionName": "DDR3_ODT",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -4.39,
+          "y": -5.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_odt",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_odt"
+        },
+        {
+          "x": 5.85,
+          "y": -4.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_odt",
+          "pcb_port_id": "pcb_port_controller_ddr3_odt"
+        }
+      ]
+    },
+    {
+      "name": "DDR3_RESET_N",
+      "rootConnectionName": "DDR3_RESET_N",
+      "netConnectionName": "DDR3_RESET_N",
+      "nominalTraceWidth": 0.12,
+      "pointsToConnect": [
+        {
+          "x": -3.59,
+          "y": -5.9,
+          "layer": "top",
+          "pointId": "point_ddr3_ddr3_reset_n",
+          "pcb_port_id": "pcb_port_ddr3_ddr3_reset_n"
+        },
+        {
+          "x": 4.85,
+          "y": -4.8,
+          "layer": "top",
+          "pointId": "point_controller_ddr3_reset_n",
+          "pcb_port_id": "pcb_port_controller_ddr3_reset_n"
+        }
+      ]
+    }
+  ],
+  "buses": [
+    {
+      "busId": "ddr3_data_bus",
+      "connectionNames": [
+        "DDR3_DQ0",
+        "DDR3_DQ1",
+        "DDR3_DQ2",
+        "DDR3_DQ3",
+        "DDR3_DQ4",
+        "DDR3_DQ5",
+        "DDR3_DQ6",
+        "DDR3_DQ7"
+      ],
+      "maxLengthSkew": 1.5,
+      "traceWidth": 0.12
+    },
+    {
+      "busId": "ddr3_address_command_bus",
+      "connectionNames": [
+        "DDR3_A0",
+        "DDR3_A1",
+        "DDR3_A2",
+        "DDR3_A3",
+        "DDR3_A4",
+        "DDR3_A5",
+        "DDR3_A6",
+        "DDR3_A7",
+        "DDR3_A8",
+        "DDR3_A9",
+        "DDR3_A10",
+        "DDR3_A11",
+        "DDR3_A12",
+        "DDR3_A13",
+        "DDR3_A14",
+        "DDR3_BA0",
+        "DDR3_BA1",
+        "DDR3_BA2",
+        "DDR3_RAS_N",
+        "DDR3_CAS_N",
+        "DDR3_WE_N",
+        "DDR3_CKE",
+        "DDR3_CS_N",
+        "DDR3_ODT",
+        "DDR3_RESET_N"
+      ],
+      "maxLengthSkew": 2.5,
+      "traceWidth": 0.12
+    }
+  ],
+  "differentialPairs": [
+    {
+      "connectionNames": [
+        "DDR3_CK_P",
+        "DDR3_CK_N"
+      ],
+      "lengthTolerance": 0.8,
+      "traceGap": 0.18,
+      "maxUncoupledLength": 5
+    },
+    {
+      "connectionNames": [
+        "DDR3_DQS0_P",
+        "DDR3_DQS0_N"
+      ],
+      "lengthTolerance": 0.8,
+      "traceGap": 0.18,
+      "maxUncoupledLength": 5
+    }
+  ],
+  "bounds": {
+    "minX": -14.18,
+    "maxX": 18.9,
+    "minY": -11.29,
+    "maxY": 11.65
+  },
+  "outline": [
+    {
+      "x": -14.18,
+      "y": -11.29
+    },
+    {
+      "x": 18.9,
+      "y": -11.29
+    },
+    {
+      "x": 18.9,
+      "y": 11.65
+    },
+    {
+      "x": -14.18,
+      "y": 11.65
+    }
+  ],
+  "metadata": {
+    "datasetName": "dataset-srj29-ddr3-bga-pairs",
+    "generatorSeed": 1037317462,
+    "ddr3": {
+      "componentId": "ddr3_bga",
+      "package": "synthetic FBGA-96-style",
+      "dataWidth": 8,
+      "pitch": 0.8,
+      "padCount": 96,
+      "signalPinCount": 38,
+      "note": "Signal naming and grouping are DDR3-realistic; this synthetic benchmark pin map is not vendor pin-compatible."
+    },
+    "controller": {
+      "componentId": "controller_bga",
+      "package": "12x12 BGA",
+      "pitch": 1,
+      "padCount": 144,
+      "memoryBankDepth": 4
+    },
+    "placement": {
+      "ddr3Side": "left",
+      "componentGap": 5.2,
+      "verticalOffset": -0.7,
+      "boardMarginX": 4.8,
+      "boardMarginY": 5.2
+    },
+    "feasibility": {
+      "focus": "BGA-to-BGA connection routing",
+      "connectedDdr3ColumnDepth": 4,
+      "connectedControllerColumnDepth": 4,
+      "availableRoutingLayers": 4,
+      "viaStyle": "0.34 mm dogbone-compatible via; via-in-pad disabled",
+      "corridorWidth": 5.2
+    },
+    "signalGroups": {
+      "data": 8,
+      "strobe": 2,
+      "mask": 1,
+      "address": 15,
+      "bank": 3,
+      "command": 3,
+      "clock": 2,
+      "control": 4
+    },
+    "signalGroupByConnection": {
+      "DDR3_DQ0": "data",
+      "DDR3_DQ1": "data",
+      "DDR3_DQ2": "data",
+      "DDR3_DQ3": "data",
+      "DDR3_DQ4": "data",
+      "DDR3_DQ5": "data",
+      "DDR3_DQ6": "data",
+      "DDR3_DQ7": "data",
+      "DDR3_DQS0_P": "strobe",
+      "DDR3_DQS0_N": "strobe",
+      "DDR3_DM0": "mask",
+      "DDR3_A0": "address",
+      "DDR3_A1": "address",
+      "DDR3_A2": "address",
+      "DDR3_A3": "address",
+      "DDR3_A4": "address",
+      "DDR3_A5": "address",
+      "DDR3_A6": "address",
+      "DDR3_A7": "address",
+      "DDR3_A8": "address",
+      "DDR3_A9": "address",
+      "DDR3_A10": "address",
+      "DDR3_A11": "address",
+      "DDR3_A12": "address",
+      "DDR3_A13": "address",
+      "DDR3_A14": "address",
+      "DDR3_BA0": "bank",
+      "DDR3_BA1": "bank",
+      "DDR3_BA2": "bank",
+      "DDR3_RAS_N": "command",
+      "DDR3_CAS_N": "command",
+      "DDR3_WE_N": "command",
+      "DDR3_CK_P": "clock",
+      "DDR3_CK_N": "clock",
+      "DDR3_CKE": "control",
+      "DDR3_CS_N": "control",
+      "DDR3_ODT": "control",
+      "DDR3_RESET_N": "control"
+    },
+    "sourceReview": [
+      "tscircuit/autorouting-dataset-01",
+      "tscircuit/dataset-srj18",
+      "tscircuit/dataset-srj24",
+      "tscircuit/dataset-srj16-bga-breakouts",
+      "tscircuit/dataset-srj19",
+      "tscircuit/dataset-srj20"
+    ]
+  }
+}

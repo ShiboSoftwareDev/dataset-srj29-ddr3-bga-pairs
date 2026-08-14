@@ -1,0 +1,65 @@
+{
+  "solver": "AutoroutingPipelineSolver7_MultiGraph",
+  "packageVersion": "^0.0.803",
+  "createdAt": "2026-08-14T16:39:11.796Z",
+  "maxSteps": 100000,
+  "requireSolved": false,
+  "results": [
+    {
+      "id": "sample001",
+      "solved": false,
+      "failed": false,
+      "timedOutByStepLimit": true,
+      "steps": 100000,
+      "elapsedMs": 4025,
+      "expectedConnections": 38,
+      "routedTraces": 0,
+      "activePhase": "portPointPathingSolver",
+      "activeStage": "BB",
+      "activeStageIterations": 92001,
+      "activeStageMaxIterations": 8000000
+    },
+    {
+      "id": "sample007",
+      "solved": false,
+      "failed": false,
+      "timedOutByStepLimit": true,
+      "steps": 100000,
+      "elapsedMs": 3017,
+      "expectedConnections": 38,
+      "routedTraces": 0,
+      "activePhase": "portPointPathingSolver",
+      "activeStage": "BB",
+      "activeStageIterations": 92866,
+      "activeStageMaxIterations": 8000000
+    },
+    {
+      "id": "sample014",
+      "solved": false,
+      "failed": false,
+      "timedOutByStepLimit": true,
+      "steps": 100000,
+      "elapsedMs": 4740,
+      "expectedConnections": 49,
+      "routedTraces": 0,
+      "activePhase": "portPointPathingSolver",
+      "activeStage": "BB",
+      "activeStageIterations": 90468,
+      "activeStageMaxIterations": 8000000
+    },
+    {
+      "id": "sample020",
+      "solved": false,
+      "failed": false,
+      "timedOutByStepLimit": true,
+      "steps": 100000,
+      "elapsedMs": 3197,
+      "expectedConnections": 49,
+      "routedTraces": 0,
+      "activePhase": "portPointPathingSolver",
+      "activeStage": "BB",
+      "activeStageIterations": 92958,
+      "activeStageMaxIterations": 8000000
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "datasetName": "dataset-srj29-ddr3-bga-pairs",
+  "sampleCount": 20,
+  "purpose": "Spacious multilayer DDR3-BGA-to-controller-BGA autorouting benchmarks",
+  "samples": [
+    {
+      "id": "sample001",
+      "title": "DDR3 x8 to 12x12 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 38,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 8,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6.8,
+      "bounds": {
+        "minX": -14.98,
+        "maxX": 17.42,
+        "minY": -10.94,
+        "maxY": 10.24
+      }
+    },
+    {
+      "id": "sample002",
+      "title": "DDR3 x16 to 14x14 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 8.4,
+      "bounds": {
+        "minX": -15.78,
+        "maxX": 19.82,
+        "minY": -10.61,
+        "maxY": 10.61
+      }
+    },
+    {
+      "id": "sample003",
+      "title": "DDR3 x16 to 16x16 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 352,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "16x16 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6,
+      "bounds": {
+        "minX": -14.58,
+        "maxX": 20.22,
+        "minY": -11.76,
+        "maxY": 11.06
+      }
+    },
+    {
+      "id": "sample004",
+      "title": "DDR3 x8 to 14x14 controller BGA",
+      "layerCount": 6,
+      "connectionCount": 38,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 8,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 7.6,
+      "bounds": {
+        "minX": -19.42,
+        "maxX": 15.38,
+        "minY": -11.31,
+        "maxY": 11.29
+      }
+    },
+    {
+      "id": "sample005",
+      "title": "DDR3 x16 to 12x12 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 1,
+      "componentGap": 5.2,
+      "bounds": {
+        "minX": -14.18,
+        "maxX": 18.9,
+        "minY": -11.29,
+        "maxY": 11.65
+      }
+    },
+    {
+      "id": "sample006",
+      "title": "DDR3 x16 to 12x12 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6.8,
+      "bounds": {
+        "minX": -14.98,
+        "maxX": 17.42,
+        "minY": -10.94,
+        "maxY": 10.24
+      }
+    },
+    {
+      "id": "sample007",
+      "title": "DDR3 x8 to 14x14 controller BGA",
+      "layerCount": 6,
+      "connectionCount": 38,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 8,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 8.4,
+      "bounds": {
+        "minX": -15.78,
+        "maxX": 19.82,
+        "minY": -10.61,
+        "maxY": 10.61
+      }
+    },
+    {
+      "id": "sample008",
+      "title": "DDR3 x16 to 16x16 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 352,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "16x16 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6,
+      "bounds": {
+        "minX": -20.22,
+        "maxX": 14.58,
+        "minY": -11.76,
+        "maxY": 11.06
+      }
+    },
+    {
+      "id": "sample009",
+      "title": "DDR3 x16 to 14x14 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 7.6,
+      "bounds": {
+        "minX": -15.38,
+        "maxX": 19.42,
+        "minY": -11.31,
+        "maxY": 11.29
+      }
+    },
+    {
+      "id": "sample010",
+      "title": "DDR3 x8 to 12x12 controller BGA",
+      "layerCount": 6,
+      "connectionCount": 38,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 8,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 1,
+      "componentGap": 5.2,
+      "bounds": {
+        "minX": -14.18,
+        "maxX": 18.9,
+        "minY": -11.29,
+        "maxY": 11.65
+      }
+    },
+    {
+      "id": "sample011",
+      "title": "DDR3 x16 to 12x12 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6.8,
+      "bounds": {
+        "minX": -14.98,
+        "maxX": 17.42,
+        "minY": -10.94,
+        "maxY": 10.24
+      }
+    },
+    {
+      "id": "sample012",
+      "title": "DDR3 x16 to 14x14 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 8.4,
+      "bounds": {
+        "minX": -19.82,
+        "maxX": 15.78,
+        "minY": -10.61,
+        "maxY": 10.61
+      }
+    },
+    {
+      "id": "sample013",
+      "title": "DDR3 x8 to 16x16 controller BGA",
+      "layerCount": 6,
+      "connectionCount": 38,
+      "obstacleCount": 352,
+      "ddr3DataWidth": 8,
+      "ddr3PadCount": 96,
+      "controllerPackage": "16x16 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6,
+      "bounds": {
+        "minX": -14.58,
+        "maxX": 20.22,
+        "minY": -11.76,
+        "maxY": 11.06
+      }
+    },
+    {
+      "id": "sample014",
+      "title": "DDR3 x16 to 14x14 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 7.6,
+      "bounds": {
+        "minX": -15.38,
+        "maxX": 19.42,
+        "minY": -11.31,
+        "maxY": 11.29
+      }
+    },
+    {
+      "id": "sample015",
+      "title": "DDR3 x16 to 12x12 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 1,
+      "componentGap": 5.2,
+      "bounds": {
+        "minX": -14.18,
+        "maxX": 18.9,
+        "minY": -11.29,
+        "maxY": 11.65
+      }
+    },
+    {
+      "id": "sample016",
+      "title": "DDR3 x8 to 12x12 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 38,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 8,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6.8,
+      "bounds": {
+        "minX": -17.42,
+        "maxX": 14.98,
+        "minY": -10.94,
+        "maxY": 10.24
+      }
+    },
+    {
+      "id": "sample017",
+      "title": "DDR3 x16 to 14x14 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 8.4,
+      "bounds": {
+        "minX": -15.78,
+        "maxX": 19.82,
+        "minY": -10.61,
+        "maxY": 10.61
+      }
+    },
+    {
+      "id": "sample018",
+      "title": "DDR3 x16 to 16x16 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 352,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "16x16 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 6,
+      "bounds": {
+        "minX": -14.58,
+        "maxX": 20.22,
+        "minY": -11.76,
+        "maxY": 11.06
+      }
+    },
+    {
+      "id": "sample019",
+      "title": "DDR3 x8 to 14x14 controller BGA",
+      "layerCount": 6,
+      "connectionCount": 38,
+      "obstacleCount": 292,
+      "ddr3DataWidth": 8,
+      "ddr3PadCount": 96,
+      "controllerPackage": "14x14 BGA",
+      "controllerPitch": 0.8,
+      "componentGap": 7.6,
+      "bounds": {
+        "minX": -15.38,
+        "maxX": 19.42,
+        "minY": -11.31,
+        "maxY": 11.29
+      }
+    },
+    {
+      "id": "sample020",
+      "title": "DDR3 x16 to 12x12 controller BGA",
+      "layerCount": 8,
+      "connectionCount": 49,
+      "obstacleCount": 240,
+      "ddr3DataWidth": 16,
+      "ddr3PadCount": 96,
+      "controllerPackage": "12x12 BGA",
+      "controllerPitch": 1,
+      "componentGap": 5.2,
+      "bounds": {
+        "minX": -18.9,
+        "maxX": 14.18,
+        "minY": -11.29,
+        "maxY": 11.65
+      }
+    }
+  ]
+}

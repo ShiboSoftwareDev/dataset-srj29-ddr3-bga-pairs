@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>dataset-srj29 · DDR3 BGA pairs</title>
+    <link rel="stylesheet" href="viewer.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="dataset-id">SRJ29</span>
+          <h1>DDR3 BGA pairs</h1>
+          <p>20 spacious multilayer routing problems</p>
+        </div>
+        <div id="sample-list" class="sample-list" aria-label="Dataset samples"></div>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <div id="sample-id" class="eyebrow">Loading…</div>
+            <h2 id="sample-title">DDR3 to controller BGA</h2>
+            <p id="sample-subtitle"></p>
+          </div>
+          <div class="legend" aria-label="Signal groups">
+            <span><i class="swatch ddr3"></i> DDR3 pads</span>
+            <span><i class="swatch controller"></i> Controller pads</span>
+            <label><input id="ratsnest-toggle" type="checkbox" checked /> Ratsnest</label>
+          </div>
+        </header>
+
+        <div id="stats" class="stats"></div>
+        <div class="canvas-shell">
+          <svg id="board-view" role="img" aria-label="Selected DDR3 to BGA routing sample"></svg>
+        </div>
+        <footer>
+          Unrouted Simple Route JSON · BGA pads on top · multilayer routing allowed · via-in-pad disabled
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="viewer.js"></script>
+  </body>
+</html>
