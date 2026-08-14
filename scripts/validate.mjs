@@ -8,6 +8,24 @@ const samplesDir = path.join(repoRoot, "samples")
 const require = createRequire(import.meta.url)
 const exportedDataset = require(path.join(repoRoot, "index.js"))
 const EPSILON = 1e-7
+const EXPECTED_DDR3_PACKAGES = {
+  8: {
+    manufacturer: "ISSI",
+    partNumber: "IS43/46TR82560C",
+    package: "78-ball BGA",
+    padCount: 78,
+    rows: ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N"],
+    knownPins: { A1: "VSS", B3: "DQ0", C3: "DQS", D3: "DQS#", E7: "DQ7", F3: "RAS#", G7: "CK#", H7: "A10/AP", J2: "BA0", K3: "A0", L7: "A1", M3: "A9", N7: "A14" },
+  },
+  16: {
+    manufacturer: "Samsung",
+    partNumber: "K4B4G1646E",
+    package: "96-ball FBGA",
+    padCount: 96,
+    rows: ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "T"],
+    knownPins: { A2: "DQU5", B7: "DQSU#", C7: "DQSU", D3: "DMU", E3: "DQL0", F3: "DQSL", G3: "DQSL#", H7: "DQL7", J3: "RAS#", K7: "CK#", L7: "A10/AP", M2: "BA0", N3: "A0", P7: "A1", R3: "A9", T7: "A14" },
+  },
+}
 
 const assert = (condition, message) => {
   if (!condition) throw new Error(message)
@@ -27,6 +45,8 @@ const report = {
   validatedAt: new Date().toISOString(),
   checks: [
     "20 sequential package exports",
+    "real ISSI 78-ball x8 or Samsung 96-ball x16 DDR3 ball population",
+    "vendor DDR3 ball names and representative row-by-row pin assignments",
     "exactly two non-overlapping top-side BGA pad fields",
     "every DDR3 net has one endpoint on each BGA",
     "all pads fully inside the board outline",
@@ -50,7 +70,28 @@ for (const [index, file] of sampleFiles.entries()) {
 
   const ddr3Pads = sample.obstacles.filter((obstacle) => obstacle.componentId === "ddr3_bga")
   const controllerPads = sample.obstacles.filter((obstacle) => obstacle.componentId === "controller_bga")
-  assert(ddr3Pads.length === 96, `${file}: expected 96 DDR3 pads, found ${ddr3Pads.length}`)
+  const expectedDdr3 = EXPECTED_DDR3_PACKAGES[sample.metadata.ddr3.dataWidth]
+  assert(expectedDdr3, `${file}: unsupported DDR3 data width`)
+  assert(ddr3Pads.length === expectedDdr3.padCount, `${file}: expected ${expectedDdr3.padCount} DDR3 pads, found ${ddr3Pads.length}`)
+  assert(sample.metadata.ddr3.manufacturer === expectedDdr3.manufacturer, `${file}: wrong DDR3 manufacturer`)
+  assert(sample.metadata.ddr3.partNumber === expectedDdr3.partNumber, `${file}: wrong DDR3 part number`)
+  assert(sample.metadata.ddr3.package === expectedDdr3.package, `${file}: wrong DDR3 package name`)
+  assert(sample.metadata.ddr3.pitch === 0.8, `${file}: real DDR3 footprint must use 0.8 mm pitch`)
+  assert(JSON.stringify(sample.metadata.ddr3.rowLabels) === JSON.stringify(expectedDdr3.rows), `${file}: wrong DDR3 row labels`)
+  assert(JSON.stringify(sample.metadata.ddr3.populatedColumns) === JSON.stringify([1, 2, 3, 7, 8, 9]), `${file}: wrong DDR3 populated columns`)
+  const ddr3PadByBall = new Map(ddr3Pads.map((pad) => [pad.ballName, pad]))
+  assert(ddr3PadByBall.size === ddr3Pads.length, `${file}: duplicate DDR3 ball names`)
+  for (const pad of ddr3Pads) {
+    const match = pad.ballName?.match(/^([A-Z])(\d)$/)
+    assert(match, `${file}: malformed DDR3 ball name ${pad.ballName}`)
+    assert(expectedDdr3.rows.includes(match[1]), `${file}: invalid DDR3 row ${match[1]}`)
+    assert([1, 2, 3, 7, 8, 9].includes(Number(match[2])), `${file}: impossible populated DDR3 column ${match[2]}`)
+    assert(pad.vendorPinName, `${file}: ${pad.ballName} has no vendor pin name`)
+    assert(pad.circuitJsonMetadata?.source_port_name === pad.vendorPinName, `${file}: ${pad.ballName} metadata does not preserve vendor pin name`)
+  }
+  for (const [ball, pin] of Object.entries(expectedDdr3.knownPins)) {
+    assert(ddr3PadByBall.get(ball)?.vendorPinName === pin, `${file}: expected vendor pin ${ball}=${pin}`)
+  }
   assert(controllerPads.length >= 144, `${file}: controller BGA is too small`)
   assert(ddr3Pads.length + controllerPads.length === sample.obstacles.length, `${file}: unexpected non-BGA obstacles`)
   assert(sample.connections.length === (sample.metadata.ddr3.dataWidth === 8 ? 38 : 49), `${file}: unexpected DDR3 signal count`)

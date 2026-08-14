@@ -1,7 +1,7 @@
 {
   "id": "sample003",
-  "title": "DDR3 x16 to 16x16 controller BGA",
-  "description": "A deliberately spacious DDR3-memory-to-controller BGA routing problem; the benchmark is paired-BGA connectivity, not board compaction.",
+  "title": "K4B4G1646E DDR3 x16 to 16x16 controller BGA",
+  "description": "A deliberately spacious, multilayer DDR3-memory-to-controller BGA routing problem using a real vendor DDR3 ballout; the benchmark is paired-BGA connectivity, not board compaction.",
   "layerCount": 8,
   "minTraceWidth": 0.12,
   "nominalTraceWidth": 0.12,
@@ -21,17 +21,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": 5.55
+        "x": -10.19,
+        "y": 6.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "A1",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
         "unconnected_ddr3_a1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_A1"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -42,17 +44,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": 5.55
+        "x": -9.39,
+        "y": 6.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "A2",
+      "vendorPinName": "DQU5",
       "connectedTo": [
-        "unconnected_ddr3_a2"
+        "DDR3_DQ13",
+        "pcb_port_ddr3_ddr3_dq13"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_A2"
+        "source_port_name": "DQU5"
       }
     },
     {
@@ -63,82 +68,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": 5.55
+        "x": -8.59,
+        "y": 6.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "A3",
+      "vendorPinName": "DQU7",
       "connectedTo": [
-        "unconnected_ddr3_a3"
+        "DDR3_DQ15",
+        "pcb_port_ddr3_ddr3_dq15"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_A3"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_a4",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -7.19,
-        "y": 5.55
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "unconnected_ddr3_a4"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "NC_A4"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_a5",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -6.39,
-        "y": 5.55
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_DQ0",
-        "pcb_port_ddr3_ddr3_dq0"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ0"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_a6",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -5.59,
-        "y": 5.55
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_DQ4",
-        "pcb_port_ddr3_ddr3_dq4"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ4"
+        "source_port_name": "DQU7"
       }
     },
     {
@@ -149,18 +92,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": 5.55
+        "x": -5.39,
+        "y": 6.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "A7",
+      "vendorPinName": "DQU4",
       "connectedTo": [
-        "DDR3_DQ3",
-        "pcb_port_ddr3_ddr3_dq3"
+        "DDR3_DQ12",
+        "pcb_port_ddr3_ddr3_dq12"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ3"
+        "source_port_name": "DQU4"
       }
     },
     {
@@ -171,18 +116,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": 5.55
+        "x": -4.59,
+        "y": 6.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "A8",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
-        "DDR3_DQ2",
-        "pcb_port_ddr3_ddr3_dq2"
+        "unconnected_ddr3_a8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ2"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -193,18 +139,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": 5.55
+        "x": -3.79,
+        "y": 6.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "A9",
+      "vendorPinName": "VSS",
       "connectedTo": [
-        "DDR3_DQ1",
-        "pcb_port_ddr3_ddr3_dq1"
+        "unconnected_ddr3_a9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ1"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -215,17 +162,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": 4.75
+        "x": -10.19,
+        "y": 5.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "B1",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
         "unconnected_ddr3_b1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_B1"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -236,17 +185,19 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": 4.75
+        "x": -9.39,
+        "y": 5.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "B2",
+      "vendorPinName": "VDD",
       "connectedTo": [
         "unconnected_ddr3_b2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_B2"
+        "source_port_name": "VDD"
       }
     },
     {
@@ -257,82 +208,19 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": 4.75
+        "x": -8.59,
+        "y": 5.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "B3",
+      "vendorPinName": "VSS",
       "connectedTo": [
         "unconnected_ddr3_b3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_B3"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_b4",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -7.19,
-        "y": 4.75
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "unconnected_ddr3_b4"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "NC_B4"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_b5",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -6.39,
-        "y": 4.75
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_DQ5",
-        "pcb_port_ddr3_ddr3_dq5"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ5"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_b6",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -5.59,
-        "y": 4.75
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_DQ7",
-        "pcb_port_ddr3_ddr3_dq7"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ7"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -343,18 +231,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": 4.75
+        "x": -5.39,
+        "y": 5.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "B7",
+      "vendorPinName": "DQSU#",
       "connectedTo": [
-        "DDR3_DQ8",
-        "pcb_port_ddr3_ddr3_dq8"
+        "DDR3_DQS1_N",
+        "pcb_port_ddr3_ddr3_dqs1_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ8"
+        "source_port_name": "DQSU#"
       }
     },
     {
@@ -365,18 +255,20 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": 4.75
+        "x": -4.59,
+        "y": 5.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "B8",
+      "vendorPinName": "DQU6",
       "connectedTo": [
-        "DDR3_DQ6",
-        "pcb_port_ddr3_ddr3_dq6"
+        "DDR3_DQ14",
+        "pcb_port_ddr3_ddr3_dq14"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ6"
+        "source_port_name": "DQU6"
       }
     },
     {
@@ -387,18 +279,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": 4.75
+        "x": -3.79,
+        "y": 5.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "B9",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
-        "DDR3_DQ9",
-        "pcb_port_ddr3_ddr3_dq9"
+        "unconnected_ddr3_b9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ9"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -409,17 +302,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": 3.95
+        "x": -10.19,
+        "y": 4.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "C1",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
         "unconnected_ddr3_c1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_C1"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -430,17 +325,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": 3.95
+        "x": -9.39,
+        "y": 4.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "C2",
+      "vendorPinName": "DQU3",
       "connectedTo": [
-        "unconnected_ddr3_c2"
+        "DDR3_DQ11",
+        "pcb_port_ddr3_ddr3_dq11"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_C2"
+        "source_port_name": "DQU3"
       }
     },
     {
@@ -451,17 +349,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": 3.95
+        "x": -8.59,
+        "y": 4.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "C3",
+      "vendorPinName": "DQU1",
       "connectedTo": [
-        "unconnected_ddr3_c3"
+        "DDR3_DQ9",
+        "pcb_port_ddr3_ddr3_dq9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_C3"
+        "source_port_name": "DQU1"
       }
     },
     {
@@ -472,18 +373,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": 3.95
+        "x": -5.39,
+        "y": 4.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "C7",
+      "vendorPinName": "DQSU",
       "connectedTo": [
-        "DDR3_DQ12",
-        "pcb_port_ddr3_ddr3_dq12"
+        "DDR3_DQS1_P",
+        "pcb_port_ddr3_ddr3_dqs1_p"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ12"
+        "source_port_name": "DQSU"
       }
     },
     {
@@ -494,18 +397,20 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": 3.95
+        "x": -4.59,
+        "y": 4.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "C8",
+      "vendorPinName": "DQU2",
       "connectedTo": [
-        "DDR3_DQ11",
-        "pcb_port_ddr3_ddr3_dq11"
+        "DDR3_DQ10",
+        "pcb_port_ddr3_ddr3_dq10"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ11"
+        "source_port_name": "DQU2"
       }
     },
     {
@@ -516,18 +421,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": 3.95
+        "x": -3.79,
+        "y": 4.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "C9",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
-        "DDR3_DQ10",
-        "pcb_port_ddr3_ddr3_dq10"
+        "unconnected_ddr3_c9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ10"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -538,17 +444,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": 3.15
+        "x": -10.19,
+        "y": 3.95
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "D1",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
         "unconnected_ddr3_d1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_D1"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -559,17 +467,19 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": 3.15
+        "x": -9.39,
+        "y": 3.95
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "D2",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
         "unconnected_ddr3_d2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_D2"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -580,17 +490,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": 3.15
+        "x": -8.59,
+        "y": 3.95
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "D3",
+      "vendorPinName": "DMU",
       "connectedTo": [
-        "unconnected_ddr3_d3"
+        "DDR3_DM1",
+        "pcb_port_ddr3_ddr3_dm1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_D3"
+        "source_port_name": "DMU"
       }
     },
     {
@@ -601,18 +514,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": 3.15
+        "x": -5.39,
+        "y": 3.95
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "D7",
+      "vendorPinName": "DQU0",
       "connectedTo": [
-        "DDR3_A1",
-        "pcb_port_ddr3_ddr3_a1"
+        "DDR3_DQ8",
+        "pcb_port_ddr3_ddr3_dq8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A1"
+        "source_port_name": "DQU0"
       }
     },
     {
@@ -623,18 +538,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": 3.15
+        "x": -4.59,
+        "y": 3.95
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "D8",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
-        "DDR3_A2",
-        "pcb_port_ddr3_ddr3_a2"
+        "unconnected_ddr3_d8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A2"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -645,18 +561,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": 3.15
+        "x": -3.79,
+        "y": 3.95
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "D9",
+      "vendorPinName": "VDD",
       "connectedTo": [
-        "DDR3_A3",
-        "pcb_port_ddr3_ddr3_a3"
+        "unconnected_ddr3_d9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A3"
+        "source_port_name": "VDD"
       }
     },
     {
@@ -667,17 +584,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": 2.35
+        "x": -10.19,
+        "y": 3.15
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "E1",
+      "vendorPinName": "VSS",
       "connectedTo": [
         "unconnected_ddr3_e1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_E1"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -688,17 +607,19 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": 2.35
+        "x": -9.39,
+        "y": 3.15
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "E2",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
         "unconnected_ddr3_e2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_E2"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -709,17 +630,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": 2.35
+        "x": -8.59,
+        "y": 3.15
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "E3",
+      "vendorPinName": "DQL0",
       "connectedTo": [
-        "unconnected_ddr3_e3"
+        "DDR3_DQ0",
+        "pcb_port_ddr3_ddr3_dq0"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_E3"
+        "source_port_name": "DQL0"
       }
     },
     {
@@ -730,18 +654,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": 2.35
+        "x": -5.39,
+        "y": 3.15
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "E7",
+      "vendorPinName": "DML",
       "connectedTo": [
-        "DDR3_DQS1_N",
-        "pcb_port_ddr3_ddr3_dqs1_n"
+        "DDR3_DM0",
+        "pcb_port_ddr3_ddr3_dm0"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQS1_N"
+        "source_port_name": "DML"
       }
     },
     {
@@ -752,18 +678,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": 2.35
+        "x": -4.59,
+        "y": 3.15
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "E8",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
-        "DDR3_DM1",
-        "pcb_port_ddr3_ddr3_dm1"
+        "unconnected_ddr3_e8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DM1"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -774,18 +701,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": 2.35
+        "x": -3.79,
+        "y": 3.15
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "E9",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
-        "DDR3_A0",
-        "pcb_port_ddr3_ddr3_a0"
+        "unconnected_ddr3_e9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A0"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -796,17 +724,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": 1.55
+        "x": -10.19,
+        "y": 2.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "F1",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
         "unconnected_ddr3_f1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_F1"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -817,17 +747,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": 1.55
+        "x": -9.39,
+        "y": 2.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "F2",
+      "vendorPinName": "DQL2",
       "connectedTo": [
-        "unconnected_ddr3_f2"
+        "DDR3_DQ2",
+        "pcb_port_ddr3_ddr3_dq2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_F2"
+        "source_port_name": "DQL2"
       }
     },
     {
@@ -838,17 +771,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": 1.55
+        "x": -8.59,
+        "y": 2.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "F3",
+      "vendorPinName": "DQSL",
       "connectedTo": [
-        "unconnected_ddr3_f3"
+        "DDR3_DQS0_P",
+        "pcb_port_ddr3_ddr3_dqs0_p"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_F3"
+        "source_port_name": "DQSL"
       }
     },
     {
@@ -859,18 +795,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": 1.55
+        "x": -5.39,
+        "y": 2.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "F7",
+      "vendorPinName": "DQL1",
       "connectedTo": [
-        "DDR3_DQS0_N",
-        "pcb_port_ddr3_ddr3_dqs0_n"
+        "DDR3_DQ1",
+        "pcb_port_ddr3_ddr3_dq1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQS0_N"
+        "source_port_name": "DQL1"
       }
     },
     {
@@ -881,18 +819,20 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": 1.55
+        "x": -4.59,
+        "y": 2.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "F8",
+      "vendorPinName": "DQL3",
       "connectedTo": [
-        "DDR3_DM0",
-        "pcb_port_ddr3_ddr3_dm0"
+        "DDR3_DQ3",
+        "pcb_port_ddr3_ddr3_dq3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DM0"
+        "source_port_name": "DQL3"
       }
     },
     {
@@ -903,18 +843,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": 1.55
+        "x": -3.79,
+        "y": 2.35
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "F9",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
-        "DDR3_DQS1_P",
-        "pcb_port_ddr3_ddr3_dqs1_p"
+        "unconnected_ddr3_f9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQS1_P"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -925,17 +866,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": 0.75
+        "x": -10.19,
+        "y": 1.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "G1",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
         "unconnected_ddr3_g1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_G1"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -946,17 +889,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": 0.75
+        "x": -9.39,
+        "y": 1.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "G2",
+      "vendorPinName": "DQL6",
       "connectedTo": [
-        "unconnected_ddr3_g2"
+        "DDR3_DQ6",
+        "pcb_port_ddr3_ddr3_dq6"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_G2"
+        "source_port_name": "DQL6"
       }
     },
     {
@@ -967,82 +913,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": 0.75
+        "x": -8.59,
+        "y": 1.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "G3",
+      "vendorPinName": "DQSL#",
       "connectedTo": [
-        "unconnected_ddr3_g3"
+        "DDR3_DQS0_N",
+        "pcb_port_ddr3_ddr3_dqs0_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_G3"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_g4",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -7.19,
-        "y": 0.75
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "unconnected_ddr3_g4"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "NC_G4"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_g5",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -6.39,
-        "y": 0.75
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_DQ13",
-        "pcb_port_ddr3_ddr3_dq13"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ13"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_g6",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -5.59,
-        "y": 0.75
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_DQS0_P",
-        "pcb_port_ddr3_ddr3_dqs0_p"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQS0_P"
+        "source_port_name": "DQSL#"
       }
     },
     {
@@ -1053,18 +937,19 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": 0.75
+        "x": -5.39,
+        "y": 1.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "G7",
+      "vendorPinName": "VDD",
       "connectedTo": [
-        "DDR3_A4",
-        "pcb_port_ddr3_ddr3_a4"
+        "unconnected_ddr3_g7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A4"
+        "source_port_name": "VDD"
       }
     },
     {
@@ -1075,18 +960,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": 0.75
+        "x": -4.59,
+        "y": 1.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "G8",
+      "vendorPinName": "VSS",
       "connectedTo": [
-        "DDR3_DQ15",
-        "pcb_port_ddr3_ddr3_dq15"
+        "unconnected_ddr3_g8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ15"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -1097,18 +983,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": 0.75
+        "x": -3.79,
+        "y": 1.55
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "G9",
+      "vendorPinName": "VSSQ",
       "connectedTo": [
-        "DDR3_DQ14",
-        "pcb_port_ddr3_ddr3_dq14"
+        "unconnected_ddr3_g9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_DQ14"
+        "source_port_name": "VSSQ"
       }
     },
     {
@@ -1119,17 +1006,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": -0.05
+        "x": -10.19,
+        "y": 0.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "H1",
+      "vendorPinName": "VREFDQ",
       "connectedTo": [
         "unconnected_ddr3_h1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_H1"
+        "source_port_name": "VREFDQ"
       }
     },
     {
@@ -1140,17 +1029,19 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": -0.05
+        "x": -9.39,
+        "y": 0.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "H2",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
         "unconnected_ddr3_h2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_H2"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -1161,82 +1052,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": -0.05
+        "x": -8.59,
+        "y": 0.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "H3",
+      "vendorPinName": "DQL4",
       "connectedTo": [
-        "unconnected_ddr3_h3"
+        "DDR3_DQ4",
+        "pcb_port_ddr3_ddr3_dq4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_H3"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_h4",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -7.19,
-        "y": -0.05
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "unconnected_ddr3_h4"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "NC_H4"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_h5",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -6.39,
-        "y": -0.05
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_A7",
-        "pcb_port_ddr3_ddr3_a7"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A7"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_ddr3_h6",
-      "componentId": "ddr3_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": -5.59,
-        "y": -0.05
-      },
-      "width": 0.38,
-      "height": 0.38,
-      "connectedTo": [
-        "DDR3_A5",
-        "pcb_port_ddr3_ddr3_a5"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A5"
+        "source_port_name": "DQL4"
       }
     },
     {
@@ -1247,18 +1076,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": -0.05
+        "x": -5.39,
+        "y": 0.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "H7",
+      "vendorPinName": "DQL7",
       "connectedTo": [
-        "DDR3_A6",
-        "pcb_port_ddr3_ddr3_a6"
+        "DDR3_DQ7",
+        "pcb_port_ddr3_ddr3_dq7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A6"
+        "source_port_name": "DQL7"
       }
     },
     {
@@ -1269,18 +1100,20 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": -0.05
+        "x": -4.59,
+        "y": 0.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "H8",
+      "vendorPinName": "DQL5",
       "connectedTo": [
-        "DDR3_A9",
-        "pcb_port_ddr3_ddr3_a9"
+        "DDR3_DQ5",
+        "pcb_port_ddr3_ddr3_dq5"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A9"
+        "source_port_name": "DQL5"
       }
     },
     {
@@ -1291,18 +1124,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": -0.05
+        "x": -3.79,
+        "y": 0.75
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "H9",
+      "vendorPinName": "VDDQ",
       "connectedTo": [
-        "DDR3_A8",
-        "pcb_port_ddr3_ddr3_a8"
+        "unconnected_ddr3_h9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A8"
+        "source_port_name": "VDDQ"
       }
     },
     {
@@ -1313,17 +1147,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": -0.85
+        "x": -10.19,
+        "y": -0.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "J1",
+      "vendorPinName": "NC",
       "connectedTo": [
         "unconnected_ddr3_j1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_J1"
+        "source_port_name": "NC"
       }
     },
     {
@@ -1334,17 +1170,19 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": -0.85
+        "x": -9.39,
+        "y": -0.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "J2",
+      "vendorPinName": "VSS",
       "connectedTo": [
         "unconnected_ddr3_j2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_J2"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -1355,17 +1193,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": -0.85
+        "x": -8.59,
+        "y": -0.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "J3",
+      "vendorPinName": "RAS#",
       "connectedTo": [
-        "unconnected_ddr3_j3"
+        "DDR3_RAS_N",
+        "pcb_port_ddr3_ddr3_ras_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_J3"
+        "source_port_name": "RAS#"
       }
     },
     {
@@ -1376,18 +1217,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": -0.85
+        "x": -5.39,
+        "y": -0.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "J7",
+      "vendorPinName": "CK",
       "connectedTo": [
-        "DDR3_A12",
-        "pcb_port_ddr3_ddr3_a12"
+        "DDR3_CK_P",
+        "pcb_port_ddr3_ddr3_ck_p"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A12"
+        "source_port_name": "CK"
       }
     },
     {
@@ -1398,18 +1241,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": -0.85
+        "x": -4.59,
+        "y": -0.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "J8",
+      "vendorPinName": "VSS",
       "connectedTo": [
-        "DDR3_A11",
-        "pcb_port_ddr3_ddr3_a11"
+        "unconnected_ddr3_j8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A11"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -1420,18 +1264,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": -0.85
+        "x": -3.79,
+        "y": -0.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "J9",
+      "vendorPinName": "NC",
       "connectedTo": [
-        "DDR3_A10",
-        "pcb_port_ddr3_ddr3_a10"
+        "unconnected_ddr3_j9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A10"
+        "source_port_name": "NC"
       }
     },
     {
@@ -1442,17 +1287,20 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": -1.65
+        "x": -10.19,
+        "y": -0.85
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "K1",
+      "vendorPinName": "ODT",
       "connectedTo": [
-        "unconnected_ddr3_k1"
+        "DDR3_ODT",
+        "pcb_port_ddr3_ddr3_odt"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_K1"
+        "source_port_name": "ODT"
       }
     },
     {
@@ -1463,17 +1311,19 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": -1.65
+        "x": -9.39,
+        "y": -0.85
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "K2",
+      "vendorPinName": "VDD",
       "connectedTo": [
         "unconnected_ddr3_k2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_K2"
+        "source_port_name": "VDD"
       }
     },
     {
@@ -1484,17 +1334,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": -1.65
+        "x": -8.59,
+        "y": -0.85
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "K3",
+      "vendorPinName": "CAS#",
       "connectedTo": [
-        "unconnected_ddr3_k3"
+        "DDR3_CAS_N",
+        "pcb_port_ddr3_ddr3_cas_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_K3"
+        "source_port_name": "CAS#"
       }
     },
     {
@@ -1505,18 +1358,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": -1.65
+        "x": -5.39,
+        "y": -0.85
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "K7",
+      "vendorPinName": "CK#",
       "connectedTo": [
-        "DDR3_A13",
-        "pcb_port_ddr3_ddr3_a13"
+        "DDR3_CK_N",
+        "pcb_port_ddr3_ddr3_ck_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A13"
+        "source_port_name": "CK#"
       }
     },
     {
@@ -1527,18 +1382,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": -1.65
+        "x": -4.59,
+        "y": -0.85
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "K8",
+      "vendorPinName": "VDD",
       "connectedTo": [
-        "DDR3_A14",
-        "pcb_port_ddr3_ddr3_a14"
+        "unconnected_ddr3_k8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_A14"
+        "source_port_name": "VDD"
       }
     },
     {
@@ -1549,18 +1405,20 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": -1.65
+        "x": -3.79,
+        "y": -0.85
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "K9",
+      "vendorPinName": "CKE",
       "connectedTo": [
-        "DDR3_BA0",
-        "pcb_port_ddr3_ddr3_ba0"
+        "DDR3_CKE",
+        "pcb_port_ddr3_ddr3_cke"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_BA0"
+        "source_port_name": "CKE"
       }
     },
     {
@@ -1571,17 +1429,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": -2.45
+        "x": -10.19,
+        "y": -1.65
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "L1",
+      "vendorPinName": "NC",
       "connectedTo": [
         "unconnected_ddr3_l1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_L1"
+        "source_port_name": "NC"
       }
     },
     {
@@ -1592,17 +1452,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": -2.45
+        "x": -9.39,
+        "y": -1.65
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "L2",
+      "vendorPinName": "CS#",
       "connectedTo": [
-        "unconnected_ddr3_l2"
+        "DDR3_CS_N",
+        "pcb_port_ddr3_ddr3_cs_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_L2"
+        "source_port_name": "CS#"
       }
     },
     {
@@ -1613,17 +1476,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": -2.45
+        "x": -8.59,
+        "y": -1.65
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "L3",
+      "vendorPinName": "WE#",
       "connectedTo": [
-        "unconnected_ddr3_l3"
+        "DDR3_WE_N",
+        "pcb_port_ddr3_ddr3_we_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_L3"
+        "source_port_name": "WE#"
       }
     },
     {
@@ -1634,18 +1500,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": -2.45
+        "x": -5.39,
+        "y": -1.65
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "L7",
+      "vendorPinName": "A10/AP",
       "connectedTo": [
-        "DDR3_RESET_N",
-        "pcb_port_ddr3_ddr3_reset_n"
+        "DDR3_A10",
+        "pcb_port_ddr3_ddr3_a10"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_RESET_N"
+        "source_port_name": "A10/AP"
       }
     },
     {
@@ -1656,17 +1524,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": -2.45
+        "x": -4.59,
+        "y": -1.65
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "L8",
+      "vendorPinName": "ZQ",
       "connectedTo": [
         "unconnected_ddr3_l8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_L8"
+        "source_port_name": "ZQ"
       }
     },
     {
@@ -1677,18 +1547,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": -2.45
+        "x": -3.79,
+        "y": -1.65
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "L9",
+      "vendorPinName": "NC",
       "connectedTo": [
-        "DDR3_BA1",
-        "pcb_port_ddr3_ddr3_ba1"
+        "unconnected_ddr3_l9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_BA1"
+        "source_port_name": "NC"
       }
     },
     {
@@ -1699,17 +1570,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": -3.25
+        "x": -10.19,
+        "y": -2.45
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "M1",
+      "vendorPinName": "VSS",
       "connectedTo": [
         "unconnected_ddr3_m1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_M1"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -1720,17 +1593,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": -3.25
+        "x": -9.39,
+        "y": -2.45
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "M2",
+      "vendorPinName": "BA0",
       "connectedTo": [
-        "unconnected_ddr3_m2"
+        "DDR3_BA0",
+        "pcb_port_ddr3_ddr3_ba0"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_M2"
+        "source_port_name": "BA0"
       }
     },
     {
@@ -1741,17 +1617,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": -3.25
+        "x": -8.59,
+        "y": -2.45
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "M3",
+      "vendorPinName": "BA2",
       "connectedTo": [
-        "unconnected_ddr3_m3"
+        "DDR3_BA2",
+        "pcb_port_ddr3_ddr3_ba2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_M3"
+        "source_port_name": "BA2"
       }
     },
     {
@@ -1762,18 +1641,19 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": -3.25
+        "x": -5.39,
+        "y": -2.45
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "M7",
+      "vendorPinName": "NC(A15)",
       "connectedTo": [
-        "DDR3_CKE",
-        "pcb_port_ddr3_ddr3_cke"
+        "unconnected_ddr3_m7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_CKE"
+        "source_port_name": "NC(A15)"
       }
     },
     {
@@ -1784,18 +1664,19 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": -3.25
+        "x": -4.59,
+        "y": -2.45
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "M8",
+      "vendorPinName": "VREFCA",
       "connectedTo": [
-        "DDR3_ODT",
-        "pcb_port_ddr3_ddr3_odt"
+        "unconnected_ddr3_m8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_ODT"
+        "source_port_name": "VREFCA"
       }
     },
     {
@@ -1806,18 +1687,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": -3.25
+        "x": -3.79,
+        "y": -2.45
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "M9",
+      "vendorPinName": "VSS",
       "connectedTo": [
-        "DDR3_CS_N",
-        "pcb_port_ddr3_ddr3_cs_n"
+        "unconnected_ddr3_m9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_CS_N"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -1828,17 +1710,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": -4.05
+        "x": -10.19,
+        "y": -3.25
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "N1",
+      "vendorPinName": "VDD",
       "connectedTo": [
         "unconnected_ddr3_n1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_N1"
+        "source_port_name": "VDD"
       }
     },
     {
@@ -1849,17 +1733,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": -4.05
+        "x": -9.39,
+        "y": -3.25
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "N2",
+      "vendorPinName": "A3",
       "connectedTo": [
-        "unconnected_ddr3_n2"
+        "DDR3_A3",
+        "pcb_port_ddr3_ddr3_a3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_N2"
+        "source_port_name": "A3"
       }
     },
     {
@@ -1870,17 +1757,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": -4.05
+        "x": -8.59,
+        "y": -3.25
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "N3",
+      "vendorPinName": "A0",
       "connectedTo": [
-        "unconnected_ddr3_n3"
+        "DDR3_A0",
+        "pcb_port_ddr3_ddr3_a0"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_N3"
+        "source_port_name": "A0"
       }
     },
     {
@@ -1891,18 +1781,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": -4.05
+        "x": -5.39,
+        "y": -3.25
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "N7",
+      "vendorPinName": "A12/BC#",
       "connectedTo": [
-        "DDR3_WE_N",
-        "pcb_port_ddr3_ddr3_we_n"
+        "DDR3_A12",
+        "pcb_port_ddr3_ddr3_a12"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_WE_N"
+        "source_port_name": "A12/BC#"
       }
     },
     {
@@ -1913,18 +1805,20 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": -4.05
+        "x": -4.59,
+        "y": -3.25
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "N8",
+      "vendorPinName": "BA1",
       "connectedTo": [
-        "DDR3_CK_P",
-        "pcb_port_ddr3_ddr3_ck_p"
+        "DDR3_BA1",
+        "pcb_port_ddr3_ddr3_ba1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_CK_P"
+        "source_port_name": "BA1"
       }
     },
     {
@@ -1935,18 +1829,19 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
-        "y": -4.05
+        "x": -3.79,
+        "y": -3.25
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "N9",
+      "vendorPinName": "VDD",
       "connectedTo": [
-        "DDR3_CK_N",
-        "pcb_port_ddr3_ddr3_ck_n"
+        "unconnected_ddr3_n9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_CK_N"
+        "source_port_name": "VDD"
       }
     },
     {
@@ -1957,17 +1852,19 @@
         "top"
       ],
       "center": {
-        "x": -9.59,
-        "y": -4.85
+        "x": -10.19,
+        "y": -4.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "P1",
+      "vendorPinName": "VSS",
       "connectedTo": [
         "unconnected_ddr3_p1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_P1"
+        "source_port_name": "VSS"
       }
     },
     {
@@ -1978,17 +1875,20 @@
         "top"
       ],
       "center": {
-        "x": -8.79,
-        "y": -4.85
+        "x": -9.39,
+        "y": -4.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "P2",
+      "vendorPinName": "A5",
       "connectedTo": [
-        "unconnected_ddr3_p2"
+        "DDR3_A5",
+        "pcb_port_ddr3_ddr3_a5"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_P2"
+        "source_port_name": "A5"
       }
     },
     {
@@ -1999,17 +1899,20 @@
         "top"
       ],
       "center": {
-        "x": -7.99,
-        "y": -4.85
+        "x": -8.59,
+        "y": -4.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "P3",
+      "vendorPinName": "A2",
       "connectedTo": [
-        "unconnected_ddr3_p3"
+        "DDR3_A2",
+        "pcb_port_ddr3_ddr3_a2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "NC_P3"
+        "source_port_name": "A2"
       }
     },
     {
@@ -2020,18 +1923,20 @@
         "top"
       ],
       "center": {
-        "x": -4.79,
-        "y": -4.85
+        "x": -5.39,
+        "y": -4.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "P7",
+      "vendorPinName": "A1",
       "connectedTo": [
-        "DDR3_BA2",
-        "pcb_port_ddr3_ddr3_ba2"
+        "DDR3_A1",
+        "pcb_port_ddr3_ddr3_a1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_BA2"
+        "source_port_name": "A1"
       }
     },
     {
@@ -2042,18 +1947,20 @@
         "top"
       ],
       "center": {
-        "x": -3.99,
-        "y": -4.85
+        "x": -4.59,
+        "y": -4.05
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "P8",
+      "vendorPinName": "A4",
       "connectedTo": [
-        "DDR3_RAS_N",
-        "pcb_port_ddr3_ddr3_ras_n"
+        "DDR3_A4",
+        "pcb_port_ddr3_ddr3_a4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_RAS_N"
+        "source_port_name": "A4"
       }
     },
     {
@@ -2064,18 +1971,303 @@
         "top"
       ],
       "center": {
-        "x": -3.19,
+        "x": -3.79,
+        "y": -4.05
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "P9",
+      "vendorPinName": "VSS",
+      "connectedTo": [
+        "unconnected_ddr3_p9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "VSS"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_r1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -10.19,
         "y": -4.85
       },
       "width": 0.38,
       "height": 0.38,
+      "ballName": "R1",
+      "vendorPinName": "VDD",
       "connectedTo": [
-        "DDR3_CAS_N",
-        "pcb_port_ddr3_ddr3_cas_n"
+        "unconnected_ddr3_r1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_DDR3",
-        "source_port_name": "DDR3_CAS_N"
+        "source_port_name": "VDD"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_r2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.39,
+        "y": -4.85
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "R2",
+      "vendorPinName": "A7",
+      "connectedTo": [
+        "DDR3_A7",
+        "pcb_port_ddr3_ddr3_a7"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "A7"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_r3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.59,
+        "y": -4.85
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "R3",
+      "vendorPinName": "A9",
+      "connectedTo": [
+        "DDR3_A9",
+        "pcb_port_ddr3_ddr3_a9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "A9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_r7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.39,
+        "y": -4.85
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "R7",
+      "vendorPinName": "A11",
+      "connectedTo": [
+        "DDR3_A11",
+        "pcb_port_ddr3_ddr3_a11"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "A11"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_r8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.59,
+        "y": -4.85
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "R8",
+      "vendorPinName": "A6",
+      "connectedTo": [
+        "DDR3_A6",
+        "pcb_port_ddr3_ddr3_a6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "A6"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_r9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.79,
+        "y": -4.85
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "R9",
+      "vendorPinName": "VDD",
+      "connectedTo": [
+        "unconnected_ddr3_r9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "VDD"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_t1",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -10.19,
+        "y": -5.65
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "T1",
+      "vendorPinName": "VSS",
+      "connectedTo": [
+        "unconnected_ddr3_t1"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "VSS"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_t2",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -9.39,
+        "y": -5.65
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "T2",
+      "vendorPinName": "RESET#",
+      "connectedTo": [
+        "DDR3_RESET_N",
+        "pcb_port_ddr3_ddr3_reset_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "RESET#"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_t3",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -8.59,
+        "y": -5.65
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "T3",
+      "vendorPinName": "A13",
+      "connectedTo": [
+        "DDR3_A13",
+        "pcb_port_ddr3_ddr3_a13"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "A13"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_t7",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -5.39,
+        "y": -5.65
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "T7",
+      "vendorPinName": "A14",
+      "connectedTo": [
+        "DDR3_A14",
+        "pcb_port_ddr3_ddr3_a14"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "A14"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_t8",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -4.59,
+        "y": -5.65
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "T8",
+      "vendorPinName": "A8",
+      "connectedTo": [
+        "DDR3_A8",
+        "pcb_port_ddr3_ddr3_a8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "A8"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_ddr3_t9",
+      "componentId": "ddr3_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": -3.79,
+        "y": -5.65
+      },
+      "width": 0.38,
+      "height": 0.38,
+      "ballName": "T9",
+      "vendorPinName": "VSS",
+      "connectedTo": [
+        "unconnected_ddr3_t9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_DDR3",
+        "source_port_name": "VSS"
       }
     },
     {
@@ -2086,55 +2278,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_DQ2",
-        "pcb_port_controller_ddr3_dq2"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_DQ2"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_a2",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.01,
-        "y": 5.65
-      },
-      "width": 0.42,
-      "height": 0.42,
-      "connectedTo": [
-        "DDR3_DQ0",
-        "pcb_port_controller_ddr3_dq0"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_DQ0"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_a3",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.81,
-        "y": 5.65
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "A1",
       "connectedTo": [
         "DDR3_DQ1",
         "pcb_port_controller_ddr3_dq1"
@@ -2145,6 +2294,52 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_a2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.61,
+        "y": 5.65
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "A2",
+      "connectedTo": [
+        "DDR3_DQ2",
+        "pcb_port_controller_ddr3_dq2"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ2"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_a3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.41,
+        "y": 5.65
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "A3",
+      "connectedTo": [
+        "DDR3_DQ0",
+        "pcb_port_controller_ddr3_dq0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ0"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_a4",
       "componentId": "controller_bga",
       "type": "rect",
@@ -2152,11 +2347,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A4",
       "connectedTo": [
         "DDR3_DQ3",
         "pcb_port_controller_ddr3_dq3"
@@ -2174,11 +2370,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A5",
       "connectedTo": [
         "unconnected_controller_a5"
       ],
@@ -2195,11 +2392,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A6",
       "connectedTo": [
         "unconnected_controller_a6"
       ],
@@ -2216,11 +2414,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A7",
       "connectedTo": [
         "unconnected_controller_a7"
       ],
@@ -2237,11 +2436,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A8",
       "connectedTo": [
         "unconnected_controller_a8"
       ],
@@ -2258,11 +2458,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A9",
       "connectedTo": [
         "unconnected_controller_a9"
       ],
@@ -2279,11 +2480,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A10",
       "connectedTo": [
         "unconnected_controller_a10"
       ],
@@ -2300,11 +2502,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A11",
       "connectedTo": [
         "unconnected_controller_a11"
       ],
@@ -2321,11 +2524,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A12",
       "connectedTo": [
         "unconnected_controller_a12"
       ],
@@ -2342,11 +2546,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A13",
       "connectedTo": [
         "unconnected_controller_a13"
       ],
@@ -2363,11 +2568,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A14",
       "connectedTo": [
         "unconnected_controller_a14"
       ],
@@ -2384,11 +2590,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A15",
       "connectedTo": [
         "unconnected_controller_a15"
       ],
@@ -2405,11 +2612,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 5.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "A16",
       "connectedTo": [
         "unconnected_controller_a16"
       ],
@@ -2426,11 +2634,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B1",
       "connectedTo": [
         "DDR3_DQ4",
         "pcb_port_controller_ddr3_dq4"
@@ -2448,11 +2657,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B2",
       "connectedTo": [
         "DDR3_DQ5",
         "pcb_port_controller_ddr3_dq5"
@@ -2470,11 +2680,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B3",
       "connectedTo": [
         "DDR3_DQ6",
         "pcb_port_controller_ddr3_dq6"
@@ -2492,11 +2703,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B4",
       "connectedTo": [
         "DDR3_DQ7",
         "pcb_port_controller_ddr3_dq7"
@@ -2514,11 +2726,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B5",
       "connectedTo": [
         "unconnected_controller_b5"
       ],
@@ -2535,11 +2748,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B6",
       "connectedTo": [
         "unconnected_controller_b6"
       ],
@@ -2556,11 +2770,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B7",
       "connectedTo": [
         "unconnected_controller_b7"
       ],
@@ -2577,11 +2792,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B8",
       "connectedTo": [
         "unconnected_controller_b8"
       ],
@@ -2598,11 +2814,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B9",
       "connectedTo": [
         "unconnected_controller_b9"
       ],
@@ -2619,11 +2836,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B10",
       "connectedTo": [
         "unconnected_controller_b10"
       ],
@@ -2640,11 +2858,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B11",
       "connectedTo": [
         "unconnected_controller_b11"
       ],
@@ -2661,11 +2880,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B12",
       "connectedTo": [
         "unconnected_controller_b12"
       ],
@@ -2682,11 +2902,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B13",
       "connectedTo": [
         "unconnected_controller_b13"
       ],
@@ -2703,11 +2924,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B14",
       "connectedTo": [
         "unconnected_controller_b14"
       ],
@@ -2724,11 +2946,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B15",
       "connectedTo": [
         "unconnected_controller_b15"
       ],
@@ -2745,11 +2968,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 4.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "B16",
       "connectedTo": [
         "unconnected_controller_b16"
       ],
@@ -2766,77 +2990,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_DQ8",
-        "pcb_port_controller_ddr3_dq8"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_DQ8"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_c2",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.01,
-        "y": 4.05
-      },
-      "width": 0.42,
-      "height": 0.42,
-      "connectedTo": [
-        "DDR3_DQ9",
-        "pcb_port_controller_ddr3_dq9"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_DQ9"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_c3",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.81,
-        "y": 4.05
-      },
-      "width": 0.42,
-      "height": 0.42,
-      "connectedTo": [
-        "DDR3_DQ10",
-        "pcb_port_controller_ddr3_dq10"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_DQ10"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_c4",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 5.61,
-        "y": 4.05
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "C1",
       "connectedTo": [
         "DDR3_DQ11",
         "pcb_port_controller_ddr3_dq11"
@@ -2847,6 +3006,75 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_c2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.61,
+        "y": 4.05
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "C2",
+      "connectedTo": [
+        "DDR3_DQ10",
+        "pcb_port_controller_ddr3_dq10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ10"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.41,
+        "y": 4.05
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "C3",
+      "connectedTo": [
+        "DDR3_DQ9",
+        "pcb_port_controller_ddr3_dq9"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ9"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_c4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.21,
+        "y": 4.05
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "C4",
+      "connectedTo": [
+        "DDR3_DQ8",
+        "pcb_port_controller_ddr3_dq8"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ8"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_c5",
       "componentId": "controller_bga",
       "type": "rect",
@@ -2854,11 +3082,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C5",
       "connectedTo": [
         "unconnected_controller_c5"
       ],
@@ -2875,11 +3104,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C6",
       "connectedTo": [
         "unconnected_controller_c6"
       ],
@@ -2896,11 +3126,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C7",
       "connectedTo": [
         "unconnected_controller_c7"
       ],
@@ -2917,11 +3148,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C8",
       "connectedTo": [
         "unconnected_controller_c8"
       ],
@@ -2938,11 +3170,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C9",
       "connectedTo": [
         "unconnected_controller_c9"
       ],
@@ -2959,11 +3192,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C10",
       "connectedTo": [
         "unconnected_controller_c10"
       ],
@@ -2980,11 +3214,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C11",
       "connectedTo": [
         "unconnected_controller_c11"
       ],
@@ -3001,11 +3236,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C12",
       "connectedTo": [
         "unconnected_controller_c12"
       ],
@@ -3022,11 +3258,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C13",
       "connectedTo": [
         "unconnected_controller_c13"
       ],
@@ -3043,11 +3280,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C14",
       "connectedTo": [
         "unconnected_controller_c14"
       ],
@@ -3064,11 +3302,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C15",
       "connectedTo": [
         "unconnected_controller_c15"
       ],
@@ -3085,11 +3324,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 4.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "C16",
       "connectedTo": [
         "unconnected_controller_c16"
       ],
@@ -3106,55 +3346,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_DQ15",
-        "pcb_port_controller_ddr3_dq15"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_DQ15"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_d2",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.01,
-        "y": 3.25
-      },
-      "width": 0.42,
-      "height": 0.42,
-      "connectedTo": [
-        "DDR3_DQ14",
-        "pcb_port_controller_ddr3_dq14"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_DQ14"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_d3",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.81,
-        "y": 3.25
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "D1",
       "connectedTo": [
         "DDR3_DQ12",
         "pcb_port_controller_ddr3_dq12"
@@ -3165,18 +3362,19 @@
       }
     },
     {
-      "obstacleId": "pcb_smtpad_controller_d4",
+      "obstacleId": "pcb_smtpad_controller_d2",
       "componentId": "controller_bga",
       "type": "rect",
       "layers": [
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 4.61,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D2",
       "connectedTo": [
         "DDR3_DQ13",
         "pcb_port_controller_ddr3_dq13"
@@ -3187,6 +3385,52 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_d3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.41,
+        "y": 3.25
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "D3",
+      "connectedTo": [
+        "DDR3_DQ14",
+        "pcb_port_controller_ddr3_dq14"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ14"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_d4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.21,
+        "y": 3.25
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "D4",
+      "connectedTo": [
+        "DDR3_DQ15",
+        "pcb_port_controller_ddr3_dq15"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_DQ15"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_d5",
       "componentId": "controller_bga",
       "type": "rect",
@@ -3194,11 +3438,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D5",
       "connectedTo": [
         "unconnected_controller_d5"
       ],
@@ -3215,11 +3460,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D6",
       "connectedTo": [
         "unconnected_controller_d6"
       ],
@@ -3236,11 +3482,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D7",
       "connectedTo": [
         "unconnected_controller_d7"
       ],
@@ -3257,11 +3504,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D8",
       "connectedTo": [
         "unconnected_controller_d8"
       ],
@@ -3278,11 +3526,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D9",
       "connectedTo": [
         "unconnected_controller_d9"
       ],
@@ -3299,11 +3548,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D10",
       "connectedTo": [
         "unconnected_controller_d10"
       ],
@@ -3320,11 +3570,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D11",
       "connectedTo": [
         "unconnected_controller_d11"
       ],
@@ -3341,11 +3592,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D12",
       "connectedTo": [
         "unconnected_controller_d12"
       ],
@@ -3362,11 +3614,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D13",
       "connectedTo": [
         "unconnected_controller_d13"
       ],
@@ -3383,11 +3636,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D14",
       "connectedTo": [
         "unconnected_controller_d14"
       ],
@@ -3404,11 +3658,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D15",
       "connectedTo": [
         "unconnected_controller_d15"
       ],
@@ -3425,11 +3680,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 3.25
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "D16",
       "connectedTo": [
         "unconnected_controller_d16"
       ],
@@ -3446,18 +3702,19 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E1",
       "connectedTo": [
-        "DDR3_A6",
-        "pcb_port_controller_ddr3_a6"
+        "DDR3_A9",
+        "pcb_port_controller_ddr3_a9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_A6"
+        "source_port_name": "DDR3_A9"
       }
     },
     {
@@ -3468,11 +3725,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E2",
       "connectedTo": [
         "DDR3_A8",
         "pcb_port_controller_ddr3_a8"
@@ -3490,33 +3748,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_A9",
-        "pcb_port_controller_ddr3_a9"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_A9"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_e4",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 5.61,
-        "y": 2.45
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "E3",
       "connectedTo": [
         "DDR3_A7",
         "pcb_port_controller_ddr3_a7"
@@ -3527,6 +3764,29 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_e4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.21,
+        "y": 2.45
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "E4",
+      "connectedTo": [
+        "DDR3_A6",
+        "pcb_port_controller_ddr3_a6"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A6"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_e5",
       "componentId": "controller_bga",
       "type": "rect",
@@ -3534,11 +3794,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E5",
       "connectedTo": [
         "unconnected_controller_e5"
       ],
@@ -3555,11 +3816,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E6",
       "connectedTo": [
         "unconnected_controller_e6"
       ],
@@ -3576,11 +3838,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E7",
       "connectedTo": [
         "unconnected_controller_e7"
       ],
@@ -3597,11 +3860,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E8",
       "connectedTo": [
         "unconnected_controller_e8"
       ],
@@ -3618,11 +3882,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E9",
       "connectedTo": [
         "unconnected_controller_e9"
       ],
@@ -3639,11 +3904,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E10",
       "connectedTo": [
         "unconnected_controller_e10"
       ],
@@ -3660,11 +3926,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E11",
       "connectedTo": [
         "unconnected_controller_e11"
       ],
@@ -3681,11 +3948,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E12",
       "connectedTo": [
         "unconnected_controller_e12"
       ],
@@ -3702,11 +3970,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E13",
       "connectedTo": [
         "unconnected_controller_e13"
       ],
@@ -3723,11 +3992,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E14",
       "connectedTo": [
         "unconnected_controller_e14"
       ],
@@ -3744,11 +4014,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E15",
       "connectedTo": [
         "unconnected_controller_e15"
       ],
@@ -3765,11 +4036,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 2.45
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "E16",
       "connectedTo": [
         "unconnected_controller_e16"
       ],
@@ -3786,11 +4058,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F1",
       "connectedTo": [
         "DDR3_A5",
         "pcb_port_controller_ddr3_a5"
@@ -3808,11 +4081,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F2",
       "connectedTo": [
         "DDR3_A4",
         "pcb_port_controller_ddr3_a4"
@@ -3830,11 +4104,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F3",
       "connectedTo": [
         "DDR3_A3",
         "pcb_port_controller_ddr3_a3"
@@ -3852,11 +4127,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F4",
       "connectedTo": [
         "DDR3_A2",
         "pcb_port_controller_ddr3_a2"
@@ -3874,11 +4150,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F5",
       "connectedTo": [
         "unconnected_controller_f5"
       ],
@@ -3895,11 +4172,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F6",
       "connectedTo": [
         "unconnected_controller_f6"
       ],
@@ -3916,11 +4194,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F7",
       "connectedTo": [
         "unconnected_controller_f7"
       ],
@@ -3937,11 +4216,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F8",
       "connectedTo": [
         "unconnected_controller_f8"
       ],
@@ -3958,11 +4238,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F9",
       "connectedTo": [
         "unconnected_controller_f9"
       ],
@@ -3979,11 +4260,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F10",
       "connectedTo": [
         "unconnected_controller_f10"
       ],
@@ -4000,11 +4282,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F11",
       "connectedTo": [
         "unconnected_controller_f11"
       ],
@@ -4021,11 +4304,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F12",
       "connectedTo": [
         "unconnected_controller_f12"
       ],
@@ -4042,11 +4326,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F13",
       "connectedTo": [
         "unconnected_controller_f13"
       ],
@@ -4063,11 +4348,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F14",
       "connectedTo": [
         "unconnected_controller_f14"
       ],
@@ -4084,11 +4370,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F15",
       "connectedTo": [
         "unconnected_controller_f15"
       ],
@@ -4105,11 +4392,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 1.65
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "F16",
       "connectedTo": [
         "unconnected_controller_f16"
       ],
@@ -4126,11 +4414,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G1",
       "connectedTo": [
         "DDR3_A1",
         "pcb_port_controller_ddr3_a1"
@@ -4148,11 +4437,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G2",
       "connectedTo": [
         "DDR3_A0",
         "pcb_port_controller_ddr3_a0"
@@ -4170,11 +4460,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G3",
       "connectedTo": [
         "DDR3_DM1",
         "pcb_port_controller_ddr3_dm1"
@@ -4192,11 +4483,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G4",
       "connectedTo": [
         "DDR3_DQS1_N",
         "pcb_port_controller_ddr3_dqs1_n"
@@ -4214,11 +4506,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G5",
       "connectedTo": [
         "unconnected_controller_g5"
       ],
@@ -4235,11 +4528,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G6",
       "connectedTo": [
         "unconnected_controller_g6"
       ],
@@ -4256,11 +4550,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G7",
       "connectedTo": [
         "unconnected_controller_g7"
       ],
@@ -4277,11 +4572,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G8",
       "connectedTo": [
         "unconnected_controller_g8"
       ],
@@ -4298,11 +4594,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G9",
       "connectedTo": [
         "unconnected_controller_g9"
       ],
@@ -4319,11 +4616,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G10",
       "connectedTo": [
         "unconnected_controller_g10"
       ],
@@ -4340,11 +4638,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G11",
       "connectedTo": [
         "unconnected_controller_g11"
       ],
@@ -4361,11 +4660,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G12",
       "connectedTo": [
         "unconnected_controller_g12"
       ],
@@ -4382,11 +4682,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G13",
       "connectedTo": [
         "unconnected_controller_g13"
       ],
@@ -4403,11 +4704,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G14",
       "connectedTo": [
         "unconnected_controller_g14"
       ],
@@ -4424,11 +4726,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G15",
       "connectedTo": [
         "unconnected_controller_g15"
       ],
@@ -4445,11 +4748,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 0.85
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "G16",
       "connectedTo": [
         "unconnected_controller_g16"
       ],
@@ -4466,11 +4770,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H1",
       "connectedTo": [
         "DDR3_DQS1_P",
         "pcb_port_controller_ddr3_dqs1_p"
@@ -4488,11 +4793,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H2",
       "connectedTo": [
         "DDR3_DM0",
         "pcb_port_controller_ddr3_dm0"
@@ -4510,11 +4816,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H3",
       "connectedTo": [
         "DDR3_DQS0_N",
         "pcb_port_controller_ddr3_dqs0_n"
@@ -4532,11 +4839,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H4",
       "connectedTo": [
         "DDR3_DQS0_P",
         "pcb_port_controller_ddr3_dqs0_p"
@@ -4554,11 +4862,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H5",
       "connectedTo": [
         "unconnected_controller_h5"
       ],
@@ -4575,11 +4884,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H6",
       "connectedTo": [
         "unconnected_controller_h6"
       ],
@@ -4596,11 +4906,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H7",
       "connectedTo": [
         "unconnected_controller_h7"
       ],
@@ -4617,11 +4928,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H8",
       "connectedTo": [
         "unconnected_controller_h8"
       ],
@@ -4638,11 +4950,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H9",
       "connectedTo": [
         "unconnected_controller_h9"
       ],
@@ -4659,11 +4972,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H10",
       "connectedTo": [
         "unconnected_controller_h10"
       ],
@@ -4680,11 +4994,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H11",
       "connectedTo": [
         "unconnected_controller_h11"
       ],
@@ -4701,11 +5016,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H12",
       "connectedTo": [
         "unconnected_controller_h12"
       ],
@@ -4722,11 +5038,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H13",
       "connectedTo": [
         "unconnected_controller_h13"
       ],
@@ -4743,11 +5060,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H14",
       "connectedTo": [
         "unconnected_controller_h14"
       ],
@@ -4764,11 +5082,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H15",
       "connectedTo": [
         "unconnected_controller_h15"
       ],
@@ -4785,11 +5104,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": 0.05
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "H16",
       "connectedTo": [
         "unconnected_controller_h16"
       ],
@@ -4806,33 +5126,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_A10",
-        "pcb_port_controller_ddr3_a10"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_A10"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_j2",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.01,
-        "y": -0.75
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "J1",
       "connectedTo": [
         "DDR3_A11",
         "pcb_port_controller_ddr3_a11"
@@ -4843,6 +5142,29 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_j2",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 4.61,
+        "y": -0.75
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "J2",
+      "connectedTo": [
+        "DDR3_A10",
+        "pcb_port_controller_ddr3_a10"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A10"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_j3",
       "componentId": "controller_bga",
       "type": "rect",
@@ -4850,33 +5172,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_A12",
-        "pcb_port_controller_ddr3_a12"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_A12"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_j4",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 5.61,
-        "y": -0.75
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "J3",
       "connectedTo": [
         "DDR3_A13",
         "pcb_port_controller_ddr3_a13"
@@ -4887,6 +5188,29 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_j4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.21,
+        "y": -0.75
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "J4",
+      "connectedTo": [
+        "DDR3_A12",
+        "pcb_port_controller_ddr3_a12"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A12"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_j5",
       "componentId": "controller_bga",
       "type": "rect",
@@ -4894,11 +5218,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J5",
       "connectedTo": [
         "unconnected_controller_j5"
       ],
@@ -4915,11 +5240,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J6",
       "connectedTo": [
         "unconnected_controller_j6"
       ],
@@ -4936,11 +5262,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J7",
       "connectedTo": [
         "unconnected_controller_j7"
       ],
@@ -4957,11 +5284,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J8",
       "connectedTo": [
         "unconnected_controller_j8"
       ],
@@ -4978,11 +5306,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J9",
       "connectedTo": [
         "unconnected_controller_j9"
       ],
@@ -4999,11 +5328,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J10",
       "connectedTo": [
         "unconnected_controller_j10"
       ],
@@ -5020,11 +5350,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J11",
       "connectedTo": [
         "unconnected_controller_j11"
       ],
@@ -5041,11 +5372,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J12",
       "connectedTo": [
         "unconnected_controller_j12"
       ],
@@ -5062,11 +5394,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J13",
       "connectedTo": [
         "unconnected_controller_j13"
       ],
@@ -5083,11 +5416,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J14",
       "connectedTo": [
         "unconnected_controller_j14"
       ],
@@ -5104,11 +5438,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J15",
       "connectedTo": [
         "unconnected_controller_j15"
       ],
@@ -5125,11 +5460,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -0.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "J16",
       "connectedTo": [
         "unconnected_controller_j16"
       ],
@@ -5146,55 +5482,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_A14",
-        "pcb_port_controller_ddr3_a14"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_A14"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_k2",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.01,
-        "y": -1.55
-      },
-      "width": 0.42,
-      "height": 0.42,
-      "connectedTo": [
-        "DDR3_BA0",
-        "pcb_port_controller_ddr3_ba0"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_BA0"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_k3",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.81,
-        "y": -1.55
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "K1",
       "connectedTo": [
         "DDR3_BA1",
         "pcb_port_controller_ddr3_ba1"
@@ -5205,18 +5498,42 @@
       }
     },
     {
-      "obstacleId": "pcb_smtpad_controller_k4",
+      "obstacleId": "pcb_smtpad_controller_k2",
       "componentId": "controller_bga",
       "type": "rect",
       "layers": [
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 4.61,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K2",
+      "connectedTo": [
+        "DDR3_A14",
+        "pcb_port_controller_ddr3_a14"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_A14"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_k3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.41,
+        "y": -1.55
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "K3",
       "connectedTo": [
         "DDR3_BA2",
         "pcb_port_controller_ddr3_ba2"
@@ -5227,6 +5544,29 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_k4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.21,
+        "y": -1.55
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "K4",
+      "connectedTo": [
+        "DDR3_BA0",
+        "pcb_port_controller_ddr3_ba0"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_BA0"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_k5",
       "componentId": "controller_bga",
       "type": "rect",
@@ -5234,11 +5574,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K5",
       "connectedTo": [
         "unconnected_controller_k5"
       ],
@@ -5255,11 +5596,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K6",
       "connectedTo": [
         "unconnected_controller_k6"
       ],
@@ -5276,11 +5618,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K7",
       "connectedTo": [
         "unconnected_controller_k7"
       ],
@@ -5297,11 +5640,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K8",
       "connectedTo": [
         "unconnected_controller_k8"
       ],
@@ -5318,11 +5662,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K9",
       "connectedTo": [
         "unconnected_controller_k9"
       ],
@@ -5339,11 +5684,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K10",
       "connectedTo": [
         "unconnected_controller_k10"
       ],
@@ -5360,11 +5706,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K11",
       "connectedTo": [
         "unconnected_controller_k11"
       ],
@@ -5381,11 +5728,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K12",
       "connectedTo": [
         "unconnected_controller_k12"
       ],
@@ -5402,11 +5750,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K13",
       "connectedTo": [
         "unconnected_controller_k13"
       ],
@@ -5423,11 +5772,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K14",
       "connectedTo": [
         "unconnected_controller_k14"
       ],
@@ -5444,11 +5794,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K15",
       "connectedTo": [
         "unconnected_controller_k15"
       ],
@@ -5465,11 +5816,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -1.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "K16",
       "connectedTo": [
         "unconnected_controller_k16"
       ],
@@ -5486,18 +5838,19 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L1",
       "connectedTo": [
-        "DDR3_WE_N",
-        "pcb_port_controller_ddr3_we_n"
+        "DDR3_RAS_N",
+        "pcb_port_controller_ddr3_ras_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_WE_N"
+        "source_port_name": "DDR3_RAS_N"
       }
     },
     {
@@ -5508,11 +5861,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L2",
       "connectedTo": [
         "DDR3_CAS_N",
         "pcb_port_controller_ddr3_cas_n"
@@ -5530,18 +5884,19 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L3",
       "connectedTo": [
-        "DDR3_RAS_N",
-        "pcb_port_controller_ddr3_ras_n"
+        "DDR3_WE_N",
+        "pcb_port_controller_ddr3_we_n"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_RAS_N"
+        "source_port_name": "DDR3_WE_N"
       }
     },
     {
@@ -5552,11 +5907,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L4",
       "connectedTo": [
         "DDR3_CK_P",
         "pcb_port_controller_ddr3_ck_p"
@@ -5574,11 +5930,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L5",
       "connectedTo": [
         "unconnected_controller_l5"
       ],
@@ -5595,11 +5952,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L6",
       "connectedTo": [
         "unconnected_controller_l6"
       ],
@@ -5616,11 +5974,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L7",
       "connectedTo": [
         "unconnected_controller_l7"
       ],
@@ -5637,11 +5996,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L8",
       "connectedTo": [
         "unconnected_controller_l8"
       ],
@@ -5658,11 +6018,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L9",
       "connectedTo": [
         "unconnected_controller_l9"
       ],
@@ -5679,11 +6040,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L10",
       "connectedTo": [
         "unconnected_controller_l10"
       ],
@@ -5700,11 +6062,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L11",
       "connectedTo": [
         "unconnected_controller_l11"
       ],
@@ -5721,11 +6084,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L12",
       "connectedTo": [
         "unconnected_controller_l12"
       ],
@@ -5742,11 +6106,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L13",
       "connectedTo": [
         "unconnected_controller_l13"
       ],
@@ -5763,11 +6128,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L14",
       "connectedTo": [
         "unconnected_controller_l14"
       ],
@@ -5784,11 +6150,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L15",
       "connectedTo": [
         "unconnected_controller_l15"
       ],
@@ -5805,11 +6172,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -2.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "L16",
       "connectedTo": [
         "unconnected_controller_l16"
       ],
@@ -5826,55 +6194,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
-      "connectedTo": [
-        "DDR3_ODT",
-        "pcb_port_controller_ddr3_odt"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_ODT"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_m2",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.01,
-        "y": -3.15
-      },
-      "width": 0.42,
-      "height": 0.42,
-      "connectedTo": [
-        "DDR3_CS_N",
-        "pcb_port_controller_ddr3_cs_n"
-      ],
-      "circuitJsonMetadata": {
-        "source_component_name": "U_CONTROLLER",
-        "source_port_name": "DDR3_CS_N"
-      }
-    },
-    {
-      "obstacleId": "pcb_smtpad_controller_m3",
-      "componentId": "controller_bga",
-      "type": "rect",
-      "layers": [
-        "top"
-      ],
-      "center": {
-        "x": 4.81,
-        "y": -3.15
-      },
-      "width": 0.42,
-      "height": 0.42,
+      "ballName": "M1",
       "connectedTo": [
         "DDR3_CKE",
         "pcb_port_controller_ddr3_cke"
@@ -5885,18 +6210,42 @@
       }
     },
     {
-      "obstacleId": "pcb_smtpad_controller_m4",
+      "obstacleId": "pcb_smtpad_controller_m2",
       "componentId": "controller_bga",
       "type": "rect",
       "layers": [
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 4.61,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M2",
+      "connectedTo": [
+        "DDR3_ODT",
+        "pcb_port_controller_ddr3_odt"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_ODT"
+      }
+    },
+    {
+      "obstacleId": "pcb_smtpad_controller_m3",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 5.41,
+        "y": -3.15
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "M3",
       "connectedTo": [
         "DDR3_CK_N",
         "pcb_port_controller_ddr3_ck_n"
@@ -5907,6 +6256,29 @@
       }
     },
     {
+      "obstacleId": "pcb_smtpad_controller_m4",
+      "componentId": "controller_bga",
+      "type": "rect",
+      "layers": [
+        "top"
+      ],
+      "center": {
+        "x": 6.21,
+        "y": -3.15
+      },
+      "width": 0.42,
+      "height": 0.42,
+      "ballName": "M4",
+      "connectedTo": [
+        "DDR3_CS_N",
+        "pcb_port_controller_ddr3_cs_n"
+      ],
+      "circuitJsonMetadata": {
+        "source_component_name": "U_CONTROLLER",
+        "source_port_name": "DDR3_CS_N"
+      }
+    },
+    {
       "obstacleId": "pcb_smtpad_controller_m5",
       "componentId": "controller_bga",
       "type": "rect",
@@ -5914,11 +6286,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M5",
       "connectedTo": [
         "unconnected_controller_m5"
       ],
@@ -5935,11 +6308,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M6",
       "connectedTo": [
         "unconnected_controller_m6"
       ],
@@ -5956,11 +6330,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M7",
       "connectedTo": [
         "unconnected_controller_m7"
       ],
@@ -5977,11 +6352,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M8",
       "connectedTo": [
         "unconnected_controller_m8"
       ],
@@ -5998,11 +6374,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M9",
       "connectedTo": [
         "unconnected_controller_m9"
       ],
@@ -6019,11 +6396,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M10",
       "connectedTo": [
         "unconnected_controller_m10"
       ],
@@ -6040,11 +6418,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M11",
       "connectedTo": [
         "unconnected_controller_m11"
       ],
@@ -6061,11 +6440,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M12",
       "connectedTo": [
         "unconnected_controller_m12"
       ],
@@ -6082,11 +6462,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M13",
       "connectedTo": [
         "unconnected_controller_m13"
       ],
@@ -6103,11 +6484,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M14",
       "connectedTo": [
         "unconnected_controller_m14"
       ],
@@ -6124,11 +6506,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M15",
       "connectedTo": [
         "unconnected_controller_m15"
       ],
@@ -6145,11 +6528,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -3.15
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "M16",
       "connectedTo": [
         "unconnected_controller_m16"
       ],
@@ -6166,11 +6550,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N1",
       "connectedTo": [
         "unconnected_controller_n1"
       ],
@@ -6187,11 +6572,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N2",
       "connectedTo": [
         "unconnected_controller_n2"
       ],
@@ -6208,11 +6594,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N3",
       "connectedTo": [
         "unconnected_controller_n3"
       ],
@@ -6229,11 +6616,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N4",
       "connectedTo": [
         "unconnected_controller_n4"
       ],
@@ -6250,11 +6638,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N5",
       "connectedTo": [
         "unconnected_controller_n5"
       ],
@@ -6271,11 +6660,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N6",
       "connectedTo": [
         "unconnected_controller_n6"
       ],
@@ -6292,11 +6682,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N7",
       "connectedTo": [
         "unconnected_controller_n7"
       ],
@@ -6313,11 +6704,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N8",
       "connectedTo": [
         "unconnected_controller_n8"
       ],
@@ -6334,11 +6726,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N9",
       "connectedTo": [
         "unconnected_controller_n9"
       ],
@@ -6355,11 +6748,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N10",
       "connectedTo": [
         "unconnected_controller_n10"
       ],
@@ -6376,11 +6770,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N11",
       "connectedTo": [
         "unconnected_controller_n11"
       ],
@@ -6397,11 +6792,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N12",
       "connectedTo": [
         "unconnected_controller_n12"
       ],
@@ -6418,11 +6814,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N13",
       "connectedTo": [
         "unconnected_controller_n13"
       ],
@@ -6439,11 +6836,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N14",
       "connectedTo": [
         "unconnected_controller_n14"
       ],
@@ -6460,11 +6858,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N15",
       "connectedTo": [
         "unconnected_controller_n15"
       ],
@@ -6481,11 +6880,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -3.95
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "N16",
       "connectedTo": [
         "unconnected_controller_n16"
       ],
@@ -6502,11 +6902,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P1",
       "connectedTo": [
         "unconnected_controller_p1"
       ],
@@ -6523,11 +6924,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P2",
       "connectedTo": [
         "unconnected_controller_p2"
       ],
@@ -6544,11 +6946,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P3",
       "connectedTo": [
         "unconnected_controller_p3"
       ],
@@ -6565,11 +6968,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P4",
       "connectedTo": [
         "unconnected_controller_p4"
       ],
@@ -6586,11 +6990,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P5",
       "connectedTo": [
         "unconnected_controller_p5"
       ],
@@ -6607,11 +7012,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P6",
       "connectedTo": [
         "unconnected_controller_p6"
       ],
@@ -6628,11 +7034,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P7",
       "connectedTo": [
         "unconnected_controller_p7"
       ],
@@ -6649,11 +7056,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P8",
       "connectedTo": [
         "unconnected_controller_p8"
       ],
@@ -6670,11 +7078,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P9",
       "connectedTo": [
         "unconnected_controller_p9"
       ],
@@ -6691,11 +7100,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P10",
       "connectedTo": [
         "unconnected_controller_p10"
       ],
@@ -6712,11 +7122,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P11",
       "connectedTo": [
         "unconnected_controller_p11"
       ],
@@ -6733,11 +7144,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P12",
       "connectedTo": [
         "unconnected_controller_p12"
       ],
@@ -6754,11 +7166,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P13",
       "connectedTo": [
         "unconnected_controller_p13"
       ],
@@ -6775,11 +7188,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P14",
       "connectedTo": [
         "unconnected_controller_p14"
       ],
@@ -6796,11 +7210,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P15",
       "connectedTo": [
         "unconnected_controller_p15"
       ],
@@ -6817,11 +7232,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -4.75
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "P16",
       "connectedTo": [
         "unconnected_controller_p16"
       ],
@@ -6838,11 +7254,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R1",
       "connectedTo": [
         "unconnected_controller_r1"
       ],
@@ -6859,11 +7276,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R2",
       "connectedTo": [
         "unconnected_controller_r2"
       ],
@@ -6880,11 +7298,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R3",
       "connectedTo": [
         "unconnected_controller_r3"
       ],
@@ -6901,11 +7320,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R4",
       "connectedTo": [
         "unconnected_controller_r4"
       ],
@@ -6922,11 +7342,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R5",
       "connectedTo": [
         "unconnected_controller_r5"
       ],
@@ -6943,11 +7364,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R6",
       "connectedTo": [
         "unconnected_controller_r6"
       ],
@@ -6964,11 +7386,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R7",
       "connectedTo": [
         "unconnected_controller_r7"
       ],
@@ -6985,11 +7408,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R8",
       "connectedTo": [
         "unconnected_controller_r8"
       ],
@@ -7006,11 +7430,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R9",
       "connectedTo": [
         "unconnected_controller_r9"
       ],
@@ -7027,11 +7452,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R10",
       "connectedTo": [
         "unconnected_controller_r10"
       ],
@@ -7048,11 +7474,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R11",
       "connectedTo": [
         "unconnected_controller_r11"
       ],
@@ -7069,11 +7496,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R12",
       "connectedTo": [
         "unconnected_controller_r12"
       ],
@@ -7090,11 +7518,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R13",
       "connectedTo": [
         "unconnected_controller_r13"
       ],
@@ -7111,11 +7540,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R14",
       "connectedTo": [
         "unconnected_controller_r14"
       ],
@@ -7132,11 +7562,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R15",
       "connectedTo": [
         "unconnected_controller_r15"
       ],
@@ -7153,11 +7584,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -5.55
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "R16",
       "connectedTo": [
         "unconnected_controller_r16"
       ],
@@ -7174,11 +7606,12 @@
         "top"
       ],
       "center": {
-        "x": 3.21,
+        "x": 3.81,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T1",
       "connectedTo": [
         "unconnected_controller_t1"
       ],
@@ -7195,11 +7628,12 @@
         "top"
       ],
       "center": {
-        "x": 4.01,
+        "x": 4.61,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T2",
       "connectedTo": [
         "unconnected_controller_t2"
       ],
@@ -7216,11 +7650,12 @@
         "top"
       ],
       "center": {
-        "x": 4.81,
+        "x": 5.41,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T3",
       "connectedTo": [
         "unconnected_controller_t3"
       ],
@@ -7237,11 +7672,12 @@
         "top"
       ],
       "center": {
-        "x": 5.61,
+        "x": 6.21,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T4",
       "connectedTo": [
         "DDR3_RESET_N",
         "pcb_port_controller_ddr3_reset_n"
@@ -7259,11 +7695,12 @@
         "top"
       ],
       "center": {
-        "x": 6.41,
+        "x": 7.01,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T5",
       "connectedTo": [
         "unconnected_controller_t5"
       ],
@@ -7280,11 +7717,12 @@
         "top"
       ],
       "center": {
-        "x": 7.21,
+        "x": 7.81,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T6",
       "connectedTo": [
         "unconnected_controller_t6"
       ],
@@ -7301,11 +7739,12 @@
         "top"
       ],
       "center": {
-        "x": 8.01,
+        "x": 8.61,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T7",
       "connectedTo": [
         "unconnected_controller_t7"
       ],
@@ -7322,11 +7761,12 @@
         "top"
       ],
       "center": {
-        "x": 8.81,
+        "x": 9.41,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T8",
       "connectedTo": [
         "unconnected_controller_t8"
       ],
@@ -7343,11 +7783,12 @@
         "top"
       ],
       "center": {
-        "x": 9.61,
+        "x": 10.21,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T9",
       "connectedTo": [
         "unconnected_controller_t9"
       ],
@@ -7364,11 +7805,12 @@
         "top"
       ],
       "center": {
-        "x": 10.41,
+        "x": 11.01,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T10",
       "connectedTo": [
         "unconnected_controller_t10"
       ],
@@ -7385,11 +7827,12 @@
         "top"
       ],
       "center": {
-        "x": 11.21,
+        "x": 11.81,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T11",
       "connectedTo": [
         "unconnected_controller_t11"
       ],
@@ -7406,11 +7849,12 @@
         "top"
       ],
       "center": {
-        "x": 12.01,
+        "x": 12.61,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T12",
       "connectedTo": [
         "unconnected_controller_t12"
       ],
@@ -7427,11 +7871,12 @@
         "top"
       ],
       "center": {
-        "x": 12.81,
+        "x": 13.41,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T13",
       "connectedTo": [
         "unconnected_controller_t13"
       ],
@@ -7448,11 +7893,12 @@
         "top"
       ],
       "center": {
-        "x": 13.61,
+        "x": 14.21,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T14",
       "connectedTo": [
         "unconnected_controller_t14"
       ],
@@ -7469,11 +7915,12 @@
         "top"
       ],
       "center": {
-        "x": 14.41,
+        "x": 15.01,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T15",
       "connectedTo": [
         "unconnected_controller_t15"
       ],
@@ -7490,11 +7937,12 @@
         "top"
       ],
       "center": {
-        "x": 15.21,
+        "x": 15.81,
         "y": -6.35
       },
       "width": 0.42,
       "height": 0.42,
+      "ballName": "T16",
       "connectedTo": [
         "unconnected_controller_t16"
       ],
@@ -7512,14 +7960,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -6.39,
-          "y": 5.55,
+          "x": -8.59,
+          "y": 3.15,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq0",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq0"
         },
         {
-          "x": 4.01,
+          "x": 5.41,
           "y": 5.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq0",
@@ -7534,14 +7982,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": 5.55,
+          "x": -5.39,
+          "y": 2.35,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq1",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq1"
         },
         {
-          "x": 4.81,
+          "x": 3.81,
           "y": 5.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq1",
@@ -7556,14 +8004,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": 5.55,
+          "x": -9.39,
+          "y": 2.35,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq2",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq2"
         },
         {
-          "x": 3.21,
+          "x": 4.61,
           "y": 5.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq2",
@@ -7578,14 +8026,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": 5.55,
+          "x": -4.59,
+          "y": 2.35,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq3",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq3"
         },
         {
-          "x": 5.61,
+          "x": 6.21,
           "y": 5.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq3",
@@ -7600,14 +8048,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -5.59,
-          "y": 5.55,
+          "x": -8.59,
+          "y": 0.75,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq4",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq4"
         },
         {
-          "x": 3.21,
+          "x": 3.81,
           "y": 4.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq4",
@@ -7622,14 +8070,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -6.39,
-          "y": 4.75,
+          "x": -4.59,
+          "y": 0.75,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq5",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq5"
         },
         {
-          "x": 4.01,
+          "x": 4.61,
           "y": 4.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq5",
@@ -7644,14 +8092,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": 4.75,
+          "x": -9.39,
+          "y": 1.55,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq6",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq6"
         },
         {
-          "x": 4.81,
+          "x": 5.41,
           "y": 4.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq6",
@@ -7666,14 +8114,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -5.59,
-          "y": 4.75,
+          "x": -5.39,
+          "y": 0.75,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq7",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq7"
         },
         {
-          "x": 5.61,
+          "x": 6.21,
           "y": 4.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq7",
@@ -7688,14 +8136,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": 4.75,
+          "x": -5.39,
+          "y": 3.95,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq8",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq8"
         },
         {
-          "x": 3.21,
+          "x": 6.21,
           "y": 4.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq8",
@@ -7710,14 +8158,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
+          "x": -8.59,
           "y": 4.75,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq9",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq9"
         },
         {
-          "x": 4.01,
+          "x": 5.41,
           "y": 4.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq9",
@@ -7732,14 +8180,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": 3.95,
+          "x": -4.59,
+          "y": 4.75,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq10",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq10"
         },
         {
-          "x": 4.81,
+          "x": 4.61,
           "y": 4.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq10",
@@ -7754,14 +8202,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": 3.95,
+          "x": -9.39,
+          "y": 4.75,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq11",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq11"
         },
         {
-          "x": 5.61,
+          "x": 3.81,
           "y": 4.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq11",
@@ -7776,14 +8224,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": 3.95,
+          "x": -5.39,
+          "y": 6.35,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq12",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq12"
         },
         {
-          "x": 4.81,
+          "x": 3.81,
           "y": 3.25,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq12",
@@ -7798,14 +8246,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -6.39,
-          "y": 0.75,
+          "x": -9.39,
+          "y": 6.35,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq13",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq13"
         },
         {
-          "x": 5.61,
+          "x": 4.61,
           "y": 3.25,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq13",
@@ -7820,14 +8268,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": 0.75,
+          "x": -4.59,
+          "y": 5.55,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq14",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq14"
         },
         {
-          "x": 4.01,
+          "x": 5.41,
           "y": 3.25,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq14",
@@ -7842,14 +8290,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": 0.75,
+          "x": -8.59,
+          "y": 6.35,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dq15",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dq15"
         },
         {
-          "x": 3.21,
+          "x": 6.21,
           "y": 3.25,
           "layer": "top",
           "pointId": "point_controller_ddr3_dq15",
@@ -7864,14 +8312,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -5.59,
-          "y": 0.75,
+          "x": -8.59,
+          "y": 2.35,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dqs0_p",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dqs0_p"
         },
         {
-          "x": 5.61,
+          "x": 6.21,
           "y": 0.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dqs0_p",
@@ -7886,14 +8334,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
+          "x": -8.59,
           "y": 1.55,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dqs0_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dqs0_n"
         },
         {
-          "x": 4.81,
+          "x": 5.41,
           "y": 0.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dqs0_n",
@@ -7908,14 +8356,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": 1.55,
+          "x": -5.39,
+          "y": 3.15,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dm0",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dm0"
         },
         {
-          "x": 4.01,
+          "x": 4.61,
           "y": 0.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dm0",
@@ -7930,14 +8378,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": 1.55,
+          "x": -5.39,
+          "y": 4.75,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dqs1_p",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dqs1_p"
         },
         {
-          "x": 3.21,
+          "x": 3.81,
           "y": 0.05,
           "layer": "top",
           "pointId": "point_controller_ddr3_dqs1_p",
@@ -7952,14 +8400,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": 2.35,
+          "x": -5.39,
+          "y": 5.55,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dqs1_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dqs1_n"
         },
         {
-          "x": 5.61,
+          "x": 6.21,
           "y": 0.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_dqs1_n",
@@ -7974,14 +8422,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": 2.35,
+          "x": -8.59,
+          "y": 3.95,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_dm1",
           "pcb_port_id": "pcb_port_ddr3_ddr3_dm1"
         },
         {
-          "x": 4.81,
+          "x": 5.41,
           "y": 0.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_dm1",
@@ -7996,14 +8444,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": 2.35,
+          "x": -8.59,
+          "y": -3.25,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a0",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a0"
         },
         {
-          "x": 4.01,
+          "x": 4.61,
           "y": 0.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_a0",
@@ -8018,14 +8466,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": 3.15,
+          "x": -5.39,
+          "y": -4.05,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a1",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a1"
         },
         {
-          "x": 3.21,
+          "x": 3.81,
           "y": 0.85,
           "layer": "top",
           "pointId": "point_controller_ddr3_a1",
@@ -8040,14 +8488,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": 3.15,
+          "x": -8.59,
+          "y": -4.05,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a2",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a2"
         },
         {
-          "x": 5.61,
+          "x": 6.21,
           "y": 1.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_a2",
@@ -8062,14 +8510,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": 3.15,
+          "x": -9.39,
+          "y": -3.25,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a3",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a3"
         },
         {
-          "x": 4.81,
+          "x": 5.41,
           "y": 1.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_a3",
@@ -8084,14 +8532,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": 0.75,
+          "x": -4.59,
+          "y": -4.05,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a4",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a4"
         },
         {
-          "x": 4.01,
+          "x": 4.61,
           "y": 1.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_a4",
@@ -8106,14 +8554,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -5.59,
-          "y": -0.05,
+          "x": -9.39,
+          "y": -4.05,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a5",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a5"
         },
         {
-          "x": 3.21,
+          "x": 3.81,
           "y": 1.65,
           "layer": "top",
           "pointId": "point_controller_ddr3_a5",
@@ -8128,14 +8576,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": -0.05,
+          "x": -4.59,
+          "y": -4.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a6",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a6"
         },
         {
-          "x": 3.21,
+          "x": 6.21,
           "y": 2.45,
           "layer": "top",
           "pointId": "point_controller_ddr3_a6",
@@ -8150,14 +8598,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -6.39,
-          "y": -0.05,
+          "x": -9.39,
+          "y": -4.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a7",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a7"
         },
         {
-          "x": 5.61,
+          "x": 5.41,
           "y": 2.45,
           "layer": "top",
           "pointId": "point_controller_ddr3_a7",
@@ -8172,14 +8620,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": -0.05,
+          "x": -4.59,
+          "y": -5.65,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a8",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a8"
         },
         {
-          "x": 4.01,
+          "x": 4.61,
           "y": 2.45,
           "layer": "top",
           "pointId": "point_controller_ddr3_a8",
@@ -8194,14 +8642,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": -0.05,
+          "x": -8.59,
+          "y": -4.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a9",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a9"
         },
         {
-          "x": 4.81,
+          "x": 3.81,
           "y": 2.45,
           "layer": "top",
           "pointId": "point_controller_ddr3_a9",
@@ -8216,14 +8664,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": -0.85,
+          "x": -5.39,
+          "y": -1.65,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a10",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a10"
         },
         {
-          "x": 3.21,
+          "x": 4.61,
           "y": -0.75,
           "layer": "top",
           "pointId": "point_controller_ddr3_a10",
@@ -8238,14 +8686,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": -0.85,
+          "x": -5.39,
+          "y": -4.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a11",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a11"
         },
         {
-          "x": 4.01,
+          "x": 3.81,
           "y": -0.75,
           "layer": "top",
           "pointId": "point_controller_ddr3_a11",
@@ -8260,14 +8708,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": -0.85,
+          "x": -5.39,
+          "y": -3.25,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a12",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a12"
         },
         {
-          "x": 4.81,
+          "x": 6.21,
           "y": -0.75,
           "layer": "top",
           "pointId": "point_controller_ddr3_a12",
@@ -8282,14 +8730,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": -1.65,
+          "x": -8.59,
+          "y": -5.65,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a13",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a13"
         },
         {
-          "x": 5.61,
+          "x": 5.41,
           "y": -0.75,
           "layer": "top",
           "pointId": "point_controller_ddr3_a13",
@@ -8304,14 +8752,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": -1.65,
+          "x": -5.39,
+          "y": -5.65,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_a14",
           "pcb_port_id": "pcb_port_ddr3_ddr3_a14"
         },
         {
-          "x": 3.21,
+          "x": 4.61,
           "y": -1.55,
           "layer": "top",
           "pointId": "point_controller_ddr3_a14",
@@ -8326,14 +8774,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": -1.65,
+          "x": -9.39,
+          "y": -2.45,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_ba0",
           "pcb_port_id": "pcb_port_ddr3_ddr3_ba0"
         },
         {
-          "x": 4.01,
+          "x": 6.21,
           "y": -1.55,
           "layer": "top",
           "pointId": "point_controller_ddr3_ba0",
@@ -8348,14 +8796,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": -2.45,
+          "x": -4.59,
+          "y": -3.25,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_ba1",
           "pcb_port_id": "pcb_port_ddr3_ddr3_ba1"
         },
         {
-          "x": 4.81,
+          "x": 3.81,
           "y": -1.55,
           "layer": "top",
           "pointId": "point_controller_ddr3_ba1",
@@ -8370,14 +8818,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": -4.85,
+          "x": -8.59,
+          "y": -2.45,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_ba2",
           "pcb_port_id": "pcb_port_ddr3_ddr3_ba2"
         },
         {
-          "x": 5.61,
+          "x": 5.41,
           "y": -1.55,
           "layer": "top",
           "pointId": "point_controller_ddr3_ba2",
@@ -8392,14 +8840,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": -4.85,
+          "x": -8.59,
+          "y": -0.05,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_ras_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_ras_n"
         },
         {
-          "x": 4.81,
+          "x": 3.81,
           "y": -2.35,
           "layer": "top",
           "pointId": "point_controller_ddr3_ras_n",
@@ -8414,14 +8862,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": -4.85,
+          "x": -8.59,
+          "y": -0.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_cas_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_cas_n"
         },
         {
-          "x": 4.01,
+          "x": 4.61,
           "y": -2.35,
           "layer": "top",
           "pointId": "point_controller_ddr3_cas_n",
@@ -8436,14 +8884,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": -4.05,
+          "x": -8.59,
+          "y": -1.65,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_we_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_we_n"
         },
         {
-          "x": 3.21,
+          "x": 5.41,
           "y": -2.35,
           "layer": "top",
           "pointId": "point_controller_ddr3_we_n",
@@ -8458,14 +8906,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": -4.05,
+          "x": -5.39,
+          "y": -0.05,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_ck_p",
           "pcb_port_id": "pcb_port_ddr3_ddr3_ck_p"
         },
         {
-          "x": 5.61,
+          "x": 6.21,
           "y": -2.35,
           "layer": "top",
           "pointId": "point_controller_ddr3_ck_p",
@@ -8480,14 +8928,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": -4.05,
+          "x": -5.39,
+          "y": -0.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_ck_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_ck_n"
         },
         {
-          "x": 5.61,
+          "x": 5.41,
           "y": -3.15,
           "layer": "top",
           "pointId": "point_controller_ddr3_ck_n",
@@ -8502,14 +8950,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": -3.25,
+          "x": -3.79,
+          "y": -0.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_cke",
           "pcb_port_id": "pcb_port_ddr3_ddr3_cke"
         },
         {
-          "x": 4.81,
+          "x": 3.81,
           "y": -3.15,
           "layer": "top",
           "pointId": "point_controller_ddr3_cke",
@@ -8524,14 +8972,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.19,
-          "y": -3.25,
+          "x": -9.39,
+          "y": -1.65,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_cs_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_cs_n"
         },
         {
-          "x": 4.01,
+          "x": 6.21,
           "y": -3.15,
           "layer": "top",
           "pointId": "point_controller_ddr3_cs_n",
@@ -8546,14 +8994,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -3.99,
-          "y": -3.25,
+          "x": -10.19,
+          "y": -0.85,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_odt",
           "pcb_port_id": "pcb_port_ddr3_ddr3_odt"
         },
         {
-          "x": 3.21,
+          "x": 4.61,
           "y": -3.15,
           "layer": "top",
           "pointId": "point_controller_ddr3_odt",
@@ -8568,14 +9016,14 @@
       "nominalTraceWidth": 0.12,
       "pointsToConnect": [
         {
-          "x": -4.79,
-          "y": -2.45,
+          "x": -9.39,
+          "y": -5.65,
           "layer": "top",
           "pointId": "point_ddr3_ddr3_reset_n",
           "pcb_port_id": "pcb_port_ddr3_ddr3_reset_n"
         },
         {
-          "x": 5.61,
+          "x": 6.21,
           "y": -6.35,
           "layer": "top",
           "pointId": "point_controller_ddr3_reset_n",
@@ -8671,27 +9119,27 @@
     }
   ],
   "bounds": {
-    "minX": -14.58,
-    "maxX": 20.22,
+    "minX": -15.18,
+    "maxX": 20.82,
     "minY": -11.76,
-    "maxY": 11.06
+    "maxY": 11.74
   },
   "outline": [
     {
-      "x": -14.58,
+      "x": -15.18,
       "y": -11.76
     },
     {
-      "x": 20.22,
+      "x": 20.82,
       "y": -11.76
     },
     {
-      "x": 20.22,
-      "y": 11.06
+      "x": 20.82,
+      "y": 11.74
     },
     {
-      "x": -14.58,
-      "y": 11.06
+      "x": -15.18,
+      "y": 11.74
     }
   ],
   "metadata": {
@@ -8699,12 +9147,44 @@
     "generatorSeed": 1037262029,
     "ddr3": {
       "componentId": "ddr3_bga",
-      "package": "synthetic FBGA-96-style",
+      "manufacturer": "Samsung",
+      "partNumber": "K4B4G1646E",
+      "package": "96-ball FBGA",
       "dataWidth": 16,
       "pitch": 0.8,
+      "bodyWidth": 7.5,
+      "bodyHeight": 13.3,
+      "rowLabels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "P",
+        "R",
+        "T"
+      ],
+      "populatedColumns": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
       "padCount": 96,
       "signalPinCount": 49,
-      "note": "Signal naming and grouping are DDR3-realistic; this synthetic benchmark pin map is not vendor pin-compatible."
+      "ballMapOrientation": "vendor top-view ballout, unrotated",
+      "sourceUrl": "https://semiconductor.samsung.com/resources/data-sheet/DS_K4B4G1646E-BC_Rev101-0.pdf",
+      "note": "Ball population and signal assignments follow the vendor datasheet. The 0.38 mm PCB land is a conservative autorouting benchmark parameter, not a production land-pattern recommendation."
     },
     "controller": {
       "componentId": "controller_bga",
@@ -8715,18 +9195,19 @@
     },
     "placement": {
       "ddr3Side": "left",
-      "componentGap": 6,
+      "componentGap": 7.2,
+      "componentGapDefinition": "minimum horizontal clearance between the two pad-field edges",
       "verticalOffset": 0.35,
       "boardMarginX": 4.8,
       "boardMarginY": 5.2
     },
     "feasibility": {
       "focus": "BGA-to-BGA connection routing",
-      "connectedDdr3ColumnDepth": 5,
+      "connectedDdr3ColumnDepth": 3,
       "connectedControllerColumnDepth": 4,
       "availableRoutingLayers": 6,
       "viaStyle": "0.34 mm dogbone-compatible via; via-in-pad disabled",
-      "corridorWidth": 6
+      "corridorWidth": 7.2
     },
     "signalGroups": {
       "data": 16,

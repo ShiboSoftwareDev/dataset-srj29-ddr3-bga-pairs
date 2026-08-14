@@ -5,25 +5,25 @@
   "samples": [
     {
       "id": "sample001",
-      "title": "DDR3 x8 to 12x12 controller BGA",
+      "title": "IS43/46TR82560C DDR3 x8 to 12x12 controller BGA",
       "layerCount": 8,
       "connectionCount": 38,
-      "obstacleCount": 240,
+      "obstacleCount": 222,
       "ddr3DataWidth": 8,
-      "ddr3PadCount": 96,
+      "ddr3PadCount": 78,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6.8,
+      "componentGap": 8,
       "bounds": {
-        "minX": -14.98,
-        "maxX": 17.42,
-        "minY": -10.94,
-        "maxY": 10.24
+        "minX": -15.58,
+        "maxX": 18.02,
+        "minY": -10.54,
+        "maxY": 10.16
       }
     },
     {
       "id": "sample002",
-      "title": "DDR3 x16 to 14x14 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 14x14 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 292,
@@ -31,17 +31,17 @@
       "ddr3PadCount": 96,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 8.4,
+      "componentGap": 9.6,
       "bounds": {
-        "minX": -15.78,
-        "maxX": 19.82,
-        "minY": -10.61,
-        "maxY": 10.61
+        "minX": -16.38,
+        "maxX": 20.42,
+        "minY": -11.39,
+        "maxY": 11.39
       }
     },
     {
       "id": "sample003",
-      "title": "DDR3 x16 to 16x16 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 16x16 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 352,
@@ -49,35 +49,35 @@
       "ddr3PadCount": 96,
       "controllerPackage": "16x16 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6,
+      "componentGap": 7.2,
       "bounds": {
-        "minX": -14.58,
-        "maxX": 20.22,
+        "minX": -15.18,
+        "maxX": 20.82,
         "minY": -11.76,
-        "maxY": 11.06
+        "maxY": 11.74
       }
     },
     {
       "id": "sample004",
-      "title": "DDR3 x8 to 14x14 controller BGA",
+      "title": "IS43/46TR82560C DDR3 x8 to 14x14 controller BGA",
       "layerCount": 6,
       "connectionCount": 38,
-      "obstacleCount": 292,
+      "obstacleCount": 274,
       "ddr3DataWidth": 8,
-      "ddr3PadCount": 96,
+      "ddr3PadCount": 78,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 7.6,
+      "componentGap": 8.8,
       "bounds": {
-        "minX": -19.42,
-        "maxX": 15.38,
+        "minX": -20.02,
+        "maxX": 15.98,
         "minY": -11.31,
-        "maxY": 11.29
+        "maxY": 10.89
       }
     },
     {
       "id": "sample005",
-      "title": "DDR3 x16 to 12x12 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 12x12 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 240,
@@ -85,17 +85,17 @@
       "ddr3PadCount": 96,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 1,
-      "componentGap": 5.2,
+      "componentGap": 6.4,
       "bounds": {
-        "minX": -14.18,
-        "maxX": 18.9,
-        "minY": -11.29,
+        "minX": -14.78,
+        "maxX": 19.5,
+        "minY": -12.09,
         "maxY": 11.65
       }
     },
     {
       "id": "sample006",
-      "title": "DDR3 x16 to 12x12 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 12x12 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 240,
@@ -103,35 +103,35 @@
       "ddr3PadCount": 96,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6.8,
+      "componentGap": 8,
       "bounds": {
-        "minX": -14.98,
-        "maxX": 17.42,
-        "minY": -10.94,
-        "maxY": 10.24
+        "minX": -15.58,
+        "maxX": 18.02,
+        "minY": -11.74,
+        "maxY": 11.04
       }
     },
     {
       "id": "sample007",
-      "title": "DDR3 x8 to 14x14 controller BGA",
+      "title": "IS43/46TR82560C DDR3 x8 to 14x14 controller BGA",
       "layerCount": 6,
       "connectionCount": 38,
-      "obstacleCount": 292,
+      "obstacleCount": 274,
       "ddr3DataWidth": 8,
-      "ddr3PadCount": 96,
+      "ddr3PadCount": 78,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 8.4,
+      "componentGap": 9.6,
       "bounds": {
-        "minX": -15.78,
-        "maxX": 19.82,
+        "minX": -16.38,
+        "maxX": 20.42,
         "minY": -10.61,
         "maxY": 10.61
       }
     },
     {
       "id": "sample008",
-      "title": "DDR3 x16 to 16x16 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 16x16 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 352,
@@ -139,17 +139,17 @@
       "ddr3PadCount": 96,
       "controllerPackage": "16x16 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6,
+      "componentGap": 7.2,
       "bounds": {
-        "minX": -20.22,
-        "maxX": 14.58,
+        "minX": -20.82,
+        "maxX": 15.18,
         "minY": -11.76,
-        "maxY": 11.06
+        "maxY": 11.74
       }
     },
     {
       "id": "sample009",
-      "title": "DDR3 x16 to 14x14 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 14x14 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 292,
@@ -157,35 +157,35 @@
       "ddr3PadCount": 96,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 7.6,
+      "componentGap": 8.8,
       "bounds": {
-        "minX": -15.38,
-        "maxX": 19.42,
+        "minX": -15.98,
+        "maxX": 20.02,
         "minY": -11.31,
-        "maxY": 11.29
+        "maxY": 12.09
       }
     },
     {
       "id": "sample010",
-      "title": "DDR3 x8 to 12x12 controller BGA",
+      "title": "IS43/46TR82560C DDR3 x8 to 12x12 controller BGA",
       "layerCount": 6,
       "connectionCount": 38,
-      "obstacleCount": 240,
+      "obstacleCount": 222,
       "ddr3DataWidth": 8,
-      "ddr3PadCount": 96,
+      "ddr3PadCount": 78,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 1,
-      "componentGap": 5.2,
+      "componentGap": 6.4,
       "bounds": {
-        "minX": -14.18,
-        "maxX": 18.9,
-        "minY": -11.29,
+        "minX": -14.78,
+        "maxX": 19.5,
+        "minY": -10.89,
         "maxY": 11.65
       }
     },
     {
       "id": "sample011",
-      "title": "DDR3 x16 to 12x12 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 12x12 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 240,
@@ -193,17 +193,17 @@
       "ddr3PadCount": 96,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6.8,
+      "componentGap": 8,
       "bounds": {
-        "minX": -14.98,
-        "maxX": 17.42,
-        "minY": -10.94,
-        "maxY": 10.24
+        "minX": -15.58,
+        "maxX": 18.02,
+        "minY": -11.74,
+        "maxY": 11.04
       }
     },
     {
       "id": "sample012",
-      "title": "DDR3 x16 to 14x14 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 14x14 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 292,
@@ -211,35 +211,35 @@
       "ddr3PadCount": 96,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 8.4,
+      "componentGap": 9.6,
       "bounds": {
-        "minX": -19.82,
-        "maxX": 15.78,
-        "minY": -10.61,
-        "maxY": 10.61
+        "minX": -20.42,
+        "maxX": 16.38,
+        "minY": -11.39,
+        "maxY": 11.39
       }
     },
     {
       "id": "sample013",
-      "title": "DDR3 x8 to 16x16 controller BGA",
+      "title": "IS43/46TR82560C DDR3 x8 to 16x16 controller BGA",
       "layerCount": 6,
       "connectionCount": 38,
-      "obstacleCount": 352,
+      "obstacleCount": 334,
       "ddr3DataWidth": 8,
-      "ddr3PadCount": 96,
+      "ddr3PadCount": 78,
       "controllerPackage": "16x16 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6,
+      "componentGap": 7.2,
       "bounds": {
-        "minX": -14.58,
-        "maxX": 20.22,
+        "minX": -15.18,
+        "maxX": 20.82,
         "minY": -11.76,
         "maxY": 11.06
       }
     },
     {
       "id": "sample014",
-      "title": "DDR3 x16 to 14x14 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 14x14 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 292,
@@ -247,17 +247,17 @@
       "ddr3PadCount": 96,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 7.6,
+      "componentGap": 8.8,
       "bounds": {
-        "minX": -15.38,
-        "maxX": 19.42,
+        "minX": -15.98,
+        "maxX": 20.02,
         "minY": -11.31,
-        "maxY": 11.29
+        "maxY": 12.09
       }
     },
     {
       "id": "sample015",
-      "title": "DDR3 x16 to 12x12 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 12x12 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 240,
@@ -265,35 +265,35 @@
       "ddr3PadCount": 96,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 1,
-      "componentGap": 5.2,
+      "componentGap": 6.4,
       "bounds": {
-        "minX": -14.18,
-        "maxX": 18.9,
-        "minY": -11.29,
+        "minX": -14.78,
+        "maxX": 19.5,
+        "minY": -12.09,
         "maxY": 11.65
       }
     },
     {
       "id": "sample016",
-      "title": "DDR3 x8 to 12x12 controller BGA",
+      "title": "IS43/46TR82560C DDR3 x8 to 12x12 controller BGA",
       "layerCount": 8,
       "connectionCount": 38,
-      "obstacleCount": 240,
+      "obstacleCount": 222,
       "ddr3DataWidth": 8,
-      "ddr3PadCount": 96,
+      "ddr3PadCount": 78,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6.8,
+      "componentGap": 8,
       "bounds": {
-        "minX": -17.42,
-        "maxX": 14.98,
-        "minY": -10.94,
-        "maxY": 10.24
+        "minX": -18.02,
+        "maxX": 15.58,
+        "minY": -10.54,
+        "maxY": 10.16
       }
     },
     {
       "id": "sample017",
-      "title": "DDR3 x16 to 14x14 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 14x14 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 292,
@@ -301,17 +301,17 @@
       "ddr3PadCount": 96,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 8.4,
+      "componentGap": 9.6,
       "bounds": {
-        "minX": -15.78,
-        "maxX": 19.82,
-        "minY": -10.61,
-        "maxY": 10.61
+        "minX": -16.38,
+        "maxX": 20.42,
+        "minY": -11.39,
+        "maxY": 11.39
       }
     },
     {
       "id": "sample018",
-      "title": "DDR3 x16 to 16x16 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 16x16 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 352,
@@ -319,35 +319,35 @@
       "ddr3PadCount": 96,
       "controllerPackage": "16x16 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 6,
+      "componentGap": 7.2,
       "bounds": {
-        "minX": -14.58,
-        "maxX": 20.22,
+        "minX": -15.18,
+        "maxX": 20.82,
         "minY": -11.76,
-        "maxY": 11.06
+        "maxY": 11.74
       }
     },
     {
       "id": "sample019",
-      "title": "DDR3 x8 to 14x14 controller BGA",
+      "title": "IS43/46TR82560C DDR3 x8 to 14x14 controller BGA",
       "layerCount": 6,
       "connectionCount": 38,
-      "obstacleCount": 292,
+      "obstacleCount": 274,
       "ddr3DataWidth": 8,
-      "ddr3PadCount": 96,
+      "ddr3PadCount": 78,
       "controllerPackage": "14x14 BGA",
       "controllerPitch": 0.8,
-      "componentGap": 7.6,
+      "componentGap": 8.8,
       "bounds": {
-        "minX": -15.38,
-        "maxX": 19.42,
+        "minX": -15.98,
+        "maxX": 20.02,
         "minY": -11.31,
-        "maxY": 11.29
+        "maxY": 10.89
       }
     },
     {
       "id": "sample020",
-      "title": "DDR3 x16 to 12x12 controller BGA",
+      "title": "K4B4G1646E DDR3 x16 to 12x12 controller BGA",
       "layerCount": 8,
       "connectionCount": 49,
       "obstacleCount": 240,
@@ -355,11 +355,11 @@
       "ddr3PadCount": 96,
       "controllerPackage": "12x12 BGA",
       "controllerPitch": 1,
-      "componentGap": 5.2,
+      "componentGap": 6.4,
       "bounds": {
-        "minX": -18.9,
-        "maxX": 14.18,
-        "minY": -11.29,
+        "minX": -19.5,
+        "maxX": 14.78,
+        "minY": -12.09,
         "maxY": 11.65
       }
     }

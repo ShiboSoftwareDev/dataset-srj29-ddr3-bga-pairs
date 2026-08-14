@@ -5,15 +5,16 @@ Twenty reproducible Simple Route JSON (SRJ) problems centered on one task: conne
 ## Dataset design
 
 - Every sample contains exactly two top-side BGA pad fields: `ddr3_bga` and `controller_bga`.
-- The DDR3 side uses a synthetic FBGA-96-style 0.8 mm-pitch package and a realistic DDR3 x8 or x16 signal set.
+- DDR3 x8 samples use the real ISSI `IS43/46TR82560C` 78-ball, 0.8 mm-pitch BGA population and vendor ball assignment.
+- DDR3 x16 samples use the real Samsung `K4B4G1646E` 96-ball, 0.8 mm-pitch FBGA population and vendor ball assignment.
 - The neighboring controller varies between 12×12, 14×14, and 16×16 BGAs at 0.8 or 1.0 mm pitch.
 - DDR3 x8 samples contain 38 routed signals; DDR3 x16 samples contain 49.
 - Boards use six or eight copper layers. The generator guarantees at least as many inner routing layers as the connected-ball column depth.
-- Component edge-to-edge spacing varies from 5.2 mm to 8.4 mm, with an additional 4.8/5.2 mm board margin.
+- Pad-field edge-to-edge spacing varies from 6.4 mm to 9.6 mm, with an additional 4.8/5.2 mm board margin.
 - Vias are 0.34 mm pad / 0.15 mm drill, dogbone-compatible at the selected pitches. `allowViaInPad` is false.
 - DDR3 clock and DQS nets are identified as differential pairs. Data and address/command groups are identified as buses with generous skew limits.
 
-The signal names and grouping are DDR3-realistic, but the synthetic benchmark ball map is not a drop-in pin map for a particular vendor part. Do not use these samples as manufacturing schematics.
+The footprint population and signal balls come from the [ISSI x8 datasheet](https://www.issi.com/WW/pdf/43-46TR16128C-82560CL.pdf) and [Samsung x16 datasheet](https://semiconductor.samsung.com/resources/data-sheet/DS_K4B4G1646E-BC_Rev101-0.pdf). Power, ground, reference, ZQ, NC, and unused balls remain physical pad obstacles but are intentionally not routed. The 0.38 mm PCB lands and the rest of the board are benchmark geometry, so these samples are not manufacturing schematics or production land-pattern recommendations.
 
 ## Why this structure
 
@@ -47,7 +48,7 @@ npm run generate
 npm test
 ```
 
-The validator rejects pad overlaps, pads outside the outline, missing or duplicated endpoints, too-small BGA channels, dogbone-via clearance failures, insufficient layers, narrow component gaps, or overly high per-layer connection burden.
+The validator rejects incorrect DDR3 package populations and representative vendor pin assignments, center-column balls that do not exist, pad overlaps, pads outside the outline, missing or duplicated endpoints, too-small BGA channels, dogbone-via clearance failures, insufficient layers, narrow component gaps, or overly high per-layer connection burden.
 
 ## Preview
 

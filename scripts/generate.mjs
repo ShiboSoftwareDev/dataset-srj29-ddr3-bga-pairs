@@ -7,7 +7,59 @@ const samplesDir = path.join(repoRoot, "samples")
 const previewsDir = path.join(repoRoot, "previews")
 
 const SAMPLE_COUNT = 20
-const DDR3_ROWS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P"]
+const DDR3_PACKAGES = {
+  8: {
+    partNumber: "IS43/46TR82560C",
+    manufacturer: "ISSI",
+    package: "78-ball BGA",
+    rows: ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N"],
+    bodyWidth: 8,
+    bodyHeight: 10.5,
+    sourceUrl: "https://www.issi.com/WW/pdf/43-46TR16128C-82560CL.pdf",
+    pins: [
+      ["VSS", "VDD", "NC", "NU/TDQS#", "VSS", "VDD"],
+      ["VSS", "VSSQ", "DQ0", "DM/TDQS", "VSSQ", "VDDQ"],
+      ["VDDQ", "DQ2", "DQS", "DQ1", "DQ3", "VSSQ"],
+      ["VSSQ", "DQ6", "DQS#", "VDD", "VSS", "VSSQ"],
+      ["VREFDQ", "VDDQ", "DQ4", "DQ7", "DQ5", "VDDQ"],
+      ["NC", "VSS", "RAS#", "CK", "VSS", "NC"],
+      ["ODT", "VDD", "CAS#", "CK#", "VDD", "CKE"],
+      ["NC", "CS#", "WE#", "A10/AP", "ZQ", "NC"],
+      ["VSS", "BA0", "BA2", "NC(A15)", "VREFCA", "VSS"],
+      ["VDD", "A3", "A0", "A12/BC#", "BA1", "VDD"],
+      ["VSS", "A5", "A2", "A1", "A4", "VSS"],
+      ["VDD", "A7", "A9", "A11", "A6", "VDD"],
+      ["VSS", "RESET#", "A13", "A14", "A8", "VSS"],
+    ],
+  },
+  16: {
+    partNumber: "K4B4G1646E",
+    manufacturer: "Samsung",
+    package: "96-ball FBGA",
+    rows: ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "T"],
+    bodyWidth: 7.5,
+    bodyHeight: 13.3,
+    sourceUrl: "https://semiconductor.samsung.com/resources/data-sheet/DS_K4B4G1646E-BC_Rev101-0.pdf",
+    pins: [
+      ["VDDQ", "DQU5", "DQU7", "DQU4", "VDDQ", "VSS"],
+      ["VSSQ", "VDD", "VSS", "DQSU#", "DQU6", "VSSQ"],
+      ["VDDQ", "DQU3", "DQU1", "DQSU", "DQU2", "VDDQ"],
+      ["VSSQ", "VDDQ", "DMU", "DQU0", "VSSQ", "VDD"],
+      ["VSS", "VSSQ", "DQL0", "DML", "VSSQ", "VDDQ"],
+      ["VDDQ", "DQL2", "DQSL", "DQL1", "DQL3", "VSSQ"],
+      ["VSSQ", "DQL6", "DQSL#", "VDD", "VSS", "VSSQ"],
+      ["VREFDQ", "VDDQ", "DQL4", "DQL7", "DQL5", "VDDQ"],
+      ["NC", "VSS", "RAS#", "CK", "VSS", "NC"],
+      ["ODT", "VDD", "CAS#", "CK#", "VDD", "CKE"],
+      ["NC", "CS#", "WE#", "A10/AP", "ZQ", "NC"],
+      ["VSS", "BA0", "BA2", "NC(A15)", "VREFCA", "VSS"],
+      ["VDD", "A3", "A0", "A12/BC#", "BA1", "VDD"],
+      ["VSS", "A5", "A2", "A1", "A4", "VSS"],
+      ["VDD", "A7", "A9", "A11", "A6", "VDD"],
+      ["VSS", "RESET#", "A13", "A14", "A8", "VSS"],
+    ],
+  },
+}
 const CONTROLLER_ROWS = [
   "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
   "L", "M", "N", "P", "R", "T", "U", "V", "W", "Y",
@@ -88,9 +140,27 @@ function makeGrid({ rows, cols, pitch, padSize, centerX, centerY, componentId, s
   return pads
 }
 
-const isDdr3BallPresent = (row, col) => {
-  if (col <= 2 || col >= 6) return true
-  return [0, 1, 6, 7].includes(row)
+const DDR3_POPULATED_COLUMNS = [0, 1, 2, 6, 7, 8]
+
+function vendorPinToSignal(pin, dataWidth) {
+  let match
+  if ((match = pin.match(/^DQ(\d+)$/))) return `DDR3_DQ${match[1]}`
+  if ((match = pin.match(/^DQL(\d)$/))) return `DDR3_DQ${match[1]}`
+  if ((match = pin.match(/^DQU(\d)$/))) return `DDR3_DQ${Number(match[1]) + 8}`
+  if ((match = pin.match(/^A(\d+)$/))) return `DDR3_A${match[1]}`
+  if ((match = pin.match(/^BA(\d)$/))) return `DDR3_BA${match[1]}`
+  const direct = {
+    DQS: "DDR3_DQS0_P", "DQS#": "DDR3_DQS0_N", "DM/TDQS": "DDR3_DM0",
+    DQSL: "DDR3_DQS0_P", "DQSL#": "DDR3_DQS0_N", DML: "DDR3_DM0",
+    DQSU: "DDR3_DQS1_P", "DQSU#": "DDR3_DQS1_N", DMU: "DDR3_DM1",
+    "A10/AP": "DDR3_A10", "A12/BC#": "DDR3_A12",
+    "RAS#": "DDR3_RAS_N", "CAS#": "DDR3_CAS_N", "WE#": "DDR3_WE_N",
+    CK: "DDR3_CK_P", "CK#": "DDR3_CK_N", CKE: "DDR3_CKE",
+    "CS#": "DDR3_CS_N", ODT: "DDR3_ODT", "RESET#": "DDR3_RESET_N",
+  }
+  const signalName = direct[pin]
+  if (dataWidth === 8 && signalName?.match(/(?:DQ(?:8|9|1[0-5])|DQS1|DM1)/)) return undefined
+  return signalName
 }
 
 function facingCandidates(pads, side, maxDepth, rng) {
@@ -146,10 +216,12 @@ function createObstacle(pad, signal) {
     center: { x: pad.x, y: pad.y },
     width: pad.width,
     height: pad.height,
+    ballName: pad.ball,
+    vendorPinName: pad.vendorPin,
     connectedTo,
     circuitJsonMetadata: {
       source_component_name: pad.componentId === "ddr3_bga" ? "U_DDR3" : "U_CONTROLLER",
-      source_port_name: signal?.name ?? `NC_${pad.ball}`,
+      source_port_name: pad.vendorPin ?? signal?.name ?? `NC_${pad.ball}`,
     },
   }
 }
@@ -189,7 +261,9 @@ function makeDifferentialPairs(signals, dataWidth) {
 function createSample(index) {
   const rng = createRng(0x3dd30000 + index * 7919)
   const dataWidth = index % 3 === 1 ? 8 : 16
+  const ddr3Package = DDR3_PACKAGES[dataWidth]
   const signals = getSignals(dataWidth)
+  const signalByName = new Map(signals.map((signal) => [signal.name, signal]))
   const ddr3OnLeft = index % 4 !== 0
   const ddr3Side = ddr3OnLeft ? "left" : "right"
   const controllerSide = ddr3OnLeft ? "right" : "left"
@@ -199,10 +273,9 @@ function createSample(index) {
   const ddr3PadSize = 0.38
   const controllerPadSize = controllerPitch === 1 ? 0.5 : 0.42
   const ddr3Width = (9 - 1) * ddr3Pitch
-  const ddr3Height = (DDR3_ROWS.length - 1) * ddr3Pitch
   const controllerWidth = (controllerGridSize - 1) * controllerPitch
   const controllerHeight = controllerWidth
-  const componentGap = round(5.2 + ((index * 7) % 5) * 0.8)
+  const componentGap = round(6.4 + ((index * 7) % 5) * 0.8)
   const verticalOffset = round(((index % 5) - 2) * 0.35)
   const ddr3XAbs = componentGap / 2 + ddr3Width / 2 + ddr3PadSize / 2
   const controllerXAbs = componentGap / 2 + controllerWidth / 2 + controllerPadSize / 2
@@ -213,7 +286,7 @@ function createSample(index) {
   const layerCount = dataWidth === 16 ? 8 : index % 5 === 1 ? 8 : 6
 
   const ddr3Pads = makeGrid({
-    rows: DDR3_ROWS,
+    rows: ddr3Package.rows,
     cols: 9,
     pitch: ddr3Pitch,
     padSize: ddr3PadSize,
@@ -221,7 +294,10 @@ function createSample(index) {
     centerY: ddr3CenterY,
     componentId: "ddr3_bga",
     side: ddr3Side,
-    keep: isDdr3BallPresent,
+    keep: (_row, col) => DDR3_POPULATED_COLUMNS.includes(col),
+  }).map((pad) => {
+    const compactColumn = DDR3_POPULATED_COLUMNS.indexOf(pad.col)
+    return { ...pad, vendorPin: ddr3Package.pins[pad.row][compactColumn] }
   })
   const controllerRows = CONTROLLER_ROWS.slice(0, controllerGridSize)
   const controllerPads = makeGrid({
@@ -235,8 +311,15 @@ function createSample(index) {
     side: controllerSide,
   })
 
-  const ddr3ColumnDepth = dataWidth === 16 ? 5 : 4
-  const ddr3Assignments = assignSignalsToPads(signals, ddr3Pads, ddr3Side, rng, ddr3ColumnDepth)
+  const ddr3ColumnDepth = 3
+  const ddr3Assignments = new Map()
+  for (const pad of ddr3Pads) {
+    const signalName = vendorPinToSignal(pad.vendorPin, dataWidth)
+    if (signalName) ddr3Assignments.set(pad.ball, signalByName.get(signalName))
+  }
+  if ([...ddr3Assignments.values()].some((signal) => !signal) || ddr3Assignments.size !== signals.length) {
+    throw new Error(`${ddr3Package.partNumber}: real ball map resolves ${ddr3Assignments.size}/${signals.length} signals`)
+  }
   const controllerColumnDepth = dataWidth === 16 && controllerGridSize === 12 ? 5 : 4
   const controllerAssignments = assignSignalsToPads(signals, controllerPads, controllerSide, rng, controllerColumnDepth)
   const ddr3PadBySignal = new Map([...ddr3Assignments].map(([ball, signal]) => [signal.name, ddr3Pads.find((pad) => pad.ball === ball)]))
@@ -290,8 +373,8 @@ function createSample(index) {
 
   return {
     id: sampleName(index),
-    title: `DDR3 x${dataWidth} to ${controllerGridSize}x${controllerGridSize} controller BGA`,
-    description: "A deliberately spacious DDR3-memory-to-controller BGA routing problem; the benchmark is paired-BGA connectivity, not board compaction.",
+    title: `${ddr3Package.partNumber} DDR3 x${dataWidth} to ${controllerGridSize}x${controllerGridSize} controller BGA`,
+    description: "A deliberately spacious, multilayer DDR3-memory-to-controller BGA routing problem using a real vendor DDR3 ballout; the benchmark is paired-BGA connectivity, not board compaction.",
     layerCount,
     minTraceWidth: 0.12,
     nominalTraceWidth: 0.12,
@@ -313,12 +396,20 @@ function createSample(index) {
       generatorSeed: 0x3dd30000 + index * 7919,
       ddr3: {
         componentId: "ddr3_bga",
-        package: "synthetic FBGA-96-style",
+        manufacturer: ddr3Package.manufacturer,
+        partNumber: ddr3Package.partNumber,
+        package: ddr3Package.package,
         dataWidth,
         pitch: ddr3Pitch,
+        bodyWidth: ddr3Package.bodyWidth,
+        bodyHeight: ddr3Package.bodyHeight,
+        rowLabels: ddr3Package.rows,
+        populatedColumns: [1, 2, 3, 7, 8, 9],
         padCount: ddr3Pads.length,
         signalPinCount: signals.length,
-        note: "Signal naming and grouping are DDR3-realistic; this synthetic benchmark pin map is not vendor pin-compatible.",
+        ballMapOrientation: "vendor top-view ballout, unrotated",
+        sourceUrl: ddr3Package.sourceUrl,
+        note: "Ball population and signal assignments follow the vendor datasheet. The 0.38 mm PCB land is a conservative autorouting benchmark parameter, not a production land-pattern recommendation.",
       },
       controller: {
         componentId: "controller_bga",
@@ -330,6 +421,7 @@ function createSample(index) {
       placement: {
         ddr3Side,
         componentGap,
+        componentGapDefinition: "minimum horizontal clearance between the two pad-field edges",
         verticalOffset,
         boardMarginX: 4.8,
         boardMarginY: 5.2,
@@ -387,7 +479,7 @@ function makeSampleSvg(sample, svgWidth = 1000, svgHeight = 650, showComponentLa
   const ddr3Center = centerOf(ddr3Pads)
   const controllerCenter = centerOf(controllerPads)
   const componentLabels = showComponentLabels
-    ? `<text x="${sx(ddr3Center.x)}" y="${Math.min(svgHeight - 24, sy(ddr3Center.minY) + 28)}" text-anchor="middle" fill="#ffc977" font-family="ui-monospace, monospace" font-size="15" font-weight="700">DDR3 x${sample.metadata.ddr3.dataWidth} · FBGA-96</text>
+    ? `<text x="${sx(ddr3Center.x)}" y="${Math.min(svgHeight - 24, sy(ddr3Center.minY) + 28)}" text-anchor="middle" fill="#ffc977" font-family="ui-monospace, monospace" font-size="15" font-weight="700">DDR3 x${sample.metadata.ddr3.dataWidth} · ${sample.metadata.ddr3.package}</text>
   <text x="${sx(controllerCenter.x)}" y="${Math.min(svgHeight - 24, sy(controllerCenter.minY) + 28)}" text-anchor="middle" fill="#88b9eb" font-family="ui-monospace, monospace" font-size="15" font-weight="700">CONTROLLER · ${sample.metadata.controller.package}</text>`
     : ""
 
@@ -399,7 +491,7 @@ function makeSampleSvg(sample, svgWidth = 1000, svgHeight = 650, showComponentLa
   <g>${pads}</g>
   ${componentLabels}
   <text x="28" y="38" fill="#eef5fb" font-family="ui-sans-serif, system-ui" font-size="19" font-weight="700">${sample.id} · ${sample.connections.length} DDR3 signals · ${sample.layerCount} layers</text>
-  <text x="28" y="61" fill="#9fb0bf" font-family="ui-sans-serif, system-ui" font-size="13">${sample.metadata.placement.componentGap} mm package gap · via-in-pad disabled · unrouted ratsnest</text>
+  <text x="28" y="61" fill="#9fb0bf" font-family="ui-sans-serif, system-ui" font-size="13">${sample.metadata.placement.componentGap} mm pad-field gap · via-in-pad disabled · unrouted ratsnest</text>
 </svg>`
 }
 
@@ -450,6 +542,8 @@ export interface SimpleRouteConnection {
 export interface SimpleRouteObstacle {
   obstacleId?: string
   componentId?: string
+  ballName?: string
+  vendorPinName?: string
   type: "rect"
   layers: string[]
   center: { x: number; y: number }

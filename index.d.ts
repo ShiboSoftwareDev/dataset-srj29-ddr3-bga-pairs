@@ -18,6 +18,8 @@ export interface SimpleRouteConnection {
 export interface SimpleRouteObstacle {
   obstacleId?: string
   componentId?: string
+  ballName?: string
+  vendorPinName?: string
   type: "rect"
   layers: string[]
   center: { x: number; y: number }

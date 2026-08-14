@@ -1,7 +1,7 @@
 {
   "solver": "AutoroutingPipelineSolver7_MultiGraph",
   "packageVersion": "^0.0.803",
-  "createdAt": "2026-08-14T16:39:11.796Z",
+  "createdAt": "2026-08-14T16:49:53.355Z",
   "maxSteps": 100000,
   "requireSolved": false,
   "results": [
@@ -11,12 +11,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 4025,
+      "elapsedMs": 4461,
       "expectedConnections": 38,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 92001,
+      "activeStageIterations": 92377,
       "activeStageMaxIterations": 8000000
     },
     {
@@ -25,12 +25,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 3017,
+      "elapsedMs": 3362,
       "expectedConnections": 38,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 92866,
+      "activeStageIterations": 92996,
       "activeStageMaxIterations": 8000000
     },
     {
@@ -39,12 +39,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 4740,
+      "elapsedMs": 5920,
       "expectedConnections": 49,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 90468,
+      "activeStageIterations": 90151,
       "activeStageMaxIterations": 8000000
     },
     {
@@ -53,12 +53,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 3197,
+      "elapsedMs": 5919,
       "expectedConnections": 49,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 92958,
+      "activeStageIterations": 92473,
       "activeStageMaxIterations": 8000000
     }
   ]
