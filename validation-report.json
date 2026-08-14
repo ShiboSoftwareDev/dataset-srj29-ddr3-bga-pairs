@@ -1,8 +1,9 @@
 {
   "datasetName": "dataset-srj29-ddr3-bga-pairs",
-  "validatedAt": "2026-08-14T16:50:00.583Z",
+  "validatedAt": "2026-08-14T17:00:22.601Z",
   "checks": [
     "20 sequential package exports",
+    "one circuit-to-svg PCB snapshot for every sample",
     "real ISSI 78-ball x8 or Samsung 96-ball x16 DDR3 ball population",
     "vendor DDR3 ball names and representative row-by-row pin assignments",
     "exactly two non-overlapping top-side BGA pad fields",
@@ -26,6 +27,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 6.3333,
       "padAreaDensity": 0.0527,
+      "snapshotPadCount": 222,
+      "snapshotRatsnestCount": 76,
       "status": "pass"
     },
     {
@@ -40,6 +43,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0578,
+      "snapshotPadCount": 292,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -54,6 +59,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0698,
+      "snapshotPadCount": 352,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -68,6 +75,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 9.5,
       "padAreaDensity": 0.0574,
+      "snapshotPadCount": 274,
+      "snapshotRatsnestCount": 76,
       "status": "pass"
     },
     {
@@ -82,6 +91,8 @@
       "controllerDogboneClearance": 0.2871,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0613,
+      "snapshotPadCount": 240,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -96,6 +107,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0513,
+      "snapshotPadCount": 240,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -110,6 +123,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 9.5,
       "padAreaDensity": 0.0587,
+      "snapshotPadCount": 274,
+      "snapshotRatsnestCount": 76,
       "status": "pass"
     },
     {
@@ -124,6 +139,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0698,
+      "snapshotPadCount": 352,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -138,6 +155,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0575,
+      "snapshotPadCount": 292,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -152,6 +171,8 @@
       "controllerDogboneClearance": 0.2871,
       "connectionsPerInnerLayer": 9.5,
       "padAreaDensity": 0.0612,
+      "snapshotPadCount": 222,
+      "snapshotRatsnestCount": 76,
       "status": "pass"
     },
     {
@@ -166,6 +187,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0513,
+      "snapshotPadCount": 240,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -180,6 +203,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0578,
+      "snapshotPadCount": 292,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -194,6 +219,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 9.5,
       "padAreaDensity": 0.0687,
+      "snapshotPadCount": 334,
+      "snapshotRatsnestCount": 76,
       "status": "pass"
     },
     {
@@ -208,6 +235,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0575,
+      "snapshotPadCount": 292,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -222,6 +251,8 @@
       "controllerDogboneClearance": 0.2871,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0613,
+      "snapshotPadCount": 240,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -236,6 +267,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 6.3333,
       "padAreaDensity": 0.0527,
+      "snapshotPadCount": 222,
+      "snapshotRatsnestCount": 76,
       "status": "pass"
     },
     {
@@ -250,6 +283,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0578,
+      "snapshotPadCount": 292,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -264,6 +299,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0698,
+      "snapshotPadCount": 352,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     },
     {
@@ -278,6 +315,8 @@
       "controllerDogboneClearance": 0.1857,
       "connectionsPerInnerLayer": 9.5,
       "padAreaDensity": 0.0574,
+      "snapshotPadCount": 274,
+      "snapshotRatsnestCount": 76,
       "status": "pass"
     },
     {
@@ -292,6 +331,8 @@
       "controllerDogboneClearance": 0.2871,
       "connectionsPerInnerLayer": 8.1667,
       "padAreaDensity": 0.0613,
+      "snapshotPadCount": 240,
+      "snapshotRatsnestCount": 98,
       "status": "pass"
     }
   ]

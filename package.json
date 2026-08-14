@@ -12,20 +12,30 @@
     "validation-report.json",
     "autorouter-smoke-report.json",
     "AUTOROUTER_NOTES.md",
+    "scripts",
     "samples",
+    "snapshots",
     "previews",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "generate": "node scripts/generate.mjs",
+    "generate": "node scripts/generate.mjs && node scripts/generate-snapshots.mjs",
+    "snapshots": "node scripts/generate-snapshots.mjs",
     "test": "node scripts/validate.mjs",
-    "build": "node scripts/generate.mjs && node scripts/validate.mjs",
+    "build": "node scripts/generate.mjs && node scripts/generate-snapshots.mjs && node scripts/validate.mjs",
     "preview": "node scripts/preview-server.mjs",
     "autoroute:smoke": "node scripts/autoroute-smoke.mjs"
   },
   "devDependencies": {
-    "@tscircuit/capacity-autorouter": "^0.0.803"
+    "@tscircuit/capacity-autorouter": "^0.0.803",
+    "@tscircuit/circuit-json-util": "0.0.97",
+    "circuit-json": "0.0.456",
+    "circuit-json-to-connectivity-map": "0.0.23",
+    "circuit-to-svg": "0.0.364",
+    "format-si-unit": "0.0.7",
+    "schematic-symbols": "0.0.231",
+    "zod": "3.25.76"
   },
   "keywords": [
     "tscircuit",
