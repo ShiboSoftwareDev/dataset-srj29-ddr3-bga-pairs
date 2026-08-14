@@ -2,7 +2,7 @@
   "id": "sample006",
   "title": "ECP5U85 BSE USB: MT41K64M16TW-x U4 to LFE5U-85F-6BG381 U1",
   "description": "A spacious multilayer benchmark reproducing 47 exact DDR3-to-BGA endpoint pairs from ECP5U85 BSE USB.",
-  "layerCount": 16,
+  "layerCount": 18,
   "minTraceWidth": 0.1,
   "nominalTraceWidth": 0.1,
   "minViaHoleDiameter": 0.1512,
@@ -12370,7 +12370,7 @@
       "focus": "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
       "connectedDdr3EdgeDepth": 2.27,
       "connectedControllerEdgeDepth": 4.25,
-      "availableRoutingLayers": 14,
+      "availableRoutingLayers": 16,
       "minimumPackagePitch": 0.8,
       "viaStyle": "0.336 mm dogbone-compatible via pad; via-in-pad disabled",
       "corridorWidth": 15

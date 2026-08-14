@@ -12,7 +12,7 @@ This revision intentionally does **not** reuse one connection map with different
 - Real 256- to 900-ball paired BGA footprints at 0.5–1.0 mm pitch.
 - Exact board-net, DDR3 ball, and controller ball triples from committed KiCad PCB data, plus the audited official BeagleBone Black schematic map.
 - A single series resistor is collapsed when it lies directly between the two chips; its reference/value and both board-net names remain in `sourcePath`.
-- 12–18 mm clear pad-field corridors and 16–22 total layers. Layer count is selected from connected-pad depth and connection count.
+- 12–18 mm clear pad-field corridors and 18–22 total layers. Layer count is selected from connected-pad depth and connection count.
 - No pre-routed traces, no via-in-pad, and no artificial board compaction.
 - One `circuit-to-svg` SVG snapshot per sample.
 

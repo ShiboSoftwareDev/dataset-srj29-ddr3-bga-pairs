@@ -2,7 +2,7 @@
   "id": "sample020",
   "title": "Zynq SDR Dongle: DDR3 U1 to xc7z020clg400 U2",
   "description": "A spacious multilayer benchmark reproducing 44 exact DDR3-to-BGA endpoint pairs from Zynq SDR Dongle.",
-  "layerCount": 16,
+  "layerCount": 18,
   "minTraceWidth": 0.1,
   "nominalTraceWidth": 0.1,
   "minViaHoleDiameter": 0.1512,
@@ -12726,7 +12726,7 @@
       "focus": "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
       "connectedDdr3EdgeDepth": 2.25,
       "connectedControllerEdgeDepth": 4.25,
-      "availableRoutingLayers": 14,
+      "availableRoutingLayers": 16,
       "minimumPackagePitch": 0.8,
       "viaStyle": "0.336 mm dogbone-compatible via pad; via-in-pad disabled",
       "corridorWidth": 12

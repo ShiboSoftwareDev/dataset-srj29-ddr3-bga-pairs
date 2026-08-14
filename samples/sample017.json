@@ -2,7 +2,7 @@
   "id": "sample017",
   "title": "Archer mainboard: MT41K256M16HA U202 to MCIMX7S5EVM08SC U101",
   "description": "A spacious multilayer benchmark reproducing 49 exact DDR3-to-BGA endpoint pairs from Archer mainboard.",
-  "layerCount": 16,
+  "layerCount": 18,
   "minTraceWidth": 0.1,
   "nominalTraceWidth": 0.1,
   "minViaHoleDiameter": 0.1418,
@@ -16113,7 +16113,7 @@
       "focus": "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
       "connectedDdr3EdgeDepth": 2.25,
       "connectedControllerEdgeDepth": 3.23,
-      "availableRoutingLayers": 14,
+      "availableRoutingLayers": 16,
       "minimumPackagePitch": 0.75,
       "viaStyle": "0.315 mm dogbone-compatible via pad; via-in-pad disabled",
       "corridorWidth": 18

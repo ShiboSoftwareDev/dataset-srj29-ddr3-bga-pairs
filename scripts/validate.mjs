@@ -53,7 +53,7 @@ const report = {
     "exactly two non-overlapping BGA pad fields per sample",
     "12 mm or larger physical BGA pad-field corridor",
     "source-land-specific trace-channel and dogbone-via clearance",
-    "16–22 total layers selected from connected pad depth and route count",
+    "18–22 total layers selected from connected pad depth and route count",
     "all package pads and connection endpoints inside the board outline",
     "every bus and differential-pair constraint references existing nets",
   ],
@@ -80,7 +80,7 @@ for (const [index, file] of sampleFiles.entries()) {
   assert(exportedDataset[expectedId] && exportedDataset.dataset?.[expectedId], `${file}: missing package export`)
   assert(!sample.traces || sample.traces.length === 0, `${file}: benchmark input must be unrouted`)
   assert(sample.allowViaInPad === false, `${file}: via-in-pad must remain disabled`)
-  assert(sample.layerCount >= 16 && sample.layerCount <= 24 && sample.layerCount % 2 === 0, `${file}: invalid layer count ${sample.layerCount}`)
+  assert(sample.layerCount >= 18 && sample.layerCount <= 24 && sample.layerCount % 2 === 0, `${file}: invalid layer count ${sample.layerCount}`)
   assert(sample.metadata.referenceDesign.board === map.referenceDesign.board, `${file}: wrong board reference`)
   assert(sample.metadata.referenceDesign.repository === map.referenceDesign.repository, `${file}: wrong source repository`)
   assert(sample.metadata.referenceDesign.commit === map.referenceDesign.commit, `${file}: wrong source commit`)

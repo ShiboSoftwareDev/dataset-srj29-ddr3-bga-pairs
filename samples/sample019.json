@@ -2,7 +2,7 @@
   "id": "sample019",
   "title": "iCE/Pi CM0 SBC: H5TQ4G63EFR U2 to H3 U1",
   "description": "A spacious multilayer benchmark reproducing 45 exact DDR3-to-BGA endpoint pairs from iCE/Pi CM0 SBC.",
-  "layerCount": 16,
+  "layerCount": 18,
   "minTraceWidth": 0.1,
   "nominalTraceWidth": 0.1,
   "minViaHoleDiameter": 0.1229,
@@ -11543,7 +11543,7 @@
       "focus": "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
       "connectedDdr3EdgeDepth": 2.23,
       "connectedControllerEdgeDepth": 4.18,
-      "availableRoutingLayers": 14,
+      "availableRoutingLayers": 16,
       "minimumPackagePitch": 0.65,
       "viaStyle": "0.273 mm dogbone-compatible via pad; via-in-pad disabled",
       "corridorWidth": 16.5

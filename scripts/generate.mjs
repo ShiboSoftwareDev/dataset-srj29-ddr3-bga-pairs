@@ -178,7 +178,7 @@ function createSample(index, mapRecord) {
   const memoryDepth = connectedDepth(map.memory, new Set(map.connections.map((connection) => connection.memory.ball)))
   const controllerDepth = connectedDepth(map.controller, new Set(map.connections.map((connection) => connection.controller.ball)))
   const layerCount = Math.max(
-    16,
+    18,
     evenCeiling(Math.max(memoryDepth, controllerDepth) * 2 + 6),
     evenCeiling(map.connections.length / 3.5 + 2),
   )
