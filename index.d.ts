@@ -1,54 +1,7 @@
-export interface SimpleRoutePoint {
-  x: number
-  y: number
-  layer?: string
-  layers?: string[]
-  pointId?: string
-  pcb_port_id?: string
-}
-
-export interface SimpleRouteConnection {
-  name: string
-  rootConnectionName?: string
-  netConnectionName?: string
-  nominalTraceWidth?: number
-  pointsToConnect: SimpleRoutePoint[]
-}
-
-export interface SimpleRouteObstacle {
-  obstacleId?: string
-  componentId?: string
-  ballName?: string
-  vendorPinName?: string
-  type: "rect"
-  layers: string[]
-  center: { x: number; y: number }
-  width: number
-  height: number
-  connectedTo: string[]
-}
-
-export interface SimpleRouteJson {
-  id: string
-  title: string
-  description: string
-  layerCount: number
-  minTraceWidth: number
-  nominalTraceWidth?: number
-  minViaHoleDiameter?: number
-  minViaPadDiameter?: number
-  defaultObstacleMargin?: number
-  minTraceToPadEdgeClearance?: number
-  minViaEdgeToPadEdgeClearance?: number
-  allowViaInPad?: boolean
-  obstacles: SimpleRouteObstacle[]
-  connections: SimpleRouteConnection[]
-  buses?: unknown[]
-  differentialPairs?: unknown[]
-  bounds: { minX: number; maxX: number; minY: number; maxY: number }
-  outline?: Array<{ x: number; y: number }>
-  metadata: Record<string, unknown>
-}
+export interface SimpleRoutePoint { x: number; y: number; layer?: string; layers?: string[]; pointId?: string; pcb_port_id?: string }
+export interface SimpleRouteConnection { name: string; rootConnectionName?: string; netConnectionName?: string; nominalTraceWidth?: number; pointsToConnect: SimpleRoutePoint[] }
+export interface SimpleRouteObstacle { obstacleId?: string; componentId?: string; ballName?: string; vendorPinName?: string; type: "rect"; layers: string[]; center: { x: number; y: number }; width: number; height: number; connectedTo: string[] }
+export interface SimpleRouteJson { id: string; title: string; description: string; layerCount: number; minTraceWidth: number; nominalTraceWidth?: number; minViaHoleDiameter?: number; minViaPadDiameter?: number; defaultObstacleMargin?: number; minTraceToPadEdgeClearance?: number; minViaEdgeToPadEdgeClearance?: number; allowViaInPad?: boolean; obstacles: SimpleRouteObstacle[]; connections: SimpleRouteConnection[]; buses?: unknown[]; differentialPairs?: unknown[]; bounds: { minX: number; maxX: number; minY: number; maxY: number }; outline?: Array<{ x: number; y: number }>; metadata: Record<string, unknown> }
 
 export const sample001: SimpleRouteJson
 export const sample002: SimpleRouteJson

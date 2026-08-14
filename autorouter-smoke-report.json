@@ -1,7 +1,7 @@
 {
   "solver": "AutoroutingPipelineSolver7_MultiGraph",
   "packageVersion": "^0.0.803",
-  "createdAt": "2026-08-14T16:49:53.355Z",
+  "createdAt": "2026-08-14T18:46:29.807Z",
   "maxSteps": 100000,
   "requireSolved": false,
   "results": [
@@ -11,12 +11,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 4461,
-      "expectedConnections": 38,
+      "elapsedMs": 13062,
+      "expectedConnections": 50,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 92377,
+      "activeStageIterations": 82138,
       "activeStageMaxIterations": 8000000
     },
     {
@@ -25,12 +25,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 3362,
-      "expectedConnections": 38,
+      "elapsedMs": 12705,
+      "expectedConnections": 50,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 92996,
+      "activeStageIterations": 82331,
       "activeStageMaxIterations": 8000000
     },
     {
@@ -39,12 +39,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 5920,
-      "expectedConnections": 49,
+      "elapsedMs": 14656,
+      "expectedConnections": 50,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 90151,
+      "activeStageIterations": 82544,
       "activeStageMaxIterations": 8000000
     },
     {
@@ -53,12 +53,12 @@
       "failed": false,
       "timedOutByStepLimit": true,
       "steps": 100000,
-      "elapsedMs": 5919,
-      "expectedConnections": 49,
+      "elapsedMs": 13246,
+      "expectedConnections": 50,
       "routedTraces": 0,
       "activePhase": "portPointPathingSolver",
       "activeStage": "BB",
-      "activeStageIterations": 92473,
+      "activeStageIterations": 82610,
       "activeStageMaxIterations": 8000000
     }
   ]

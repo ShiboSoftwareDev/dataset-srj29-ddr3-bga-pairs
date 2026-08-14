@@ -1,32 +1,20 @@
+import { createHash } from "node:crypto"
+import { createRequire } from "node:module"
 import { readFile, readdir, writeFile } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
-import { createRequire } from "node:module"
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const samplesDir = path.join(repoRoot, "samples")
 const snapshotsDir = path.join(repoRoot, "snapshots")
+const mapFile = path.join(repoRoot, "reference", "beaglebone-black-ddr3-map.json")
+const mapText = await readFile(mapFile, "utf8")
+const realMap = JSON.parse(mapText)
 const require = createRequire(import.meta.url)
 const exportedDataset = require(path.join(repoRoot, "index.js"))
 const EPSILON = 1e-7
-const EXPECTED_DDR3_PACKAGES = {
-  8: {
-    manufacturer: "ISSI",
-    partNumber: "IS43/46TR82560C",
-    package: "78-ball BGA",
-    padCount: 78,
-    rows: ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N"],
-    knownPins: { A1: "VSS", B3: "DQ0", C3: "DQS", D3: "DQS#", E7: "DQ7", F3: "RAS#", G7: "CK#", H7: "A10/AP", J2: "BA0", K3: "A0", L7: "A1", M3: "A9", N7: "A14" },
-  },
-  16: {
-    manufacturer: "Samsung",
-    partNumber: "K4B4G1646E",
-    package: "96-ball FBGA",
-    padCount: 96,
-    rows: ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "T"],
-    knownPins: { A2: "DQU5", B7: "DQSU#", C7: "DQSU", D3: "DMU", E3: "DQL0", F3: "DQSL", G3: "DQSL#", H7: "DQL7", J3: "RAS#", K7: "CK#", L7: "A10/AP", M2: "BA0", N3: "A0", P7: "A1", R3: "A9", T7: "A14" },
-  },
-}
+const DDR3_ROWS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "T"]
+const CONTROLLER_ROWS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "T", "U", "V"]
 
 const assert = (condition, message) => {
   if (!condition) throw new Error(message)
@@ -38,6 +26,16 @@ const boxesOverlap = (a, b) =>
   Math.abs(a.center.x - b.center.x) * 2 < a.width + b.width - EPSILON &&
   Math.abs(a.center.y - b.center.y) * 2 < a.height + b.height - EPSILON
 
+assert(realMap.referenceDesign.board === "BeagleBone Black", "Unexpected reference design")
+assert(realMap.referenceDesign.controllerPartNumber === "AM3358BZCZ100", "Unexpected controller reference")
+assert(realMap.connections.length === 50, `Expected 50 real-board connections, found ${realMap.connections.length}`)
+const mappedNets = new Set(realMap.connections.map((connection) => connection.net))
+const mappedDdr3Balls = new Set(realMap.connections.map((connection) => connection.ddr3.ball))
+const mappedControllerBalls = new Set(realMap.connections.map((connection) => connection.controller.ball))
+assert(mappedNets.size === 50, "Reference map contains duplicate nets")
+assert(mappedDdr3Balls.size === 50, "Reference map reuses a DDR3 ball")
+assert(mappedControllerBalls.size === 50, "Reference map reuses an AM3358 ball")
+
 const sampleFiles = (await readdir(samplesDir)).filter((file) => /^sample\d{3}\.json$/.test(file)).sort()
 const snapshotFiles = (await readdir(snapshotsDir)).filter((file) => /^sample\d{3}\.svg$/.test(file)).sort()
 assert(sampleFiles.length === 20, `Expected 20 samples, found ${sampleFiles.length}`)
@@ -46,19 +44,23 @@ assert(snapshotFiles.length === 20, `Expected 20 circuit-to-svg snapshots, found
 const report = {
   datasetName: "dataset-srj29-ddr3-bga-pairs",
   validatedAt: new Date().toISOString(),
+  referenceDesign: realMap.referenceDesign,
+  connectionMapSha256: createHash("sha256").update(mapText).digest("hex"),
+  directConnectionCount: realMap.connections.length,
   checks: [
-    "20 sequential package exports",
-    "one circuit-to-svg PCB snapshot for every sample",
-    "real ISSI 78-ball x8 or Samsung 96-ball x16 DDR3 ball population",
-    "vendor DDR3 ball names and representative row-by-row pin assignments",
-    "exactly two non-overlapping top-side BGA pad fields",
-    "every DDR3 net has one endpoint on each BGA",
-    "all pads fully inside the board outline",
-    "minimum trace channel and dogbone-via geometry",
-    "at least 5 mm between the two BGA pad-field edges",
-    "conservative multilayer escape and corridor capacity",
-    "DDR3 signal groups and differential-pair references",
+    "20 sequential package exports and circuit-to-svg snapshots",
+    "official BeagleBone Black U12-to-U5 schematic net map",
+    "50 exact net-to-DDR3-ball-to-AM3358-ball endpoint triples",
+    "real sparse 96-ball x16 DDR3L footprint at 0.8 mm pitch",
+    "real AM3358 ZCZ 18x18 / 324-ball footprint at 0.8 mm pitch",
+    "exactly two non-overlapping BGA pad fields",
+    "all pads and endpoints inside the board outline",
+    "minimum 9 mm physical BGA pad-field gap",
+    "dogbone-via and between-pad trace clearance",
+    "12 or 14 total layers with conservative routing-layer burden",
+    "clock and DQS differential pair references",
   ],
+  mappingAudit: realMap.connections,
   samples: [],
 }
 
@@ -71,53 +73,73 @@ for (const [index, file] of sampleFiles.entries()) {
   assert(snapshotSvg.includes("data-circuit-to-svg-version="), `${file}: snapshot was not generated by circuit-to-svg`)
   const snapshotPadCount = snapshotSvg.match(/data-type="pcb_smtpad"/g)?.length ?? 0
   const snapshotRatsnestCount = snapshotSvg.match(/data-type="pcb_rats_nest"/g)?.length ?? 0
+
   assert(sample.id === expectedId, `${file}: expected id ${expectedId}, found ${sample.id}`)
-  assert(exportedDataset[expectedId], `${file}: missing package export ${expectedId}`)
-  assert(exportedDataset.dataset?.[expectedId], `${file}: missing dataset.${expectedId}`)
+  assert(exportedDataset[expectedId] && exportedDataset.dataset?.[expectedId], `${file}: missing package export`)
   assert(!sample.traces || sample.traces.length === 0, `${file}: benchmark input must be unrouted`)
   assert(sample.allowViaInPad === false, `${file}: via-in-pad must remain disabled`)
-  assert([6, 8].includes(sample.layerCount), `${file}: expected 6 or 8 layers, found ${sample.layerCount}`)
+  assert([12, 14].includes(sample.layerCount), `${file}: expected 12 or 14 layers, found ${sample.layerCount}`)
+  assert(sample.metadata.referenceDesign.board === "BeagleBone Black", `${file}: wrong reference design`)
+  assert(sample.metadata.referenceDesign.directConnectionCount === 50, `${file}: wrong mapping count metadata`)
 
   const ddr3Pads = sample.obstacles.filter((obstacle) => obstacle.componentId === "ddr3_bga")
   const controllerPads = sample.obstacles.filter((obstacle) => obstacle.componentId === "controller_bga")
-  const expectedDdr3 = EXPECTED_DDR3_PACKAGES[sample.metadata.ddr3.dataWidth]
-  assert(expectedDdr3, `${file}: unsupported DDR3 data width`)
-  assert(ddr3Pads.length === expectedDdr3.padCount, `${file}: expected ${expectedDdr3.padCount} DDR3 pads, found ${ddr3Pads.length}`)
-  assert(sample.metadata.ddr3.manufacturer === expectedDdr3.manufacturer, `${file}: wrong DDR3 manufacturer`)
-  assert(sample.metadata.ddr3.partNumber === expectedDdr3.partNumber, `${file}: wrong DDR3 part number`)
-  assert(sample.metadata.ddr3.package === expectedDdr3.package, `${file}: wrong DDR3 package name`)
-  assert(sample.metadata.ddr3.pitch === 0.8, `${file}: real DDR3 footprint must use 0.8 mm pitch`)
-  assert(JSON.stringify(sample.metadata.ddr3.rowLabels) === JSON.stringify(expectedDdr3.rows), `${file}: wrong DDR3 row labels`)
-  assert(JSON.stringify(sample.metadata.ddr3.populatedColumns) === JSON.stringify([1, 2, 3, 7, 8, 9]), `${file}: wrong DDR3 populated columns`)
+  assert(ddr3Pads.length === 96, `${file}: expected 96 DDR3 pads, found ${ddr3Pads.length}`)
+  assert(controllerPads.length === 324, `${file}: expected 324 AM3358 pads, found ${controllerPads.length}`)
+  assert(sample.obstacles.length === 420, `${file}: unexpected non-package obstacles`)
+  assert(sample.metadata.ddr3.package === "96-ball FBGA", `${file}: wrong DDR3 package`)
+  assert(sample.metadata.ddr3.pitch === 0.8, `${file}: DDR3 pitch is not 0.8 mm`)
+  assert(sample.metadata.controller.partNumber === "AM3358BZCZ100", `${file}: wrong controller part`)
+  assert(sample.metadata.controller.package === "ZCZ 324-ball NFBGA", `${file}: wrong controller package`)
+  assert(sample.metadata.controller.pitch === 0.8, `${file}: AM3358 pitch is not 0.8 mm`)
+  assert(JSON.stringify(sample.metadata.ddr3.rowLabels) === JSON.stringify(DDR3_ROWS), `${file}: wrong DDR3 row labels`)
+  assert(JSON.stringify(sample.metadata.ddr3.populatedColumns) === JSON.stringify([1, 2, 3, 7, 8, 9]), `${file}: wrong DDR3 column population`)
+
   const ddr3PadByBall = new Map(ddr3Pads.map((pad) => [pad.ballName, pad]))
-  assert(ddr3PadByBall.size === ddr3Pads.length, `${file}: duplicate DDR3 ball names`)
+  const controllerPadByBall = new Map(controllerPads.map((pad) => [pad.ballName, pad]))
+  assert(ddr3PadByBall.size === 96, `${file}: duplicate DDR3 balls`)
+  assert(controllerPadByBall.size === 324, `${file}: duplicate AM3358 balls`)
   for (const pad of ddr3Pads) {
     const match = pad.ballName?.match(/^([A-Z])(\d)$/)
-    assert(match, `${file}: malformed DDR3 ball name ${pad.ballName}`)
-    assert(expectedDdr3.rows.includes(match[1]), `${file}: invalid DDR3 row ${match[1]}`)
-    assert([1, 2, 3, 7, 8, 9].includes(Number(match[2])), `${file}: impossible populated DDR3 column ${match[2]}`)
-    assert(pad.vendorPinName, `${file}: ${pad.ballName} has no vendor pin name`)
-    assert(pad.circuitJsonMetadata?.source_port_name === pad.vendorPinName, `${file}: ${pad.ballName} metadata does not preserve vendor pin name`)
+    assert(match && DDR3_ROWS.includes(match[1]), `${file}: malformed DDR3 ball ${pad.ballName}`)
+    assert([1, 2, 3, 7, 8, 9].includes(Number(match[2])), `${file}: impossible DDR3 ball ${pad.ballName}`)
   }
-  for (const [ball, pin] of Object.entries(expectedDdr3.knownPins)) {
-    assert(ddr3PadByBall.get(ball)?.vendorPinName === pin, `${file}: expected vendor pin ${ball}=${pin}`)
+  for (const pad of controllerPads) {
+    const match = pad.ballName?.match(/^([A-Z])(\d{1,2})$/)
+    assert(match && CONTROLLER_ROWS.includes(match[1]), `${file}: malformed AM3358 ball ${pad.ballName}`)
+    assert(Number(match[2]) >= 1 && Number(match[2]) <= 18, `${file}: impossible AM3358 ball ${pad.ballName}`)
   }
-  assert(controllerPads.length >= 144, `${file}: controller BGA is too small`)
-  assert(ddr3Pads.length + controllerPads.length === sample.obstacles.length, `${file}: unexpected non-BGA obstacles`)
-  assert(snapshotPadCount === sample.obstacles.length, `${file}: snapshot has ${snapshotPadCount}/${sample.obstacles.length} pads`)
-  assert(snapshotRatsnestCount === sample.connections.length * 2, `${file}: snapshot has ${snapshotRatsnestCount} unexpected ratsnest segments`)
-  assert(sample.connections.length === (sample.metadata.ddr3.dataWidth === 8 ? 38 : 49), `${file}: unexpected DDR3 signal count`)
+  assert(snapshotPadCount === 420, `${file}: snapshot has ${snapshotPadCount}/420 package pads`)
+  assert(sample.connections.length === 50, `${file}: expected 50 real-board nets`)
+  assert(snapshotRatsnestCount === 100, `${file}: snapshot has ${snapshotRatsnestCount}/100 ratsnest segments`)
+
+  const sampleConnectionByName = new Map(sample.connections.map((connection) => [connection.name, connection]))
+  assert(sampleConnectionByName.size === 50, `${file}: duplicate connection names`)
+  for (const mapped of realMap.connections) {
+    const connection = sampleConnectionByName.get(mapped.net)
+    assert(connection, `${file}: missing real net ${mapped.net}`)
+    assert(connection.pointsToConnect.length === 2, `${file}: ${mapped.net} must have two endpoints`)
+    const ddr3Pad = ddr3PadByBall.get(mapped.ddr3.ball)
+    const controllerPad = controllerPadByBall.get(mapped.controller.ball)
+    assert(ddr3Pad?.vendorPinName === mapped.ddr3.signal, `${file}: ${mapped.net} DDR3 endpoint is not ${mapped.ddr3.ball}/${mapped.ddr3.signal}`)
+    assert(controllerPad?.vendorPinName === mapped.controller.signal, `${file}: ${mapped.net} controller endpoint is not ${mapped.controller.ball}/${mapped.controller.signal}`)
+    assert(ddr3Pad.connectedTo.includes(mapped.net), `${file}: ${mapped.net} absent from DDR3 ball ${mapped.ddr3.ball}`)
+    assert(controllerPad.connectedTo.includes(mapped.net), `${file}: ${mapped.net} absent from controller ball ${mapped.controller.ball}`)
+    assert(containsPoint(ddr3Pad, connection.pointsToConnect[0]), `${file}: ${mapped.net} first point is not DDR3 ball ${mapped.ddr3.ball}`)
+    assert(containsPoint(controllerPad, connection.pointsToConnect[1]), `${file}: ${mapped.net} second point is not AM3358 ball ${mapped.controller.ball}`)
+    const metadataEndpoint = sample.metadata.endpointBallsByConnection[mapped.net]
+    assert(metadataEndpoint?.ddr3Ball === mapped.ddr3.ball && metadataEndpoint?.controllerBall === mapped.controller.ball, `${file}: ${mapped.net} endpoint metadata differs from source map`)
+  }
 
   for (const obstacle of sample.obstacles) {
     assert(obstacle.type === "rect", `${file}: non-rect obstacle ${obstacle.obstacleId}`)
-    assert(obstacle.layers.length === 1 && obstacle.layers[0] === "top", `${file}: BGA pad must be on top`)
-    assert(obstacle.width > 0 && obstacle.height > 0, `${file}: invalid pad size`)
-    assert(obstacle.center.x - obstacle.width / 2 >= sample.bounds.minX - EPSILON, `${file}: ${obstacle.obstacleId} exceeds minX`)
-    assert(obstacle.center.x + obstacle.width / 2 <= sample.bounds.maxX + EPSILON, `${file}: ${obstacle.obstacleId} exceeds maxX`)
-    assert(obstacle.center.y - obstacle.height / 2 >= sample.bounds.minY - EPSILON, `${file}: ${obstacle.obstacleId} exceeds minY`)
-    assert(obstacle.center.y + obstacle.height / 2 <= sample.bounds.maxY + EPSILON, `${file}: ${obstacle.obstacleId} exceeds maxY`)
+    assert(obstacle.layers.length === 1 && obstacle.layers[0] === "top", `${file}: package pad must be top-side`)
+    assert(obstacle.width === 0.38 && obstacle.height === 0.38, `${file}: unexpected land size`)
+    assert(obstacle.center.x - obstacle.width / 2 >= sample.bounds.minX - EPSILON, `${file}: ${obstacle.ballName} exceeds minX`)
+    assert(obstacle.center.x + obstacle.width / 2 <= sample.bounds.maxX + EPSILON, `${file}: ${obstacle.ballName} exceeds maxX`)
+    assert(obstacle.center.y - obstacle.height / 2 >= sample.bounds.minY - EPSILON, `${file}: ${obstacle.ballName} exceeds minY`)
+    assert(obstacle.center.y + obstacle.height / 2 <= sample.bounds.maxY + EPSILON, `${file}: ${obstacle.ballName} exceeds maxY`)
   }
-
   for (let a = 0; a < sample.obstacles.length - 1; a++) {
     for (let b = a + 1; b < sample.obstacles.length; b++) {
       assert(!boxesOverlap(sample.obstacles[a], sample.obstacles[b]), `${file}: overlapping pads ${sample.obstacles[a].obstacleId} and ${sample.obstacles[b].obstacleId}`)
@@ -125,86 +147,53 @@ for (const [index, file] of sampleFiles.entries()) {
   }
 
   const connectionNames = new Set(sample.connections.map((connection) => connection.name))
-  assert(connectionNames.size === sample.connections.length, `${file}: duplicate connection names`)
-  for (const connection of sample.connections) {
-    assert(connection.pointsToConnect.length === 2, `${file}: ${connection.name} must have exactly two endpoints`)
-    const endpointComponents = []
-    for (const point of connection.pointsToConnect) {
-      assert(point.layer === "top", `${file}: ${connection.name} endpoint is not on top`)
-      const endpointPads = sample.obstacles.filter(
-        (obstacle) => containsPoint(obstacle, point) && obstacle.connectedTo.includes(connection.name),
-      )
-      assert(endpointPads.length === 1, `${file}: ${connection.name} endpoint resolves to ${endpointPads.length} pads`)
-      endpointComponents.push(endpointPads[0].componentId)
-    }
-    assert(new Set(endpointComponents).size === 2, `${file}: ${connection.name} does not bridge the two BGAs`)
-    assert(endpointComponents.includes("ddr3_bga"), `${file}: ${connection.name} has no DDR3 endpoint`)
-    assert(endpointComponents.includes("controller_bga"), `${file}: ${connection.name} has no controller endpoint`)
-  }
-
   for (const pair of sample.differentialPairs ?? []) {
     assert(pair.connectionNames.length === 2, `${file}: malformed differential pair`)
-    assert(pair.connectionNames.every((name) => connectionNames.has(name)), `${file}: differential pair references a missing net`)
+    assert(pair.connectionNames.every((name) => connectionNames.has(name)), `${file}: differential pair references missing net`)
   }
+  assert(sample.differentialPairs.length === 3, `${file}: expected CK and two DQS differential pairs`)
   for (const bus of sample.buses ?? []) {
-    assert(bus.connectionNames.length > 0, `${file}: empty bus ${bus.busId}`)
-    assert(bus.connectionNames.every((name) => connectionNames.has(name)), `${file}: bus ${bus.busId} references a missing net`)
+    assert(bus.connectionNames.length > 0 && bus.connectionNames.every((name) => connectionNames.has(name)), `${file}: invalid bus ${bus.busId}`)
   }
 
-  const ddr3Pitch = sample.metadata.ddr3.pitch
-  const controllerPitch = sample.metadata.controller.pitch
-  const ddr3PadSize = ddr3Pads[0].width
-  const controllerPadSize = controllerPads[0].width
   const traceChannelNeed = sample.minTraceWidth + 2 * sample.minTraceToPadEdgeClearance
-  const ddr3TraceChannel = ddr3Pitch - ddr3PadSize
-  const controllerTraceChannel = controllerPitch - controllerPadSize
-  assert(ddr3TraceChannel + EPSILON >= traceChannelNeed, `${file}: DDR3 trace channel is too narrow`)
-  assert(controllerTraceChannel + EPSILON >= traceChannelNeed, `${file}: controller trace channel is too narrow`)
+  const traceChannel = 0.8 - 0.38
+  assert(traceChannel + EPSILON >= traceChannelNeed, `${file}: between-ball trace channel is too narrow`)
+  const dogboneClearance = 0.8 / Math.sqrt(2) - 0.38 / 2 - sample.minViaPadDiameter / 2
+  assert(dogboneClearance + EPSILON >= sample.minViaEdgeToPadEdgeClearance, `${file}: dogbone via cannot fit`)
 
-  const dogboneClearance = (pitch, padSize) =>
-    pitch / Math.sqrt(2) - padSize / 2 - sample.minViaPadDiameter / 2
-  const ddr3DogboneClearance = dogboneClearance(ddr3Pitch, ddr3PadSize)
-  const controllerDogboneClearance = dogboneClearance(controllerPitch, controllerPadSize)
-  assert(ddr3DogboneClearance + EPSILON >= sample.minViaEdgeToPadEdgeClearance, `${file}: DDR3 dogbone via cannot fit`)
-  assert(controllerDogboneClearance + EPSILON >= sample.minViaEdgeToPadEdgeClearance, `${file}: controller dogbone via cannot fit`)
-
-  const componentBounds = (pads) => ({
+  const horizontalBounds = (pads) => ({
     minX: Math.min(...pads.map((pad) => pad.center.x - pad.width / 2)),
     maxX: Math.max(...pads.map((pad) => pad.center.x + pad.width / 2)),
   })
-  const ddr3Bounds = componentBounds(ddr3Pads)
-  const controllerBounds = componentBounds(controllerPads)
+  const ddr3Bounds = horizontalBounds(ddr3Pads)
+  const controllerBounds = horizontalBounds(controllerPads)
   const measuredGap = ddr3Bounds.maxX < controllerBounds.minX
     ? controllerBounds.minX - ddr3Bounds.maxX
     : ddr3Bounds.minX - controllerBounds.maxX
-  assert(measuredGap >= 5 - EPSILON, `${file}: BGA-to-BGA gap ${measuredGap} mm is too tight`)
+  assert(measuredGap >= 9 - EPSILON, `${file}: BGA gap ${measuredGap} mm is too tight`)
 
   const availableRoutingLayers = sample.layerCount - 2
-  const maximumEscapeDepth = Math.max(
-    sample.metadata.feasibility.connectedDdr3ColumnDepth,
-    sample.metadata.feasibility.connectedControllerColumnDepth,
-  )
+  assert(availableRoutingLayers >= 10, `${file}: fewer than 10 routing layers available`)
   const connectionsPerInnerLayer = sample.connections.length / availableRoutingLayers
-  assert(availableRoutingLayers >= maximumEscapeDepth, `${file}: insufficient inner layers for BGA escape depth`)
-  assert(connectionsPerInnerLayer <= 10, `${file}: conservative inner-layer burden exceeded`)
-
+  assert(connectionsPerInnerLayer <= 5, `${file}: conservative layer burden exceeded`)
   const boardWidth = sample.bounds.maxX - sample.bounds.minX
   const boardHeight = sample.bounds.maxY - sample.bounds.minY
-  const copperObstacleArea = sample.obstacles.reduce((area, obstacle) => area + obstacle.width * obstacle.height, 0)
-  const padAreaDensity = copperObstacleArea / (boardWidth * boardHeight)
-  assert(padAreaDensity < 0.12, `${file}: pad density ${padAreaDensity} is unexpectedly high`)
+  const padAreaDensity = sample.obstacles.reduce((area, obstacle) => area + obstacle.width * obstacle.height, 0) / (boardWidth * boardHeight)
+  assert(padAreaDensity < 0.12, `${file}: package-pad density is unexpectedly high`)
 
   report.samples.push({
     id: sample.id,
     layerCount: sample.layerCount,
     connectionCount: sample.connections.length,
     obstacleCount: sample.obstacles.length,
+    ddr3PadCount: ddr3Pads.length,
+    controllerPadCount: controllerPads.length,
     componentGap: round(measuredGap),
-    ddr3TraceChannel: round(ddr3TraceChannel),
-    controllerTraceChannel: round(controllerTraceChannel),
-    ddr3DogboneClearance: round(ddr3DogboneClearance),
-    controllerDogboneClearance: round(controllerDogboneClearance),
-    connectionsPerInnerLayer: round(connectionsPerInnerLayer),
+    rotation: sample.metadata.ddr3.rotation,
+    traceChannel: round(traceChannel),
+    dogboneClearance: round(dogboneClearance),
+    connectionsPerRoutingLayer: round(connectionsPerInnerLayer),
     padAreaDensity: round(padAreaDensity),
     snapshotPadCount,
     snapshotRatsnestCount,
@@ -213,4 +202,4 @@ for (const [index, file] of sampleFiles.entries()) {
 }
 
 await writeFile(path.join(repoRoot, "validation-report.json"), `${JSON.stringify(report, null, 2)}\n`)
-console.log(`Validated ${report.samples.length} spacious multilayer DDR3-to-BGA samples`)
+console.log(`Validated ${report.samples.length} ball-accurate BeagleBone Black DDR3L-to-AM3358 samples`)

@@ -1,14 +1,9 @@
-# Current autorouter observations
+# Autorouter observations
 
-The dataset was checked with `@tscircuit/capacity-autorouter` 0.0.803 and `AutoroutingPipelineSolver7_MultiGraph`.
+The dataset's raw compatibility smoke test uses `@tscircuit/capacity-autorouter` 0.0.803 and `AutoroutingPipelineSolver7_MultiGraph`. The default 100,000-step run covers `sample001`, `sample007`, `sample014`, and `sample020`, spanning 0°/180° orientations, 10–13.2 mm package gaps, and 12-layer boards. Each input has the same real 50-net BeagleBone Black endpoint map, 96 DDR3L balls, and 324 AM3358 balls.
 
-The default 100,000-step smoke run covers `sample001`, `sample007`, `sample014`, and `sample020`, representing x8/x16 DDR3, 6/8-layer boards, different BGA sizes, both left/right placements, and different package gaps. All four:
+All four inputs completed preprocessing without a solver failure and reached the pathing stage. They did not fully route inside the short 100,000-step budget; that result is recorded in `autorouter-smoke-report.json` and is not treated as proof of completion.
 
-- completed preprocessing and component detection without rejecting the SRJ;
-- progressed through escape-via placement, endpoint pairing, and topology planning;
-- reached `portPointPathingSolver`;
-- reported no solver failure in the quick budget.
+The intended benchmark fixture is in the tscircuit autorouter repository. Its dedicated pipeline runs component detection, invokes the standalone fanout solver on both detected BGAs, and then runs the multilayer Pipeline 7 autorouter. Static feasibility and exact endpoint correctness are checked independently by `validation-report.json`.
 
-They were not fully routed within 100,000 steps. A longer exploratory run also remained in pathing and was stopped after more than 250 seconds without a solver failure. This is recorded as benchmark difficulty, not evidence that the layouts are impossible. The independent `validation-report.json` documents the geometric and conservative capacity checks for all 20 samples.
-
-Run `npm run autoroute:smoke` to refresh the checked report. Add `--require-solved` and a larger `--max-steps` value when evaluating a full solve.
+Run `npm run autoroute:smoke` to refresh the raw Pipeline 7 report. Use the autorouter fixture for the actual detection → DDR3 fanout → AM3358 fanout → autoroute workflow.
