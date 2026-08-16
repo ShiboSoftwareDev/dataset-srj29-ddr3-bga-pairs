@@ -1,6 +1,6 @@
 {
   "name": "@tscircuit/dataset-srj29-ddr3-bga-pairs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Twenty unique-reference real DDR3-to-BGA multilayer routing benchmarks",
   "private": true,
   "main": "index.js",

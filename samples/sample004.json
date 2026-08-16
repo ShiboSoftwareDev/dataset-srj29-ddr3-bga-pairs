@@ -1,7 +1,7 @@
 {
   "id": "sample004",
   "title": "OrangeCrab r0.2.1: MT41K64M16TW-107_J-TR U4 to LFE5U-25F-8MG285C U3",
-  "description": "A spacious multilayer benchmark reproducing 50 exact DDR3-to-BGA endpoint pairs from OrangeCrab r0.2.1.",
+  "description": "A spacious multilayer benchmark routing a balanced 16-net subset of 50 exact DDR3-to-BGA endpoint pairs from OrangeCrab r0.2.1.",
   "layerCount": 18,
   "minTraceWidth": 0.08,
   "nominalTraceWidth": 0.08,
@@ -50,15 +50,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "T8",
-      "vendorPinName": "RAM_A8",
+      "vendorPinName": "T8",
       "connectedTo": [
-        "DDR3_t8_ram_a8",
-        "pcb_port_ddr3_ddr3_t8_ram_a8"
+        "unconnected_ddr3_t8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A8",
-        "reference_design_net": "RAM_A8"
+        "source_port_name": "T8"
       }
     },
     {
@@ -75,15 +73,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "T7",
-      "vendorPinName": "RAM_A14",
+      "vendorPinName": "T7",
       "connectedTo": [
-        "DDR3_t7_ram_a14",
-        "pcb_port_ddr3_ddr3_t7_ram_a14"
+        "unconnected_ddr3_t7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A14",
-        "reference_design_net": "RAM_A14"
+        "source_port_name": "T7"
       }
     },
     {
@@ -100,15 +96,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "T3",
-      "vendorPinName": "RAM_A13",
+      "vendorPinName": "T3",
       "connectedTo": [
-        "DDR3_t3_ram_a13",
-        "pcb_port_ddr3_ddr3_t3_ram_a13"
+        "unconnected_ddr3_t3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A13",
-        "reference_design_net": "RAM_A13"
+        "source_port_name": "T3"
       }
     },
     {
@@ -125,15 +119,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "T2",
-      "vendorPinName": "RAM_RESET#",
+      "vendorPinName": "T2",
       "connectedTo": [
-        "DDR3_t2_ram_reset",
-        "pcb_port_ddr3_ddr3_t2_ram_reset"
+        "unconnected_ddr3_t2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_RESET#",
-        "reference_design_net": "RAM_RESET#"
+        "source_port_name": "T2"
       }
     },
     {
@@ -196,15 +188,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "R8",
-      "vendorPinName": "RAM_A6",
+      "vendorPinName": "R8",
       "connectedTo": [
-        "DDR3_r8_ram_a6",
-        "pcb_port_ddr3_ddr3_r8_ram_a6"
+        "unconnected_ddr3_r8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A6",
-        "reference_design_net": "RAM_A6"
+        "source_port_name": "R8"
       }
     },
     {
@@ -221,15 +211,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "R7",
-      "vendorPinName": "RAM_A11",
+      "vendorPinName": "R7",
       "connectedTo": [
-        "DDR3_r7_ram_a11",
-        "pcb_port_ddr3_ddr3_r7_ram_a11"
+        "unconnected_ddr3_r7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A11",
-        "reference_design_net": "RAM_A11"
+        "source_port_name": "R7"
       }
     },
     {
@@ -246,15 +234,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "R3",
-      "vendorPinName": "RAM_A9",
+      "vendorPinName": "R3",
       "connectedTo": [
-        "DDR3_r3_ram_a9",
-        "pcb_port_ddr3_ddr3_r3_ram_a9"
+        "unconnected_ddr3_r3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A9",
-        "reference_design_net": "RAM_A9"
+        "source_port_name": "R3"
       }
     },
     {
@@ -271,15 +257,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "R2",
-      "vendorPinName": "RAM_A7",
+      "vendorPinName": "R2",
       "connectedTo": [
-        "DDR3_r2_ram_a7",
-        "pcb_port_ddr3_ddr3_r2_ram_a7"
+        "unconnected_ddr3_r2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A7",
-        "reference_design_net": "RAM_A7"
+        "source_port_name": "R2"
       }
     },
     {
@@ -342,15 +326,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "P8",
-      "vendorPinName": "RAM_A4",
+      "vendorPinName": "P8",
       "connectedTo": [
-        "DDR3_p8_ram_a4",
-        "pcb_port_ddr3_ddr3_p8_ram_a4"
+        "unconnected_ddr3_p8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A4",
-        "reference_design_net": "RAM_A4"
+        "source_port_name": "P8"
       }
     },
     {
@@ -367,15 +349,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "P7",
-      "vendorPinName": "RAM_A1",
+      "vendorPinName": "P7",
       "connectedTo": [
-        "DDR3_p7_ram_a1",
-        "pcb_port_ddr3_ddr3_p7_ram_a1"
+        "unconnected_ddr3_p7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A1",
-        "reference_design_net": "RAM_A1"
+        "source_port_name": "P7"
       }
     },
     {
@@ -392,15 +372,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "P3",
-      "vendorPinName": "RAM_A2",
+      "vendorPinName": "P3",
       "connectedTo": [
-        "DDR3_p3_ram_a2",
-        "pcb_port_ddr3_ddr3_p3_ram_a2"
+        "unconnected_ddr3_p3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A2",
-        "reference_design_net": "RAM_A2"
+        "source_port_name": "P3"
       }
     },
     {
@@ -417,15 +395,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "P2",
-      "vendorPinName": "RAM_A5",
+      "vendorPinName": "P2",
       "connectedTo": [
-        "DDR3_p2_ram_a5",
-        "pcb_port_ddr3_ddr3_p2_ram_a5"
+        "unconnected_ddr3_p2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A5",
-        "reference_design_net": "RAM_A5"
+        "source_port_name": "P2"
       }
     },
     {
@@ -488,15 +464,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "N8",
-      "vendorPinName": "RAM_BA1",
+      "vendorPinName": "N8",
       "connectedTo": [
-        "DDR3_n8_ram_ba1",
-        "pcb_port_ddr3_ddr3_n8_ram_ba1"
+        "unconnected_ddr3_n8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_BA1",
-        "reference_design_net": "RAM_BA1"
+        "source_port_name": "N8"
       }
     },
     {
@@ -513,15 +487,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "N7",
-      "vendorPinName": "RAM_A12",
+      "vendorPinName": "N7",
       "connectedTo": [
-        "DDR3_n7_ram_a12",
-        "pcb_port_ddr3_ddr3_n7_ram_a12"
+        "unconnected_ddr3_n7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A12",
-        "reference_design_net": "RAM_A12"
+        "source_port_name": "N7"
       }
     },
     {
@@ -538,15 +510,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "N3",
-      "vendorPinName": "RAM_A0",
+      "vendorPinName": "N3",
       "connectedTo": [
-        "DDR3_n3_ram_a0",
-        "pcb_port_ddr3_ddr3_n3_ram_a0"
+        "unconnected_ddr3_n3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_A0",
-        "reference_design_net": "RAM_A0"
+        "source_port_name": "N3"
       }
     },
     {
@@ -682,15 +652,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "M3",
-      "vendorPinName": "RAM_BA2",
+      "vendorPinName": "M3",
       "connectedTo": [
-        "DDR3_m3_ram_ba2",
-        "pcb_port_ddr3_ddr3_m3_ram_ba2"
+        "unconnected_ddr3_m3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_BA2",
-        "reference_design_net": "RAM_BA2"
+        "source_port_name": "M3"
       }
     },
     {
@@ -826,15 +794,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "L3",
-      "vendorPinName": "RAM_WE#",
+      "vendorPinName": "L3",
       "connectedTo": [
-        "DDR3_l3_ram_we",
-        "pcb_port_ddr3_ddr3_l3_ram_we"
+        "unconnected_ddr3_l3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_WE#",
-        "reference_design_net": "RAM_WE#"
+        "source_port_name": "L3"
       }
     },
     {
@@ -851,15 +817,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "L2",
-      "vendorPinName": "RAM_CS#",
+      "vendorPinName": "L2",
       "connectedTo": [
-        "DDR3_l2_ram_cs",
-        "pcb_port_ddr3_ddr3_l2_ram_cs"
+        "unconnected_ddr3_l2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_CS#",
-        "reference_design_net": "RAM_CS#"
+        "source_port_name": "L2"
       }
     },
     {
@@ -899,15 +863,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "K9",
-      "vendorPinName": "RAM_CKE",
+      "vendorPinName": "K9",
       "connectedTo": [
-        "DDR3_k9_ram_cke",
-        "pcb_port_ddr3_ddr3_k9_ram_cke"
+        "unconnected_ddr3_k9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_CKE",
-        "reference_design_net": "RAM_CKE"
+        "source_port_name": "K9"
       }
     },
     {
@@ -1210,15 +1172,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "H8",
-      "vendorPinName": "RAM_D5",
+      "vendorPinName": "H8",
       "connectedTo": [
-        "DDR3_h8_ram_d5",
-        "pcb_port_ddr3_ddr3_h8_ram_d5"
+        "unconnected_ddr3_h8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D5",
-        "reference_design_net": "RAM_D5"
+        "source_port_name": "H8"
       }
     },
     {
@@ -1235,15 +1195,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "H7",
-      "vendorPinName": "RAM_D7",
+      "vendorPinName": "H7",
       "connectedTo": [
-        "DDR3_h7_ram_d7",
-        "pcb_port_ddr3_ddr3_h7_ram_d7"
+        "unconnected_ddr3_h7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D7",
-        "reference_design_net": "RAM_D7"
+        "source_port_name": "H7"
       }
     },
     {
@@ -1260,15 +1218,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "H3",
-      "vendorPinName": "RAM_D4",
+      "vendorPinName": "H3",
       "connectedTo": [
-        "DDR3_h3_ram_d4",
-        "pcb_port_ddr3_ddr3_h3_ram_d4"
+        "unconnected_ddr3_h3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D4",
-        "reference_design_net": "RAM_D4"
+        "source_port_name": "H3"
       }
     },
     {
@@ -1400,15 +1356,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "G3",
-      "vendorPinName": "RAM_UDQS-",
+      "vendorPinName": "G3",
       "connectedTo": [
-        "DDR3_g3_ram_udqs",
-        "pcb_port_ddr3_ddr3_g3_ram_udqs"
+        "unconnected_ddr3_g3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_UDQS-",
-        "reference_design_net": "RAM_UDQS-"
+        "source_port_name": "G3"
       }
     },
     {
@@ -1425,15 +1379,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "G2",
-      "vendorPinName": "RAM_D6",
+      "vendorPinName": "G2",
       "connectedTo": [
-        "DDR3_g2_ram_d6",
-        "pcb_port_ddr3_ddr3_g2_ram_d6"
+        "unconnected_ddr3_g2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D6",
-        "reference_design_net": "RAM_D6"
+        "source_port_name": "G2"
       }
     },
     {
@@ -1496,15 +1448,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "F8",
-      "vendorPinName": "RAM_D3",
+      "vendorPinName": "F8",
       "connectedTo": [
-        "DDR3_f8_ram_d3",
-        "pcb_port_ddr3_ddr3_f8_ram_d3"
+        "unconnected_ddr3_f8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D3",
-        "reference_design_net": "RAM_D3"
+        "source_port_name": "F8"
       }
     },
     {
@@ -1521,15 +1471,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "F7",
-      "vendorPinName": "RAM_D1",
+      "vendorPinName": "F7",
       "connectedTo": [
-        "DDR3_f7_ram_d1",
-        "pcb_port_ddr3_ddr3_f7_ram_d1"
+        "unconnected_ddr3_f7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D1",
-        "reference_design_net": "RAM_D1"
+        "source_port_name": "F7"
       }
     },
     {
@@ -1546,15 +1494,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "F3",
-      "vendorPinName": "RAM_UDQS+",
+      "vendorPinName": "F3",
       "connectedTo": [
-        "DDR3_f3_ram_udqs",
-        "pcb_port_ddr3_ddr3_f3_ram_udqs"
+        "unconnected_ddr3_f3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_UDQS+",
-        "reference_design_net": "RAM_UDQS+"
+        "source_port_name": "F3"
       }
     },
     {
@@ -1571,15 +1517,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "F2",
-      "vendorPinName": "RAM_D2",
+      "vendorPinName": "F2",
       "connectedTo": [
-        "DDR3_f2_ram_d2",
-        "pcb_port_ddr3_ddr3_f2_ram_d2"
+        "unconnected_ddr3_f2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D2",
-        "reference_design_net": "RAM_D2"
+        "source_port_name": "F2"
       }
     },
     {
@@ -1665,15 +1609,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "E7",
-      "vendorPinName": "RAM_LDM",
+      "vendorPinName": "E7",
       "connectedTo": [
-        "DDR3_e7_ram_ldm",
-        "pcb_port_ddr3_ddr3_e7_ram_ldm"
+        "unconnected_ddr3_e7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_LDM",
-        "reference_design_net": "RAM_LDM"
+        "source_port_name": "E7"
       }
     },
     {
@@ -1690,15 +1632,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "E3",
-      "vendorPinName": "RAM_D0",
+      "vendorPinName": "E3",
       "connectedTo": [
-        "DDR3_e3_ram_d0",
-        "pcb_port_ddr3_ddr3_e3_ram_d0"
+        "unconnected_ddr3_e3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D0",
-        "reference_design_net": "RAM_D0"
+        "source_port_name": "E3"
       }
     },
     {
@@ -1807,15 +1747,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "D7",
-      "vendorPinName": "RAM_D8",
+      "vendorPinName": "D7",
       "connectedTo": [
-        "DDR3_d7_ram_d8",
-        "pcb_port_ddr3_ddr3_d7_ram_d8"
+        "unconnected_ddr3_d7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D8",
-        "reference_design_net": "RAM_D8"
+        "source_port_name": "D7"
       }
     },
     {
@@ -1926,15 +1864,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "C8",
-      "vendorPinName": "RAM_D10",
+      "vendorPinName": "C8",
       "connectedTo": [
-        "DDR3_c8_ram_d10",
-        "pcb_port_ddr3_ddr3_c8_ram_d10"
+        "unconnected_ddr3_c8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D10",
-        "reference_design_net": "RAM_D10"
+        "source_port_name": "C8"
       }
     },
     {
@@ -1976,15 +1912,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "C3",
-      "vendorPinName": "RAM_D9",
+      "vendorPinName": "C3",
       "connectedTo": [
-        "DDR3_c3_ram_d9",
-        "pcb_port_ddr3_ddr3_c3_ram_d9"
+        "unconnected_ddr3_c3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D9",
-        "reference_design_net": "RAM_D9"
+        "source_port_name": "C3"
       }
     },
     {
@@ -2001,15 +1935,13 @@
       "width": 0.4,
       "height": 0.4,
       "ballName": "C2",
-      "vendorPinName": "RAM_D11",
+      "vendorPinName": "C2",
       "connectedTo": [
-        "DDR3_c2_ram_d11",
-        "pcb_port_ddr3_ddr3_c2_ram_d11"
+        "unconnected_ddr3_c2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U4_MT41K64M16TW-107_J-TR",
-        "source_port_name": "RAM_D11",
-        "reference_design_net": "RAM_D11"
+        "source_port_name": "C2"
       }
     },
     {
@@ -2335,15 +2267,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B1",
-      "vendorPinName": "RAM_A8",
+      "vendorPinName": "B1",
       "connectedTo": [
-        "DDR3_t8_ram_a8",
-        "pcb_port_controller_ddr3_t8_ram_a8"
+        "unconnected_controller_b1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A8",
-        "reference_design_net": "RAM_A8"
+        "source_port_name": "B1"
       }
     },
     {
@@ -2360,15 +2290,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "C1",
-      "vendorPinName": "RAM_A13",
+      "vendorPinName": "C1",
       "connectedTo": [
-        "DDR3_t3_ram_a13",
-        "pcb_port_controller_ddr3_t3_ram_a13"
+        "unconnected_controller_c1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A13",
-        "reference_design_net": "RAM_A13"
+        "source_port_name": "C1"
       }
     },
     {
@@ -2385,15 +2313,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "D1",
-      "vendorPinName": "RAM_A9",
+      "vendorPinName": "D1",
       "connectedTo": [
-        "DDR3_r3_ram_a9",
-        "pcb_port_controller_ddr3_r3_ram_a9"
+        "unconnected_controller_d1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A9",
-        "reference_design_net": "RAM_A9"
+        "source_port_name": "D1"
       }
     },
     {
@@ -2663,15 +2589,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A2",
-      "vendorPinName": "RAM_A14",
+      "vendorPinName": "A2",
       "connectedTo": [
-        "DDR3_t7_ram_a14",
-        "pcb_port_controller_ddr3_t7_ram_a14"
+        "unconnected_controller_a2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A14",
-        "reference_design_net": "RAM_A14"
+        "source_port_name": "A2"
       }
     },
     {
@@ -2688,15 +2612,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B2",
-      "vendorPinName": "RAM_A7",
+      "vendorPinName": "B2",
       "connectedTo": [
-        "DDR3_r2_ram_a7",
-        "pcb_port_controller_ddr3_r2_ram_a7"
+        "unconnected_controller_b2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A7",
-        "reference_design_net": "RAM_A7"
+        "source_port_name": "B2"
       }
     },
     {
@@ -2713,15 +2635,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "C2",
-      "vendorPinName": "RAM_A11",
+      "vendorPinName": "C2",
       "connectedTo": [
-        "DDR3_r7_ram_a11",
-        "pcb_port_controller_ddr3_r7_ram_a11"
+        "unconnected_controller_c2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A11",
-        "reference_design_net": "RAM_A11"
+        "source_port_name": "C2"
       }
     },
     {
@@ -2738,15 +2658,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "D2",
-      "vendorPinName": "RAM_A1",
+      "vendorPinName": "D2",
       "connectedTo": [
-        "DDR3_p7_ram_a1",
-        "pcb_port_controller_ddr3_p7_ram_a1"
+        "unconnected_controller_d2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A1",
-        "reference_design_net": "RAM_A1"
+        "source_port_name": "D2"
       }
     },
     {
@@ -3087,15 +3005,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "C3",
-      "vendorPinName": "RAM_A6",
+      "vendorPinName": "C3",
       "connectedTo": [
-        "DDR3_r8_ram_a6",
-        "pcb_port_controller_ddr3_r8_ram_a6"
+        "unconnected_controller_c3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A6",
-        "reference_design_net": "RAM_A6"
+        "source_port_name": "C3"
       }
     },
     {
@@ -3112,15 +3028,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "D3",
-      "vendorPinName": "RAM_A2",
+      "vendorPinName": "D3",
       "connectedTo": [
-        "DDR3_p3_ram_a2",
-        "pcb_port_controller_ddr3_p3_ram_a2"
+        "unconnected_controller_d3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A2",
-        "reference_design_net": "RAM_A2"
+        "source_port_name": "D3"
       }
     },
     {
@@ -3413,15 +3327,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A4",
-      "vendorPinName": "RAM_A4",
+      "vendorPinName": "A4",
       "connectedTo": [
-        "DDR3_p8_ram_a4",
-        "pcb_port_controller_ddr3_p8_ram_a4"
+        "unconnected_controller_a4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A4",
-        "reference_design_net": "RAM_A4"
+        "source_port_name": "A4"
       }
     },
     {
@@ -3461,15 +3373,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "C4",
-      "vendorPinName": "RAM_A0",
+      "vendorPinName": "C4",
       "connectedTo": [
-        "DDR3_n3_ram_a0",
-        "pcb_port_controller_ddr3_n3_ram_a0"
+        "unconnected_controller_c4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A0",
-        "reference_design_net": "RAM_A0"
+        "source_port_name": "C4"
       }
     },
     {
@@ -3486,15 +3396,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "D4",
-      "vendorPinName": "RAM_A5",
+      "vendorPinName": "D4",
       "connectedTo": [
-        "DDR3_p2_ram_a5",
-        "pcb_port_controller_ddr3_p2_ram_a5"
+        "unconnected_controller_d4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A5",
-        "reference_design_net": "RAM_A5"
+        "source_port_name": "D4"
       }
     },
     {
@@ -4063,15 +3971,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A6",
-      "vendorPinName": "RAM_BA2",
+      "vendorPinName": "A6",
       "connectedTo": [
-        "DDR3_m3_ram_ba2",
-        "pcb_port_controller_ddr3_m3_ram_ba2"
+        "unconnected_controller_a6"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_BA2",
-        "reference_design_net": "RAM_BA2"
+        "source_port_name": "A6"
       }
     },
     {
@@ -4088,15 +3994,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B6",
-      "vendorPinName": "RAM_A12",
+      "vendorPinName": "B6",
       "connectedTo": [
-        "DDR3_n7_ram_a12",
-        "pcb_port_controller_ddr3_n7_ram_a12"
+        "unconnected_controller_b6"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_A12",
-        "reference_design_net": "RAM_A12"
+        "source_port_name": "B6"
       }
     },
     {
@@ -4485,15 +4389,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B7",
-      "vendorPinName": "RAM_BA1",
+      "vendorPinName": "B7",
       "connectedTo": [
-        "DDR3_n8_ram_ba1",
-        "pcb_port_controller_ddr3_n8_ram_ba1"
+        "unconnected_controller_b7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_BA1",
-        "reference_design_net": "RAM_BA1"
+        "source_port_name": "B7"
       }
     },
     {
@@ -6444,15 +6346,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A12",
-      "vendorPinName": "RAM_CS#",
+      "vendorPinName": "A12",
       "connectedTo": [
-        "DDR3_l2_ram_cs",
-        "pcb_port_controller_ddr3_l2_ram_cs"
+        "unconnected_controller_a12"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_CS#",
-        "reference_design_net": "RAM_CS#"
+        "source_port_name": "A12"
       }
     },
     {
@@ -6469,15 +6369,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B12",
-      "vendorPinName": "RAM_WE#",
+      "vendorPinName": "B12",
       "connectedTo": [
-        "DDR3_l3_ram_we",
-        "pcb_port_controller_ddr3_l3_ram_we"
+        "unconnected_controller_b12"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_WE#",
-        "reference_design_net": "RAM_WE#"
+        "source_port_name": "B12"
       }
     },
     {
@@ -6841,15 +6739,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A13",
-      "vendorPinName": "RAM_D7",
+      "vendorPinName": "A13",
       "connectedTo": [
-        "DDR3_h7_ram_d7",
-        "pcb_port_controller_ddr3_h7_ram_d7"
+        "unconnected_controller_a13"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D7",
-        "reference_design_net": "RAM_D7"
+        "source_port_name": "A13"
       }
     },
     {
@@ -6866,15 +6762,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B13",
-      "vendorPinName": "RAM_D5",
+      "vendorPinName": "B13",
       "connectedTo": [
-        "DDR3_h8_ram_d5",
-        "pcb_port_controller_ddr3_h8_ram_d5"
+        "unconnected_controller_b13"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D5",
-        "reference_design_net": "RAM_D5"
+        "source_port_name": "B13"
       }
     },
     {
@@ -7539,15 +7433,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A15",
-      "vendorPinName": "RAM_D4",
+      "vendorPinName": "A15",
       "connectedTo": [
-        "DDR3_h3_ram_d4",
-        "pcb_port_controller_ddr3_h3_ram_d4"
+        "unconnected_controller_a15"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D4",
-        "reference_design_net": "RAM_D4"
+        "source_port_name": "A15"
       }
     },
     {
@@ -7564,15 +7456,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B15",
-      "vendorPinName": "RAM_UDQS+",
+      "vendorPinName": "B15",
       "connectedTo": [
-        "DDR3_f3_ram_udqs",
-        "pcb_port_controller_ddr3_f3_ram_udqs"
+        "unconnected_controller_b15"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_UDQS+",
-        "reference_design_net": "RAM_UDQS+"
+        "source_port_name": "B15"
       }
     },
     {
@@ -7612,15 +7502,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "D15",
-      "vendorPinName": "RAM_D1",
+      "vendorPinName": "D15",
       "connectedTo": [
-        "DDR3_f7_ram_d1",
-        "pcb_port_controller_ddr3_f7_ram_d1"
+        "unconnected_controller_d15"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D1",
-        "reference_design_net": "RAM_D1"
+        "source_port_name": "D15"
       }
     },
     {
@@ -7637,15 +7525,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "F15",
-      "vendorPinName": "RAM_D11",
+      "vendorPinName": "F15",
       "connectedTo": [
-        "DDR3_c2_ram_d11",
-        "pcb_port_controller_ddr3_c2_ram_d11"
+        "unconnected_controller_f15"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D11",
-        "reference_design_net": "RAM_D11"
+        "source_port_name": "F15"
       }
     },
     {
@@ -7662,15 +7548,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "G15",
-      "vendorPinName": "RAM_D10",
+      "vendorPinName": "G15",
       "connectedTo": [
-        "DDR3_c8_ram_d10",
-        "pcb_port_controller_ddr3_c8_ram_d10"
+        "unconnected_controller_g15"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D10",
-        "reference_design_net": "RAM_D10"
+        "source_port_name": "G15"
       }
     },
     {
@@ -7894,15 +7778,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A16",
-      "vendorPinName": "RAM_UDQS-",
+      "vendorPinName": "A16",
       "connectedTo": [
-        "DDR3_g3_ram_udqs",
-        "pcb_port_controller_ddr3_g3_ram_udqs"
+        "unconnected_controller_a16"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_UDQS-",
-        "reference_design_net": "RAM_UDQS-"
+        "source_port_name": "A16"
       }
     },
     {
@@ -7942,15 +7824,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "C16",
-      "vendorPinName": "RAM_D3",
+      "vendorPinName": "C16",
       "connectedTo": [
-        "DDR3_f8_ram_d3",
-        "pcb_port_controller_ddr3_f8_ram_d3"
+        "unconnected_controller_c16"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D3",
-        "reference_design_net": "RAM_D3"
+        "source_port_name": "C16"
       }
     },
     {
@@ -7992,15 +7872,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "F16",
-      "vendorPinName": "RAM_D9",
+      "vendorPinName": "F16",
       "connectedTo": [
-        "DDR3_c3_ram_d9",
-        "pcb_port_controller_ddr3_c3_ram_d9"
+        "unconnected_controller_f16"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D9",
-        "reference_design_net": "RAM_D9"
+        "source_port_name": "F16"
       }
     },
     {
@@ -8017,15 +7895,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "G16",
-      "vendorPinName": "RAM_LDM",
+      "vendorPinName": "G16",
       "connectedTo": [
-        "DDR3_e7_ram_ldm",
-        "pcb_port_controller_ddr3_e7_ram_ldm"
+        "unconnected_controller_g16"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_LDM",
-        "reference_design_net": "RAM_LDM"
+        "source_port_name": "G16"
       }
     },
     {
@@ -8276,15 +8152,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "A17",
-      "vendorPinName": "RAM_D6",
+      "vendorPinName": "A17",
       "connectedTo": [
-        "DDR3_g2_ram_d6",
-        "pcb_port_controller_ddr3_g2_ram_d6"
+        "unconnected_controller_a17"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D6",
-        "reference_design_net": "RAM_D6"
+        "source_port_name": "A17"
       }
     },
     {
@@ -8301,15 +8175,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "B17",
-      "vendorPinName": "RAM_D2",
+      "vendorPinName": "B17",
       "connectedTo": [
-        "DDR3_f2_ram_d2",
-        "pcb_port_controller_ddr3_f2_ram_d2"
+        "unconnected_controller_b17"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D2",
-        "reference_design_net": "RAM_D2"
+        "source_port_name": "B17"
       }
     },
     {
@@ -8326,15 +8198,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "C17",
-      "vendorPinName": "RAM_D0",
+      "vendorPinName": "C17",
       "connectedTo": [
-        "DDR3_e3_ram_d0",
-        "pcb_port_controller_ddr3_e3_ram_d0"
+        "unconnected_controller_c17"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D0",
-        "reference_design_net": "RAM_D0"
+        "source_port_name": "C17"
       }
     },
     {
@@ -8374,15 +8244,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "F17",
-      "vendorPinName": "RAM_D8",
+      "vendorPinName": "F17",
       "connectedTo": [
-        "DDR3_d7_ram_d8",
-        "pcb_port_controller_ddr3_d7_ram_d8"
+        "unconnected_controller_f17"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_D8",
-        "reference_design_net": "RAM_D8"
+        "source_port_name": "F17"
       }
     },
     {
@@ -8702,15 +8570,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "D18",
-      "vendorPinName": "RAM_CKE",
+      "vendorPinName": "D18",
       "connectedTo": [
-        "DDR3_k9_ram_cke",
-        "pcb_port_controller_ddr3_k9_ram_cke"
+        "unconnected_controller_d18"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_CKE",
-        "reference_design_net": "RAM_CKE"
+        "source_port_name": "D18"
       }
     },
     {
@@ -8850,15 +8716,13 @@
       "width": 0.23,
       "height": 0.23,
       "ballName": "L18",
-      "vendorPinName": "RAM_RESET#",
+      "vendorPinName": "L18",
       "connectedTo": [
-        "DDR3_t2_ram_reset",
-        "pcb_port_controller_ddr3_t2_ram_reset"
+        "unconnected_controller_l18"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U3_LFE5U-25F-8MG285C",
-        "source_port_name": "RAM_RESET#",
-        "reference_design_net": "RAM_RESET#"
+        "source_port_name": "L18"
       }
     },
     {
@@ -9089,50 +8953,6 @@
       ]
     },
     {
-      "name": "DDR3_c2_ram_d11",
-      "rootConnectionName": "DDR3_c2_ram_d11",
-      "netConnectionName": "DDR3_c2_ram_d11",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 9.25,
-          "y": 5.6,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_c2_ram_d11",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_c2_ram_d11"
-        },
-        {
-          "x": -9.865,
-          "y": 0.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_c2_ram_d11",
-          "pcb_port_id": "pcb_port_controller_ddr3_c2_ram_d11"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_c3_ram_d9",
-      "rootConnectionName": "DDR3_c3_ram_d9",
-      "netConnectionName": "DDR3_c3_ram_d9",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": 5.6,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_c3_ram_d9",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_c3_ram_d9"
-        },
-        {
-          "x": -9.365,
-          "y": 0.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_c3_ram_d9",
-          "pcb_port_id": "pcb_port_controller_ddr3_c3_ram_d9"
-        }
-      ]
-    },
-    {
       "name": "DDR3_c7_ram_ldqs",
       "rootConnectionName": "DDR3_c7_ram_ldqs",
       "netConnectionName": "DDR3_c7_ram_ldqs",
@@ -9155,28 +8975,6 @@
       ]
     },
     {
-      "name": "DDR3_c8_ram_d10",
-      "rootConnectionName": "DDR3_c8_ram_d10",
-      "netConnectionName": "DDR3_c8_ram_d10",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.05,
-          "y": 5.6,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_c8_ram_d10",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_c8_ram_d10"
-        },
-        {
-          "x": -9.865,
-          "y": 0.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_c8_ram_d10",
-          "pcb_port_id": "pcb_port_controller_ddr3_c8_ram_d10"
-        }
-      ]
-    },
-    {
       "name": "DDR3_d3_ram_udm",
       "rootConnectionName": "DDR3_d3_ram_udm",
       "netConnectionName": "DDR3_d3_ram_udm",
@@ -9195,270 +8993,6 @@
           "layer": "top",
           "pointId": "point_controller_ddr3_d3_ram_udm",
           "pcb_port_id": "pcb_port_controller_ddr3_d3_ram_udm"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_d7_ram_d8",
-      "rootConnectionName": "DDR3_d7_ram_d8",
-      "netConnectionName": "DDR3_d7_ram_d8",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": 4.8,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_d7_ram_d8",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_d7_ram_d8"
-        },
-        {
-          "x": -8.865,
-          "y": 0.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_d7_ram_d8",
-          "pcb_port_id": "pcb_port_controller_ddr3_d7_ram_d8"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_e3_ram_d0",
-      "rootConnectionName": "DDR3_e3_ram_d0",
-      "netConnectionName": "DDR3_e3_ram_d0",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": 4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_e3_ram_d0",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_e3_ram_d0"
-        },
-        {
-          "x": -8.865,
-          "y": 2.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_e3_ram_d0",
-          "pcb_port_id": "pcb_port_controller_ddr3_e3_ram_d0"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_e7_ram_ldm",
-      "rootConnectionName": "DDR3_e7_ram_ldm",
-      "netConnectionName": "DDR3_e7_ram_ldm",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": 4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_e7_ram_ldm",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_e7_ram_ldm"
-        },
-        {
-          "x": -9.365,
-          "y": 0.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_e7_ram_ldm",
-          "pcb_port_id": "pcb_port_controller_ddr3_e7_ram_ldm"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_f2_ram_d2",
-      "rootConnectionName": "DDR3_f2_ram_d2",
-      "netConnectionName": "DDR3_f2_ram_d2",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 9.25,
-          "y": 3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_f2_ram_d2",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_f2_ram_d2"
-        },
-        {
-          "x": -8.865,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_f2_ram_d2",
-          "pcb_port_id": "pcb_port_controller_ddr3_f2_ram_d2"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_f3_ram_udqs",
-      "rootConnectionName": "DDR3_f3_ram_udqs",
-      "netConnectionName": "DDR3_f3_ram_udqs",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": 3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_f3_ram_udqs",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_f3_ram_udqs"
-        },
-        {
-          "x": -9.865,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_f3_ram_udqs",
-          "pcb_port_id": "pcb_port_controller_ddr3_f3_ram_udqs"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_f7_ram_d1",
-      "rootConnectionName": "DDR3_f7_ram_d1",
-      "netConnectionName": "DDR3_f7_ram_d1",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": 3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_f7_ram_d1",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_f7_ram_d1"
-        },
-        {
-          "x": -9.865,
-          "y": 1.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_f7_ram_d1",
-          "pcb_port_id": "pcb_port_controller_ddr3_f7_ram_d1"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_f8_ram_d3",
-      "rootConnectionName": "DDR3_f8_ram_d3",
-      "netConnectionName": "DDR3_f8_ram_d3",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.05,
-          "y": 3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_f8_ram_d3",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_f8_ram_d3"
-        },
-        {
-          "x": -9.365,
-          "y": 2.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_f8_ram_d3",
-          "pcb_port_id": "pcb_port_controller_ddr3_f8_ram_d3"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_g2_ram_d6",
-      "rootConnectionName": "DDR3_g2_ram_d6",
-      "netConnectionName": "DDR3_g2_ram_d6",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 9.25,
-          "y": 2.4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_g2_ram_d6",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_g2_ram_d6"
-        },
-        {
-          "x": -8.865,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_g2_ram_d6",
-          "pcb_port_id": "pcb_port_controller_ddr3_g2_ram_d6"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_g3_ram_udqs",
-      "rootConnectionName": "DDR3_g3_ram_udqs",
-      "netConnectionName": "DDR3_g3_ram_udqs",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": 2.4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_g3_ram_udqs",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_g3_ram_udqs"
-        },
-        {
-          "x": -9.365,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_g3_ram_udqs",
-          "pcb_port_id": "pcb_port_controller_ddr3_g3_ram_udqs"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_h3_ram_d4",
-      "rootConnectionName": "DDR3_h3_ram_d4",
-      "netConnectionName": "DDR3_h3_ram_d4",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": 1.6,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_h3_ram_d4",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_h3_ram_d4"
-        },
-        {
-          "x": -9.865,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_h3_ram_d4",
-          "pcb_port_id": "pcb_port_controller_ddr3_h3_ram_d4"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_h7_ram_d7",
-      "rootConnectionName": "DDR3_h7_ram_d7",
-      "netConnectionName": "DDR3_h7_ram_d7",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": 1.6,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_h7_ram_d7",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_h7_ram_d7"
-        },
-        {
-          "x": -10.865,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_h7_ram_d7",
-          "pcb_port_id": "pcb_port_controller_ddr3_h7_ram_d7"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_h8_ram_d5",
-      "rootConnectionName": "DDR3_h8_ram_d5",
-      "netConnectionName": "DDR3_h8_ram_d5",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.05,
-          "y": 1.6,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_h8_ram_d5",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_h8_ram_d5"
-        },
-        {
-          "x": -10.865,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_h8_ram_d5",
-          "pcb_port_id": "pcb_port_controller_ddr3_h8_ram_d5"
         }
       ]
     },
@@ -9573,72 +9107,6 @@
       ]
     },
     {
-      "name": "DDR3_k9_ram_cke",
-      "rootConnectionName": "DDR3_k9_ram_cke",
-      "netConnectionName": "DDR3_k9_ram_cke",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.85,
-          "y": 0,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_k9_ram_cke",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_k9_ram_cke"
-        },
-        {
-          "x": -8.365,
-          "y": 1.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_k9_ram_cke",
-          "pcb_port_id": "pcb_port_controller_ddr3_k9_ram_cke"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_l2_ram_cs",
-      "rootConnectionName": "DDR3_l2_ram_cs",
-      "netConnectionName": "DDR3_l2_ram_cs",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 9.25,
-          "y": -0.8,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_l2_ram_cs",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_l2_ram_cs"
-        },
-        {
-          "x": -11.365,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_l2_ram_cs",
-          "pcb_port_id": "pcb_port_controller_ddr3_l2_ram_cs"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_l3_ram_we",
-      "rootConnectionName": "DDR3_l3_ram_we",
-      "netConnectionName": "DDR3_l3_ram_we",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": -0.8,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_l3_ram_we",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_l3_ram_we"
-        },
-        {
-          "x": -11.365,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_l3_ram_we",
-          "pcb_port_id": "pcb_port_controller_ddr3_l3_ram_we"
-        }
-      ]
-    },
-    {
       "name": "DDR3_l7_ram_a10",
       "rootConnectionName": "DDR3_l7_ram_a10",
       "netConnectionName": "DDR3_l7_ram_a10",
@@ -9679,28 +9147,6 @@
           "layer": "top",
           "pointId": "point_controller_ddr3_m2_ram_ba0",
           "pcb_port_id": "pcb_port_controller_ddr3_m2_ram_ba0"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_m3_ram_ba2",
-      "rootConnectionName": "DDR3_m3_ram_ba2",
-      "netConnectionName": "DDR3_m3_ram_ba2",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": -1.6,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_m3_ram_ba2",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_m3_ram_ba2"
-        },
-        {
-          "x": -14.365,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_m3_ram_ba2",
-          "pcb_port_id": "pcb_port_controller_ddr3_m3_ram_ba2"
         }
       ]
     },
@@ -9747,348 +9193,19 @@
           "pcb_port_id": "pcb_port_controller_ddr3_n2_ram_a3"
         }
       ]
-    },
-    {
-      "name": "DDR3_n3_ram_a0",
-      "rootConnectionName": "DDR3_n3_ram_a0",
-      "netConnectionName": "DDR3_n3_ram_a0",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": -2.4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_n3_ram_a0",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_n3_ram_a0"
-        },
-        {
-          "x": -15.365,
-          "y": 2.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_n3_ram_a0",
-          "pcb_port_id": "pcb_port_controller_ddr3_n3_ram_a0"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_n7_ram_a12",
-      "rootConnectionName": "DDR3_n7_ram_a12",
-      "netConnectionName": "DDR3_n7_ram_a12",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": -2.4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_n7_ram_a12",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_n7_ram_a12"
-        },
-        {
-          "x": -14.365,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_n7_ram_a12",
-          "pcb_port_id": "pcb_port_controller_ddr3_n7_ram_a12"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_n8_ram_ba1",
-      "rootConnectionName": "DDR3_n8_ram_ba1",
-      "netConnectionName": "DDR3_n8_ram_ba1",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.05,
-          "y": -2.4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_n8_ram_ba1",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_n8_ram_ba1"
-        },
-        {
-          "x": -13.865,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_n8_ram_ba1",
-          "pcb_port_id": "pcb_port_controller_ddr3_n8_ram_ba1"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_p2_ram_a5",
-      "rootConnectionName": "DDR3_p2_ram_a5",
-      "netConnectionName": "DDR3_p2_ram_a5",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 9.25,
-          "y": -3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_p2_ram_a5",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_p2_ram_a5"
-        },
-        {
-          "x": -15.365,
-          "y": 1.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_p2_ram_a5",
-          "pcb_port_id": "pcb_port_controller_ddr3_p2_ram_a5"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_p3_ram_a2",
-      "rootConnectionName": "DDR3_p3_ram_a2",
-      "netConnectionName": "DDR3_p3_ram_a2",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": -3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_p3_ram_a2",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_p3_ram_a2"
-        },
-        {
-          "x": -15.865,
-          "y": 1.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_p3_ram_a2",
-          "pcb_port_id": "pcb_port_controller_ddr3_p3_ram_a2"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_p7_ram_a1",
-      "rootConnectionName": "DDR3_p7_ram_a1",
-      "netConnectionName": "DDR3_p7_ram_a1",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": -3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_p7_ram_a1",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_p7_ram_a1"
-        },
-        {
-          "x": -16.365,
-          "y": 1.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_p7_ram_a1",
-          "pcb_port_id": "pcb_port_controller_ddr3_p7_ram_a1"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_p8_ram_a4",
-      "rootConnectionName": "DDR3_p8_ram_a4",
-      "netConnectionName": "DDR3_p8_ram_a4",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.05,
-          "y": -3.2,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_p8_ram_a4",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_p8_ram_a4"
-        },
-        {
-          "x": -15.365,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_p8_ram_a4",
-          "pcb_port_id": "pcb_port_controller_ddr3_p8_ram_a4"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_r2_ram_a7",
-      "rootConnectionName": "DDR3_r2_ram_a7",
-      "netConnectionName": "DDR3_r2_ram_a7",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 9.25,
-          "y": -4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_r2_ram_a7",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_r2_ram_a7"
-        },
-        {
-          "x": -16.365,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_r2_ram_a7",
-          "pcb_port_id": "pcb_port_controller_ddr3_r2_ram_a7"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_r3_ram_a9",
-      "rootConnectionName": "DDR3_r3_ram_a9",
-      "netConnectionName": "DDR3_r3_ram_a9",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": -4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_r3_ram_a9",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_r3_ram_a9"
-        },
-        {
-          "x": -16.865,
-          "y": 1.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_r3_ram_a9",
-          "pcb_port_id": "pcb_port_controller_ddr3_r3_ram_a9"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_r7_ram_a11",
-      "rootConnectionName": "DDR3_r7_ram_a11",
-      "netConnectionName": "DDR3_r7_ram_a11",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": -4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_r7_ram_a11",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_r7_ram_a11"
-        },
-        {
-          "x": -16.365,
-          "y": 2.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_r7_ram_a11",
-          "pcb_port_id": "pcb_port_controller_ddr3_r7_ram_a11"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_r8_ram_a6",
-      "rootConnectionName": "DDR3_r8_ram_a6",
-      "netConnectionName": "DDR3_r8_ram_a6",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.05,
-          "y": -4,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_r8_ram_a6",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_r8_ram_a6"
-        },
-        {
-          "x": -15.865,
-          "y": 2.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_r8_ram_a6",
-          "pcb_port_id": "pcb_port_controller_ddr3_r8_ram_a6"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_t2_ram_reset",
-      "rootConnectionName": "DDR3_t2_ram_reset",
-      "netConnectionName": "DDR3_t2_ram_reset",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 9.25,
-          "y": -4.8,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_t2_ram_reset",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_t2_ram_reset"
-        },
-        {
-          "x": -8.365,
-          "y": -1.95,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_t2_ram_reset",
-          "pcb_port_id": "pcb_port_controller_ddr3_t2_ram_reset"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_t3_ram_a13",
-      "rootConnectionName": "DDR3_t3_ram_a13",
-      "netConnectionName": "DDR3_t3_ram_a13",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 10.05,
-          "y": -4.8,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_t3_ram_a13",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_t3_ram_a13"
-        },
-        {
-          "x": -16.865,
-          "y": 2.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_t3_ram_a13",
-          "pcb_port_id": "pcb_port_controller_ddr3_t3_ram_a13"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_t7_ram_a14",
-      "rootConnectionName": "DDR3_t7_ram_a14",
-      "netConnectionName": "DDR3_t7_ram_a14",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 13.25,
-          "y": -4.8,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_t7_ram_a14",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_t7_ram_a14"
-        },
-        {
-          "x": -16.365,
-          "y": 3.05,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_t7_ram_a14",
-          "pcb_port_id": "pcb_port_controller_ddr3_t7_ram_a14"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_t8_ram_a8",
-      "rootConnectionName": "DDR3_t8_ram_a8",
-      "netConnectionName": "DDR3_t8_ram_a8",
-      "nominalTraceWidth": 0.08,
-      "pointsToConnect": [
-        {
-          "x": 14.05,
-          "y": -4.8,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_t8_ram_a8",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_t8_ram_a8"
-        },
-        {
-          "x": -16.865,
-          "y": 2.55,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_t8_ram_a8",
-          "pcb_port_id": "pcb_port_controller_ddr3_t8_ram_a8"
-        }
-      ]
     }
   ],
   "buses": [
     {
       "busId": "ddr3_data_bus",
       "connectionNames": [
+        "DDR3_a2_ram_d13",
+        "DDR3_a3_ram_d15",
+        "DDR3_a7_ram_d12",
         "DDR3_b7_ram_ldqs",
+        "DDR3_b8_ram_d14",
         "DDR3_c7_ram_ldqs",
-        "DDR3_d3_ram_udm",
-        "DDR3_e7_ram_ldm",
-        "DDR3_f3_ram_udqs",
-        "DDR3_g3_ram_udqs"
+        "DDR3_d3_ram_udm"
       ],
       "maxLengthSkew": 1.5,
       "traceWidth": 0.1
@@ -10096,50 +9213,15 @@
     {
       "busId": "ddr3_address_command_bus",
       "connectionNames": [
-        "DDR3_a2_ram_d13",
-        "DDR3_a3_ram_d15",
-        "DDR3_a7_ram_d12",
-        "DDR3_b8_ram_d14",
-        "DDR3_c2_ram_d11",
-        "DDR3_c3_ram_d9",
-        "DDR3_c8_ram_d10",
-        "DDR3_d7_ram_d8",
-        "DDR3_e3_ram_d0",
-        "DDR3_f2_ram_d2",
-        "DDR3_f7_ram_d1",
-        "DDR3_f8_ram_d3",
-        "DDR3_g2_ram_d6",
-        "DDR3_h3_ram_d4",
-        "DDR3_h7_ram_d7",
-        "DDR3_h8_ram_d5",
         "DDR3_j3_ram_ras",
         "DDR3_j7_ram_ck",
         "DDR3_k1_ram_odt",
         "DDR3_k3_ram_cas",
         "DDR3_k7_ram_ck",
-        "DDR3_k9_ram_cke",
-        "DDR3_l2_ram_cs",
-        "DDR3_l3_ram_we",
         "DDR3_l7_ram_a10",
         "DDR3_m2_ram_ba0",
-        "DDR3_m3_ram_ba2",
         "DDR3_m7_ram_a15",
-        "DDR3_n2_ram_a3",
-        "DDR3_n3_ram_a0",
-        "DDR3_n7_ram_a12",
-        "DDR3_n8_ram_ba1",
-        "DDR3_p2_ram_a5",
-        "DDR3_p3_ram_a2",
-        "DDR3_p7_ram_a1",
-        "DDR3_p8_ram_a4",
-        "DDR3_r2_ram_a7",
-        "DDR3_r3_ram_a9",
-        "DDR3_r7_ram_a11",
-        "DDR3_r8_ram_a6",
-        "DDR3_t2_ram_reset",
-        "DDR3_t3_ram_a13",
-        "DDR3_t7_ram_a14",
-        "DDR3_t8_ram_a8"
+        "DDR3_n2_ram_a3"
       ],
       "maxLengthSkew": 2.5,
       "traceWidth": 0.1
@@ -10157,8 +9239,8 @@
     },
     {
       "connectionNames": [
-        "DDR3_f3_ram_udqs",
-        "DDR3_g3_ram_udqs"
+        "DDR3_j7_ram_ck",
+        "DDR3_k7_ram_ck"
       ],
       "lengthTolerance": 0.8,
       "traceGap": 0.18,
@@ -10200,7 +9282,8 @@
       "sourceUrl": "https://github.com/orangecrab-fpga/orangecrab-hardware/blob/c511d569fe2af39467041f888bc231020f40c6ac/hardware/orangecrab_r0.2.1/OrangeCrab.kicad_pcb",
       "extractionMethod": "Exact KiCad PCB pad/net traversal; a single two-pad series resistor may be collapsed into one benchmark connection and is recorded per path.",
       "connectionMapFile": "reference/sample004-orangecrab-hardware.json",
-      "directConnectionCount": 50,
+      "directConnectionCount": 16,
+      "sourceDirectConnectionCount": 50,
       "endpointMapSha256": "b0949cbf68e9bc43e7ea195f97ee0c3fe6def873ccb49481620e97fba01c0320"
     },
     "ddr3": {
@@ -10213,7 +9296,7 @@
       "padFieldWidth": 6.8,
       "padFieldHeight": 12.4,
       "technology": "DDR3 / DDR3L",
-      "signalPinCount": 50,
+      "signalPinCount": 16,
       "rotation": 0,
       "bodyWidth": 7.6,
       "bodyHeight": 13.2
@@ -10240,7 +9323,7 @@
       "boardMargin": 7
     },
     "feasibility": {
-      "focus": "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
+      "focus": "fan out both real BGA footprints, then route a representative subset of exact reference DDR3 endpoint pairs",
       "connectedDdr3EdgeDepth": 2.25,
       "connectedControllerEdgeDepth": 3.23,
       "availableRoutingLayers": 16,
@@ -10249,66 +9332,32 @@
       "corridorWidth": 16.5
     },
     "signalGroups": {
-      "data": 0,
-      "strobe": 4,
-      "mask": 2,
-      "address": 16,
-      "bank": 3,
-      "command": 3,
-      "clock": 0,
-      "control": 22
+      "data": 4,
+      "strobe": 2,
+      "mask": 1,
+      "address": 3,
+      "bank": 1,
+      "command": 2,
+      "clock": 2,
+      "control": 1
     },
     "signalGroupByConnection": {
-      "DDR3_a2_ram_d13": "control",
-      "DDR3_a3_ram_d15": "control",
-      "DDR3_a7_ram_d12": "control",
+      "DDR3_a2_ram_d13": "data",
+      "DDR3_a3_ram_d15": "data",
+      "DDR3_a7_ram_d12": "data",
       "DDR3_b7_ram_ldqs": "strobe",
-      "DDR3_b8_ram_d14": "control",
-      "DDR3_c2_ram_d11": "control",
-      "DDR3_c3_ram_d9": "control",
+      "DDR3_b8_ram_d14": "data",
       "DDR3_c7_ram_ldqs": "strobe",
-      "DDR3_c8_ram_d10": "control",
       "DDR3_d3_ram_udm": "mask",
-      "DDR3_d7_ram_d8": "control",
-      "DDR3_e3_ram_d0": "control",
-      "DDR3_e7_ram_ldm": "mask",
-      "DDR3_f2_ram_d2": "control",
-      "DDR3_f3_ram_udqs": "strobe",
-      "DDR3_f7_ram_d1": "control",
-      "DDR3_f8_ram_d3": "control",
-      "DDR3_g2_ram_d6": "control",
-      "DDR3_g3_ram_udqs": "strobe",
-      "DDR3_h3_ram_d4": "control",
-      "DDR3_h7_ram_d7": "control",
-      "DDR3_h8_ram_d5": "control",
       "DDR3_j3_ram_ras": "command",
-      "DDR3_j7_ram_ck": "control",
+      "DDR3_j7_ram_ck": "clock",
       "DDR3_k1_ram_odt": "control",
       "DDR3_k3_ram_cas": "command",
-      "DDR3_k7_ram_ck": "control",
-      "DDR3_k9_ram_cke": "control",
-      "DDR3_l2_ram_cs": "control",
-      "DDR3_l3_ram_we": "command",
+      "DDR3_k7_ram_ck": "clock",
       "DDR3_l7_ram_a10": "address",
       "DDR3_m2_ram_ba0": "bank",
-      "DDR3_m3_ram_ba2": "bank",
       "DDR3_m7_ram_a15": "address",
-      "DDR3_n2_ram_a3": "address",
-      "DDR3_n3_ram_a0": "address",
-      "DDR3_n7_ram_a12": "address",
-      "DDR3_n8_ram_ba1": "bank",
-      "DDR3_p2_ram_a5": "address",
-      "DDR3_p3_ram_a2": "address",
-      "DDR3_p7_ram_a1": "address",
-      "DDR3_p8_ram_a4": "address",
-      "DDR3_r2_ram_a7": "address",
-      "DDR3_r3_ram_a9": "address",
-      "DDR3_r7_ram_a11": "address",
-      "DDR3_r8_ram_a6": "address",
-      "DDR3_t2_ram_reset": "control",
-      "DDR3_t3_ram_a13": "address",
-      "DDR3_t7_ram_a14": "address",
-      "DDR3_t8_ram_a8": "address"
+      "DDR3_n2_ram_a3": "address"
     },
     "referenceNetByConnection": {
       "DDR3_a2_ram_d13": "RAM_D13",
@@ -10316,51 +9365,17 @@
       "DDR3_a7_ram_d12": "RAM_D12",
       "DDR3_b7_ram_ldqs": "RAM_LDQS-",
       "DDR3_b8_ram_d14": "RAM_D14",
-      "DDR3_c2_ram_d11": "RAM_D11",
-      "DDR3_c3_ram_d9": "RAM_D9",
       "DDR3_c7_ram_ldqs": "RAM_LDQS+",
-      "DDR3_c8_ram_d10": "RAM_D10",
       "DDR3_d3_ram_udm": "RAM_UDM",
-      "DDR3_d7_ram_d8": "RAM_D8",
-      "DDR3_e3_ram_d0": "RAM_D0",
-      "DDR3_e7_ram_ldm": "RAM_LDM",
-      "DDR3_f2_ram_d2": "RAM_D2",
-      "DDR3_f3_ram_udqs": "RAM_UDQS+",
-      "DDR3_f7_ram_d1": "RAM_D1",
-      "DDR3_f8_ram_d3": "RAM_D3",
-      "DDR3_g2_ram_d6": "RAM_D6",
-      "DDR3_g3_ram_udqs": "RAM_UDQS-",
-      "DDR3_h3_ram_d4": "RAM_D4",
-      "DDR3_h7_ram_d7": "RAM_D7",
-      "DDR3_h8_ram_d5": "RAM_D5",
       "DDR3_j3_ram_ras": "RAM_RAS#",
       "DDR3_j7_ram_ck": "RAM_CK+",
       "DDR3_k1_ram_odt": "RAM_ODT",
       "DDR3_k3_ram_cas": "RAM_CAS#",
       "DDR3_k7_ram_ck": "RAM_CK-",
-      "DDR3_k9_ram_cke": "RAM_CKE",
-      "DDR3_l2_ram_cs": "RAM_CS#",
-      "DDR3_l3_ram_we": "RAM_WE#",
       "DDR3_l7_ram_a10": "RAM_A10",
       "DDR3_m2_ram_ba0": "RAM_BA0",
-      "DDR3_m3_ram_ba2": "RAM_BA2",
       "DDR3_m7_ram_a15": "RAM_A15",
-      "DDR3_n2_ram_a3": "RAM_A3",
-      "DDR3_n3_ram_a0": "RAM_A0",
-      "DDR3_n7_ram_a12": "RAM_A12",
-      "DDR3_n8_ram_ba1": "RAM_BA1",
-      "DDR3_p2_ram_a5": "RAM_A5",
-      "DDR3_p3_ram_a2": "RAM_A2",
-      "DDR3_p7_ram_a1": "RAM_A1",
-      "DDR3_p8_ram_a4": "RAM_A4",
-      "DDR3_r2_ram_a7": "RAM_A7",
-      "DDR3_r3_ram_a9": "RAM_A9",
-      "DDR3_r7_ram_a11": "RAM_A11",
-      "DDR3_r8_ram_a6": "RAM_A6",
-      "DDR3_t2_ram_reset": "RAM_RESET#",
-      "DDR3_t3_ram_a13": "RAM_A13",
-      "DDR3_t7_ram_a14": "RAM_A14",
-      "DDR3_t8_ram_a8": "RAM_A8"
+      "DDR3_n2_ram_a3": "RAM_A3"
     },
     "endpointBallsByConnection": {
       "DDR3_a2_ram_d13": {
@@ -10423,30 +9438,6 @@
           "seriesComponents": []
         }
       },
-      "DDR3_c2_ram_d11": {
-        "ddr3Ball": "C2",
-        "ddr3Signal": "RAM_D11",
-        "controllerBall": "F15",
-        "controllerSignal": "RAM_D11",
-        "referenceNet": "RAM_D11",
-        "sourcePath": {
-          "memorySideNet": "RAM_D11",
-          "controllerSideNet": "RAM_D11",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_c3_ram_d9": {
-        "ddr3Ball": "C3",
-        "ddr3Signal": "RAM_D9",
-        "controllerBall": "F16",
-        "controllerSignal": "RAM_D9",
-        "referenceNet": "RAM_D9",
-        "sourcePath": {
-          "memorySideNet": "RAM_D9",
-          "controllerSideNet": "RAM_D9",
-          "seriesComponents": []
-        }
-      },
       "DDR3_c7_ram_ldqs": {
         "ddr3Ball": "C7",
         "ddr3Signal": "RAM_LDQS+",
@@ -10459,18 +9450,6 @@
           "seriesComponents": []
         }
       },
-      "DDR3_c8_ram_d10": {
-        "ddr3Ball": "C8",
-        "ddr3Signal": "RAM_D10",
-        "controllerBall": "G15",
-        "controllerSignal": "RAM_D10",
-        "referenceNet": "RAM_D10",
-        "sourcePath": {
-          "memorySideNet": "RAM_D10",
-          "controllerSideNet": "RAM_D10",
-          "seriesComponents": []
-        }
-      },
       "DDR3_d3_ram_udm": {
         "ddr3Ball": "D3",
         "ddr3Signal": "RAM_UDM",
@@ -10480,150 +9459,6 @@
         "sourcePath": {
           "memorySideNet": "RAM_UDM",
           "controllerSideNet": "RAM_UDM",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_d7_ram_d8": {
-        "ddr3Ball": "D7",
-        "ddr3Signal": "RAM_D8",
-        "controllerBall": "F17",
-        "controllerSignal": "RAM_D8",
-        "referenceNet": "RAM_D8",
-        "sourcePath": {
-          "memorySideNet": "RAM_D8",
-          "controllerSideNet": "RAM_D8",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_e3_ram_d0": {
-        "ddr3Ball": "E3",
-        "ddr3Signal": "RAM_D0",
-        "controllerBall": "C17",
-        "controllerSignal": "RAM_D0",
-        "referenceNet": "RAM_D0",
-        "sourcePath": {
-          "memorySideNet": "RAM_D0",
-          "controllerSideNet": "RAM_D0",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_e7_ram_ldm": {
-        "ddr3Ball": "E7",
-        "ddr3Signal": "RAM_LDM",
-        "controllerBall": "G16",
-        "controllerSignal": "RAM_LDM",
-        "referenceNet": "RAM_LDM",
-        "sourcePath": {
-          "memorySideNet": "RAM_LDM",
-          "controllerSideNet": "RAM_LDM",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_f2_ram_d2": {
-        "ddr3Ball": "F2",
-        "ddr3Signal": "RAM_D2",
-        "controllerBall": "B17",
-        "controllerSignal": "RAM_D2",
-        "referenceNet": "RAM_D2",
-        "sourcePath": {
-          "memorySideNet": "RAM_D2",
-          "controllerSideNet": "RAM_D2",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_f3_ram_udqs": {
-        "ddr3Ball": "F3",
-        "ddr3Signal": "RAM_UDQS+",
-        "controllerBall": "B15",
-        "controllerSignal": "RAM_UDQS+",
-        "referenceNet": "RAM_UDQS+",
-        "sourcePath": {
-          "memorySideNet": "RAM_UDQS+",
-          "controllerSideNet": "RAM_UDQS+",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_f7_ram_d1": {
-        "ddr3Ball": "F7",
-        "ddr3Signal": "RAM_D1",
-        "controllerBall": "D15",
-        "controllerSignal": "RAM_D1",
-        "referenceNet": "RAM_D1",
-        "sourcePath": {
-          "memorySideNet": "RAM_D1",
-          "controllerSideNet": "RAM_D1",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_f8_ram_d3": {
-        "ddr3Ball": "F8",
-        "ddr3Signal": "RAM_D3",
-        "controllerBall": "C16",
-        "controllerSignal": "RAM_D3",
-        "referenceNet": "RAM_D3",
-        "sourcePath": {
-          "memorySideNet": "RAM_D3",
-          "controllerSideNet": "RAM_D3",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_g2_ram_d6": {
-        "ddr3Ball": "G2",
-        "ddr3Signal": "RAM_D6",
-        "controllerBall": "A17",
-        "controllerSignal": "RAM_D6",
-        "referenceNet": "RAM_D6",
-        "sourcePath": {
-          "memorySideNet": "RAM_D6",
-          "controllerSideNet": "RAM_D6",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_g3_ram_udqs": {
-        "ddr3Ball": "G3",
-        "ddr3Signal": "RAM_UDQS-",
-        "controllerBall": "A16",
-        "controllerSignal": "RAM_UDQS-",
-        "referenceNet": "RAM_UDQS-",
-        "sourcePath": {
-          "memorySideNet": "RAM_UDQS-",
-          "controllerSideNet": "RAM_UDQS-",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_h3_ram_d4": {
-        "ddr3Ball": "H3",
-        "ddr3Signal": "RAM_D4",
-        "controllerBall": "A15",
-        "controllerSignal": "RAM_D4",
-        "referenceNet": "RAM_D4",
-        "sourcePath": {
-          "memorySideNet": "RAM_D4",
-          "controllerSideNet": "RAM_D4",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_h7_ram_d7": {
-        "ddr3Ball": "H7",
-        "ddr3Signal": "RAM_D7",
-        "controllerBall": "A13",
-        "controllerSignal": "RAM_D7",
-        "referenceNet": "RAM_D7",
-        "sourcePath": {
-          "memorySideNet": "RAM_D7",
-          "controllerSideNet": "RAM_D7",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_h8_ram_d5": {
-        "ddr3Ball": "H8",
-        "ddr3Signal": "RAM_D5",
-        "controllerBall": "B13",
-        "controllerSignal": "RAM_D5",
-        "referenceNet": "RAM_D5",
-        "sourcePath": {
-          "memorySideNet": "RAM_D5",
-          "controllerSideNet": "RAM_D5",
           "seriesComponents": []
         }
       },
@@ -10687,42 +9522,6 @@
           "seriesComponents": []
         }
       },
-      "DDR3_k9_ram_cke": {
-        "ddr3Ball": "K9",
-        "ddr3Signal": "RAM_CKE",
-        "controllerBall": "D18",
-        "controllerSignal": "RAM_CKE",
-        "referenceNet": "RAM_CKE",
-        "sourcePath": {
-          "memorySideNet": "RAM_CKE",
-          "controllerSideNet": "RAM_CKE",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_l2_ram_cs": {
-        "ddr3Ball": "L2",
-        "ddr3Signal": "RAM_CS#",
-        "controllerBall": "A12",
-        "controllerSignal": "RAM_CS#",
-        "referenceNet": "RAM_CS#",
-        "sourcePath": {
-          "memorySideNet": "RAM_CS#",
-          "controllerSideNet": "RAM_CS#",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_l3_ram_we": {
-        "ddr3Ball": "L3",
-        "ddr3Signal": "RAM_WE#",
-        "controllerBall": "B12",
-        "controllerSignal": "RAM_WE#",
-        "referenceNet": "RAM_WE#",
-        "sourcePath": {
-          "memorySideNet": "RAM_WE#",
-          "controllerSideNet": "RAM_WE#",
-          "seriesComponents": []
-        }
-      },
       "DDR3_l7_ram_a10": {
         "ddr3Ball": "L7",
         "ddr3Signal": "RAM_A10",
@@ -10747,18 +9546,6 @@
           "seriesComponents": []
         }
       },
-      "DDR3_m3_ram_ba2": {
-        "ddr3Ball": "M3",
-        "ddr3Signal": "RAM_BA2",
-        "controllerBall": "A6",
-        "controllerSignal": "RAM_BA2",
-        "referenceNet": "RAM_BA2",
-        "sourcePath": {
-          "memorySideNet": "RAM_BA2",
-          "controllerSideNet": "RAM_BA2",
-          "seriesComponents": []
-        }
-      },
       "DDR3_m7_ram_a15": {
         "ddr3Ball": "M7",
         "ddr3Signal": "RAM_A15",
@@ -10780,186 +9567,6 @@
         "sourcePath": {
           "memorySideNet": "RAM_A3",
           "controllerSideNet": "RAM_A3",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_n3_ram_a0": {
-        "ddr3Ball": "N3",
-        "ddr3Signal": "RAM_A0",
-        "controllerBall": "C4",
-        "controllerSignal": "RAM_A0",
-        "referenceNet": "RAM_A0",
-        "sourcePath": {
-          "memorySideNet": "RAM_A0",
-          "controllerSideNet": "RAM_A0",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_n7_ram_a12": {
-        "ddr3Ball": "N7",
-        "ddr3Signal": "RAM_A12",
-        "controllerBall": "B6",
-        "controllerSignal": "RAM_A12",
-        "referenceNet": "RAM_A12",
-        "sourcePath": {
-          "memorySideNet": "RAM_A12",
-          "controllerSideNet": "RAM_A12",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_n8_ram_ba1": {
-        "ddr3Ball": "N8",
-        "ddr3Signal": "RAM_BA1",
-        "controllerBall": "B7",
-        "controllerSignal": "RAM_BA1",
-        "referenceNet": "RAM_BA1",
-        "sourcePath": {
-          "memorySideNet": "RAM_BA1",
-          "controllerSideNet": "RAM_BA1",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_p2_ram_a5": {
-        "ddr3Ball": "P2",
-        "ddr3Signal": "RAM_A5",
-        "controllerBall": "D4",
-        "controllerSignal": "RAM_A5",
-        "referenceNet": "RAM_A5",
-        "sourcePath": {
-          "memorySideNet": "RAM_A5",
-          "controllerSideNet": "RAM_A5",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_p3_ram_a2": {
-        "ddr3Ball": "P3",
-        "ddr3Signal": "RAM_A2",
-        "controllerBall": "D3",
-        "controllerSignal": "RAM_A2",
-        "referenceNet": "RAM_A2",
-        "sourcePath": {
-          "memorySideNet": "RAM_A2",
-          "controllerSideNet": "RAM_A2",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_p7_ram_a1": {
-        "ddr3Ball": "P7",
-        "ddr3Signal": "RAM_A1",
-        "controllerBall": "D2",
-        "controllerSignal": "RAM_A1",
-        "referenceNet": "RAM_A1",
-        "sourcePath": {
-          "memorySideNet": "RAM_A1",
-          "controllerSideNet": "RAM_A1",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_p8_ram_a4": {
-        "ddr3Ball": "P8",
-        "ddr3Signal": "RAM_A4",
-        "controllerBall": "A4",
-        "controllerSignal": "RAM_A4",
-        "referenceNet": "RAM_A4",
-        "sourcePath": {
-          "memorySideNet": "RAM_A4",
-          "controllerSideNet": "RAM_A4",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_r2_ram_a7": {
-        "ddr3Ball": "R2",
-        "ddr3Signal": "RAM_A7",
-        "controllerBall": "B2",
-        "controllerSignal": "RAM_A7",
-        "referenceNet": "RAM_A7",
-        "sourcePath": {
-          "memorySideNet": "RAM_A7",
-          "controllerSideNet": "RAM_A7",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_r3_ram_a9": {
-        "ddr3Ball": "R3",
-        "ddr3Signal": "RAM_A9",
-        "controllerBall": "D1",
-        "controllerSignal": "RAM_A9",
-        "referenceNet": "RAM_A9",
-        "sourcePath": {
-          "memorySideNet": "RAM_A9",
-          "controllerSideNet": "RAM_A9",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_r7_ram_a11": {
-        "ddr3Ball": "R7",
-        "ddr3Signal": "RAM_A11",
-        "controllerBall": "C2",
-        "controllerSignal": "RAM_A11",
-        "referenceNet": "RAM_A11",
-        "sourcePath": {
-          "memorySideNet": "RAM_A11",
-          "controllerSideNet": "RAM_A11",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_r8_ram_a6": {
-        "ddr3Ball": "R8",
-        "ddr3Signal": "RAM_A6",
-        "controllerBall": "C3",
-        "controllerSignal": "RAM_A6",
-        "referenceNet": "RAM_A6",
-        "sourcePath": {
-          "memorySideNet": "RAM_A6",
-          "controllerSideNet": "RAM_A6",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_t2_ram_reset": {
-        "ddr3Ball": "T2",
-        "ddr3Signal": "RAM_RESET#",
-        "controllerBall": "L18",
-        "controllerSignal": "RAM_RESET#",
-        "referenceNet": "RAM_RESET#",
-        "sourcePath": {
-          "memorySideNet": "RAM_RESET#",
-          "controllerSideNet": "RAM_RESET#",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_t3_ram_a13": {
-        "ddr3Ball": "T3",
-        "ddr3Signal": "RAM_A13",
-        "controllerBall": "C1",
-        "controllerSignal": "RAM_A13",
-        "referenceNet": "RAM_A13",
-        "sourcePath": {
-          "memorySideNet": "RAM_A13",
-          "controllerSideNet": "RAM_A13",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_t7_ram_a14": {
-        "ddr3Ball": "T7",
-        "ddr3Signal": "RAM_A14",
-        "controllerBall": "A2",
-        "controllerSignal": "RAM_A14",
-        "referenceNet": "RAM_A14",
-        "sourcePath": {
-          "memorySideNet": "RAM_A14",
-          "controllerSideNet": "RAM_A14",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_t8_ram_a8": {
-        "ddr3Ball": "T8",
-        "ddr3Signal": "RAM_A8",
-        "controllerBall": "B1",
-        "controllerSignal": "RAM_A8",
-        "referenceNet": "RAM_A8",
-        "sourcePath": {
-          "memorySideNet": "RAM_A8",
-          "controllerSideNet": "RAM_A8",
           "seriesComponents": []
         }
       }
