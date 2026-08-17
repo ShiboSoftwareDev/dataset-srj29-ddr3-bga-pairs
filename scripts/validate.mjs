@@ -11,6 +11,7 @@ const referenceManifest = JSON.parse(await readFile(path.join(repoRoot, "referen
 const require = createRequire(import.meta.url)
 const exportedDataset = require(path.join(repoRoot, "index.js"))
 const EPSILON = 1e-7
+const ROUTED_CONNECTION_COUNT = 16
 
 const assert = (condition, message) => {
   if (!condition) throw new Error(message)
@@ -43,17 +44,18 @@ const report = {
   validatedAt: new Date().toISOString(),
   referenceCount: referenceManifest.length,
   totalReferenceEndpointPairs: referenceManifest.reduce((sum, entry) => sum + entry.connectionCount, 0),
+  totalRoutedEndpointPairs: 0,
   checks: [
     "20 sequential package exports and circuit-to-svg snapshots",
     "20 different primary board repositories and exact commit-pinned source URLs",
     "20 unique canonical DDR3-ball-to-controller-ball endpoint maps",
     "real 78-ball x8 or 96-ball x16 DDR3 package pad populations",
     "real controller/FPGA/SoC BGA package pad populations and pitch",
-    "exact sample-to-reference endpoint, net, part, and pad-count agreement",
+    "exact selected sample-to-reference endpoint, net, part, and pad-count agreement",
     "exactly two non-overlapping BGA pad fields per sample",
     "12 mm or larger physical BGA pad-field corridor",
     "source-land-specific trace-channel and dogbone-via clearance",
-    "18–22 total layers selected from connected pad depth and route count",
+    "18 or more total layers selected from routed pad depth and route count",
     "all package pads and connection endpoints inside the board outline",
     "every bus and differential-pair constraint references existing nets",
   ],
@@ -90,6 +92,9 @@ for (const [index, file] of sampleFiles.entries()) {
   assert(map.referenceDesign.sourceUrl.includes(map.referenceDesign.commit), `${file}: primary source URL is not commit-pinned`)
   assert(map.connections.length === manifestEntry.connectionCount, `${file}: manifest connection count differs`)
   assert(map.connections.length >= 35 && map.connections.length <= 60, `${file}: implausible DDR3 signal count ${map.connections.length}`)
+  assert(sample.connections.length === ROUTED_CONNECTION_COUNT, `${file}: expected ${ROUTED_CONNECTION_COUNT} routed connections, found ${sample.connections.length}`)
+  assert(sample.metadata.referenceDesign.directConnectionCount === ROUTED_CONNECTION_COUNT, `${file}: routed connection metadata differs`)
+  assert(sample.metadata.referenceDesign.sourceDirectConnectionCount === map.connections.length, `${file}: source connection metadata differs`)
 
   const ddr3Pads = sample.obstacles.filter((obstacle) => obstacle.componentId === "ddr3_bga")
   const controllerPads = sample.obstacles.filter((obstacle) => obstacle.componentId === "controller_bga")
@@ -121,14 +126,17 @@ for (const [index, file] of sampleFiles.entries()) {
     assert(pad.width === sourcePad.width && pad.height === sourcePad.height, `${file}: controller land ${sourcePad.ball} differs from source footprint`)
   }
 
-  assert(sample.connections.length === map.connections.length, `${file}: connection count differs from source map`)
   const sampleConnectionByName = new Map(sample.connections.map((connection) => [connection.name, connection]))
   assert(sampleConnectionByName.size === sample.connections.length, `${file}: duplicate benchmark connection names`)
-  assert(new Set(Object.values(sample.metadata.referenceNetByConnection)).size === map.connections.length, `${file}: duplicate reference board nets`)
-  for (const mapped of map.connections) {
+  assert(new Set(Object.values(sample.metadata.referenceNetByConnection)).size === sample.connections.length, `${file}: duplicate reference board nets`)
+  const mappedConnectionByName = new Map(map.connections.map((mapped) => {
     const expectedConnectionName = `DDR3_${String(mapped.memory.ball).toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "")}_${String(mapped.net).toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "")}`
-    const connection = sampleConnectionByName.get(expectedConnectionName)
-    assert(connection, `${file}: missing source net ${mapped.net}`)
+    return [expectedConnectionName, mapped]
+  }))
+  for (const connection of sample.connections) {
+    const mapped = mappedConnectionByName.get(connection.name)
+    assert(mapped, `${file}: routed net ${connection.name} is absent from the source map`)
+    const expectedConnectionName = connection.name
     assert(connection.pointsToConnect.length === 2, `${file}: ${mapped.net} must have two endpoints`)
     const ddr3Pad = ddr3PadByBall.get(mapped.memory.ball)
     const controllerPad = controllerPadByBall.get(mapped.controller.ball)
@@ -239,9 +247,10 @@ for (const [index, file] of sampleFiles.entries()) {
     snapshotRatsnestCount,
     status: "pass",
   })
+  report.totalRoutedEndpointPairs += sample.connections.length
 }
 
 assert(new Set(report.sources.map((source) => source.repository)).size === 20, "Validated samples repeat a source repository")
 assert(new Set(report.sources.map((source) => source.endpointMapSha256)).size === 20, "Validated samples repeat an endpoint hash")
 await writeFile(path.join(repoRoot, "validation-report.json"), `${JSON.stringify(report, null, 2)}\n`)
-console.log(`Validated ${report.samples.length} unique-reference DDR3-to-BGA samples (${report.totalReferenceEndpointPairs} endpoint pairs)`)
+console.log(`Validated ${report.samples.length} unique-reference DDR3-to-BGA samples (${report.totalRoutedEndpointPairs} routed pairs from ${report.totalReferenceEndpointPairs} source pairs)`)

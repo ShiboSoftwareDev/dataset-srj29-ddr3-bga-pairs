@@ -22,6 +22,18 @@ const GROUP_COLORS = {
   control: "#76b7b2",
 }
 
+const ROUTED_CONNECTION_COUNT = 16
+const ROUTED_GROUP_COUNTS = {
+  data: 4,
+  strobe: 2,
+  mask: 1,
+  address: 3,
+  bank: 1,
+  command: 2,
+  clock: 2,
+  control: 1,
+}
+
 const round = (value, precision = 5) => Number(value.toFixed(precision))
 const sampleName = (index) => `sample${String(index).padStart(3, "0")}`
 const safeId = (value) => String(value).toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "")
@@ -55,6 +67,40 @@ function getPadBounds(pads) {
 
 function makeConnectionName(connection) {
   return `DDR3_${safeId(connection.memory.ball)}_${safeId(connection.net)}`
+}
+
+function getSignalGroup(connection) {
+  const signal = String(connection.memory.signal).toUpperCase().replace(/[~{}#]/g, "").replace(/[+-]$/, "")
+  if (/^(?:[A-Z0-9]+_)?(?:U?DM|LDM|DM[UL]|DQM\d*)(?:$|\/)/.test(signal)) return "mask"
+  if (/DQS/.test(signal)) return "strobe"
+  if (/(?:CKE|CLK_EN)/.test(signal)) return "control"
+  if (/(?:^|_)(?:CK|CKN|CLK)(?:$|_[PN]$)/.test(signal)) return "clock"
+  if (/(?:RAS|CAS)(?:N)?$|(?:^|_)WE(?:N)?$/.test(signal)) return "command"
+  if (/(?:^|_)BA\d+$/.test(signal)) return "bank"
+  if (/(?:^|_)A\d+(?:\/AP)?$/.test(signal)) return "address"
+  if (/(?:^|_)(?:DQ[UL]?\d+|D\d+)$/.test(signal)) return "data"
+  return connection.group
+}
+
+function selectRoutedConnections(connections) {
+  const normalizedConnections = connections.map((connection) => ({
+    ...connection,
+    group: getSignalGroup(connection),
+  }))
+  const selected = new Set()
+  for (const [group, count] of Object.entries(ROUTED_GROUP_COUNTS)) {
+    for (const connection of normalizedConnections.filter((connection) => connection.group === group).slice(0, count)) {
+      selected.add(connection)
+    }
+  }
+  for (const connection of normalizedConnections) {
+    if (selected.size >= ROUTED_CONNECTION_COUNT) break
+    selected.add(connection)
+  }
+  if (selected.size !== ROUTED_CONNECTION_COUNT) {
+    throw new Error(`Reference map has only ${selected.size} routable DDR3 signal connections`)
+  }
+  return normalizedConnections.filter((connection) => selected.has(connection))
 }
 
 function createObstacle(pad, connection, packageData) {
@@ -149,7 +195,8 @@ function createSample(index, mapRecord) {
   }
   const memoryPads = transformPackage(map.memory, "ddr3_bga", memoryCenter, rotation)
   const controllerPads = transformPackage(map.controller, "controller_bga", controllerCenter, rotation)
-  const connectionRecords = map.connections.map((connection) => ({
+  const routedConnections = selectRoutedConnections(map.connections)
+  const connectionRecords = routedConnections.map((connection) => ({
     ...connection,
     connectionName: makeConnectionName(connection),
   }))
@@ -189,12 +236,12 @@ function createSample(index, mapRecord) {
     4,
   )
   const viaHoleDiameter = round(Math.max(0.08, viaPadDiameter * 0.45), 4)
-  const memoryDepth = connectedDepth(map.memory, new Set(map.connections.map((connection) => connection.memory.ball)))
-  const controllerDepth = connectedDepth(map.controller, new Set(map.connections.map((connection) => connection.controller.ball)))
+  const memoryDepth = connectedDepth(map.memory, new Set(routedConnections.map((connection) => connection.memory.ball)))
+  const controllerDepth = connectedDepth(map.controller, new Set(routedConnections.map((connection) => connection.controller.ball)))
   const layerCount = Math.max(
     18,
     evenCeiling(Math.max(memoryDepth, controllerDepth) * 2 + 6),
-    evenCeiling(map.connections.length / 3.5 + 2),
+    evenCeiling(routedConnections.length / 3.5 + 2),
   )
 
   const connections = connectionRecords.map((connection) => {
@@ -256,7 +303,7 @@ function createSample(index, mapRecord) {
   return {
     id,
     title: `${map.referenceDesign.board}: ${map.memory.partNumber} ${map.memory.reference} to ${map.controller.partNumber} ${map.controller.reference}`,
-    description: `A spacious multilayer benchmark reproducing ${map.connections.length} exact DDR3-to-BGA endpoint pairs from ${map.referenceDesign.board}.`,
+    description: `A spacious multilayer benchmark routing a balanced ${connectionRecords.length}-net subset of ${map.connections.length} exact DDR3-to-BGA endpoint pairs from ${map.referenceDesign.board}.`,
     layerCount,
     minTraceWidth: nominalTraceWidth,
     nominalTraceWidth,
@@ -279,7 +326,8 @@ function createSample(index, mapRecord) {
       referenceDesign: {
         ...map.referenceDesign,
         connectionMapFile: manifestEntry.mapFile,
-        directConnectionCount: map.connections.length,
+        directConnectionCount: connectionRecords.length,
+        sourceDirectConnectionCount: map.connections.length,
         endpointMapSha256: map.endpointMapSha256,
       },
       ddr3: {
@@ -292,7 +340,7 @@ function createSample(index, mapRecord) {
         padFieldWidth: map.memory.padFieldWidth,
         padFieldHeight: map.memory.padFieldHeight,
         technology: "DDR3 / DDR3L",
-        signalPinCount: map.connections.length,
+        signalPinCount: connectionRecords.length,
         rotation,
         bodyWidth: round(map.memory.padFieldWidth + map.memory.pitch),
         bodyHeight: round(map.memory.padFieldHeight + map.memory.pitch),
@@ -319,7 +367,7 @@ function createSample(index, mapRecord) {
         boardMargin,
       },
       feasibility: {
-        focus: "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
+        focus: "fan out both real BGA footprints, then route a representative subset of exact reference DDR3 endpoint pairs",
         connectedDdr3EdgeDepth: round(memoryDepth, 2),
         connectedControllerEdgeDepth: round(controllerDepth, 2),
         availableRoutingLayers: layerCount - 2,
@@ -404,14 +452,14 @@ function makeIndex(samples) {
 function makeConnectionMapsMarkdown(samples) {
   const rows = samples.map((sample) => {
     const reference = sample.metadata.referenceDesign
-    return `| ${sample.id} | [${reference.board}](${reference.sourceUrl}) | ${sample.metadata.ddr3.reference} ${sample.metadata.ddr3.partNumber} | ${sample.metadata.controller.reference} ${sample.metadata.controller.partNumber} | ${sample.connections.length} | \`${reference.endpointMapSha256.slice(0, 12)}\` | [map](${reference.connectionMapFile}) |`
+    return `| ${sample.id} | [${reference.board}](${reference.sourceUrl}) | ${sample.metadata.ddr3.reference} ${sample.metadata.ddr3.partNumber} | ${sample.metadata.controller.reference} ${sample.metadata.controller.partNumber} | ${sample.connections.length} | ${reference.sourceDirectConnectionCount} | \`${reference.endpointMapSha256.slice(0, 12)}\` | [map](${reference.connectionMapFile}) |`
   }).join("\n")
   return `# DDR3-to-BGA reference maps
 
 Every sample uses a different primary-source board repository and a unique canonical DDR3-ball-to-controller-ball endpoint hash. KiCad-derived maps preserve the committed package pad populations and exact board nets. If a reference uses one series resistor between the two chips, the benchmark collapses that resistor while recording it in each connection's \`sourcePath\`.
 
-| Sample | Primary board source | DDR3 | Controller / FPGA / SoC | Nets | Endpoint hash | Machine map |
-|---|---|---|---|---:|---|---|
+| Sample | Primary board source | DDR3 | Controller / FPGA / SoC | Routed nets | Source pairs | Endpoint hash | Machine map |
+|---|---|---|---|---:|---:|---|---|
 ${rows}
 
 Power, ground, VREF, ZQ, decoupling, and termination-only branches are outside this two-BGA routing benchmark.
@@ -444,7 +492,8 @@ const manifest = {
   datasetName: "dataset-srj29-ddr3-bga-pairs",
   sampleCount: samples.length,
   purpose: "Spacious multilayer routing benchmarks from 20 different real DDR3-to-BGA board references",
-  totalReferenceEndpointPairs: samples.reduce((sum, sample) => sum + sample.connections.length, 0),
+  totalReferenceEndpointPairs: maps.reduce((sum, mapRecord) => sum + mapRecord.map.connections.length, 0),
+  totalRoutedEndpointPairs: samples.reduce((sum, sample) => sum + sample.connections.length, 0),
   referenceManifestFile: "reference/reference-manifest.json",
   samples: samples.map((sample) => ({
     id: sample.id,
@@ -456,6 +505,7 @@ const manifest = {
     connectionMapFile: sample.metadata.referenceDesign.connectionMapFile,
     layerCount: sample.layerCount,
     connectionCount: sample.connections.length,
+    referenceConnectionCount: sample.metadata.referenceDesign.sourceDirectConnectionCount,
     obstacleCount: sample.obstacles.length,
     ddr3PadCount: sample.metadata.ddr3.padCount,
     ddr3PartNumber: sample.metadata.ddr3.partNumber,

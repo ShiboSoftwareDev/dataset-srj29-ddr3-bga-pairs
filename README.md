@@ -1,13 +1,14 @@
 # dataset-srj29-ddr3-bga-pairs
 
-Twenty spacious multilayer Simple Route JSON fixtures derived from twenty different real DDR3 board designs. Every sample contains one 78- or 96-ball DDR3/DDR3L device, one real BGA FPGA/SoC/controller footprint, and that board's exact DDR3-ball-to-controller-ball connections.
+Twenty spacious multilayer Simple Route JSON fixtures derived from twenty different real DDR3 board designs. Every sample contains one 78- or 96-ball DDR3/DDR3L device, one real BGA FPGA/SoC/controller footprint, and a balanced 16-net subset selected only from that board's exact DDR3-ball-to-controller-ball connections.
 
 This revision intentionally does **not** reuse one connection map with different placement geometry. The source repositories, committed PCB/schematic files, endpoint maps, part numbers, BGA pad populations, and canonical endpoint hashes are listed in [CONNECTION_MAPS.md](CONNECTION_MAPS.md). The validator rejects a repeated repository, board, or endpoint hash.
 
 ## Dataset scope
 
 - 20 different primary board repositories, pinned to exact commits.
-- 951 total DDR3↔BGA endpoint pairs; 39–53 per sample according to the real device width and board topology.
+- 951 audited source DDR3↔BGA endpoint pairs; 320 routed endpoint pairs, exactly 16 per sample.
+- Each routed subset represents data, strobe, mask, address, bank, command, clock, and control signals where present; source maps remain complete.
 - Real 78-ball x8 or 96-ball x16 DDR3 package pad populations at approximately 0.8 mm pitch.
 - Real 256- to 900-ball paired BGA footprints at 0.5–1.0 mm pitch.
 - Exact board-net, DDR3 ball, and controller ball triples from committed KiCad PCB data, plus the audited official BeagleBone Black schematic map.
@@ -48,7 +49,7 @@ The set spans Allwinner H3/H616, AM335x, i.MX6/i.MX7, STM32MP1, HPMicro, Zynq, S
 npm run build
 ```
 
-The validator resolves every routing endpoint back to its source package ball and rejects missing or repeated mappings, altered land geometry, overlapping pads, corridors below 12 mm, insufficient trace/via clearance, insufficient layers, and incomplete snapshots.
+The validator resolves every selected routing endpoint back to its full source map and package ball, and rejects invented or repeated mappings, altered land geometry, overlapping pads, corridors below 12 mm, insufficient trace/via clearance, insufficient layers, and incomplete snapshots.
 
 ## Package usage
 

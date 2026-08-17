@@ -1,8 +1,8 @@
 {
   "id": "sample008",
   "title": "Kintex-410T development board: MT41K512M8DA U5 to XC7K410T-2FFG900I U1",
-  "description": "A spacious multilayer benchmark reproducing 39 exact DDR3-to-BGA endpoint pairs from Kintex-410T development board.",
-  "layerCount": 20,
+  "description": "A spacious multilayer benchmark routing a balanced 16-net subset of 39 exact DDR3-to-BGA endpoint pairs from Kintex-410T development board.",
+  "layerCount": 18,
   "minTraceWidth": 0.1,
   "nominalTraceWidth": 0.1,
   "minViaHoleDiameter": 0.1508,
@@ -478,13 +478,11 @@
       "ballName": "D2",
       "vendorPinName": "NF/DQ6",
       "connectedTo": [
-        "DDR3_d2_dram_sram_ddr_dq6",
-        "pcb_port_ddr3_ddr3_d2_dram_sram_ddr_dq6"
+        "unconnected_ddr3_d2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "NF/DQ6",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ6"
+        "source_port_name": "NF/DQ6"
       }
     },
     {
@@ -643,13 +641,11 @@
       "ballName": "E3",
       "vendorPinName": "NF/DQ4",
       "connectedTo": [
-        "DDR3_e3_dram_sram_ddr_dq4",
-        "pcb_port_ddr3_ddr3_e3_dram_sram_ddr_dq4"
+        "unconnected_ddr3_e3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "NF/DQ4",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ4"
+        "source_port_name": "NF/DQ4"
       }
     },
     {
@@ -668,13 +664,11 @@
       "ballName": "E7",
       "vendorPinName": "NF/DQ7",
       "connectedTo": [
-        "DDR3_e7_dram_sram_ddr_dq7",
-        "pcb_port_ddr3_ddr3_e7_dram_sram_ddr_dq7"
+        "unconnected_ddr3_e7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "NF/DQ7",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ7"
+        "source_port_name": "NF/DQ7"
       }
     },
     {
@@ -693,13 +687,11 @@
       "ballName": "E8",
       "vendorPinName": "NF/DQ5",
       "connectedTo": [
-        "DDR3_e8_dram_sram_ddr_dq5",
-        "pcb_port_ddr3_ddr3_e8_dram_sram_ddr_dq5"
+        "unconnected_ddr3_e8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "NF/DQ5",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ5"
+        "source_port_name": "NF/DQ5"
       }
     },
     {
@@ -1004,13 +996,11 @@
       "ballName": "G9",
       "vendorPinName": "CKE",
       "connectedTo": [
-        "DDR3_g9_dram_sram_ddr_cke",
-        "pcb_port_ddr3_ddr3_g9_dram_sram_ddr_cke"
+        "unconnected_ddr3_g9"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "CKE",
-        "reference_design_net": "/DRAM + SRAM/DDR.CKE"
+        "source_port_name": "CKE"
       }
     },
     {
@@ -1052,13 +1042,11 @@
       "ballName": "H2",
       "vendorPinName": "CS#",
       "connectedTo": [
-        "DDR3_h2_dram_sram_ddr_cs",
-        "pcb_port_ddr3_ddr3_h2_dram_sram_ddr_cs"
+        "unconnected_ddr3_h2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "CS#",
-        "reference_design_net": "/DRAM + SRAM/DDR.~{CS}"
+        "source_port_name": "CS#"
       }
     },
     {
@@ -1077,13 +1065,11 @@
       "ballName": "H3",
       "vendorPinName": "WE#",
       "connectedTo": [
-        "DDR3_h3_dram_sram_ddr_we",
-        "pcb_port_ddr3_ddr3_h3_dram_sram_ddr_we"
+        "unconnected_ddr3_h3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "WE#",
-        "reference_design_net": "/DRAM + SRAM/DDR.~{WE}"
+        "source_port_name": "WE#"
       }
     },
     {
@@ -1221,13 +1207,11 @@
       "ballName": "J3",
       "vendorPinName": "BA2",
       "connectedTo": [
-        "DDR3_j3_dram_sram_ddr_ba2",
-        "pcb_port_ddr3_ddr3_j3_dram_sram_ddr_ba2"
+        "unconnected_ddr3_j3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "BA2",
-        "reference_design_net": "/DRAM + SRAM/DDR.BA2"
+        "source_port_name": "BA2"
       }
     },
     {
@@ -1365,13 +1349,11 @@
       "ballName": "K3",
       "vendorPinName": "A0",
       "connectedTo": [
-        "DDR3_k3_dram_sram_ddr_a0",
-        "pcb_port_ddr3_ddr3_k3_dram_sram_ddr_a0"
+        "unconnected_ddr3_k3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A0",
-        "reference_design_net": "/DRAM + SRAM/DDR.A0"
+        "source_port_name": "A0"
       }
     },
     {
@@ -1390,13 +1372,11 @@
       "ballName": "K7",
       "vendorPinName": "A12/BC#",
       "connectedTo": [
-        "DDR3_k7_dram_sram_ddr_a12",
-        "pcb_port_ddr3_ddr3_k7_dram_sram_ddr_a12"
+        "unconnected_ddr3_k7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A12/BC#",
-        "reference_design_net": "/DRAM + SRAM/DDR.A12"
+        "source_port_name": "A12/BC#"
       }
     },
     {
@@ -1415,13 +1395,11 @@
       "ballName": "K8",
       "vendorPinName": "BA1",
       "connectedTo": [
-        "DDR3_k8_dram_sram_ddr_ba1",
-        "pcb_port_ddr3_ddr3_k8_dram_sram_ddr_ba1"
+        "unconnected_ddr3_k8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "BA1",
-        "reference_design_net": "/DRAM + SRAM/DDR.BA1"
+        "source_port_name": "BA1"
       }
     },
     {
@@ -1486,13 +1464,11 @@
       "ballName": "L2",
       "vendorPinName": "A5",
       "connectedTo": [
-        "DDR3_l2_dram_sram_ddr_a5",
-        "pcb_port_ddr3_ddr3_l2_dram_sram_ddr_a5"
+        "unconnected_ddr3_l2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A5",
-        "reference_design_net": "/DRAM + SRAM/DDR.A5"
+        "source_port_name": "A5"
       }
     },
     {
@@ -1511,13 +1487,11 @@
       "ballName": "L3",
       "vendorPinName": "A2",
       "connectedTo": [
-        "DDR3_l3_dram_sram_ddr_a2",
-        "pcb_port_ddr3_ddr3_l3_dram_sram_ddr_a2"
+        "unconnected_ddr3_l3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A2",
-        "reference_design_net": "/DRAM + SRAM/DDR.A2"
+        "source_port_name": "A2"
       }
     },
     {
@@ -1536,13 +1510,11 @@
       "ballName": "L7",
       "vendorPinName": "A1",
       "connectedTo": [
-        "DDR3_l7_dram_sram_ddr_a1",
-        "pcb_port_ddr3_ddr3_l7_dram_sram_ddr_a1"
+        "unconnected_ddr3_l7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A1",
-        "reference_design_net": "/DRAM + SRAM/DDR.A1"
+        "source_port_name": "A1"
       }
     },
     {
@@ -1561,13 +1533,11 @@
       "ballName": "L8",
       "vendorPinName": "A4",
       "connectedTo": [
-        "DDR3_l8_dram_sram_ddr_a4",
-        "pcb_port_ddr3_ddr3_l8_dram_sram_ddr_a4"
+        "unconnected_ddr3_l8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A4",
-        "reference_design_net": "/DRAM + SRAM/DDR.A4"
+        "source_port_name": "A4"
       }
     },
     {
@@ -1632,13 +1602,11 @@
       "ballName": "M2",
       "vendorPinName": "A7",
       "connectedTo": [
-        "DDR3_m2_dram_sram_ddr_a7",
-        "pcb_port_ddr3_ddr3_m2_dram_sram_ddr_a7"
+        "unconnected_ddr3_m2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A7",
-        "reference_design_net": "/DRAM + SRAM/DDR.A7"
+        "source_port_name": "A7"
       }
     },
     {
@@ -1657,13 +1625,11 @@
       "ballName": "M3",
       "vendorPinName": "A9",
       "connectedTo": [
-        "DDR3_m3_dram_sram_ddr_a9",
-        "pcb_port_ddr3_ddr3_m3_dram_sram_ddr_a9"
+        "unconnected_ddr3_m3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A9",
-        "reference_design_net": "/DRAM + SRAM/DDR.A9"
+        "source_port_name": "A9"
       }
     },
     {
@@ -1682,13 +1648,11 @@
       "ballName": "M7",
       "vendorPinName": "A11",
       "connectedTo": [
-        "DDR3_m7_dram_sram_ddr_a11",
-        "pcb_port_ddr3_ddr3_m7_dram_sram_ddr_a11"
+        "unconnected_ddr3_m7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A11",
-        "reference_design_net": "/DRAM + SRAM/DDR.A11"
+        "source_port_name": "A11"
       }
     },
     {
@@ -1707,13 +1671,11 @@
       "ballName": "M8",
       "vendorPinName": "A6",
       "connectedTo": [
-        "DDR3_m8_dram_sram_ddr_a6",
-        "pcb_port_ddr3_ddr3_m8_dram_sram_ddr_a6"
+        "unconnected_ddr3_m8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A6",
-        "reference_design_net": "/DRAM + SRAM/DDR.A6"
+        "source_port_name": "A6"
       }
     },
     {
@@ -1778,13 +1740,11 @@
       "ballName": "N2",
       "vendorPinName": "RESET#",
       "connectedTo": [
-        "DDR3_n2_dram_sram_ddr_reset",
-        "pcb_port_ddr3_ddr3_n2_dram_sram_ddr_reset"
+        "unconnected_ddr3_n2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "RESET#",
-        "reference_design_net": "/DRAM + SRAM/DDR.~{RESET}"
+        "source_port_name": "RESET#"
       }
     },
     {
@@ -1803,13 +1763,11 @@
       "ballName": "N3",
       "vendorPinName": "A13",
       "connectedTo": [
-        "DDR3_n3_dram_sram_ddr_a13",
-        "pcb_port_ddr3_ddr3_n3_dram_sram_ddr_a13"
+        "unconnected_ddr3_n3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A13",
-        "reference_design_net": "/DRAM + SRAM/DDR.A13"
+        "source_port_name": "A13"
       }
     },
     {
@@ -1828,13 +1786,11 @@
       "ballName": "N7",
       "vendorPinName": "A14",
       "connectedTo": [
-        "DDR3_n7_dram_sram_ddr_a14",
-        "pcb_port_ddr3_ddr3_n7_dram_sram_ddr_a14"
+        "unconnected_ddr3_n7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A14",
-        "reference_design_net": "/DRAM + SRAM/DDR.A14"
+        "source_port_name": "A14"
       }
     },
     {
@@ -1853,13 +1809,11 @@
       "ballName": "N8",
       "vendorPinName": "A8",
       "connectedTo": [
-        "DDR3_n8_dram_sram_ddr_a8",
-        "pcb_port_ddr3_ddr3_n8_dram_sram_ddr_a8"
+        "unconnected_ddr3_n8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U5_MT41K512M8DA",
-        "source_port_name": "A8",
-        "reference_design_net": "/DRAM + SRAM/DDR.A8"
+        "source_port_name": "A8"
       }
     },
     {
@@ -3971,13 +3925,11 @@
       "ballName": "AC1",
       "vendorPinName": "IO_L2N_T0_34",
       "connectedTo": [
-        "DDR3_k7_dram_sram_ddr_a12",
-        "pcb_port_controller_ddr3_k7_dram_sram_ddr_a12"
+        "unconnected_controller_ac1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L2N_T0_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A12"
+        "source_port_name": "IO_L2N_T0_34"
       }
     },
     {
@@ -3996,13 +3948,11 @@
       "ballName": "AC2",
       "vendorPinName": "IO_L2P_T0_34",
       "connectedTo": [
-        "DDR3_n3_dram_sram_ddr_a13",
-        "pcb_port_controller_ddr3_n3_dram_sram_ddr_a13"
+        "unconnected_controller_ac2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L2P_T0_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A13"
+        "source_port_name": "IO_L2P_T0_34"
       }
     },
     {
@@ -4069,13 +4019,11 @@
       "ballName": "AC5",
       "vendorPinName": "IO_L4P_T0_34",
       "connectedTo": [
-        "DDR3_m7_dram_sram_ddr_a11",
-        "pcb_port_controller_ddr3_m7_dram_sram_ddr_a11"
+        "unconnected_controller_ac5"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L4P_T0_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A11"
+        "source_port_name": "IO_L4P_T0_34"
       }
     },
     {
@@ -4117,13 +4065,11 @@
       "ballName": "AC7",
       "vendorPinName": "IO_L6P_T0_34",
       "connectedTo": [
-        "DDR3_m2_dram_sram_ddr_a7",
-        "pcb_port_controller_ddr3_m2_dram_sram_ddr_a7"
+        "unconnected_controller_ac7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L6P_T0_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A7"
+        "source_port_name": "IO_L6P_T0_34"
       }
     },
     {
@@ -4721,13 +4667,11 @@
       "ballName": "AD3",
       "vendorPinName": "IO_L1N_T0_34",
       "connectedTo": [
-        "DDR3_n7_dram_sram_ddr_a14",
-        "pcb_port_controller_ddr3_n7_dram_sram_ddr_a14"
+        "unconnected_controller_ad3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L1N_T0_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A14"
+        "source_port_name": "IO_L1N_T0_34"
       }
     },
     {
@@ -4794,13 +4738,11 @@
       "ballName": "AD6",
       "vendorPinName": "IO_L5P_T0_34",
       "connectedTo": [
-        "DDR3_m3_dram_sram_ddr_a9",
-        "pcb_port_controller_ddr3_m3_dram_sram_ddr_a9"
+        "unconnected_controller_ad6"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L5P_T0_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A9"
+        "source_port_name": "IO_L5P_T0_34"
       }
     },
     {
@@ -5371,13 +5313,11 @@
       "ballName": "AE1",
       "vendorPinName": "IO_L8P_T1_34",
       "connectedTo": [
-        "DDR3_l8_dram_sram_ddr_a4",
-        "pcb_port_controller_ddr3_l8_dram_sram_ddr_a4"
+        "unconnected_controller_ae1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L8P_T1_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A4"
+        "source_port_name": "IO_L8P_T1_34"
       }
     },
     {
@@ -5419,13 +5359,11 @@
       "ballName": "AE3",
       "vendorPinName": "IO_L10N_T1_34",
       "connectedTo": [
-        "DDR3_j3_dram_sram_ddr_ba2",
-        "pcb_port_controller_ddr3_j3_dram_sram_ddr_ba2"
+        "unconnected_controller_ae3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L10N_T1_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.BA2"
+        "source_port_name": "IO_L10N_T1_34"
       }
     },
     {
@@ -5444,13 +5382,11 @@
       "ballName": "AE4",
       "vendorPinName": "IO_L10P_T1_34",
       "connectedTo": [
-        "DDR3_k3_dram_sram_ddr_a0",
-        "pcb_port_controller_ddr3_k3_dram_sram_ddr_a0"
+        "unconnected_controller_ae4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L10P_T1_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A0"
+        "source_port_name": "IO_L10P_T1_34"
       }
     },
     {
@@ -5469,13 +5405,11 @@
       "ballName": "AE5",
       "vendorPinName": "IO_L11P_T1_SRCC_34",
       "connectedTo": [
-        "DDR3_k8_dram_sram_ddr_ba1",
-        "pcb_port_controller_ddr3_k8_dram_sram_ddr_ba1"
+        "unconnected_controller_ae5"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L11P_T1_SRCC_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.BA1"
+        "source_port_name": "IO_L11P_T1_SRCC_34"
       }
     },
     {
@@ -5494,13 +5428,11 @@
       "ballName": "AE6",
       "vendorPinName": "IO_L5N_T0_34",
       "connectedTo": [
-        "DDR3_n8_dram_sram_ddr_a8",
-        "pcb_port_controller_ddr3_n8_dram_sram_ddr_a8"
+        "unconnected_controller_ae6"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L5N_T0_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A8"
+        "source_port_name": "IO_L5N_T0_34"
       }
     },
     {
@@ -6096,13 +6028,11 @@
       "ballName": "AF2",
       "vendorPinName": "IO_L7N_T1_34",
       "connectedTo": [
-        "DDR3_l2_dram_sram_ddr_a5",
-        "pcb_port_controller_ddr3_l2_dram_sram_ddr_a5"
+        "unconnected_controller_af2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L7N_T1_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A5"
+        "source_port_name": "IO_L7N_T1_34"
       }
     },
     {
@@ -6121,13 +6051,11 @@
       "ballName": "AF3",
       "vendorPinName": "IO_L7P_T1_34",
       "connectedTo": [
-        "DDR3_m8_dram_sram_ddr_a6",
-        "pcb_port_controller_ddr3_m8_dram_sram_ddr_a6"
+        "unconnected_controller_af3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L7P_T1_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A6"
+        "source_port_name": "IO_L7P_T1_34"
       }
     },
     {
@@ -6219,13 +6147,11 @@
       "ballName": "AF7",
       "vendorPinName": "IO_L20P_T3_34",
       "connectedTo": [
-        "DDR3_e7_dram_sram_ddr_dq7",
-        "pcb_port_controller_ddr3_e7_dram_sram_ddr_dq7"
+        "unconnected_controller_af7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L20P_T3_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ7"
+        "source_port_name": "IO_L20P_T3_34"
       }
     },
     {
@@ -6798,13 +6724,11 @@
       "ballName": "AG2",
       "vendorPinName": "IO_L15P_T2_DQS_34",
       "connectedTo": [
-        "DDR3_h3_dram_sram_ddr_we",
-        "pcb_port_controller_ddr3_h3_dram_sram_ddr_we"
+        "unconnected_controller_ag2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L15P_T2_DQS_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.~{WE}"
+        "source_port_name": "IO_L15P_T2_DQS_34"
       }
     },
     {
@@ -6823,13 +6747,11 @@
       "ballName": "AG3",
       "vendorPinName": "IO_L9N_T1_DQS_34",
       "connectedTo": [
-        "DDR3_l7_dram_sram_ddr_a1",
-        "pcb_port_controller_ddr3_l7_dram_sram_ddr_a1"
+        "unconnected_controller_ag3"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L9N_T1_DQS_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A1"
+        "source_port_name": "IO_L9N_T1_DQS_34"
       }
     },
     {
@@ -6848,13 +6770,11 @@
       "ballName": "AG4",
       "vendorPinName": "IO_L9P_T1_DQS_34",
       "connectedTo": [
-        "DDR3_l3_dram_sram_ddr_a2",
-        "pcb_port_controller_ddr3_l3_dram_sram_ddr_a2"
+        "unconnected_controller_ag4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L9P_T1_DQS_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.A2"
+        "source_port_name": "IO_L9P_T1_DQS_34"
       }
     },
     {
@@ -6921,13 +6841,11 @@
       "ballName": "AG7",
       "vendorPinName": "IO_L20N_T3_34",
       "connectedTo": [
-        "DDR3_e3_dram_sram_ddr_dq4",
-        "pcb_port_controller_ddr3_e3_dram_sram_ddr_dq4"
+        "unconnected_controller_ag7"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L20N_T3_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ4"
+        "source_port_name": "IO_L20N_T3_34"
       }
     },
     {
@@ -7475,13 +7393,11 @@
       "ballName": "AH1",
       "vendorPinName": "IO_L15N_T2_DQS_34",
       "connectedTo": [
-        "DDR3_h2_dram_sram_ddr_cs",
-        "pcb_port_controller_ddr3_h2_dram_sram_ddr_cs"
+        "unconnected_controller_ah1"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L15N_T2_DQS_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.~{CS}"
+        "source_port_name": "IO_L15N_T2_DQS_34"
       }
     },
     {
@@ -7500,13 +7416,11 @@
       "ballName": "AH2",
       "vendorPinName": "IO_L16P_T2_34",
       "connectedTo": [
-        "DDR3_g9_dram_sram_ddr_cke",
-        "pcb_port_controller_ddr3_g9_dram_sram_ddr_cke"
+        "unconnected_controller_ah2"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L16P_T2_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.CKE"
+        "source_port_name": "IO_L16P_T2_34"
       }
     },
     {
@@ -7548,13 +7462,11 @@
       "ballName": "AH4",
       "vendorPinName": "IO_L13P_T2_MRCC_34",
       "connectedTo": [
-        "DDR3_n2_dram_sram_ddr_reset",
-        "pcb_port_controller_ddr3_n2_dram_sram_ddr_reset"
+        "unconnected_controller_ah4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L13P_T2_MRCC_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.~{RESET}"
+        "source_port_name": "IO_L13P_T2_MRCC_34"
       }
     },
     {
@@ -8340,13 +8252,11 @@
       "ballName": "AJ8",
       "vendorPinName": "IO_L23P_T3_34",
       "connectedTo": [
-        "DDR3_e8_dram_sram_ddr_dq5",
-        "pcb_port_controller_ddr3_e8_dram_sram_ddr_dq5"
+        "unconnected_controller_aj8"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L23P_T3_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ5"
+        "source_port_name": "IO_L23P_T3_34"
       }
     },
     {
@@ -8940,13 +8850,11 @@
       "ballName": "AK4",
       "vendorPinName": "IO_L24N_T3_34",
       "connectedTo": [
-        "DDR3_d2_dram_sram_ddr_dq6",
-        "pcb_port_controller_ddr3_d2_dram_sram_ddr_dq6"
+        "unconnected_controller_ak4"
       ],
       "circuitJsonMetadata": {
         "source_component_name": "U1_XC7K410T-2FFG900I",
-        "source_port_name": "IO_L24N_T3_34",
-        "reference_design_net": "/DRAM + SRAM/DDR.DQ6"
+        "source_port_name": "IO_L24N_T3_34"
       }
     },
     {
@@ -22798,28 +22706,6 @@
       ]
     },
     {
-      "name": "DDR3_d2_dram_sram_ddr_dq6",
-      "rootConnectionName": "DDR3_d2_dram_sram_ddr_dq6",
-      "netConnectionName": "DDR3_d2_dram_sram_ddr_dq6",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 7.767,
-          "y": 2.3995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_d2_dram_sram_ddr_dq6",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_d2_dram_sram_ddr_dq6"
-        },
-        {
-          "x": -33,
-          "y": -14.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_d2_dram_sram_ddr_dq6",
-          "pcb_port_id": "pcb_port_controller_ddr3_d2_dram_sram_ddr_dq6"
-        }
-      ]
-    },
-    {
       "name": "DDR3_d3_dram_sram_ddr_dqs_n",
       "rootConnectionName": "DDR3_d3_dram_sram_ddr_dqs_n",
       "netConnectionName": "DDR3_d3_dram_sram_ddr_dqs_n",
@@ -22838,72 +22724,6 @@
           "layer": "top",
           "pointId": "point_controller_ddr3_d3_dram_sram_ddr_dqs_n",
           "pcb_port_id": "pcb_port_controller_ddr3_d3_dram_sram_ddr_dqs_n"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_e3_dram_sram_ddr_dq4",
-      "rootConnectionName": "DDR3_e3_dram_sram_ddr_dq4",
-      "netConnectionName": "DDR3_e3_dram_sram_ddr_dq4",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 8.566,
-          "y": 1.6005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_e3_dram_sram_ddr_dq4",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_e3_dram_sram_ddr_dq4"
-        },
-        {
-          "x": -30,
-          "y": -11.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_e3_dram_sram_ddr_dq4",
-          "pcb_port_id": "pcb_port_controller_ddr3_e3_dram_sram_ddr_dq4"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_e7_dram_sram_ddr_dq7",
-      "rootConnectionName": "DDR3_e7_dram_sram_ddr_dq7",
-      "netConnectionName": "DDR3_e7_dram_sram_ddr_dq7",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 11.767,
-          "y": 1.6005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_e7_dram_sram_ddr_dq7",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_e7_dram_sram_ddr_dq7"
-        },
-        {
-          "x": -30,
-          "y": -10.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_e7_dram_sram_ddr_dq7",
-          "pcb_port_id": "pcb_port_controller_ddr3_e7_dram_sram_ddr_dq7"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_e8_dram_sram_ddr_dq5",
-      "rootConnectionName": "DDR3_e8_dram_sram_ddr_dq5",
-      "netConnectionName": "DDR3_e8_dram_sram_ddr_dq5",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 12.565,
-          "y": 1.6005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_e8_dram_sram_ddr_dq5",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_e8_dram_sram_ddr_dq5"
-        },
-        {
-          "x": -29,
-          "y": -13.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_e8_dram_sram_ddr_dq5",
-          "pcb_port_id": "pcb_port_controller_ddr3_e8_dram_sram_ddr_dq5"
         }
       ]
     },
@@ -23018,72 +22838,6 @@
       ]
     },
     {
-      "name": "DDR3_g9_dram_sram_ddr_cke",
-      "rootConnectionName": "DDR3_g9_dram_sram_ddr_cke",
-      "netConnectionName": "DDR3_g9_dram_sram_ddr_cke",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 13.367,
-          "y": -0.0005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_g9_dram_sram_ddr_cke",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_g9_dram_sram_ddr_cke"
-        },
-        {
-          "x": -35,
-          "y": -12.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_g9_dram_sram_ddr_cke",
-          "pcb_port_id": "pcb_port_controller_ddr3_g9_dram_sram_ddr_cke"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_h2_dram_sram_ddr_cs",
-      "rootConnectionName": "DDR3_h2_dram_sram_ddr_cs",
-      "netConnectionName": "DDR3_h2_dram_sram_ddr_cs",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 7.767,
-          "y": -0.8005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_h2_dram_sram_ddr_cs",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_h2_dram_sram_ddr_cs"
-        },
-        {
-          "x": -36,
-          "y": -12.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_h2_dram_sram_ddr_cs",
-          "pcb_port_id": "pcb_port_controller_ddr3_h2_dram_sram_ddr_cs"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_h3_dram_sram_ddr_we",
-      "rootConnectionName": "DDR3_h3_dram_sram_ddr_we",
-      "netConnectionName": "DDR3_h3_dram_sram_ddr_we",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 8.566,
-          "y": -0.8005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_h3_dram_sram_ddr_we",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_h3_dram_sram_ddr_we"
-        },
-        {
-          "x": -35,
-          "y": -11.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_h3_dram_sram_ddr_we",
-          "pcb_port_id": "pcb_port_controller_ddr3_h3_dram_sram_ddr_we"
-        }
-      ]
-    },
-    {
       "name": "DDR3_h7_dram_sram_ddr_a10",
       "rootConnectionName": "DDR3_h7_dram_sram_ddr_a10",
       "netConnectionName": "DDR3_h7_dram_sram_ddr_a10",
@@ -23124,28 +22878,6 @@
           "layer": "top",
           "pointId": "point_controller_ddr3_j2_dram_sram_ddr_ba0",
           "pcb_port_id": "pcb_port_controller_ddr3_j2_dram_sram_ddr_ba0"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_j3_dram_sram_ddr_ba2",
-      "rootConnectionName": "DDR3_j3_dram_sram_ddr_ba2",
-      "netConnectionName": "DDR3_j3_dram_sram_ddr_ba2",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 8.566,
-          "y": -1.6005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_j3_dram_sram_ddr_ba2",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_j3_dram_sram_ddr_ba2"
-        },
-        {
-          "x": -34,
-          "y": -9.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_j3_dram_sram_ddr_ba2",
-          "pcb_port_id": "pcb_port_controller_ddr3_j3_dram_sram_ddr_ba2"
         }
       ]
     },
@@ -23192,336 +22924,6 @@
           "pcb_port_id": "pcb_port_controller_ddr3_k2_dram_sram_ddr_a3"
         }
       ]
-    },
-    {
-      "name": "DDR3_k3_dram_sram_ddr_a0",
-      "rootConnectionName": "DDR3_k3_dram_sram_ddr_a0",
-      "netConnectionName": "DDR3_k3_dram_sram_ddr_a0",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 8.566,
-          "y": -2.3985,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_k3_dram_sram_ddr_a0",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_k3_dram_sram_ddr_a0"
-        },
-        {
-          "x": -33,
-          "y": -9.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_k3_dram_sram_ddr_a0",
-          "pcb_port_id": "pcb_port_controller_ddr3_k3_dram_sram_ddr_a0"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_k7_dram_sram_ddr_a12",
-      "rootConnectionName": "DDR3_k7_dram_sram_ddr_a12",
-      "netConnectionName": "DDR3_k7_dram_sram_ddr_a12",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 11.767,
-          "y": -2.3985,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_k7_dram_sram_ddr_a12",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_k7_dram_sram_ddr_a12"
-        },
-        {
-          "x": -36,
-          "y": -7.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_k7_dram_sram_ddr_a12",
-          "pcb_port_id": "pcb_port_controller_ddr3_k7_dram_sram_ddr_a12"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_k8_dram_sram_ddr_ba1",
-      "rootConnectionName": "DDR3_k8_dram_sram_ddr_ba1",
-      "netConnectionName": "DDR3_k8_dram_sram_ddr_ba1",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 12.565,
-          "y": -2.3985,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_k8_dram_sram_ddr_ba1",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_k8_dram_sram_ddr_ba1"
-        },
-        {
-          "x": -32,
-          "y": -9.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_k8_dram_sram_ddr_ba1",
-          "pcb_port_id": "pcb_port_controller_ddr3_k8_dram_sram_ddr_ba1"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_l2_dram_sram_ddr_a5",
-      "rootConnectionName": "DDR3_l2_dram_sram_ddr_a5",
-      "netConnectionName": "DDR3_l2_dram_sram_ddr_a5",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 7.767,
-          "y": -3.2005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_l2_dram_sram_ddr_a5",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_l2_dram_sram_ddr_a5"
-        },
-        {
-          "x": -35,
-          "y": -10.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_l2_dram_sram_ddr_a5",
-          "pcb_port_id": "pcb_port_controller_ddr3_l2_dram_sram_ddr_a5"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_l3_dram_sram_ddr_a2",
-      "rootConnectionName": "DDR3_l3_dram_sram_ddr_a2",
-      "netConnectionName": "DDR3_l3_dram_sram_ddr_a2",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 8.566,
-          "y": -3.2005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_l3_dram_sram_ddr_a2",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_l3_dram_sram_ddr_a2"
-        },
-        {
-          "x": -33,
-          "y": -11.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_l3_dram_sram_ddr_a2",
-          "pcb_port_id": "pcb_port_controller_ddr3_l3_dram_sram_ddr_a2"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_l7_dram_sram_ddr_a1",
-      "rootConnectionName": "DDR3_l7_dram_sram_ddr_a1",
-      "netConnectionName": "DDR3_l7_dram_sram_ddr_a1",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 11.767,
-          "y": -3.2005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_l7_dram_sram_ddr_a1",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_l7_dram_sram_ddr_a1"
-        },
-        {
-          "x": -34,
-          "y": -11.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_l7_dram_sram_ddr_a1",
-          "pcb_port_id": "pcb_port_controller_ddr3_l7_dram_sram_ddr_a1"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_l8_dram_sram_ddr_a4",
-      "rootConnectionName": "DDR3_l8_dram_sram_ddr_a4",
-      "netConnectionName": "DDR3_l8_dram_sram_ddr_a4",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 12.565,
-          "y": -3.2005,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_l8_dram_sram_ddr_a4",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_l8_dram_sram_ddr_a4"
-        },
-        {
-          "x": -36,
-          "y": -9.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_l8_dram_sram_ddr_a4",
-          "pcb_port_id": "pcb_port_controller_ddr3_l8_dram_sram_ddr_a4"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_m2_dram_sram_ddr_a7",
-      "rootConnectionName": "DDR3_m2_dram_sram_ddr_a7",
-      "netConnectionName": "DDR3_m2_dram_sram_ddr_a7",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 7.767,
-          "y": -3.9995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_m2_dram_sram_ddr_a7",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_m2_dram_sram_ddr_a7"
-        },
-        {
-          "x": -30,
-          "y": -7.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_m2_dram_sram_ddr_a7",
-          "pcb_port_id": "pcb_port_controller_ddr3_m2_dram_sram_ddr_a7"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_m3_dram_sram_ddr_a9",
-      "rootConnectionName": "DDR3_m3_dram_sram_ddr_a9",
-      "netConnectionName": "DDR3_m3_dram_sram_ddr_a9",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 8.566,
-          "y": -3.9995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_m3_dram_sram_ddr_a9",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_m3_dram_sram_ddr_a9"
-        },
-        {
-          "x": -31,
-          "y": -8.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_m3_dram_sram_ddr_a9",
-          "pcb_port_id": "pcb_port_controller_ddr3_m3_dram_sram_ddr_a9"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_m7_dram_sram_ddr_a11",
-      "rootConnectionName": "DDR3_m7_dram_sram_ddr_a11",
-      "netConnectionName": "DDR3_m7_dram_sram_ddr_a11",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 11.767,
-          "y": -3.9995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_m7_dram_sram_ddr_a11",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_m7_dram_sram_ddr_a11"
-        },
-        {
-          "x": -32,
-          "y": -7.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_m7_dram_sram_ddr_a11",
-          "pcb_port_id": "pcb_port_controller_ddr3_m7_dram_sram_ddr_a11"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_m8_dram_sram_ddr_a6",
-      "rootConnectionName": "DDR3_m8_dram_sram_ddr_a6",
-      "netConnectionName": "DDR3_m8_dram_sram_ddr_a6",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 12.565,
-          "y": -3.9995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_m8_dram_sram_ddr_a6",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_m8_dram_sram_ddr_a6"
-        },
-        {
-          "x": -34,
-          "y": -10.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_m8_dram_sram_ddr_a6",
-          "pcb_port_id": "pcb_port_controller_ddr3_m8_dram_sram_ddr_a6"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_n2_dram_sram_ddr_reset",
-      "rootConnectionName": "DDR3_n2_dram_sram_ddr_reset",
-      "netConnectionName": "DDR3_n2_dram_sram_ddr_reset",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 7.767,
-          "y": -4.7995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_n2_dram_sram_ddr_reset",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_n2_dram_sram_ddr_reset"
-        },
-        {
-          "x": -33,
-          "y": -12.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_n2_dram_sram_ddr_reset",
-          "pcb_port_id": "pcb_port_controller_ddr3_n2_dram_sram_ddr_reset"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_n3_dram_sram_ddr_a13",
-      "rootConnectionName": "DDR3_n3_dram_sram_ddr_a13",
-      "netConnectionName": "DDR3_n3_dram_sram_ddr_a13",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 8.566,
-          "y": -4.7995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_n3_dram_sram_ddr_a13",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_n3_dram_sram_ddr_a13"
-        },
-        {
-          "x": -35,
-          "y": -7.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_n3_dram_sram_ddr_a13",
-          "pcb_port_id": "pcb_port_controller_ddr3_n3_dram_sram_ddr_a13"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_n7_dram_sram_ddr_a14",
-      "rootConnectionName": "DDR3_n7_dram_sram_ddr_a14",
-      "netConnectionName": "DDR3_n7_dram_sram_ddr_a14",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 11.767,
-          "y": -4.7995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_n7_dram_sram_ddr_a14",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_n7_dram_sram_ddr_a14"
-        },
-        {
-          "x": -34,
-          "y": -8.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_n7_dram_sram_ddr_a14",
-          "pcb_port_id": "pcb_port_controller_ddr3_n7_dram_sram_ddr_a14"
-        }
-      ]
-    },
-    {
-      "name": "DDR3_n8_dram_sram_ddr_a8",
-      "rootConnectionName": "DDR3_n8_dram_sram_ddr_a8",
-      "netConnectionName": "DDR3_n8_dram_sram_ddr_a8",
-      "nominalTraceWidth": 0.1,
-      "pointsToConnect": [
-        {
-          "x": 12.565,
-          "y": -4.7995,
-          "layer": "top",
-          "pointId": "point_ddr3_ddr3_n8_dram_sram_ddr_a8",
-          "pcb_port_id": "pcb_port_ddr3_ddr3_n8_dram_sram_ddr_a8"
-        },
-        {
-          "x": -31,
-          "y": -9.5,
-          "layer": "top",
-          "pointId": "point_controller_ddr3_n8_dram_sram_ddr_a8",
-          "pcb_port_id": "pcb_port_controller_ddr3_n8_dram_sram_ddr_a8"
-        }
-      ]
     }
   ],
   "buses": [
@@ -23534,11 +22936,7 @@
         "DDR3_c3_dram_sram_ddr_dqs_p",
         "DDR3_c7_dram_sram_ddr_dq1",
         "DDR3_c8_dram_sram_ddr_dq3",
-        "DDR3_d2_dram_sram_ddr_dq6",
-        "DDR3_d3_dram_sram_ddr_dqs_n",
-        "DDR3_e3_dram_sram_ddr_dq4",
-        "DDR3_e7_dram_sram_ddr_dq7",
-        "DDR3_e8_dram_sram_ddr_dq5"
+        "DDR3_d3_dram_sram_ddr_dqs_n"
       ],
       "maxLengthSkew": 1.5,
       "traceWidth": 0.1
@@ -23551,29 +22949,10 @@
         "DDR3_g1_dram_sram_ddr_odt",
         "DDR3_g3_dram_sram_ddr_cas",
         "DDR3_g7_dram_sram_ddr_ck_n",
-        "DDR3_g9_dram_sram_ddr_cke",
-        "DDR3_h2_dram_sram_ddr_cs",
-        "DDR3_h3_dram_sram_ddr_we",
         "DDR3_h7_dram_sram_ddr_a10",
         "DDR3_j2_dram_sram_ddr_ba0",
-        "DDR3_j3_dram_sram_ddr_ba2",
         "DDR3_j7_dram_sram_ddr_a15",
-        "DDR3_k2_dram_sram_ddr_a3",
-        "DDR3_k3_dram_sram_ddr_a0",
-        "DDR3_k7_dram_sram_ddr_a12",
-        "DDR3_k8_dram_sram_ddr_ba1",
-        "DDR3_l2_dram_sram_ddr_a5",
-        "DDR3_l3_dram_sram_ddr_a2",
-        "DDR3_l7_dram_sram_ddr_a1",
-        "DDR3_l8_dram_sram_ddr_a4",
-        "DDR3_m2_dram_sram_ddr_a7",
-        "DDR3_m3_dram_sram_ddr_a9",
-        "DDR3_m7_dram_sram_ddr_a11",
-        "DDR3_m8_dram_sram_ddr_a6",
-        "DDR3_n2_dram_sram_ddr_reset",
-        "DDR3_n3_dram_sram_ddr_a13",
-        "DDR3_n7_dram_sram_ddr_a14",
-        "DDR3_n8_dram_sram_ddr_a8"
+        "DDR3_k2_dram_sram_ddr_a3"
       ],
       "maxLengthSkew": 2.5,
       "traceWidth": 0.1
@@ -23584,6 +22963,15 @@
       "connectionNames": [
         "DDR3_c3_dram_sram_ddr_dqs_p",
         "DDR3_d3_dram_sram_ddr_dqs_n"
+      ],
+      "lengthTolerance": 0.8,
+      "traceGap": 0.18,
+      "maxUncoupledLength": 5
+    },
+    {
+      "connectionNames": [
+        "DDR3_f7_dram_sram_ddr_ck_p",
+        "DDR3_g7_dram_sram_ddr_ck_n"
       ],
       "lengthTolerance": 0.8,
       "traceGap": 0.18,
@@ -23625,7 +23013,8 @@
       "sourceUrl": "https://github.com/antmicro/kintex-410t-devboard/blob/aeacd840ec3d5b4d93b789ccd99c30c50da11d71/k410t-devboard.kicad_pcb",
       "extractionMethod": "Exact KiCad PCB pad/net traversal; a single two-pad series resistor may be collapsed into one benchmark connection and is recorded per path.",
       "connectionMapFile": "reference/sample008-kintex-410t-devboard.json",
-      "directConnectionCount": 39,
+      "directConnectionCount": 16,
+      "sourceDirectConnectionCount": 39,
       "endpointMapSha256": "dc680cc2bf1d563ffe3141d33bc725e30ee5b2e7e35aee50c0070d3454e6ab44"
     },
     "ddr3": {
@@ -23638,7 +23027,7 @@
       "padFieldWidth": 6.832,
       "padFieldHeight": 10.029,
       "technology": "DDR3 / DDR3L",
-      "signalPinCount": 39,
+      "signalPinCount": 16,
       "rotation": 0,
       "bodyWidth": 7.63,
       "bodyHeight": 10.827
@@ -23665,64 +23054,41 @@
       "boardMargin": 7
     },
     "feasibility": {
-      "focus": "fan out both real BGA footprints, then route the exact reference DDR3 endpoint pairs",
+      "focus": "fan out both real BGA footprints, then route a representative subset of exact reference DDR3 endpoint pairs",
       "connectedDdr3EdgeDepth": 2.28,
-      "connectedControllerEdgeDepth": 6.25,
-      "availableRoutingLayers": 18,
+      "connectedControllerEdgeDepth": 4.25,
+      "availableRoutingLayers": 16,
       "minimumPackagePitch": 0.798,
       "viaStyle": "0.3352 mm dogbone-compatible via pad; via-in-pad disabled",
       "corridorWidth": 13.5
     },
     "signalGroups": {
-      "data": 8,
-      "strobe": 3,
-      "mask": 0,
-      "address": 16,
-      "bank": 3,
-      "command": 3,
-      "clock": 1,
-      "control": 5
+      "data": 4,
+      "strobe": 2,
+      "mask": 1,
+      "address": 3,
+      "bank": 1,
+      "command": 2,
+      "clock": 2,
+      "control": 1
     },
     "signalGroupByConnection": {
       "DDR3_b3_dram_sram_ddr_dq0": "data",
-      "DDR3_b7_dram_sram_ddr_dm": "strobe",
+      "DDR3_b7_dram_sram_ddr_dm": "mask",
       "DDR3_c2_dram_sram_ddr_dq2": "data",
       "DDR3_c3_dram_sram_ddr_dqs_p": "strobe",
       "DDR3_c7_dram_sram_ddr_dq1": "data",
       "DDR3_c8_dram_sram_ddr_dq3": "data",
-      "DDR3_d2_dram_sram_ddr_dq6": "data",
       "DDR3_d3_dram_sram_ddr_dqs_n": "strobe",
-      "DDR3_e3_dram_sram_ddr_dq4": "data",
-      "DDR3_e7_dram_sram_ddr_dq7": "data",
-      "DDR3_e8_dram_sram_ddr_dq5": "data",
       "DDR3_f3_dram_sram_ddr_ras": "command",
-      "DDR3_f7_dram_sram_ddr_ck_p": "control",
+      "DDR3_f7_dram_sram_ddr_ck_p": "clock",
       "DDR3_g1_dram_sram_ddr_odt": "control",
       "DDR3_g3_dram_sram_ddr_cas": "command",
       "DDR3_g7_dram_sram_ddr_ck_n": "clock",
-      "DDR3_g9_dram_sram_ddr_cke": "control",
-      "DDR3_h2_dram_sram_ddr_cs": "control",
-      "DDR3_h3_dram_sram_ddr_we": "command",
       "DDR3_h7_dram_sram_ddr_a10": "address",
       "DDR3_j2_dram_sram_ddr_ba0": "bank",
-      "DDR3_j3_dram_sram_ddr_ba2": "bank",
       "DDR3_j7_dram_sram_ddr_a15": "address",
-      "DDR3_k2_dram_sram_ddr_a3": "address",
-      "DDR3_k3_dram_sram_ddr_a0": "address",
-      "DDR3_k7_dram_sram_ddr_a12": "address",
-      "DDR3_k8_dram_sram_ddr_ba1": "bank",
-      "DDR3_l2_dram_sram_ddr_a5": "address",
-      "DDR3_l3_dram_sram_ddr_a2": "address",
-      "DDR3_l7_dram_sram_ddr_a1": "address",
-      "DDR3_l8_dram_sram_ddr_a4": "address",
-      "DDR3_m2_dram_sram_ddr_a7": "address",
-      "DDR3_m3_dram_sram_ddr_a9": "address",
-      "DDR3_m7_dram_sram_ddr_a11": "address",
-      "DDR3_m8_dram_sram_ddr_a6": "address",
-      "DDR3_n2_dram_sram_ddr_reset": "control",
-      "DDR3_n3_dram_sram_ddr_a13": "address",
-      "DDR3_n7_dram_sram_ddr_a14": "address",
-      "DDR3_n8_dram_sram_ddr_a8": "address"
+      "DDR3_k2_dram_sram_ddr_a3": "address"
     },
     "referenceNetByConnection": {
       "DDR3_b3_dram_sram_ddr_dq0": "/DRAM + SRAM/DDR.DQ0",
@@ -23731,39 +23097,16 @@
       "DDR3_c3_dram_sram_ddr_dqs_p": "/DRAM + SRAM/DDR.DQS_P",
       "DDR3_c7_dram_sram_ddr_dq1": "/DRAM + SRAM/DDR.DQ1",
       "DDR3_c8_dram_sram_ddr_dq3": "/DRAM + SRAM/DDR.DQ3",
-      "DDR3_d2_dram_sram_ddr_dq6": "/DRAM + SRAM/DDR.DQ6",
       "DDR3_d3_dram_sram_ddr_dqs_n": "/DRAM + SRAM/DDR.DQS_N",
-      "DDR3_e3_dram_sram_ddr_dq4": "/DRAM + SRAM/DDR.DQ4",
-      "DDR3_e7_dram_sram_ddr_dq7": "/DRAM + SRAM/DDR.DQ7",
-      "DDR3_e8_dram_sram_ddr_dq5": "/DRAM + SRAM/DDR.DQ5",
       "DDR3_f3_dram_sram_ddr_ras": "/DRAM + SRAM/DDR.~{RAS}",
       "DDR3_f7_dram_sram_ddr_ck_p": "/DRAM + SRAM/DDR.CK_P",
       "DDR3_g1_dram_sram_ddr_odt": "/DRAM + SRAM/DDR.ODT",
       "DDR3_g3_dram_sram_ddr_cas": "/DRAM + SRAM/DDR.~{CAS}",
       "DDR3_g7_dram_sram_ddr_ck_n": "/DRAM + SRAM/DDR.CK_N",
-      "DDR3_g9_dram_sram_ddr_cke": "/DRAM + SRAM/DDR.CKE",
-      "DDR3_h2_dram_sram_ddr_cs": "/DRAM + SRAM/DDR.~{CS}",
-      "DDR3_h3_dram_sram_ddr_we": "/DRAM + SRAM/DDR.~{WE}",
       "DDR3_h7_dram_sram_ddr_a10": "/DRAM + SRAM/DDR.A10",
       "DDR3_j2_dram_sram_ddr_ba0": "/DRAM + SRAM/DDR.BA0",
-      "DDR3_j3_dram_sram_ddr_ba2": "/DRAM + SRAM/DDR.BA2",
       "DDR3_j7_dram_sram_ddr_a15": "/DRAM + SRAM/DDR.A15",
-      "DDR3_k2_dram_sram_ddr_a3": "/DRAM + SRAM/DDR.A3",
-      "DDR3_k3_dram_sram_ddr_a0": "/DRAM + SRAM/DDR.A0",
-      "DDR3_k7_dram_sram_ddr_a12": "/DRAM + SRAM/DDR.A12",
-      "DDR3_k8_dram_sram_ddr_ba1": "/DRAM + SRAM/DDR.BA1",
-      "DDR3_l2_dram_sram_ddr_a5": "/DRAM + SRAM/DDR.A5",
-      "DDR3_l3_dram_sram_ddr_a2": "/DRAM + SRAM/DDR.A2",
-      "DDR3_l7_dram_sram_ddr_a1": "/DRAM + SRAM/DDR.A1",
-      "DDR3_l8_dram_sram_ddr_a4": "/DRAM + SRAM/DDR.A4",
-      "DDR3_m2_dram_sram_ddr_a7": "/DRAM + SRAM/DDR.A7",
-      "DDR3_m3_dram_sram_ddr_a9": "/DRAM + SRAM/DDR.A9",
-      "DDR3_m7_dram_sram_ddr_a11": "/DRAM + SRAM/DDR.A11",
-      "DDR3_m8_dram_sram_ddr_a6": "/DRAM + SRAM/DDR.A6",
-      "DDR3_n2_dram_sram_ddr_reset": "/DRAM + SRAM/DDR.~{RESET}",
-      "DDR3_n3_dram_sram_ddr_a13": "/DRAM + SRAM/DDR.A13",
-      "DDR3_n7_dram_sram_ddr_a14": "/DRAM + SRAM/DDR.A14",
-      "DDR3_n8_dram_sram_ddr_a8": "/DRAM + SRAM/DDR.A8"
+      "DDR3_k2_dram_sram_ddr_a3": "/DRAM + SRAM/DDR.A3"
     },
     "endpointBallsByConnection": {
       "DDR3_b3_dram_sram_ddr_dq0": {
@@ -23838,18 +23181,6 @@
           "seriesComponents": []
         }
       },
-      "DDR3_d2_dram_sram_ddr_dq6": {
-        "ddr3Ball": "D2",
-        "ddr3Signal": "NF/DQ6",
-        "controllerBall": "AK4",
-        "controllerSignal": "IO_L24N_T3_34",
-        "referenceNet": "/DRAM + SRAM/DDR.DQ6",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.DQ6",
-          "controllerSideNet": "/DRAM + SRAM/DDR.DQ6",
-          "seriesComponents": []
-        }
-      },
       "DDR3_d3_dram_sram_ddr_dqs_n": {
         "ddr3Ball": "D3",
         "ddr3Signal": "DQS#",
@@ -23859,42 +23190,6 @@
         "sourcePath": {
           "memorySideNet": "/DRAM + SRAM/DDR.DQS_N",
           "controllerSideNet": "/DRAM + SRAM/DDR.DQS_N",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_e3_dram_sram_ddr_dq4": {
-        "ddr3Ball": "E3",
-        "ddr3Signal": "NF/DQ4",
-        "controllerBall": "AG7",
-        "controllerSignal": "IO_L20N_T3_34",
-        "referenceNet": "/DRAM + SRAM/DDR.DQ4",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.DQ4",
-          "controllerSideNet": "/DRAM + SRAM/DDR.DQ4",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_e7_dram_sram_ddr_dq7": {
-        "ddr3Ball": "E7",
-        "ddr3Signal": "NF/DQ7",
-        "controllerBall": "AF7",
-        "controllerSignal": "IO_L20P_T3_34",
-        "referenceNet": "/DRAM + SRAM/DDR.DQ7",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.DQ7",
-          "controllerSideNet": "/DRAM + SRAM/DDR.DQ7",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_e8_dram_sram_ddr_dq5": {
-        "ddr3Ball": "E8",
-        "ddr3Signal": "NF/DQ5",
-        "controllerBall": "AJ8",
-        "controllerSignal": "IO_L23P_T3_34",
-        "referenceNet": "/DRAM + SRAM/DDR.DQ5",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.DQ5",
-          "controllerSideNet": "/DRAM + SRAM/DDR.DQ5",
           "seriesComponents": []
         }
       },
@@ -23958,42 +23253,6 @@
           "seriesComponents": []
         }
       },
-      "DDR3_g9_dram_sram_ddr_cke": {
-        "ddr3Ball": "G9",
-        "ddr3Signal": "CKE",
-        "controllerBall": "AH2",
-        "controllerSignal": "IO_L16P_T2_34",
-        "referenceNet": "/DRAM + SRAM/DDR.CKE",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.CKE",
-          "controllerSideNet": "/DRAM + SRAM/DDR.CKE",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_h2_dram_sram_ddr_cs": {
-        "ddr3Ball": "H2",
-        "ddr3Signal": "CS#",
-        "controllerBall": "AH1",
-        "controllerSignal": "IO_L15N_T2_DQS_34",
-        "referenceNet": "/DRAM + SRAM/DDR.~{CS}",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.~{CS}",
-          "controllerSideNet": "/DRAM + SRAM/DDR.~{CS}",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_h3_dram_sram_ddr_we": {
-        "ddr3Ball": "H3",
-        "ddr3Signal": "WE#",
-        "controllerBall": "AG2",
-        "controllerSignal": "IO_L15P_T2_DQS_34",
-        "referenceNet": "/DRAM + SRAM/DDR.~{WE}",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.~{WE}",
-          "controllerSideNet": "/DRAM + SRAM/DDR.~{WE}",
-          "seriesComponents": []
-        }
-      },
       "DDR3_h7_dram_sram_ddr_a10": {
         "ddr3Ball": "H7",
         "ddr3Signal": "A10/AP",
@@ -24018,18 +23277,6 @@
           "seriesComponents": []
         }
       },
-      "DDR3_j3_dram_sram_ddr_ba2": {
-        "ddr3Ball": "J3",
-        "ddr3Signal": "BA2",
-        "controllerBall": "AE3",
-        "controllerSignal": "IO_L10N_T1_34",
-        "referenceNet": "/DRAM + SRAM/DDR.BA2",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.BA2",
-          "controllerSideNet": "/DRAM + SRAM/DDR.BA2",
-          "seriesComponents": []
-        }
-      },
       "DDR3_j7_dram_sram_ddr_a15": {
         "ddr3Ball": "J7",
         "ddr3Signal": "A15",
@@ -24051,186 +23298,6 @@
         "sourcePath": {
           "memorySideNet": "/DRAM + SRAM/DDR.A3",
           "controllerSideNet": "/DRAM + SRAM/DDR.A3",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_k3_dram_sram_ddr_a0": {
-        "ddr3Ball": "K3",
-        "ddr3Signal": "A0",
-        "controllerBall": "AE4",
-        "controllerSignal": "IO_L10P_T1_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A0",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A0",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A0",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_k7_dram_sram_ddr_a12": {
-        "ddr3Ball": "K7",
-        "ddr3Signal": "A12/BC#",
-        "controllerBall": "AC1",
-        "controllerSignal": "IO_L2N_T0_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A12",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A12",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A12",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_k8_dram_sram_ddr_ba1": {
-        "ddr3Ball": "K8",
-        "ddr3Signal": "BA1",
-        "controllerBall": "AE5",
-        "controllerSignal": "IO_L11P_T1_SRCC_34",
-        "referenceNet": "/DRAM + SRAM/DDR.BA1",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.BA1",
-          "controllerSideNet": "/DRAM + SRAM/DDR.BA1",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_l2_dram_sram_ddr_a5": {
-        "ddr3Ball": "L2",
-        "ddr3Signal": "A5",
-        "controllerBall": "AF2",
-        "controllerSignal": "IO_L7N_T1_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A5",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A5",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A5",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_l3_dram_sram_ddr_a2": {
-        "ddr3Ball": "L3",
-        "ddr3Signal": "A2",
-        "controllerBall": "AG4",
-        "controllerSignal": "IO_L9P_T1_DQS_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A2",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A2",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A2",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_l7_dram_sram_ddr_a1": {
-        "ddr3Ball": "L7",
-        "ddr3Signal": "A1",
-        "controllerBall": "AG3",
-        "controllerSignal": "IO_L9N_T1_DQS_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A1",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A1",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A1",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_l8_dram_sram_ddr_a4": {
-        "ddr3Ball": "L8",
-        "ddr3Signal": "A4",
-        "controllerBall": "AE1",
-        "controllerSignal": "IO_L8P_T1_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A4",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A4",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A4",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_m2_dram_sram_ddr_a7": {
-        "ddr3Ball": "M2",
-        "ddr3Signal": "A7",
-        "controllerBall": "AC7",
-        "controllerSignal": "IO_L6P_T0_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A7",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A7",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A7",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_m3_dram_sram_ddr_a9": {
-        "ddr3Ball": "M3",
-        "ddr3Signal": "A9",
-        "controllerBall": "AD6",
-        "controllerSignal": "IO_L5P_T0_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A9",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A9",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A9",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_m7_dram_sram_ddr_a11": {
-        "ddr3Ball": "M7",
-        "ddr3Signal": "A11",
-        "controllerBall": "AC5",
-        "controllerSignal": "IO_L4P_T0_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A11",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A11",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A11",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_m8_dram_sram_ddr_a6": {
-        "ddr3Ball": "M8",
-        "ddr3Signal": "A6",
-        "controllerBall": "AF3",
-        "controllerSignal": "IO_L7P_T1_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A6",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A6",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A6",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_n2_dram_sram_ddr_reset": {
-        "ddr3Ball": "N2",
-        "ddr3Signal": "RESET#",
-        "controllerBall": "AH4",
-        "controllerSignal": "IO_L13P_T2_MRCC_34",
-        "referenceNet": "/DRAM + SRAM/DDR.~{RESET}",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.~{RESET}",
-          "controllerSideNet": "/DRAM + SRAM/DDR.~{RESET}",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_n3_dram_sram_ddr_a13": {
-        "ddr3Ball": "N3",
-        "ddr3Signal": "A13",
-        "controllerBall": "AC2",
-        "controllerSignal": "IO_L2P_T0_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A13",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A13",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A13",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_n7_dram_sram_ddr_a14": {
-        "ddr3Ball": "N7",
-        "ddr3Signal": "A14",
-        "controllerBall": "AD3",
-        "controllerSignal": "IO_L1N_T0_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A14",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A14",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A14",
-          "seriesComponents": []
-        }
-      },
-      "DDR3_n8_dram_sram_ddr_a8": {
-        "ddr3Ball": "N8",
-        "ddr3Signal": "A8",
-        "controllerBall": "AE6",
-        "controllerSignal": "IO_L5N_T0_34",
-        "referenceNet": "/DRAM + SRAM/DDR.A8",
-        "sourcePath": {
-          "memorySideNet": "/DRAM + SRAM/DDR.A8",
-          "controllerSideNet": "/DRAM + SRAM/DDR.A8",
           "seriesComponents": []
         }
       }
