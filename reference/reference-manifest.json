@@ -218,5 +218,16 @@
     "controller": "U2 xc7z020clg400",
     "connectionCount": 44,
     "endpointMapSha256": "8fc6606eb3f652b8e6e8429968c464401fe0d8bfee2d0056602470143f168a3a"
+  },
+  {
+    "sampleId": "sample021",
+    "mapFile": "reference/sample021-am62l-lpddr4-breakout-repro.json",
+    "board": "AM62L32 ↔ LPDDR4 automatic-breakout reproduction",
+    "repository": "tscircuit/0hmX/am62l-lpddr4-breakout-repro",
+    "sourceUrl": "https://tscircuit.com/0hmX/am62l-lpddr4-breakout-repro",
+    "memory": "U2 MT53E1G16D1ZW-046 WT:C",
+    "controller": "U1 AM62L32BOGHAANBR",
+    "connectionCount": 33,
+    "endpointMapSha256": "ee839c3284c313f4d30b7e003359d56107c4c86e6d0ec82d74742cf818e04fc0"
   }
 ]

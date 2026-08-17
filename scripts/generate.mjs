@@ -178,7 +178,7 @@ function connectedDepth(packageData, connectedBalls) {
   )))
 }
 
-function createSample(index, mapRecord) {
+function createDdr3Sample(index, mapRecord) {
   const { map, manifestEntry } = mapRecord
   const id = sampleName(index)
   const memoryOnLeft = index % 4 !== 0
@@ -383,6 +383,190 @@ function createSample(index, mapRecord) {
   }
 }
 
+function createPublishedReproSample(index, mapRecord) {
+  const { map, manifestEntry } = mapRecord
+  const id = sampleName(index)
+  const memoryPadByBall = new Map(map.memory.pads.map((pad) => [pad.ball, pad]))
+  const controllerPadByBall = new Map(map.controller.pads.map((pad) => [pad.ball, pad]))
+  const connectionByMemoryBall = new Map(map.connections.map((connection) => [connection.memory.ball, connection]))
+  const connectionByControllerBall = new Map(map.connections.map((connection) => [connection.controller.ball, connection]))
+  const makeObstacle = (pad, packageData, connection) => ({
+    obstacleId: pad.obstacleId,
+    componentId: packageData.componentId,
+    type: "rect",
+    shape: pad.shape,
+    layers: ["top"],
+    center: { x: pad.x, y: pad.y },
+    width: pad.width,
+    height: pad.height,
+    ballName: pad.ball,
+    vendorPinName: pad.signal,
+    connectedTo: connection
+      ? [connection.net, pad.pcbPortId]
+      : [`unconnected_${pad.obstacleId}`],
+    circuitJsonMetadata: {
+      source_component_name: `${packageData.reference}_${packageData.partNumber}`,
+      source_port_name: pad.signal,
+      source_package_ball: pad.ball,
+      published_pcb_port_id: pad.pcbPortId,
+    },
+  })
+  const obstacles = [
+    ...map.controller.pads.map((pad) => makeObstacle(pad, map.controller, connectionByControllerBall.get(pad.ball))),
+    ...map.memory.pads.map((pad) => makeObstacle(pad, map.memory, connectionByMemoryBall.get(pad.ball))),
+  ]
+  const connections = map.connections.map((connection) => {
+    const controllerPad = controllerPadByBall.get(connection.controller.ball)
+    const memoryPad = memoryPadByBall.get(connection.memory.ball)
+    if (!controllerPad || !memoryPad) throw new Error(`${id}: ${connection.net} references an absent package ball`)
+    return {
+      name: connection.net,
+      rootConnectionName: connection.net,
+      netConnectionName: connection.net,
+      nominalTraceWidth: map.board.nominalTraceWidth,
+      pointsToConnect: [
+        {
+          x: controllerPad.x,
+          y: controllerPad.y,
+          layer: "top",
+          pointId: controllerPad.pcbPortId,
+          pcb_port_id: controllerPad.pcbPortId,
+        },
+        {
+          x: memoryPad.x,
+          y: memoryPad.y,
+          layer: "top",
+          pointId: memoryPad.pcbPortId,
+          pcb_port_id: memoryPad.pcbPortId,
+        },
+      ],
+    }
+  })
+  const bounds = {
+    minX: round(map.board.center.x - map.board.width / 2),
+    maxX: round(map.board.center.x + map.board.width / 2),
+    minY: round(map.board.center.y - map.board.height / 2),
+    maxY: round(map.board.center.y + map.board.height / 2),
+  }
+  const outline = [
+    { x: bounds.minX, y: bounds.minY },
+    { x: bounds.maxX, y: bounds.minY },
+    { x: bounds.maxX, y: bounds.maxY },
+    { x: bounds.minX, y: bounds.maxY },
+  ]
+  const memoryBounds = getPadBounds(map.memory.pads)
+  const controllerBounds = getPadBounds(map.controller.pads)
+  const componentGap = round(memoryBounds.minX - controllerBounds.maxX)
+  const signalGroupByConnection = Object.fromEntries(map.connections.map((connection) => {
+    const signal = connection.memory.signal
+    const group = /^DQ\d+$/.test(signal)
+      ? "data"
+      : /^DQS/.test(signal)
+        ? "strobe"
+        : /^DMI/.test(signal)
+          ? "mask"
+          : /^CA/.test(signal)
+            ? "address"
+            : /^CK_[tc]$/.test(signal)
+              ? "clock"
+              : /^(?:CKE|RESET)/.test(signal)
+                ? "control"
+                : "command"
+    return [connection.net, group]
+  }))
+
+  return {
+    id,
+    title: "AM62L32 ↔ MT53E1G16D1ZW LPDDR4 automatic-breakout reproduction",
+    description: "An exact flat Simple Route JSON reproduction of the published 8-layer AM62L32-to-LPDDR4 board geometry, package balls, design rules, and all 33 direct DDR connections.",
+    layerCount: map.board.layerCount,
+    minTraceWidth: map.board.minTraceWidth,
+    nominalTraceWidth: map.board.nominalTraceWidth,
+    minViaHoleDiameter: map.board.minViaHoleDiameter,
+    minViaPadDiameter: map.board.minViaPadDiameter,
+    defaultObstacleMargin: map.board.minTraceToPadEdgeClearance,
+    minTraceToPadEdgeClearance: map.board.minTraceToPadEdgeClearance,
+    minViaEdgeToPadEdgeClearance: map.board.minViaEdgeToPadEdgeClearance,
+    minViaHoleEdgeToViaHoleEdgeClearance: map.board.minViaHoleEdgeToViaHoleEdgeClearance,
+    minPadEdgeToPadEdgeClearance: map.board.minPadEdgeToPadEdgeClearance,
+    minBoardEdgeClearance: map.board.minBoardEdgeClearance,
+    allowViaInPad: map.board.allowViaInPad,
+    obstacles,
+    connections,
+    buses: map.buses,
+    differentialPairs: map.differentialPairs.map((pair) => ({
+      name: pair.name,
+      connectionNames: pair.connectionNames,
+    })),
+    bounds,
+    outline,
+    metadata: {
+      datasetName: "dataset-srj29-ddr3-bga-pairs",
+      sampleType: map.sampleType,
+      referenceDesign: {
+        ...map.referenceDesign,
+        connectionMapFile: manifestEntry.mapFile,
+        directConnectionCount: connections.length,
+        sourceDirectConnectionCount: map.connections.length,
+        endpointMapSha256: map.endpointMapSha256,
+      },
+      memory: {
+        componentId: map.memory.componentId,
+        reference: map.memory.reference,
+        partNumber: map.memory.partNumber,
+        footprint: map.memory.footprint,
+        padCount: map.memory.padCount,
+        pitch: map.memory.pitch,
+        padFieldWidth: map.memory.padFieldWidth,
+        padFieldHeight: map.memory.padFieldHeight,
+        technology: map.memory.technology,
+        signalPinCount: connections.length,
+        rotation: map.memory.rotation,
+        bodyWidth: map.memory.bodyWidth,
+        bodyHeight: map.memory.bodyHeight,
+      },
+      controller: {
+        componentId: map.controller.componentId,
+        reference: map.controller.reference,
+        partNumber: map.controller.partNumber,
+        footprint: map.controller.footprint,
+        padCount: map.controller.padCount,
+        pitch: map.controller.pitch,
+        padFieldWidth: map.controller.padFieldWidth,
+        padFieldHeight: map.controller.padFieldHeight,
+        rotation: map.controller.rotation,
+        bodyWidth: map.controller.bodyWidth,
+        bodyHeight: map.controller.bodyHeight,
+      },
+      placement: {
+        controllerCenter: map.controller.center,
+        memoryCenter: map.memory.center,
+        componentGap,
+        componentGapDefinition: "minimum horizontal clearance between the published physical pad-field edges",
+        boardWidth: map.board.width,
+        boardHeight: map.board.height,
+      },
+      fanout: map.fanout,
+      signalGroupByConnection,
+      referenceNetByConnection: Object.fromEntries(map.connections.map((connection) => [connection.net, connection.net])),
+      endpointBallsByConnection: Object.fromEntries(map.connections.map((connection) => [connection.net, {
+        memoryBall: connection.memory.ball,
+        memorySignal: connection.memory.signal,
+        controllerBall: connection.controller.ball,
+        controllerSignal: connection.controller.signal,
+        referenceNet: connection.net,
+        sourcePath: connection.sourcePath,
+      }])),
+    },
+  }
+}
+
+function createSample(index, mapRecord) {
+  return mapRecord.map.sampleType === "published-tscircuit-repro"
+    ? createPublishedReproSample(index, mapRecord)
+    : createDdr3Sample(index, mapRecord)
+}
+
 function escapeXml(value) {
   return String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 }
@@ -401,8 +585,9 @@ function makeSampleSvg(sample, svgWidth = 1000, svgHeight = 650, showComponentLa
     const color = GROUP_COLORS[groupByName[connection.name]] ?? "#8796a5"
     return `<line x1="${sx(points[0].x)}" y1="${sy(points[0].y)}" x2="${sx(points[1].x)}" y2="${sy(points[1].y)}" stroke="${color}" stroke-width="0.85" opacity="0.46"/>`
   }).join("")
+  const memory = sample.metadata.memory ?? sample.metadata.ddr3
   const pads = sample.obstacles.map((obstacle) => {
-    const fill = obstacle.componentId === "ddr3_bga" ? "#f5a742" : "#4d8cc9"
+    const fill = obstacle.componentId === memory.componentId ? "#f5a742" : "#4d8cc9"
     const width = Math.max(1.6, obstacle.width * scale)
     const height = Math.max(1.6, obstacle.height * scale)
     return `<rect x="${sx(obstacle.center.x) - width / 2}" y="${sy(obstacle.center.y) - height / 2}" width="${width}" height="${height}" rx="${Math.min(width, height) * 0.22}" fill="${fill}" stroke="#0b1015" stroke-width="0.35"/>`
@@ -413,7 +598,7 @@ function makeSampleSvg(sample, svgWidth = 1000, svgHeight = 650, showComponentLa
     return `<text x="${sx((bounds.minX + bounds.maxX) / 2)}" y="${Math.min(svgHeight - 19, sy(bounds.minY) + 25)}" text-anchor="middle" fill="${color}" font-family="ui-monospace, monospace" font-size="12" font-weight="700">${escapeXml(label)}</text>`
   }
   const labels = showComponentLabels
-    ? `${componentLabel("ddr3_bga", "#ffc977", `${sample.metadata.ddr3.reference} · ${sample.metadata.ddr3.partNumber} · ${sample.metadata.ddr3.padCount} balls`)}${componentLabel("controller_bga", "#88b9eb", `${sample.metadata.controller.reference} · ${sample.metadata.controller.partNumber} · ${sample.metadata.controller.padCount} balls`)}`
+    ? `${componentLabel(memory.componentId, "#ffc977", `${memory.reference} · ${memory.partNumber} · ${memory.padCount} balls`)}${componentLabel(sample.metadata.controller.componentId, "#88b9eb", `${sample.metadata.controller.reference} · ${sample.metadata.controller.partNumber} · ${sample.metadata.controller.padCount} balls`)}`
     : ""
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}">
@@ -429,7 +614,7 @@ function makeContactSheet(samples) {
   const cellWidth = 420
   const cellHeight = 270
   const cols = 4
-  const rows = 5
+  const rows = Math.ceil(samples.length / cols)
   const cells = samples.map((sample, index) => {
     const svg = makeSampleSvg(sample, cellWidth, cellHeight, false)
       .replace(/^<\?xml[^>]*>\s*/, "")
@@ -452,13 +637,14 @@ function makeIndex(samples) {
 function makeConnectionMapsMarkdown(samples) {
   const rows = samples.map((sample) => {
     const reference = sample.metadata.referenceDesign
-    return `| ${sample.id} | [${reference.board}](${reference.sourceUrl}) | ${sample.metadata.ddr3.reference} ${sample.metadata.ddr3.partNumber} | ${sample.metadata.controller.reference} ${sample.metadata.controller.partNumber} | ${sample.connections.length} | ${reference.sourceDirectConnectionCount} | \`${reference.endpointMapSha256.slice(0, 12)}\` | [map](${reference.connectionMapFile}) |`
+    const memory = sample.metadata.memory ?? sample.metadata.ddr3
+    return `| ${sample.id} | [${reference.board}](${reference.sourceUrl}) | ${memory.reference} ${memory.partNumber} | ${sample.metadata.controller.reference} ${sample.metadata.controller.partNumber} | ${sample.connections.length} | ${reference.sourceDirectConnectionCount} | \`${reference.endpointMapSha256.slice(0, 12)}\` | [map](${reference.connectionMapFile}) |`
   }).join("\n")
-  return `# DDR3-to-BGA reference maps
+  return `# Memory-to-BGA reference maps
 
-Every sample uses a different primary-source board repository and a unique canonical DDR3-ball-to-controller-ball endpoint hash. KiCad-derived maps preserve the committed package pad populations and exact board nets. If a reference uses one series resistor between the two chips, the benchmark collapses that resistor while recording it in each connection's \`sourcePath\`.
+Every sample uses a different primary source and a unique canonical memory-ball-to-controller-ball endpoint hash. KiCad-derived maps preserve the committed package pad populations and exact board nets; sample021 preserves the published tscircuit AM62L32-to-LPDDR4 reproduction at package version 1.0.5. If a reference uses one series resistor between the two chips, the benchmark collapses that resistor while recording it in each connection's \`sourcePath\`.
 
-| Sample | Primary board source | DDR3 | Controller / FPGA / SoC | Routed nets | Source pairs | Endpoint hash | Machine map |
+| Sample | Primary board source | Memory | Controller / FPGA / SoC | Routed nets | Source pairs | Endpoint hash | Machine map |
 |---|---|---|---|---:|---:|---|---|
 ${rows}
 
@@ -470,7 +656,7 @@ function makeTypes(samples) {
   const exports = samples.map((sample) => `export const ${sample.id}: SimpleRouteJson`).join("\n")
   return `export interface SimpleRoutePoint { x: number; y: number; layer?: string; layers?: string[]; pointId?: string; pcb_port_id?: string }
 export interface SimpleRouteConnection { name: string; rootConnectionName?: string; netConnectionName?: string; nominalTraceWidth?: number; pointsToConnect: SimpleRoutePoint[] }
-export interface SimpleRouteObstacle { obstacleId?: string; componentId?: string; ballName?: string; vendorPinName?: string; type: "rect"; layers: string[]; center: { x: number; y: number }; width: number; height: number; connectedTo: string[] }
+export interface SimpleRouteObstacle { obstacleId?: string; componentId?: string; ballName?: string; vendorPinName?: string; type: "rect"; shape?: "rect" | "circle"; layers: string[]; center: { x: number; y: number }; width: number; height: number; connectedTo: string[] }
 export interface SimpleRouteJson { id: string; title: string; description: string; layerCount: number; minTraceWidth: number; nominalTraceWidth?: number; minViaHoleDiameter?: number; minViaPadDiameter?: number; defaultObstacleMargin?: number; minTraceToPadEdgeClearance?: number; minViaEdgeToPadEdgeClearance?: number; allowViaInPad?: boolean; obstacles: SimpleRouteObstacle[]; connections: SimpleRouteConnection[]; buses?: unknown[]; differentialPairs?: unknown[]; bounds: { minX: number; maxX: number; minY: number; maxY: number }; outline?: Array<{ x: number; y: number }>; metadata: Record<string, unknown> }
 
 ${exports}
@@ -491,30 +677,36 @@ for (const sample of samples) {
 const manifest = {
   datasetName: "dataset-srj29-ddr3-bga-pairs",
   sampleCount: samples.length,
-  purpose: "Spacious multilayer routing benchmarks from 20 different real DDR3-to-BGA board references",
+  purpose: "Twenty spacious DDR3-to-BGA references plus one exact published AM62L32-to-LPDDR4 breakout reproduction",
   totalReferenceEndpointPairs: maps.reduce((sum, mapRecord) => sum + mapRecord.map.connections.length, 0),
   totalRoutedEndpointPairs: samples.reduce((sum, sample) => sum + sample.connections.length, 0),
   referenceManifestFile: "reference/reference-manifest.json",
-  samples: samples.map((sample) => ({
-    id: sample.id,
-    title: sample.title,
-    referenceBoard: sample.metadata.referenceDesign.board,
-    referenceRepository: sample.metadata.referenceDesign.repository,
-    referenceSourceUrl: sample.metadata.referenceDesign.sourceUrl,
-    endpointMapSha256: sample.metadata.referenceDesign.endpointMapSha256,
-    connectionMapFile: sample.metadata.referenceDesign.connectionMapFile,
-    layerCount: sample.layerCount,
-    connectionCount: sample.connections.length,
-    referenceConnectionCount: sample.metadata.referenceDesign.sourceDirectConnectionCount,
-    obstacleCount: sample.obstacles.length,
-    ddr3PadCount: sample.metadata.ddr3.padCount,
-    ddr3PartNumber: sample.metadata.ddr3.partNumber,
-    controllerPadCount: sample.metadata.controller.padCount,
-    controllerPartNumber: sample.metadata.controller.partNumber,
-    componentGap: sample.metadata.placement.componentGap,
-    rotation: sample.metadata.ddr3.rotation,
-    bounds: sample.bounds,
-  })),
+  samples: samples.map((sample) => {
+    const memory = sample.metadata.memory ?? sample.metadata.ddr3
+    return {
+      id: sample.id,
+      title: sample.title,
+      referenceBoard: sample.metadata.referenceDesign.board,
+      referenceRepository: sample.metadata.referenceDesign.repository,
+      referenceSourceUrl: sample.metadata.referenceDesign.sourceUrl,
+      endpointMapSha256: sample.metadata.referenceDesign.endpointMapSha256,
+      connectionMapFile: sample.metadata.referenceDesign.connectionMapFile,
+      layerCount: sample.layerCount,
+      connectionCount: sample.connections.length,
+      referenceConnectionCount: sample.metadata.referenceDesign.sourceDirectConnectionCount,
+      obstacleCount: sample.obstacles.length,
+      memoryPadCount: memory.padCount,
+      memoryPartNumber: memory.partNumber,
+      memoryTechnology: memory.technology,
+      ddr3PadCount: sample.metadata.ddr3?.padCount,
+      ddr3PartNumber: sample.metadata.ddr3?.partNumber,
+      controllerPadCount: sample.metadata.controller.padCount,
+      controllerPartNumber: sample.metadata.controller.partNumber,
+      componentGap: sample.metadata.placement.componentGap,
+      rotation: memory.rotation,
+      bounds: sample.bounds,
+    }
+  }),
 }
 const connectionMapsMarkdown = makeConnectionMapsMarkdown(samples)
 await writeFile(path.join(repoRoot, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`)
@@ -523,4 +715,4 @@ await writeFile(path.join(repoRoot, "index.d.ts"), makeTypes(samples))
 await writeFile(path.join(repoRoot, "CONNECTION_MAP.md"), connectionMapsMarkdown)
 await writeFile(path.join(repoRoot, "CONNECTION_MAPS.md"), connectionMapsMarkdown)
 await writeFile(path.join(previewsDir, "contact-sheet.svg"), makeContactSheet(samples))
-console.log(`Generated ${samples.length} unique-board DDR3-to-BGA SRJ samples`)
+console.log(`Generated ${samples.length} memory-to-BGA SRJ samples`)

@@ -1,8 +1,8 @@
-# DDR3-to-BGA reference maps
+# Memory-to-BGA reference maps
 
-Every sample uses a different primary-source board repository and a unique canonical DDR3-ball-to-controller-ball endpoint hash. KiCad-derived maps preserve the committed package pad populations and exact board nets. If a reference uses one series resistor between the two chips, the benchmark collapses that resistor while recording it in each connection's `sourcePath`.
+Every sample uses a different primary source and a unique canonical memory-ball-to-controller-ball endpoint hash. KiCad-derived maps preserve the committed package pad populations and exact board nets; sample021 preserves the published tscircuit AM62L32-to-LPDDR4 reproduction at package version 1.0.5. If a reference uses one series resistor between the two chips, the benchmark collapses that resistor while recording it in each connection's `sourcePath`.
 
-| Sample | Primary board source | DDR3 | Controller / FPGA / SoC | Routed nets | Source pairs | Endpoint hash | Machine map |
+| Sample | Primary board source | Memory | Controller / FPGA / SoC | Routed nets | Source pairs | Endpoint hash | Machine map |
 |---|---|---|---|---:|---:|---|---|
 | sample001 | [BeagleBone Black Rev D1](https://github.com/beagleboard/beaglebone-black/blob/c7bbdb9676c0cacc8dd9a2f656ee2dab34d98fca/BBB-SCH.pdf) | U12 MT41K256M16HA-125 / MT41K512M16HA-125 | U5 AM3358BZCZ100 | 16 | 50 | `32dcd9c80763` | [map](reference/sample001-beaglebone-black.json) |
 | sample002 | [Allwinner H3 DDR3 x16 reference design](https://github.com/hvwyl/allwinner-h3-ddr3-16x1-kicad/blob/02e365b21363a17710e0f96072c0844940495567/project/allwinner-h3.kicad_pcb) | DU1 DDR3-FBGA96 | U1 Allwinner-H3 | 16 | 53 | `5e0a090408ca` | [map](reference/sample002-allwinner-h3-ddr3-16x1-kicad.json) |
@@ -24,5 +24,6 @@ Every sample uses a different primary-source board repository and a unique canon
 | sample018 | [NekoInk Gen2 mainboard](https://github.com/zephray/NekoInk/blob/9bb86a9f21bbe98f1e5dd090bf5172e57ec50cf3/pcb/mainboard_gen2/pcb.kicad_pcb) | U7 MT41K256M16HA | U6 XC7Z010-CLG400 | 16 | 49 | `f64e3ee5a499` | [map](reference/sample018-nekoink.json) |
 | sample019 | [iCE/Pi CM0 SBC](https://github.com/cheyao/icepi-sbc/blob/45037f8522e6b95649ab43772b08fe223cb87f01/hardware/cm0.kicad_pcb) | U2 H5TQ4G63EFR | U1 H3 | 16 | 45 | `2226bf8ac400` | [map](reference/sample019-icepi-sbc.json) |
 | sample020 | [Zynq SDR Dongle](https://github.com/john-luan/SDR-dongle/blob/1861a1b339c4064f057cf5e1f721f089c28d0b08/hardware/zynq_sdr_dongle.kicad_pcb) | U1 DDR3 | U2 xc7z020clg400 | 16 | 44 | `8fc6606eb3f6` | [map](reference/sample020-sdr-dongle.json) |
+| sample021 | [AM62L32 ↔ LPDDR4 automatic-breakout reproduction](https://tscircuit.com/0hmX/am62l-lpddr4-breakout-repro) | U2 MT53E1G16D1ZW-046 WT:C | U1 AM62L32BOGHAANBR | 33 | 33 | `ee839c3284c3` | [map](reference/sample021-am62l-lpddr4-breakout-repro.json) |
 
 Power, ground, VREF, ZQ, decoupling, and termination-only branches are outside this two-BGA routing benchmark.

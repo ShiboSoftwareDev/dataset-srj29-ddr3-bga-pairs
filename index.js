@@ -20,6 +20,7 @@ exports.sample017 = require("./samples/sample017.json")
 exports.sample018 = require("./samples/sample018.json")
 exports.sample019 = require("./samples/sample019.json")
 exports.sample020 = require("./samples/sample020.json")
+exports.sample021 = require("./samples/sample021.json")
 
 exports.dataset = {
   sample001: exports.sample001,
@@ -42,6 +43,7 @@ exports.dataset = {
   sample018: exports.sample018,
   sample019: exports.sample019,
   sample020: exports.sample020,
+  sample021: exports.sample021,
 }
 
 exports.default = exports.dataset

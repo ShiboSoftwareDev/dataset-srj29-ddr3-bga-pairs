@@ -41,18 +41,20 @@ function convertSampleToCircuitJson(sample) {
     num_layers: sample.layerCount,
   })
 
+  const memory = sample.metadata.memory ?? sample.metadata.ddr3
+  const isLegacyDdr3Sample = Boolean(sample.metadata.ddr3)
   const components = [
     {
-      componentId: "ddr3_bga",
-      sourceComponentId: "source_component_ddr3",
-      pcbComponentId: "pcb_component_ddr3",
-      name: sample.metadata.ddr3.reference,
-      label: `${sample.metadata.ddr3.partNumber} DDR3`,
-      bodyWidth: sample.metadata.ddr3.bodyWidth,
-      bodyHeight: sample.metadata.ddr3.bodyHeight,
+      componentId: memory.componentId,
+      sourceComponentId: isLegacyDdr3Sample ? "source_component_ddr3" : "source_component_memory",
+      pcbComponentId: isLegacyDdr3Sample ? "pcb_component_ddr3" : "pcb_component_memory",
+      name: memory.reference,
+      label: isLegacyDdr3Sample ? `${memory.partNumber} DDR3` : `${memory.partNumber} ${memory.technology}`,
+      bodyWidth: memory.bodyWidth,
+      bodyHeight: memory.bodyHeight,
     },
     {
-      componentId: "controller_bga",
+      componentId: sample.metadata.controller.componentId,
       sourceComponentId: "source_component_controller",
       pcbComponentId: "pcb_component_controller",
       name: sample.metadata.controller.reference,
@@ -110,8 +112,10 @@ function convertSampleToCircuitJson(sample) {
   const sourcePortsByConnection = new Map()
 
   for (const obstacle of sample.obstacles) {
-    const isDdr3 = obstacle.componentId === "ddr3_bga"
-    const componentPrefix = isDdr3 ? "ddr3" : "controller"
+    const isMemory = obstacle.componentId === memory.componentId
+    const componentPrefix = isMemory
+      ? isLegacyDdr3Sample ? "ddr3" : "memory"
+      : "controller"
     const sourceComponentId = `source_component_${componentPrefix}`
     const pcbComponentId = `pcb_component_${componentPrefix}`
     const smtpadId = obstacle.obstacleId
@@ -121,11 +125,12 @@ function convertSampleToCircuitJson(sample) {
       type: "pcb_smtpad",
       pcb_smtpad_id: smtpadId,
       pcb_component_id: pcbComponentId,
-      shape: "rect",
+      shape: obstacle.shape === "circle" ? "circle" : "rect",
       x: obstacle.center.x,
       y: obstacle.center.y,
-      width: obstacle.width,
-      height: obstacle.height,
+      ...(obstacle.shape === "circle"
+        ? { radius: obstacle.width / 2 }
+        : { width: obstacle.width, height: obstacle.height }),
       layer: "top",
       pcb_port_id: pcbPortId,
       port_hints: obstacle.ballName ? [obstacle.ballName] : undefined,
